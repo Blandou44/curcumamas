@@ -3,8 +3,9 @@ import styled, { createGlobalStyle } from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import { Navbar } from "../components/Navbar";
 import { sidePadding } from "../styles/theme";
+import { Footer } from "../components/Footer";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const Header = styled.h2`
+export const Header = styled.h2`
   font-size: 32px;
   color: #253269;
   text-transform: uppercase;
@@ -30,11 +31,11 @@ const SubHeader = styled.h3`
   font-size: 40px;
 `;
 
-const Section = styled.div`
+export const Section = styled.div`
   background: #f7f7f7;
   padding: 2rem ${sidePadding};
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background: #fff;
   }
 `;
@@ -543,6 +544,7 @@ const IndexPage = () => {
           <Button type="submit">Abonne toi</Button>
         </form>
       </Section>
+      <Footer />
     </main>
   );
 };

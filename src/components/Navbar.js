@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 import Headroom from "react-headroom";
-import { mainColor, sidePadding } from "../styles/theme";
+import { mainColor, secondaryColor, sidePadding } from "../styles/theme";
 
 const NavContainer = styled.nav`
   background: ${mainColor};
@@ -11,9 +11,10 @@ const NavContainer = styled.nav`
   padding: 0.5rem ${sidePadding};
   display: grid;
   grid-template-columns: 200px 1fr auto auto auto auto;
+  column-gap: 2rem;
 `;
 
-const LogoContainer = styled.div`
+const LogoContainer = styled(AnchorLink)`
   background: white;
   border-radius: 5px;
 
@@ -23,16 +24,15 @@ const LogoContainer = styled.div`
 `;
 
 const Link = styled(AnchorLink)`
-  color: white;
+  color: ${secondaryColor};
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 0.5rem;
 
   align-self: center;
 
   &:hover {
-    text-decoration: underline;
+    color: white;
   }
 `;
 
@@ -40,7 +40,7 @@ export const Navbar = () => {
   return (
     <Headroom>
       <NavContainer>
-        <LogoContainer>
+        <LogoContainer to="/">
           <StaticImage
             src="../images/logo.jpg"
             alt="Curcumamas"
@@ -48,10 +48,10 @@ export const Navbar = () => {
           />
         </LogoContainer>
         <div></div>
-        <Link to="#menu">Menu</Link>
-        <Link to="#formules">Nos formules</Link>
-        <Link to="#plus">Nos autres offres</Link>
-        <Link to="#contact">Contact</Link>
+        <Link to="/#menu">Menu</Link>
+        <Link to="/#formules">Nos formules</Link>
+        <Link to="/#plus">Nos autres offres</Link>
+        <Link to="/#contact">Contact</Link>
       </NavContainer>
     </Headroom>
   );
