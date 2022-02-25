@@ -36,7 +36,7 @@ const Link = styled(AnchorLink)`
   }
 `;
 
-export const Navbar = () => {
+export const Navbar = ({ onContactClick }) => {
   return (
     <Headroom>
       <NavContainer>
@@ -51,7 +51,9 @@ export const Navbar = () => {
         <Link to="/#menu">Menu</Link>
         <Link to="/#formules">Nos formules</Link>
         <Link to="/#plus">Nos autres offres</Link>
-        <Link to="/#contact">Contact</Link>
+        <Link to="/#contact" onAnchorLinkClick={onContactClick}>
+          Contact
+        </Link>
       </NavContainer>
     </Headroom>
   );

@@ -1,9 +1,17 @@
 import * as React from "react";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import styled, { createGlobalStyle } from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import { Navbar } from "../components/Navbar";
-import { sidePadding } from "../styles/theme";
+import {
+  sidePadding,
+  mainColor,
+  secondaryColor,
+  sidePaddingSmall,
+} from "../styles/theme";
 import { Footer } from "../components/Footer";
+import { RadioGroup } from "../components/RadioGroup";
+import { CheckBox } from "../components/CheckBox";
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -27,16 +35,24 @@ const SubHeader = styled.h3`
   text-align: center;
   font-weight: 500;
   padding: 0;
-  color: #bf8a34;
+  color: ${secondaryColor};
   font-size: 40px;
 `;
 
 export const Section = styled.div`
   background: #f7f7f7;
-  padding: 2rem ${sidePadding};
+
+  opacity: ${(props) => (props.isHidden ? 0 : 1)};
+  max-height: ${(props) => (props.isHidden ? "0px" : "2000px")};
+  padding: ${(props) => (props.isHidden ? 0 : `2rem ${sidePadding}`)};
+  overflow: hidden;
 
   &:nth-child(even) {
     background: #fff;
+  }
+
+  @media (max-width: 900px) {
+    padding: ${(props) => (props.isHidden ? 0 : `2rem ${sidePaddingSmall}`)};
   }
 `;
 
@@ -50,7 +66,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  border: 1px solid #273470;
+  border: 1px solid ${mainColor};
   background-color: #f7f7f7;
   padding: 1rem;
 
@@ -60,11 +76,11 @@ const Card = styled.div`
 
   > h4 {
     font-size: 17px;
-    color: #273470;
+    color: ${mainColor};
     text-align: center;
   }
 
-  > button {
+  > a {
     align-self: center;
     margin-top: auto;
   }
@@ -74,17 +90,20 @@ const Price = styled.p`
   text-align: center;
 `;
 
-const Button = styled.button`
-  background: #bf8a34;
+const Button = styled(AnchorLink)`
+  background: ${secondaryColor};
   border: 0;
-  padding: 10px 24px;
+  padding: 1rem 24px;
   color: #fff;
   transition: 0.4s;
   border-radius: 5px;
   border: 2px solid #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
 
   &:hover {
-    background: #273470;
+    background: ${mainColor};
   }
 `;
 
@@ -112,7 +131,7 @@ const PetitsPlus = styled.div`
   > h4 {
     font-weight: 700;
     font-size: 18px;
-    background-color: #bf8a34;
+    background-color: ${secondaryColor};
     color: #fff;
     padding: 0.5rem;
     margin: 0;
@@ -171,13 +190,102 @@ const EngagementContainer = styled.div`
   }
 `;
 
+const TextInput = styled.input`
+  background: transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: solid 1px white;
+  color: white;
+  padding: 1rem;
+  transition: background 0.4s;
+  font-size: 1rem;
+  font-family: "Montserrat";
+
+  &:focus {
+    outline: none;
+    background-color: ${mainColor};
+  }
+
+  &::placeholder {
+    color: #ffffff88;
+  }
+`;
+
+const FormContainer = styled.form`
+  display: grid;
+  justify-items: center;
+  border-radius: 26% 74% 78% 22% / 23% 46% 54% 77%;
+  background-color: ${secondaryColor};
+  padding: 2rem 2rem 2rem 12rem;
+  margin: 0 auto;
+  max-width: 850px;
+  justify-items: flex-start;
+
+  @media (max-width: 900px) {
+    border-radius: 0;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    padding: 2rem;
+  }
+`;
+
+const DetailsContainer = styled.div`
+  opacity: ${(props) => (props.isHidden ? 0 : 1)};
+  max-height: ${(props) => (props.isHidden ? "0px" : "300px")};
+  overflow: hidden;
+  transition: all 0.4s;
+  display: grid;
+  row-gap: 1rem;
+
+  > p {
+    color: white;
+    font-size: 1.2rem;
+  }
+`;
+
 // markup
 const IndexPage = () => {
+  const [formule, setFormule] = React.useState("");
+  const [duree, setDuree] = React.useState("");
+  const [variante, setVariante] = React.useState("");
+  const [date, setDate] = React.useState("");
+  const [cadeau, setCadeau] = React.useState(false);
+  const [isSubscribingToNewsLetter, setIsSubscribingToNewsLetter] =
+    React.useState(false);
+
+  const [isContact, setIsContact] = React.useState(true);
+
+  const isCadeau = cadeau || formule === "carte cadeau";
+
+  const onFormuleChange = (e) => {
+    setFormule(e.target.value);
+  };
+  const onDureeChange = (e) => {
+    setDuree(e.target.value);
+  };
+  const onVarianteChange = (e) => {
+    setVariante(e.target.value);
+  };
+  const onDateChange = (e) => {
+    setDate(e.target.value);
+  };
+
+  const onCadeauChange = (e) => {
+    setCadeau(e.target.checked);
+  };
+  const onNewsLetterChange = (e) => {
+    setIsSubscribingToNewsLetter(e.target.checked);
+  };
+
+  const handleContactClick = () => {
+    setIsContact(true);
+  };
+
   return (
     <main>
       <GlobalStyle />
       <title>Curcumamas : une cuisine ronde, simple et engagée.</title>
-      <Navbar />
+      <Navbar onContactClick={handleContactClick} />
       <Section>
         <Header>Traiteur du post-partum* à Toulouse</Header>
         <p>
@@ -237,7 +345,15 @@ const IndexPage = () => {
               réconfortant t’attend. Pensés pour répondre à tes besoins de
               guerrière, il ne reste plus qu’à apprivoiser la vie avec bébé.
             </p>
-            <Button>Réserver</Button>
+            <Button
+              to="/#commander"
+              onAnchorLinkClick={() => {
+                setIsContact(false);
+                setFormule("2 jours");
+              }}
+            >
+              Réserver
+            </Button>
           </Card>
           <Card>
             <StaticImage
@@ -253,7 +369,15 @@ const IndexPage = () => {
               ou non. Grâce à la formule duo, doublez les quantités de la
               formule 3 jours et libérez vous de 6 repas.
             </p>
-            <Button>Réserver</Button>
+            <Button
+              to="/#commander"
+              onAnchorLinkClick={() => {
+                setIsContact(false);
+                setFormule("6 jours");
+              }}
+            >
+              Réserver
+            </Button>
           </Card>
           <Card>
             <StaticImage
@@ -285,7 +409,15 @@ const IndexPage = () => {
               alimentation, pendant la durée souhaitée. À chaque bouchée,
               retrouvez la force et la chaleur de votre tribu qui vous entoure.
             </p>
-            <Button>Réserver</Button>
+            <Button
+              to="/#commander"
+              onAnchorLinkClick={() => {
+                setIsContact(false);
+                setFormule("carte cadeau");
+              }}
+            >
+              Réserver
+            </Button>
           </Card>
         </FormulesContainer>
       </Section>
@@ -350,7 +482,14 @@ const IndexPage = () => {
               massages pré et postnataux et bien d’autre. Écris-lui si tu as des
               questions.
             </p>
-            <Button>Contacte-nous</Button>
+            <Button
+              to="/#contact"
+              onAnchorLinkClick={() => {
+                setIsContact(true);
+              }}
+            >
+              Contacte-nous
+            </Button>
           </Card>
           <Card>
             <StaticImage
@@ -372,7 +511,14 @@ const IndexPage = () => {
               difficile etc). Conseiller et bien organiser le post-partum tant
               physiquement qu’émotionnellement.
             </p>
-            <Button>Contacte-nous</Button>
+            <Button
+              to="/#contact"
+              onAnchorLinkClick={() => {
+                setIsContact(true);
+              }}
+            >
+              Contacte-nous
+            </Button>
           </Card>
           <Card>
             <StaticImage
@@ -387,7 +533,14 @@ const IndexPage = () => {
               période. Ateliers solo, duo ou en groupe, chez toi ou à la
               curcumaison, tout est faisable. Écris- nous si tu as des questions
             </p>
-            <Button>Contacte-nous</Button>
+            <Button
+              to="/#contact"
+              onAnchorLinkClick={() => {
+                setIsContact(true);
+              }}
+            >
+              Contacte-nous
+            </Button>
           </Card>
           <Card>
             <StaticImage
@@ -403,7 +556,14 @@ const IndexPage = () => {
               entourage, avec des produits bio, locaux et hormones friendly.
               Écris- nous si tu as des questions.
             </p>
-            <Button>Contacte-nous</Button>
+            <Button
+              to="/#contact"
+              onAnchorLinkClick={() => {
+                setIsContact(true);
+              }}
+            >
+              Contacte-nous
+            </Button>
           </Card>
         </PlusContainer>
       </Section>
@@ -523,10 +683,134 @@ const IndexPage = () => {
         </EngagementContainer>
       </Section>
 
-      <Section id="contact">
+      <Section id="commander" isHidden={isContact}>
+        <Header>Commander</Header>
+
+        <FormContainer name="commande" method="POST" data-netlify="true">
+          <input type="hidden" name="commande-form" value="commande" />
+          <DetailsContainer>
+            <p>Vos détails</p>
+            <div>
+              <TextInput type="text" name="name" placeholder="Votre nom" />
+            </div>
+            <div>
+              <TextInput type="email" name="email" placeholder="Votre email" />
+            </div>
+            <div>
+              <TextInput
+                type="text"
+                name="phone"
+                placeholder="Votre numéro de téléphone"
+              />
+            </div>
+          </DetailsContainer>
+          <RadioGroup
+            label="Votre formule"
+            name="formule"
+            options={[
+              { value: "2 jours", label: "Petite fringale - 2 jours" },
+              { value: "6 jours", label: "Curcufamille - 6 jours" },
+              { value: "carte cadeau", label: "Cartes cadeaux" },
+            ]}
+            onChange={onFormuleChange}
+            selectedValue={formule}
+          />
+          <RadioGroup
+            name="durée"
+            options={[
+              { value: "10 jours", label: "10 jours" },
+              { value: "14 jours", label: "14 jours" },
+              { value: "30 jours", label: "30 jours" },
+            ]}
+            onChange={onDureeChange}
+            selectedValue={duree}
+            isHidden={formule !== "carte cadeau"}
+          />
+          <RadioGroup
+            label="Variante"
+            name="variante"
+            options={[
+              { value: "VG", label: "VG" },
+              { value: "Flexi", label: "Flexi" },
+            ]}
+            onChange={onVarianteChange}
+            selectedValue={variante}
+          />
+          <RadioGroup
+            label="Livraison"
+            name="date"
+            options={[
+              { value: "8 mars", label: "8 mars" },
+              { value: "15 mars", label: "15 mars" },
+            ]}
+            onChange={onDateChange}
+            selectedValue={date}
+          />
+          <div style={{ marginTop: "1rem" }}>
+            <TextInput
+              type="text"
+              name="addresse"
+              placeholder="Addresse de livraison"
+            />
+          </div>
+          <CheckBox
+            label="C'est un cadeau !"
+            name="cadeau"
+            onChange={onCadeauChange}
+            value={cadeau}
+          />
+          <CheckBox
+            label="Recevoir de nos nouvelles"
+            name="newsletter"
+            onChange={onNewsLetterChange}
+            value={isSubscribingToNewsLetter}
+          />
+          <DetailsContainer isHidden={!isCadeau}>
+            <p>Détails de la personne recevant le cadeau</p>
+            <div>
+              <TextInput
+                type="text"
+                name="recipient-name"
+                placeholder="Son nom"
+              />
+            </div>
+            <div>
+              <TextInput
+                type="email"
+                name="recipient-email"
+                placeholder="Son email"
+              />
+            </div>
+            <div>
+              <TextInput
+                type="text"
+                name="recipient-phone"
+                placeholder="Son numéro de téléphone"
+              />
+            </div>
+          </DetailsContainer>
+          <div style={{ marginTop: "1rem" }}>
+            <TextInput
+              as={"textarea"}
+              name="message"
+              placeholder="Laissez-nous un petit message ! (optionnel)"
+              style={{ height: "7rem", width: "150%" }}
+            />
+          </div>
+          <Button
+            as="button"
+            type="submit"
+            style={{ marginTop: isCadeau ? "2rem" : "1rem" }}
+          >
+            Commander
+          </Button>
+        </FormContainer>
+      </Section>
+      <div />
+      <Section id="contact" isHidden={!isContact}>
         <Header>Contact</Header>
 
-        <form name="newsletter" method="POST" data-netlify="true">
+        <FormContainer name="newsletter" method="POST" data-netlify="true">
           <input type="hidden" name="newsletter-form" value="newsletter" />
           <div>
             <input type="text" name="name" placeholder="Votre nom" />
@@ -542,7 +826,7 @@ const IndexPage = () => {
             />
           </div>
           <Button type="submit">Abonne toi</Button>
-        </form>
+        </FormContainer>
       </Section>
       <Footer />
     </main>
