@@ -9,6 +9,7 @@ import {
   sidePaddingSmall,
   GlobalStyle,
   Button,
+  maxWidth,
 } from "../styles/theme";
 import { Footer } from "../components/Footer";
 import { RadioGroup } from "../components/RadioGroup";
@@ -48,6 +49,11 @@ export const Section = styled.div`
 
   @media (max-width: 900px) {
     padding: ${(props) => (props.isHidden ? 0 : `2rem ${sidePaddingSmall}`)};
+  }
+
+  > * {
+    max-width: ${maxWidth};
+    margin: 0 auto;
   }
 `;
 
@@ -569,11 +575,13 @@ const IndexPage = () => {
       <Section id="menu">
         <Header>QU’Y A T-IL DANS LE CURCUMENU ?</Header>
         <SubHeader>Un engagement nutritionnel</SubHeader>
-        <StaticImage
-          src="../images/menus/engagement nutri.png"
-          alt=""
-          imgStyle={{ objectFit: "contain" }}
-        />{" "}
+        <div>
+          <StaticImage
+            src="../images/menus/engagement nutri.png"
+            alt=""
+            imgStyle={{ objectFit: "contain" }}
+          />{" "}
+        </div>
         <Menus />
         <p>
           La grande majorité de nos menus sont sans gluten et protéines de lait

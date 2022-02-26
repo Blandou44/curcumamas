@@ -9,6 +9,8 @@ export const grey20 = "#dee2e6";
 export const sidePadding = "6rem";
 export const sidePaddingSmall = "1rem";
 
+export const maxWidth = "1200px";
+
 export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
