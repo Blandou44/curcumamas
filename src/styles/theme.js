@@ -25,9 +25,10 @@ export const Button = styled(AnchorLink)`
   transition: 0.4s;
   border-radius: 5px;
   border: 2px solid #fff;
-  cursor: pointer;
   text-decoration: none;
   font-size: 1rem;
+
+  cursor: pointer;
 
   &:hover {
     background: ${mainColor};

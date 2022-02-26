@@ -34,6 +34,7 @@ const RadioWrapper = styled.div`
   border: 1px solid white;
   display: flex;
   margin-left: -1px;
+  position: relative;
 
   background-color: ${(props) =>
     props.isSelected ? mainColor : "transparent"};
@@ -60,8 +61,8 @@ const RadioWrapper = styled.div`
   > input {
     opacity: 0;
     position: absolute;
-    width: 0;
-    height: 0;
+    left: 50%;
+    bottom: 1px;
   }
 `;
 
@@ -72,6 +73,7 @@ export const RadioGroup = ({
   onChange,
   selectedValue,
   isHidden = false,
+  isRequired = false,
 }) => {
   return (
     <RadioGroupContainer isHidden={isHidden}>
@@ -90,6 +92,8 @@ export const RadioGroup = ({
                 value={option.value}
                 id={option.value}
                 onChange={onChange}
+                required={isRequired}
+                checked={selectedValue === option.value}
               />
               <label htmlFor={option.value}>{option.label}</label>
             </RadioWrapper>

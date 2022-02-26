@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import { Navbar } from "../components/Navbar";
@@ -36,7 +36,7 @@ export const Section = styled.div`
   background: #f7f7f7;
 
   opacity: ${(props) => (props.isHidden ? 0 : 1)};
-  max-height: ${(props) => (props.isHidden ? "0px" : "2000px")};
+  max-height: ${(props) => (props.isHidden ? "0px" : "99999px")};
   padding: ${(props) => (props.isHidden ? 0 : `2rem ${sidePadding}`)};
   overflow: hidden;
 
@@ -219,17 +219,35 @@ const DetailsContainer = styled.div`
   }
 `;
 
+const Select = styled.select`
+  background: transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: solid 1px white;
+  color: white;
+  padding: 1rem;
+  transition: background 0.4s;
+  font-size: 1rem;
+  font-family: "Montserrat";
+
+  &:focus {
+    outline: none;
+    background-color: ${mainColor};
+  }
+`;
+
 // markup
 const IndexPage = () => {
-  const [formule, setFormule] = React.useState("");
-  const [duree, setDuree] = React.useState("");
-  const [variante, setVariante] = React.useState("");
-  const [date, setDate] = React.useState("");
-  const [cadeau, setCadeau] = React.useState(false);
+  const [formule, setFormule] = useState("");
+  const [duree, setDuree] = useState("");
+  const [variante, setVariante] = useState("");
+  const [date, setDate] = useState("");
+  const [cadeau, setCadeau] = useState(false);
   const [isSubscribingToNewsLetter, setIsSubscribingToNewsLetter] =
-    React.useState(false);
+    useState(false);
+  const [sujet, setSujet] = useState("général");
 
-  const [isContact, setIsContact] = React.useState(true);
+  const [isContact, setIsContact] = useState(true);
 
   const isCadeau = cadeau || formule === "carte cadeau";
 
@@ -255,6 +273,10 @@ const IndexPage = () => {
 
   const handleContactClick = () => {
     setIsContact(true);
+  };
+
+  const onSujetChange = (e) => {
+    setSujet(e.target.value);
   };
 
   return (
@@ -462,6 +484,7 @@ const IndexPage = () => {
               to="/#contact"
               onAnchorLinkClick={() => {
                 setIsContact(true);
+                setSujet("doula");
               }}
             >
               Contacte-nous
@@ -491,6 +514,7 @@ const IndexPage = () => {
               to="/#contact"
               onAnchorLinkClick={() => {
                 setIsContact(true);
+                setSujet("consultation");
               }}
             >
               Contacte-nous
@@ -513,6 +537,7 @@ const IndexPage = () => {
               to="/#contact"
               onAnchorLinkClick={() => {
                 setIsContact(true);
+                setSujet("atelier");
               }}
             >
               Contacte-nous
@@ -536,6 +561,7 @@ const IndexPage = () => {
               to="/#contact"
               onAnchorLinkClick={() => {
                 setIsContact(true);
+                setSujet("evenements");
               }}
             >
               Contacte-nous
@@ -672,10 +698,20 @@ const IndexPage = () => {
           <DetailsContainer>
             <p>Vos détails</p>
             <div>
-              <TextInput type="text" name="name" placeholder="Votre nom" />
+              <TextInput
+                type="text"
+                name="name"
+                placeholder="Votre nom"
+                required
+              />
             </div>
             <div>
-              <TextInput type="email" name="email" placeholder="Votre email" />
+              <TextInput
+                type="email"
+                name="email"
+                placeholder="Votre email"
+                required
+              />
             </div>
             <div>
               <TextInput
@@ -695,6 +731,7 @@ const IndexPage = () => {
             ]}
             onChange={onFormuleChange}
             selectedValue={formule}
+            isRequired
           />
           <RadioGroup
             name="durée"
@@ -706,6 +743,7 @@ const IndexPage = () => {
             onChange={onDureeChange}
             selectedValue={duree}
             isHidden={formule !== "carte cadeau"}
+            isRequired={formule === "carte cadeau"}
           />
           <RadioGroup
             label="Variante"
@@ -716,6 +754,7 @@ const IndexPage = () => {
             ]}
             onChange={onVarianteChange}
             selectedValue={variante}
+            isRequired
           />
           <RadioGroup
             label="Livraison"
@@ -726,11 +765,13 @@ const IndexPage = () => {
             ]}
             onChange={onDateChange}
             selectedValue={date}
+            isRequired
           />
           <div style={{ marginTop: "1rem" }}>
             <TextInput
               type="text"
               name="addresse"
+              required
               placeholder="Addresse de livraison"
             />
           </div>
@@ -753,6 +794,7 @@ const IndexPage = () => {
                 type="text"
                 name="recipient-name"
                 placeholder="Son nom"
+                required={isCadeau}
               />
             </div>
             <div>
@@ -760,6 +802,7 @@ const IndexPage = () => {
                 type="email"
                 name="recipient-email"
                 placeholder="Son email"
+                required={isCadeau}
               />
             </div>
             <div>
@@ -792,26 +835,65 @@ const IndexPage = () => {
         <Header>Contact</Header>
 
         <FormContainer
-          name="newsletter"
+          name="contact"
           method="POST"
           data-netlify="true"
           action="/pages/succes/contact"
         >
-          <input type="hidden" name="newsletter-form" value="newsletter" />
-          <div>
-            <input type="text" name="name" placeholder="Votre nom" />
-          </div>
-          <div>
-            <input type="email" name="email" placeholder="Votre email" />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="phone"
-              placeholder="Votre numéro de téléphone"
-            />
-          </div>
-          <Button type="submit">Abonne toi</Button>
+          <input type="hidden" name="contact-form" value="contact" />
+          <DetailsContainer>
+            <p>Vos détails</p>
+            <div>
+              <TextInput
+                type="text"
+                name="name"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+            <div>
+              <TextInput
+                type="email"
+                name="email"
+                placeholder="Votre email"
+                required
+              />
+            </div>
+            <div>
+              <TextInput
+                type="text"
+                name="phone"
+                placeholder="Votre numéro de téléphone"
+              />
+            </div>
+          </DetailsContainer>
+          <DetailsContainer>
+            <p>Je vous contacte à propos de :</p>
+            <Select name="sujet" value={sujet} onChange={onSujetChange}>
+              <option value="général">J'ai une question</option>
+              <option value="doula">Doula</option>
+              <option value="consultation">
+                Consultation alimentaire et naturopathie
+              </option>
+              <option value="atelier">Atelier de cuisine</option>
+              <option value="evenements">Évènements</option>
+            </Select>
+          </DetailsContainer>
+          <TextInput
+            as={"textarea"}
+            name="message"
+            placeholder="Laissez-nous un petit message ! (optionnel)"
+            style={{ height: "7rem", width: "20rem", marginTop: "1rem" }}
+          />
+          <CheckBox
+            label="Recevoir de nos nouvelles"
+            name="newsletter"
+            onChange={onNewsLetterChange}
+            value={isSubscribingToNewsLetter}
+          />
+          <Button as="button" type="submit" disabled={false}>
+            Contacte nous
+          </Button>
         </FormContainer>
       </Section>
       <Footer />
