@@ -13,6 +13,7 @@ import {
 import { Footer } from "../components/Footer";
 import { RadioGroup } from "../components/RadioGroup";
 import { CheckBox } from "../components/CheckBox";
+import { Menus } from "../components/Menus";
 
 export const Header = styled.h2`
   font-size: 32px;
@@ -125,12 +126,6 @@ const PlusContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-`;
-
-const MenuWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem;
 `;
 
 const Tribu = styled(PetitsPlus)`
@@ -577,18 +572,7 @@ const IndexPage = () => {
           alt=""
           imgStyle={{ objectFit: "contain" }}
         />{" "}
-        <MenuWrapper>
-          <StaticImage
-            src="../images/menus/menu1.png"
-            alt=""
-            imgStyle={{ objectFit: "contain" }}
-          />{" "}
-          <StaticImage
-            src="../images/menus/menu2.png"
-            alt=""
-            imgStyle={{ objectFit: "contain" }}
-          />
-        </MenuWrapper>
+        <Menus />
         <p>
           La grande majorité de nos menus sont sans gluten et protéines de lait
           de vache (sauf féta et parmesan), cependant n'hésitez pas à nous

@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
-import { mainColor, secondaryColor, sidePadding } from "../styles/theme";
+import { mainColor, secondaryColor } from "../styles/theme";
 
 const RadioGroupContainer = styled.div`
   display: flex;
@@ -12,7 +8,7 @@ const RadioGroupContainer = styled.div`
   margin-top: ${(props) => (props.isHidden ? 0 : "1rem")};
 
   > p {
-    color: white;
+    color: ${(props) => (props.isDark ? secondaryColor : "white")};
     font-size: 1.2rem;
   }
 `;
@@ -25,13 +21,14 @@ const RadioGroupWrapper = styled.div`
   overflow-y: hidden;
 
   > p {
-    color: white;
+    color: ${(props) => (props.isDark ? secondaryColor : "white")};
     width: 100%;
   }
 `;
 
 const RadioWrapper = styled.div`
   border: 1px solid white;
+  border-color: ${(props) => (props.isDark ? secondaryColor : "white")};
   display: flex;
   margin-left: -1px;
   position: relative;
@@ -55,7 +52,7 @@ const RadioWrapper = styled.div`
     user-select: none;
     padding: 1rem;
     cursor: pointer;
-    color: white;
+    color: ${(props) => (props.isDark ? secondaryColor : "white")};
   }
 
   > input {
@@ -74,17 +71,19 @@ export const RadioGroup = ({
   selectedValue,
   isHidden = false,
   isRequired = false,
+  isDark = false,
 }) => {
   return (
-    <RadioGroupContainer isHidden={isHidden}>
+    <RadioGroupContainer isHidden={isHidden} isDark={isDark}>
       {label ? <p>{label} :</p> : null}
-      <RadioGroupWrapper isHidden={isHidden}>
+      <RadioGroupWrapper isHidden={isHidden} isDark={isDark}>
         {options.map((option, index) => {
           return (
             <RadioWrapper
               key={index}
               isSelected={selectedValue === option.value}
               name={name}
+              isDark={isDark}
             >
               <input
                 type="radio"

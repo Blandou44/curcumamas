@@ -1,10 +1,9 @@
 import * as React from "react";
-import styled, { createGlobalStyle } from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
+import styled from "styled-components";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { secondaryColor, sidePadding } from "../styles/theme";
-import { GlobalStyle, Header, Section } from "./index";
+import { secondaryColor, GlobalStyle } from "../styles/theme";
+import { Header, Section } from "./index";
 
 const Article = styled.h2`
   font-size: 1.5rem;
@@ -13,7 +12,7 @@ const Article = styled.h2`
 `;
 
 // markup
-const IndexPage = () => {
+const CGU = () => {
   return (
     <main>
       <GlobalStyle />
@@ -138,4 +137,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default CGU;
