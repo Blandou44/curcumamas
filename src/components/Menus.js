@@ -21,8 +21,8 @@ export const Menus = () => {
       <RadioGroup
         name="date"
         options={[
-          { value: "1", label: "Livraison du 8 mars" },
-          { value: "2", label: "Livraison du 15 mars" },
+          { value: "1", label: "Menu du 8 mars" },
+          { value: "2", label: "Menu du 15 mars" },
         ]}
         onChange={handleMenuChange}
         selectedValue={menu}

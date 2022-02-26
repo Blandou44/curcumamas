@@ -339,10 +339,10 @@ const IndexPage = () => {
               alt=""
               imgStyle={{ objectFit: "contain" }}
             />
-            <h4>Formule 3 jours</h4>
-            <Price>46€ VG - 49€ Flexi</Price>
+            <h4>Petite fringale - 2 jours</h4>
+            <Price>36€ VG - 38€ Flexi</Price>
             <p>
-              Offre toi 3 jours pendant lesquels un bon repas chaud, gourmand et
+              Offre toi 2 jours pendant lesquels un bon repas chaud, gourmand et
               réconfortant t’attend. Pensés pour répondre à tes besoins de
               guerrière, il ne reste plus qu’à apprivoiser la vie avec bébé.
             </p>
@@ -362,8 +362,8 @@ const IndexPage = () => {
               alt=""
               imgStyle={{ objectFit: "contain" }}
             />
-            <h4>Formule duo</h4>
-            <Price>90€ VG -96€ Flexi</Price>
+            <h4>Curcufamille - 6 jours</h4>
+            <Price>94€ VG - 98€ Flexi</Price>
             <p>
               Love ou self love : partager avec son partenaire ou congeler, ça
               reste une double ration de plaisir ET de temps libre. À partager
@@ -389,21 +389,21 @@ const IndexPage = () => {
             <h4>Cartes cadeaux</h4>
             <PriceTable>
               <span />
-              <span>9 jours</span>
-              <span>15 jours</span>
+              <span>10 jours</span>
+              <span>14 jours</span>
               <span>30 jours</span>
               <span>
                 <strong>VG</strong>
               </span>
-              <span>133€</span>
+              <span>154€</span>
               <span>215€</span>
-              <span>415€</span>
+              <span>420€</span>
               <span>
                 <strong>Flexi</strong>
               </span>
-              <span>142€</span>
-              <span>245€</span>
-              <span>445€</span>
+              <span>160€</span>
+              <span>224€</span>
+              <span>440€</span>
             </PriceTable>
             <p>
               Tes proches font appel à nous pour prendre en charge votre

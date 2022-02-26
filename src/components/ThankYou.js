@@ -52,7 +52,7 @@ export const ThankYou = ({ heading, message }) => {
       <ThankYouWrapper>
         <Header>{heading}</Header>
         <p>{message}</p>
-        <Button to="/">Accueuil</Button>
+        <Button to="/">Accueil</Button>
       </ThankYouWrapper>
     </ThankYouContainer>
   );
