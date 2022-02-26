@@ -678,7 +678,7 @@ const IndexPage = () => {
           name="commande"
           method="POST"
           data-netlify="true"
-          action="/pages/succes/commande"
+          action="/succes/commande/"
         >
           <input type="hidden" name="commande-form" value="commande" />
           <DetailsContainer>
@@ -824,7 +824,7 @@ const IndexPage = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/pages/succes/contact"
+          action="/succes/contact/"
         >
           <input type="hidden" name="contact-form" value="contact" />
           <DetailsContainer>
