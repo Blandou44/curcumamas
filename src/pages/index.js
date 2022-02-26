@@ -1,6 +1,5 @@
 import * as React from "react";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 import { Navbar } from "../components/Navbar";
 import {
@@ -8,18 +7,12 @@ import {
   mainColor,
   secondaryColor,
   sidePaddingSmall,
+  GlobalStyle,
+  Button,
 } from "../styles/theme";
 import { Footer } from "../components/Footer";
 import { RadioGroup } from "../components/RadioGroup";
 import { CheckBox } from "../components/CheckBox";
-
-export const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-  }
-`;
 
 export const Header = styled.h2`
   font-size: 32px;
@@ -88,23 +81,6 @@ const Card = styled.div`
 
 const Price = styled.p`
   text-align: center;
-`;
-
-const Button = styled(AnchorLink)`
-  background: ${secondaryColor};
-  border: 0;
-  padding: 1rem 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 5px;
-  border: 2px solid #fff;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1rem;
-
-  &:hover {
-    background: ${mainColor};
-  }
 `;
 
 const PriceTable = styled.div`
@@ -207,7 +183,7 @@ const TextInput = styled.input`
   }
 
   &::placeholder {
-    color: #ffffff88;
+    color: #ffffff99;
   }
 `;
 
@@ -686,7 +662,12 @@ const IndexPage = () => {
       <Section id="commander" isHidden={isContact}>
         <Header>Commander</Header>
 
-        <FormContainer name="commande" method="POST" data-netlify="true">
+        <FormContainer
+          name="commande"
+          method="POST"
+          data-netlify="true"
+          action="/pages/succes/commande"
+        >
           <input type="hidden" name="commande-form" value="commande" />
           <DetailsContainer>
             <p>Vos détails</p>
@@ -810,7 +791,12 @@ const IndexPage = () => {
       <Section id="contact" isHidden={!isContact}>
         <Header>Contact</Header>
 
-        <FormContainer name="newsletter" method="POST" data-netlify="true">
+        <FormContainer
+          name="newsletter"
+          method="POST"
+          data-netlify="true"
+          action="/pages/succes/contact"
+        >
           <input type="hidden" name="newsletter-form" value="newsletter" />
           <div>
             <input type="text" name="name" placeholder="Votre nom" />

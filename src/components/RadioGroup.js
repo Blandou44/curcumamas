@@ -82,6 +82,7 @@ export const RadioGroup = ({
             <RadioWrapper
               key={index}
               isSelected={selectedValue === option.value}
+              name={name}
             >
               <input
                 type="radio"
