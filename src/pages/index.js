@@ -14,6 +14,7 @@ import { Footer } from "../components/Footer";
 import { RadioGroup } from "../components/RadioGroup";
 import { CheckBox } from "../components/CheckBox";
 import { Menus } from "../components/Menus";
+import { Carousel } from "../components/Carousel";
 
 export const Header = styled.h2`
   font-size: 32px;
@@ -281,6 +282,7 @@ const IndexPage = () => {
       <Navbar onContactClick={handleContactClick} />
       <Section>
         <Header>Traiteur du post-partum* à Toulouse</Header>
+        <Carousel />
         <p>
           * Le post partum est par définition d’une durée de 40 jours après la
           naissance. Chez les curcumamas on pense que c’est à vous de ressentir
