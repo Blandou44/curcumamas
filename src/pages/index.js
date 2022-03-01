@@ -301,7 +301,7 @@ const IndexPage = () => {
         <ul>
           <li>
             <p>
-              Vous pouvez commander un minimum de 3 menus parmi les 4 menus à la
+              Vous pouvez commander un minimum de 2 menus parmi les 3 menus à la
               carte. Les formules et cartes cadeaux comprennent 1 repas par jour
             </p>
           </li>
