@@ -7,7 +7,6 @@ import {
   mainColor,
   secondaryColor,
   sidePaddingSmall,
-  GlobalStyle,
   Button,
   maxWidth,
 } from "../styles/theme";
@@ -16,6 +15,7 @@ import { RadioGroup } from "../components/RadioGroup";
 import { CheckBox } from "../components/CheckBox";
 import { Menus } from "../components/Menus";
 import { Carousel } from "../components/Carousel";
+import { BasePage } from "../components/BasePage";
 
 export const Header = styled.h2`
   font-size: 32px;
@@ -282,9 +282,7 @@ const IndexPage = () => {
   };
 
   return (
-    <main>
-      <GlobalStyle />
-      <title>Curcumamas : une cuisine ronde, simple et engagée.</title>
+    <BasePage>
       <Navbar onContactClick={handleContactClick} />
       <Section>
         <Header>Traiteur du post-partum* à Toulouse</Header>
@@ -891,7 +889,7 @@ const IndexPage = () => {
         </FormContainer>
       </Section>
       <Footer />
-    </main>
+    </BasePage>
   );
 };
 

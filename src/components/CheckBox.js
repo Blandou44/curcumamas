@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
-import { mainColor, secondaryColor, sidePadding } from "../styles/theme";
+import { mainColor } from "../styles/theme";
 
 const CheckBoxWrapper = styled.div`
   display: flex;

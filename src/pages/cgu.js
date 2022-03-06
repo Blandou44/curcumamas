@@ -2,8 +2,9 @@ import * as React from "react";
 import styled from "styled-components";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import { secondaryColor, GlobalStyle } from "../styles/theme";
+import { secondaryColor } from "../styles/theme";
 import { Header, Section } from "./index";
+import { BasePage } from "../components/BasePage";
 
 const Article = styled.h2`
   font-size: 1.5rem;
@@ -14,9 +15,7 @@ const Article = styled.h2`
 // markup
 const CGU = () => {
   return (
-    <main>
-      <GlobalStyle />
-      <title>Curcumamas - CGU.</title>
+    <BasePage title={"CGU"}>
       <Navbar />
       <Section>
         <Header>Conditions générales d'utilisation</Header>
@@ -133,7 +132,7 @@ const CGU = () => {
         </p>
       </Section>
       <Footer isCGU />
-    </main>
+    </BasePage>
   );
 };
 

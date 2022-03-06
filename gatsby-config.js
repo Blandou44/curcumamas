@@ -1,7 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Curcumamas`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://curcumamas.com`,
+    titleTemplate: "%s · une cuisine ronde, simple et engagée.",
+    description:
+      "Curcumamas c'est le traiteur pour les familles et mamans en post-partum sur Toulouse.",
+    keywords:
+      "Curcumamas, Traiteur, Famille, Mamans, Post-partum, Toulouse, Cuisine, Bio, Ayurvédique, Tribu, Cadeau, Naissance, Livraisons",
+    image: "/logo.png",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
@@ -12,7 +18,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          placeholder: `tracedSVG`,
+          placeholder: `blurred`,
           backgroundColor: `transparent`,
         },
       },
