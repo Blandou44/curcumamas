@@ -8,11 +8,16 @@ import {
   maxWidth,
   secondaryColor,
   sidePadding,
+  smallBreakpoint,
 } from "../styles/theme";
 
 const NavContainer = styled.nav`
   background: ${mainColor};
   height: 5rem;
+
+  @media (max-width: ${smallBreakpoint}) {
+    display: none;
+  }
 `;
 
 const NavWrapper = styled.nav`

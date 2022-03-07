@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { mainColor, secondaryColor, sidePadding } from "../styles/theme";
+import {
+  mainColor,
+  secondaryColor,
+  sidePadding,
+  smallBreakpoint,
+} from "../styles/theme";
 
 const FooterContainer = styled.footer`
   background: ${mainColor};
@@ -9,6 +14,10 @@ const FooterContainer = styled.footer`
   display: grid;
   row-gap: 2rem;
   justify-items: center;
+
+  @media (max-width: ${smallBreakpoint}) {
+    padding: 2rem 1rem 1rem;
+  }
 `;
 
 const FooterText = styled.p`
@@ -45,6 +54,13 @@ const PartnersContainer = styled.div`
   > p:first-child {
     grid-column: span 4;
     text-align: center;
+  }
+  @media (max-width: ${smallBreakpoint}) {
+    grid-template-columns: 1fr;
+
+    > p:first-child {
+      grid-column: span 1;
+    }
   }
 `;
 

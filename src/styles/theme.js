@@ -10,6 +10,7 @@ export const sidePadding = "6rem";
 export const sidePaddingSmall = "1rem";
 
 export const maxWidth = "1200px";
+export const smallBreakpoint = "930px";
 
 export const GlobalStyle = createGlobalStyle`
   body {

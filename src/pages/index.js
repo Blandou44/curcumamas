@@ -9,6 +9,7 @@ import {
   sidePaddingSmall,
   Button,
   maxWidth,
+  smallBreakpoint,
 } from "../styles/theme";
 import { Footer } from "../components/Footer";
 import { RadioGroup } from "../components/RadioGroup";
@@ -61,6 +62,10 @@ const FormulesContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3rem;
+
+  @media (max-width: ${smallBreakpoint}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Card = styled.div`
@@ -68,7 +73,7 @@ const Card = styled.div`
   flex-direction: column;
   border-radius: 5px;
   border: 1px solid ${mainColor};
-  background-color: #f7f7f7;
+  background-color: white;
   padding: 1rem;
 
   > div.gatsby-image-wrapper {
@@ -105,6 +110,10 @@ const PetitPlusContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3rem;
+
+  @media (max-width: ${smallBreakpoint}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const PetitsPlus = styled.div`
@@ -133,6 +142,10 @@ const PlusContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+
+  @media (max-width: ${smallBreakpoint}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Tribu = styled(PetitsPlus)`
