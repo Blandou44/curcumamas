@@ -251,7 +251,7 @@ const IndexPage = () => {
 
   const [isContact, setIsContact] = useState(true);
 
-  const isCadeau = cadeau || formule === "carte cadeau";
+  const isCadeau = cadeau;
 
   const onFormuleChange = (e) => {
     setFormule(e.target.value);
@@ -759,6 +759,16 @@ const IndexPage = () => {
             selectedValue={date}
             isRequired
           />
+
+          <div style={{ marginTop: "1rem" }}>
+            <TextInput
+              type="text"
+              name="menus"
+              required
+              placeholder="Menus choisis. ex: 1, 2, 3"
+            />
+          </div>
+
           <div style={{ marginTop: "1rem" }}>
             <TextInput
               type="text"
