@@ -53,13 +53,13 @@ const RadioWrapper = styled.div`
     padding: 1rem;
     cursor: pointer;
     color: ${(props) => (props.isDark ? secondaryColor : "white")};
-  }
 
-  > input {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    bottom: 1px;
+    > input {
+      opacity: 0;
+      position: absolute;
+      left: 50%;
+      bottom: 1px;
+    }
   }
 `;
 
@@ -85,16 +85,18 @@ export const RadioGroup = ({
               name={name}
               isDark={isDark}
             >
-              <input
-                type="radio"
-                name={name}
-                value={option.value}
-                id={option.value}
-                onChange={onChange}
-                required={isRequired}
-                checked={selectedValue === option.value}
-              />
-              <label htmlFor={option.value}>{option.label}</label>
+              <label>
+                <input
+                  type="radio"
+                  name={name}
+                  value={option.value}
+                  id={option.value}
+                  onChange={onChange}
+                  required={isRequired}
+                  checked={selectedValue === option.value}
+                />
+                {option.label}
+              </label>
             </RadioWrapper>
           );
         })}
