@@ -3,11 +3,18 @@ import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
 import { StaticImage } from "gatsby-plugin-image";
+import { mainColor, secondaryColor } from "../styles/theme";
 
 const MenusWrapper = styled.div`
   display: grid;
   row-gap: 1rem;
   justify-items: center;
+`;
+
+const Legend = styled.p`
+  background: ${mainColor} !important;
+  color: ${secondaryColor} !important;
+  font-size: 1.2rem !important;
 `;
 
 export const Carousel = () => {
@@ -34,7 +41,7 @@ export const Carousel = () => {
             alt=""
             imgStyle={{ objectFit: "contain" }}
           />
-          <p className="legend">{legend}</p>
+          <Legend className="legend">{legend}</Legend>
         </div>
         <div>
           <StaticImage
@@ -42,7 +49,7 @@ export const Carousel = () => {
             alt=""
             imgStyle={{ objectFit: "contain" }}
           />
-          <p className="legend">{legend}</p>
+          <Legend className="legend">{legend}</Legend>
         </div>
         <div>
           <StaticImage
@@ -50,7 +57,7 @@ export const Carousel = () => {
             alt=""
             imgStyle={{ objectFit: "contain" }}
           />
-          <p className="legend">{legend}</p>
+          <Legend className="legend">{legend}</Legend>
         </div>
         <div>
           <StaticImage
@@ -58,7 +65,7 @@ export const Carousel = () => {
             alt=""
             imgStyle={{ objectFit: "contain" }}
           />
-          <p className="legend">{legend}</p>
+          <Legend className="legend">{legend}</Legend>
         </div>
         <div>
           <StaticImage
@@ -66,7 +73,7 @@ export const Carousel = () => {
             alt=""
             imgStyle={{ objectFit: "contain" }}
           />
-          <p className="legend">{legend}</p>
+          <Legend className="legend">{legend}</Legend>
         </div>
         <div>
           <StaticImage
@@ -74,7 +81,7 @@ export const Carousel = () => {
             alt=""
             imgStyle={{ objectFit: "contain" }}
           />
-          <p className="legend">{legend}</p>
+          <Legend className="legend">{legend}</Legend>
         </div>
       </ReactCarousel>
     </MenusWrapper>
