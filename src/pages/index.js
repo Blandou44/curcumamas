@@ -332,10 +332,11 @@ const IndexPage = () => {
           </li>
           <li>
             <p>
-              Livraisons sur Toulouse et sa périphérie proche tous les mardis
-              (fourchette horaire précisée la veille). Nous livrons plus loin en
-              Haute-Garonne en appliquant un supplément de livraison calculé
-              avec vous.
+              Livraisons sur Toulouse et sa périphérie proche tous les mardis ou
+              mercredis (en fonction du nombres de commandes), heure et jour
+              précisés le vendredi précédant votre livraison. Nous livrons plus
+              loin en Haute-Garonne en appliquant un supplément de livraison
+              calculé avec vous.
             </p>
           </li>
           <li>
