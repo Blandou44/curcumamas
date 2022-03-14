@@ -9,7 +9,7 @@ const MenusWrapper = styled.div`
   justify-items: center;
 `;
 
-export const Menus = () => {
+export const Menus = ({ datesLivraison }) => {
   const [menu, setMenu] = React.useState("1");
 
   const handleMenuChange = (e) => {
@@ -21,8 +21,8 @@ export const Menus = () => {
       <RadioGroup
         name="date"
         options={[
-          { value: "1", label: "Menu du 8 mars" },
-          { value: "2", label: "Menu du 15 mars" },
+          { value: "1", label: `Menu du  ${datesLivraison["1"]}` },
+          { value: "2", label: `Menu du  ${datesLivraison["2"]}` },
         ]}
         onChange={handleMenuChange}
         selectedValue={menu}

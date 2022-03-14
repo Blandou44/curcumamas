@@ -251,6 +251,11 @@ const Select = styled.select`
   }
 `;
 
+const datesLivraison = {
+  1: "22 mars",
+  2: "29 mars",
+};
+
 // markup
 const IndexPage = () => {
   const [formule, setFormule] = useState("");
@@ -593,7 +598,7 @@ const IndexPage = () => {
             imgStyle={{ objectFit: "contain" }}
           />{" "}
         </div>
-        <Menus />
+        <Menus datesLivraison={datesLivraison} />
         <p>
           La grande majorité de nos menus sont sans gluten et protéines de lait
           de vache (sauf féta et parmesan), cependant n'hésitez pas à nous
@@ -765,8 +770,8 @@ const IndexPage = () => {
             label="Livraison"
             name="date"
             options={[
-              { value: "8 mars", label: "8 mars" },
-              { value: "15 mars", label: "15 mars" },
+              { value: datesLivraison["1"], label: datesLivraison["1"] },
+              { value: datesLivraison["2"], label: datesLivraison["2"] },
             ]}
             onChange={onDateChange}
             selectedValue={date}
