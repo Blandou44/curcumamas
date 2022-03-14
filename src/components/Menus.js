@@ -7,6 +7,10 @@ const MenusWrapper = styled.div`
   display: grid;
   row-gap: 1rem;
   justify-items: center;
+
+  > .gatsby-image-wrapper {
+    max-height: 100vh;
+  }
 `;
 
 export const Menus = ({ datesLivraison }) => {
@@ -32,13 +36,13 @@ export const Menus = ({ datesLivraison }) => {
         <StaticImage
           src="../images/menus/menu1.png"
           alt=""
-          imgStyle={{ objectFit: "contain" }}
+          imgStyle={{ objectFit: "contain", maxHeight: "100vh" }}
         />
       ) : (
         <StaticImage
           src="../images/menus/menu2.png"
           alt=""
-          imgStyle={{ objectFit: "contain" }}
+          imgStyle={{ objectFit: "contain", maxHeight: "100vh" }}
         />
       )}
     </MenusWrapper>
