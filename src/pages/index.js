@@ -327,9 +327,13 @@ const IndexPage = () => {
           <li>
             <p>
               Deux options sont possibles : végé ou flexi (Pour l'option flexi :
-              2 repas sur trois comprennent de la viande) Livraisons sur
-              Toulouse et sa périphérie proche tous les mardis (fourchette
-              horaire précisée la veille). Nous livrons plus loin en
+              2 repas sur trois comprennent de la viande)
+            </p>
+          </li>
+          <li>
+            <p>
+              Livraisons sur Toulouse et sa périphérie proche tous les mardis
+              (fourchette horaire précisée la veille). Nous livrons plus loin en
               Haute-Garonne en appliquant un supplément de livraison calculé
               avec vous.
             </p>
