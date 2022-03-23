@@ -11,20 +11,25 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Landing page"
-        name: "landing"
-        file: "content/landing.yml"
+      - label: "Menus"
+        name: "menus"
+        file: "content/menus.yml"
         fields: 
-          - {label: Name, name: cta.primaryhook, widget: string}
-      - label: "Locations Page"
-        name: "locations"
-        file: "site/content/locations.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+          - {label: Date 1, name: date_1, widget: string}
+          - label: "Menu 1"
+            name: "menu_1"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true   
+          - {label: Date 2, name: date_2, widget: string}
+          - label: "Menu 1"
+            name: "menu_2"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_2.png"
+            media_library:
+                config:
+                  multiple: true   
