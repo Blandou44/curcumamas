@@ -37,5 +37,13 @@ module.exports = {
         display: "swap",
       },
     },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/content`,
+      },
+    },
   ],
 };
