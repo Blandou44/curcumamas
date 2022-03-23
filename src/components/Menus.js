@@ -1,8 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
 import { RadioGroup } from "./RadioGroup";
-import { StaticImage } from "gatsby-plugin-image";
 
 const MenusWrapper = styled.div`
   display: grid;
@@ -15,29 +13,12 @@ const MenusWrapper = styled.div`
   }
 `;
 
-export const Menus = ({ datesLivraison }) => {
+export const Menus = ({ menuNode }) => {
   const [menu, setMenu] = React.useState("1");
 
   const handleMenuChange = (e) => {
     setMenu(e.target.value);
   };
-
-  const data = useStaticQuery(graphql`
-    query MenusQuery {
-      allContentYaml {
-        edges {
-          node {
-            menu_1
-            menu_2
-            date_1
-            date_2
-          }
-        }
-      }
-    }
-  `);
-
-  const menuNode = data.allContentYaml.edges[0].node;
 
   return (
     <MenusWrapper>

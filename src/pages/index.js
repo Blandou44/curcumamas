@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
 import { Navbar } from "../components/Navbar";
 import {
   sidePadding,
@@ -257,7 +258,7 @@ const datesLivraison = {
 };
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const [formule, setFormule] = useState("");
   const [duree, setDuree] = useState("");
   const [variante, setVariante] = useState("");
@@ -298,6 +299,8 @@ const IndexPage = () => {
   const onSujetChange = (e) => {
     setSujet(e.target.value);
   };
+
+  const menuNode = data.allContentYaml.edges[0].node;
 
   return (
     <BasePage>
@@ -603,7 +606,7 @@ const IndexPage = () => {
             imgStyle={{ objectFit: "contain" }}
           />{" "}
         </div>
-        <Menus datesLivraison={datesLivraison} />
+        <Menus menuNode={menuNode} />
         <p>
           La grande majorité de nos menus sont sans gluten et protéines de lait
           de vache (sauf féta et parmesan), cependant n'hésitez pas à nous
@@ -775,8 +778,8 @@ const IndexPage = () => {
             label="Livraison"
             name="date"
             options={[
-              { value: datesLivraison["1"], label: datesLivraison["1"] },
-              { value: datesLivraison["2"], label: datesLivraison["2"] },
+              { value: menuNode.date_1, label: menuNode.date_1 },
+              { value: menuNode.date_2, label: menuNode.date_2 },
             ]}
             onChange={onDateChange}
             selectedValue={date}
@@ -925,5 +928,20 @@ const IndexPage = () => {
     </BasePage>
   );
 };
+
+export const query = graphql`
+  query MenusQuery {
+    allContentYaml {
+      edges {
+        node {
+          menu_1
+          menu_2
+          date_1
+          date_2
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;
