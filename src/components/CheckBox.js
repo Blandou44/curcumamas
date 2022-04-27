@@ -9,8 +9,24 @@ const CheckBoxWrapper = styled.div`
   > label {
     user-select: none;
     padding: 1rem;
+    padding-left: 0;
     cursor: pointer;
     color: white;
+    display: flex;
+
+    &::before {
+      content: "";
+      width: 1rem;
+      height: 1rem;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 2px;
+      align-self: center;
+      margin-right: 1rem;
+      background-color: ${(props) =>
+        props.isChecked ? mainColor : "transparent"};
+      transition: all 0.4s;
+    }
   }
 
   > input {
@@ -18,20 +34,6 @@ const CheckBoxWrapper = styled.div`
     position: absolute;
     width: 0;
     height: 0;
-  }
-
-  &::before {
-    content: "";
-    width: 1rem;
-    height: 1rem;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 2px;
-    align-self: center;
-    margin-left: 1rem;
-    background-color: ${(props) =>
-      props.isChecked ? mainColor : "transparent"};
-    transition: all 0.4s;
   }
 `;
 
