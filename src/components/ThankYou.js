@@ -36,7 +36,7 @@ const ThankYouWrapper = styled.div`
 `;
 
 const Header = styled.h1`
-  font-family: "Leckerli One", cursive;
+  font-family: "Permanent Marker", cursive;
   margin: 0 0 20px 0;
   text-align: center;
   font-weight: 500;

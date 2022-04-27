@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Leckerli One`, `Montserrat\:100,400,700`],
+        fonts: [`Permanent Marker`, `Montserrat\:100,400,700`],
         display: "swap",
       },
     },

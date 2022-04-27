@@ -1,8 +1,8 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-export const mainColor = "#273470";
-export const secondaryColor = "#bf8a34";
+export const mainColor = "#032aaf";
+export const secondaryColor = "#F78B1E";
 export const grey10 = "#f7f7f7";
 export const grey20 = "#dee2e6";
 
