@@ -33,7 +33,7 @@ const NavWrapper = styled.nav`
 
 const LogoContainer = styled(AnchorLink)`
   background: white;
-  border-radius: 5px;
+  border-radius: 65% 35% 41% 59% / 35% 55% 45% 65%;
 
   > div.gatsby-image-wrapper {
     max-height: 4rem;
@@ -60,7 +60,7 @@ export const Navbar = ({ onContactClick }) => {
         <NavWrapper>
           <LogoContainer to="/">
             <StaticImage
-              src="../images/logo.jpg"
+              src="../images/logo.png"
               alt="Curcumamas"
               imgStyle={{ objectFit: "contain" }}
             />
