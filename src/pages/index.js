@@ -763,6 +763,12 @@ const IndexPage = ({ data }) => {
             isHidden={formule !== "carte cadeau"}
             isRequired={formule === "carte cadeau"}
           />
+          <CheckBox
+            label="C'est un cadeau !"
+            name="cadeau"
+            onChange={onCadeauChange}
+            value={cadeau}
+          />
           <RadioGroup
             label="Variante"
             name="variante"
@@ -780,6 +786,9 @@ const IndexPage = ({ data }) => {
             options={[
               { value: menuNode.date_1, label: menuNode.date_1 },
               { value: menuNode.date_2, label: menuNode.date_2 },
+              ...(isCadeau
+                ? [{ value: "Iels choisissent", label: "Iels choisissent" }]
+                : []),
             ]}
             onChange={onDateChange}
             selectedValue={date}
@@ -803,12 +812,6 @@ const IndexPage = ({ data }) => {
               placeholder="Addresse de livraison"
             />
           </div>
-          <CheckBox
-            label="C'est un cadeau !"
-            name="cadeau"
-            onChange={onCadeauChange}
-            value={cadeau}
-          />
           <CheckBox
             label="Recevoir de nos nouvelles"
             name="newsletter"
