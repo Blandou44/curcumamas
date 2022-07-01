@@ -3,7 +3,14 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ title, description, image, article, keywords }) => {
+const SEO = ({
+  title,
+  description,
+  image,
+  article,
+  keywords,
+  noindex = false,
+}) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
 
@@ -47,6 +54,7 @@ const SEO = ({ title, description, image, article, keywords }) => {
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
       {seo.keywords && <meta name="keywords" content={seo.keywords} />}
+      {noindex ? <meta name="robots" content="noindex,nofollow" /> : null}
     </Helmet>
   );
 };

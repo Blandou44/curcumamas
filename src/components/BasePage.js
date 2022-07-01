@@ -2,7 +2,14 @@ import * as React from "react";
 import { GlobalStyle } from "../styles/theme";
 import SEO from "./seo";
 
-export const BasePage = ({ title, description, image, article, children }) => {
+export const BasePage = ({
+  title,
+  description,
+  image,
+  article,
+  children,
+  noindex,
+}) => {
   return (
     <main>
       <SEO
@@ -10,6 +17,7 @@ export const BasePage = ({ title, description, image, article, children }) => {
         description={description}
         image={image}
         article={article}
+        noindex={noindex}
       />
       <GlobalStyle />
       {children}

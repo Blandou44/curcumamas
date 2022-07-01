@@ -15,7 +15,7 @@ const Article = styled.h2`
 // markup
 const CGU = () => {
   return (
-    <BasePage title={"CGU"}>
+    <BasePage title={"CGU"} noindex>
       <Navbar />
       <Section>
         <Header>Conditions générales d'utilisation</Header>
