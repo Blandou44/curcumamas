@@ -23,6 +23,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://curcumamas.com`,
+      },
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-anchor-links",

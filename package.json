@@ -18,6 +18,7 @@
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.6.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-canonical-urls": "^4.18.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.7.0",
     "gatsby-plugin-netlify-cms": "^6.6.0",
