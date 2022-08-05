@@ -33,3 +33,17 @@ collections:
             media_library:
                 config:
                   multiple: true   
+      - label: "Prix"
+        name: "prix"
+        file: "content/prix.yml"
+        fields: 
+          - {label: Fringale, name: fringale, widget: number}
+          - {label: Supplément Flexi Fringale, name: fringaleFlexi, widget: number}
+          - {label: Curcufamille, name: curcufamille, widget: number}
+          - {label: Supplément Flexi Curcufamille, name: curcufamilleFlexi, widget: number}
+          - {label: Carte cadeau 10 jours, name: cc10j, widget: number}
+          - {label: Supplément Flexi Carte cadeau 10 jours, name: cc10jFlexi, widget: number}
+          - {label: Carte cadeau 14 jours, name: cc14j, widget: number}
+          - {label: Supplément Flexi Carte cadeau 14 jours, name: cc14jFlexi, widget: number}
+          - {label: Carte cadeau 30 jours, name: cc30j, widget: number}
+          - {label: Supplément Flexi Carte cadeau 30 jours, name: cc30jFlexi, widget: number}

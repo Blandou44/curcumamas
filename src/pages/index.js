@@ -301,6 +301,7 @@ const IndexPage = ({ data }) => {
   };
 
   const menuNode = data.allContentYaml.edges[0].node;
+  const prixNode = data.allContentYaml.edges[1].node;
 
   return (
     <BasePage>
@@ -330,7 +331,7 @@ const IndexPage = ({ data }) => {
           <li>
             <p>
               Deux options sont possibles : végé ou flexi (Pour l'option flexi :
-              2 repas sur trois comprennent de la viande)
+              un repas sur deux comprend du poulet)
             </p>
           </li>
           <li>
@@ -364,7 +365,10 @@ const IndexPage = ({ data }) => {
               imgStyle={{ objectFit: "contain" }}
             />
             <h4>Petite fringale - 2 jours</h4>
-            <Price>36€ VG - 38€ Flexi</Price>
+            <Price>
+              <strong>{prixNode.fringale}€</strong> <br />
+              (+{prixNode.fringaleFlexi}€ pour l'option flexi)
+            </Price>
             <p>
               Offre toi 2 jours pendant lesquels un bon repas chaud, gourmand et
               réconfortant t’attend. Pensés pour répondre à tes besoins de
@@ -387,7 +391,10 @@ const IndexPage = ({ data }) => {
               imgStyle={{ objectFit: "contain" }}
             />
             <h4>Curcufamille - 6 jours</h4>
-            <Price>94€ VG - 98€ Flexi</Price>
+            <Price>
+              <strong>{prixNode.curcufamille}€</strong> <br />
+              (+{prixNode.curcufamilleFlexi}€ pour l'option flexi)
+            </Price>
             <p>
               Love ou self love : partager avec son partenaire ou congeler, ça
               reste une double ration de plaisir ET de temps libre. À partager
@@ -419,15 +426,21 @@ const IndexPage = ({ data }) => {
               <span>
                 <strong>VG</strong>
               </span>
-              <span>154€</span>
-              <span>215€</span>
-              <span>420€</span>
+              <span>
+                <strong>{prixNode.cc10j}€</strong>
+              </span>
+              <span>
+                <strong>{prixNode.cc14j}€</strong>
+              </span>
+              <span>
+                <strong>{prixNode.cc30j}€</strong>
+              </span>
               <span>
                 <strong>Flexi</strong>
               </span>
-              <span>160€</span>
-              <span>224€</span>
-              <span>440€</span>
+              <span>+{prixNode.cc10jFlexi}€</span>
+              <span>+{prixNode.cc14jFlexi}€</span>
+              <span>+{prixNode.cc30jFlexi}€</span>
             </PriceTable>
             <p>
               Tes proches font appel à nous pour prendre en charge votre
@@ -937,8 +950,16 @@ export const query = graphql`
     allContentYaml {
       edges {
         node {
-          menu_1
-          menu_2
+          fringale
+          curcufamille
+          cc10j
+          cc14j
+          cc30j
+          fringaleFlexi
+          curcufamilleFlexi
+          cc10jFlexi
+          cc14jFlexi
+          cc30jFlexi
           date_1
           date_2
         }
