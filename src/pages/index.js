@@ -259,10 +259,13 @@ const datesLivraison = {
 
 // markup
 const IndexPage = ({ data }) => {
+  const menuNode = data.allContentYaml.edges[1].node;
+  const prixNode = data.allContentYaml.edges[0].node;
+
   const [formule, setFormule] = useState("");
   const [duree, setDuree] = useState("");
   const [variante, setVariante] = useState("");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(menuNode.date);
   const [cadeau, setCadeau] = useState(false);
   const [isSubscribingToNewsLetter, setIsSubscribingToNewsLetter] =
     useState(false);
@@ -299,9 +302,6 @@ const IndexPage = ({ data }) => {
   const onSujetChange = (e) => {
     setSujet(e.target.value);
   };
-
-  const menuNode = data.allContentYaml.edges[0].node;
-  const prixNode = data.allContentYaml.edges[1].node;
 
   return (
     <BasePage>
@@ -797,8 +797,7 @@ const IndexPage = ({ data }) => {
             label="Livraison"
             name="date"
             options={[
-              { value: menuNode.date_1, label: menuNode.date_1 },
-              { value: menuNode.date_2, label: menuNode.date_2 },
+              { value: menuNode.date, label: menuNode.date },
               ...(isCadeau
                 ? [{ value: "Iels choisissent", label: "Iels choisissent" }]
                 : []),
@@ -960,8 +959,8 @@ export const query = graphql`
           cc10jFlexi
           cc14jFlexi
           cc30jFlexi
-          date_1
-          date_2
+          menu
+          date
         }
       }
     }
