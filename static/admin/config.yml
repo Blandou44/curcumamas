@@ -15,24 +15,15 @@ collections:
         name: "menus"
         file: "content/menus.yml"
         fields: 
-          - {label: Date 1, name: date_1, widget: string}
-          - label: "Menu 1"
-            name: "menu_1"
+          - {label: Date, name: date, widget: string}
+          - label: "Menu"
+            name: "menu"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
             media_library:
                 config:
-                  multiple: true   
-          - {label: Date 2, name: date_2, widget: string}
-          - label: "Menu 1"
-            name: "menu_2"
-            widget: "image"
-            choose_url: true
-            default: "/static/images/menu_2.png"
-            media_library:
-                config:
-                  multiple: true   
+                  multiple: true     
       - label: "Prix"
         name: "prix"
         file: "content/prix.yml"
