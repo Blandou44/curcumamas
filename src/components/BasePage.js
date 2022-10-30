@@ -20,6 +20,7 @@ export const BasePage = ({
         noindex={noindex}
       />
       <GlobalStyle />
+
       {children}
     </main>
   );

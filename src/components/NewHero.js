@@ -1,63 +1,66 @@
 import React from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
-import {
-  mainColor,
-  maxWidth,
-  secondaryColor,
-  sidePadding,
-  NewButton,
-} from "../styles/theme";
 
-const HeroWrapper = styled.nav`
+import heroImage from "../images/hero.jpg";
+
+import background from "../images/illustrations/grains2.png";
+
+import { maxWidth, sidePadding, NewButton } from "../styles/theme";
+
+const HeroContainer = styled.div`
   padding: 1.5rem ${sidePadding};
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
-
-  max-width: ${maxWidth};
-  margin: 0 auto;
 `;
 
-const Quote = styled.p`
-  grid-column: 1 / 2;
-  font-size: 2rem;
-  font-weight: bold;
+const HeroWrapper = styled.nav`
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 2rem;
+  background: url(${heroImage});
+  background-size: cover;
   position: relative;
-  z-index: 10;
+  max-width: ${maxWidth};
+  height: 620px;
+  margin: 0 auto;
 
   &::before {
-    content: url(https://placekitten.com/200/100);
+    content: url(${background});
     position: absolute;
-    z-index: -1;
-    top: 7rem;
-    left: -5rem;
-    transform: rotate(55deg);
+    top: 440px;
+    left: -140px;
+    transform: scale(0.7);
   }
 `;
 
-const Illustration = styled.img`
-  align-self: center;
-  justify-self: flex-end;
-  grid-column: 2 / 2;
+const Quote = styled.p`
+  font-family: "Rubik", sans-serif;
+  font-size: 2.2rem;
+  color: white;
+  grid-column: 2 / 4;
+  grid-row: 1;
+  font-weight: bold;
+  padding-right: 2rem;
 `;
 
 const CTA = styled(NewButton)`
   grid-column: 2 / 2;
+  grid-row: 2;
+  margin-bottom: 2rem;
 `;
 
 export const NewHero = () => {
   return (
-    <HeroWrapper>
-      <Quote>
-        &laquo;Votre bébé né, une famille aussi. La promesse d'un post partum
-        gourmand, serein et récupérateur, commence avec vos plats
-        curcumamas&raquo;
-      </Quote>
-      <Illustration src="https://placekitten.com/260/300"></Illustration>
-      <CTA to="/curcumagasin">Commandez</CTA>
-    </HeroWrapper>
+    <HeroContainer>
+      <HeroWrapper>
+        <Quote>
+          &laquo; Vos bébés naissent, vos familles avec.
+          <br />
+          Un post partum gourmand et accompagné commence avec Curcumamas &raquo;
+        </Quote>
+        <CTA to="/nos-services" secondary>
+          Commandez
+        </CTA>
+      </HeroWrapper>
+    </HeroContainer>
   );
 };

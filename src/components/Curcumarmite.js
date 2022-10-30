@@ -4,13 +4,15 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
 import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
+
+import background from "../images/illustrations/grains1.png";
 import {
   mainColor,
   maxWidth,
   secondaryColor,
   sidePadding,
   NewButton,
+  Heading,
 } from "../styles/theme";
 
 const CurcumarmiteWrapper = styled.nav`
@@ -20,26 +22,24 @@ const CurcumarmiteWrapper = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
 
-  &::after {
-    content: url(https://placekitten.com/200/300);
-    height: 0;
-    position: relative;
-    left: 1rem;
-    transform: rotate(50deg);
+  &::before {
+    content: url(${background});
+    position: absolute;
+    top: -20px;
+    left: 980px;
+    transform: scale(0.7);
   }
 `;
 
-const Heading = styled.h1`
-  grid-column: span 4;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: ${secondaryColor};
-  margin: 0;
-  text-align: center;
-`;
-
 const CarouselContainer = styled.div`
+  margin-top: 2rem;
+
+  .carousel {
+    height: 650px;
+  }
+
   > ${NewButton} {
     position: relative;
     top: -5rem;
@@ -59,48 +59,35 @@ export const Curcumarmite = () => {
           showThumbs={false}
           showStatus={false}
           autoPlay={true}
+          interval={8000}
           infiniteLoop={true}
         >
           <div>
             <StaticImage
-              src="https://placekitten.com/1920/1080"
+              src={"../images/carousel/21.jpg"}
               alt=""
-              imgStyle={{ objectFit: "contain" }}
+              imgStyle={{ objectFit: "contain", height: "650px" }}
             />
           </div>
           <div>
             <StaticImage
-              src="https://placekitten.com/1920/1081"
+              src={"../images/carousel/22.jpg"}
               alt=""
-              imgStyle={{ objectFit: "contain" }}
+              imgStyle={{ objectFit: "contain", height: "650px" }}
             />
           </div>
           <div>
             <StaticImage
-              src="https://placekitten.com/1920/1087"
+              src={"../images/carousel/23.jpg"}
               alt=""
-              imgStyle={{ objectFit: "contain" }}
+              imgStyle={{ objectFit: "contain", height: "650px" }}
             />
           </div>
           <div>
             <StaticImage
-              src="https://placekitten.com/1923/1083"
+              src={"../images/carousel/24.jpg"}
               alt=""
-              imgStyle={{ objectFit: "contain" }}
-            />
-          </div>
-          <div>
-            <StaticImage
-              src="https://placekitten.com/1920/1084"
-              alt=""
-              imgStyle={{ objectFit: "contain" }}
-            />
-          </div>
-          <div>
-            <StaticImage
-              src="https://placekitten.com/1920/1085"
-              alt=""
-              imgStyle={{ objectFit: "contain" }}
+              imgStyle={{ objectFit: "contain", height: "650px" }}
             />
           </div>
         </ReactCarousel>

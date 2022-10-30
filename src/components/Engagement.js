@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
+import legumes from "../images/illustrations/legumes_bleu.png";
+import genoux from "../images/illustrations/genoux_bleu.png";
+import graines from "../images/illustrations/graines_bleu.png";
+import bocal from "../images/illustrations/bocal_bleu.png";
+import nibs from "../images/illustrations/nibs_bleu.png";
+
 import {
   mainColor,
   maxWidth,
@@ -11,43 +14,99 @@ import {
   NewButton,
   Argument,
   Heading,
+  MotifWrapper,
 } from "../styles/theme";
 
 const EngagementContainer = styled.nav`
-  padding: 1.5rem ${sidePadding};
+  padding: 5rem ${sidePadding};
   max-width: ${maxWidth};
   margin: 0 auto;
+`;
+
+const EngagementWrapper = styled.div`
+  padding: 3rem 6rem;
+  border-radius: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
+  box-shadow: 0px 0px 15px 4px #00000033;
+  background: white;
 `;
 
 const CTA = styled(NewButton)`
-  grid-column: 3 / 5;
+  grid-column: 4 / 6;
   justify-self: flex-end;
+`;
+
+const EngagementItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  > img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  > p {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+  }
 `;
 
 export const Engagement = () => {
   return (
-    <EngagementContainer>
-      <Heading>L'engagement nutritionnel</Heading>
-      <Argument>
-        <img src="https://placekitten.com/100/100"></img>
-        <p>Tout est 100% bio et 80% local</p>
-      </Argument>
-      <Argument>
-        <img src="https://placekitten.com/100/100"></img>
-        <p>Lorem ipsum dolor sit amet</p>
-      </Argument>
-      <Argument>
-        <img src="https://placekitten.com/100/100"></img>
-        <p>Lorem ipsum dolor sit amet</p>
-      </Argument>
-      <Argument>
-        <img src="https://placekitten.com/100/100"></img>
-        <p>Lorem ipsum dolor sit amet</p>
-      </Argument>
-      <CTA to="/curcumagasin">Commandez</CTA>
-    </EngagementContainer>
+    <MotifWrapper>
+      <EngagementContainer>
+        <EngagementWrapper>
+          <Heading>
+            L'engagement <em>nutritionnel</em>
+          </Heading>
+          <EngagementItem>
+            <img src={legumes}></img>
+            <p>
+              Chez Curcumamas tout est 100% bio et de saison, en majorité local
+              (excepté épices, oléagineux etc)
+            </p>
+          </EngagementItem>
+          <EngagementItem>
+            <img src={genoux}></img>
+            <p>
+              Grâce à l’expertise de Blandine les menus sont élaborés pour
+              répondre aux besoins nutritionnels particuliers de la jeune mère,
+              convenant à toute la famille.
+            </p>
+          </EngagementItem>
+          <EngagementItem>
+            <img src={graines}></img>
+            <p>
+              Chez curcumamas on utilse des supers aliments qui permettent
+              d’avoir tous les nutriments nécessaires à votre récupération et
+              votre moral (algues, cacao cru, huile crue, épices...)
+            </p>
+          </EngagementItem>
+          <EngagementItem>
+            <img src={bocal}></img>
+            <p>
+              Chez Curcumamas les cuissons sont douces pour préserver les
+              nutriments et les vitamines, utilisation de sucrants naturels, on
+              évite le lactose pour les aplv et le gluten.
+            </p>
+          </EngagementItem>
+          <EngagementItem>
+            <img src={nibs}></img>
+            <p>
+              Chez Curcumamas on utilise des aliments qui soutiennent
+              l’allaitement et on évite le gluten et le lactose pour des mamans
+              et des bébés qui digèrent mieux.
+            </p>
+          </EngagementItem>
+          <CTA to="/nos-services">Commandez</CTA>
+        </EngagementWrapper>
+      </EngagementContainer>
+    </MotifWrapper>
   );
 };

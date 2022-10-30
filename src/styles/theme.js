@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import motif from "../images/motif.png";
 
 export const mainColor = "#032aaf";
 export const secondaryColor = "#F78B1E";
@@ -38,47 +39,93 @@ export const Button = styled(AnchorLink)`
   }
 `;
 
+// nouveau site
+
+export const colorBaie = "#4f3d63";
+export const colorHerbes = "#8f9940";
+export const colorPaprika = "#cc3300";
+export const colorCurcuma = "#f26300";
+export const colorMoutarde = "#f5a800";
+
+export const newMainColor = "#013cf2";
+export const newSecondaryColor = colorCurcuma;
+
+export const MotifWrapper = styled.div`
+  background: url(${motif});
+`;
+
 export const NewButton = styled(AnchorLink)`
+  font-family: "Rubik Mono One", sans-serif;
   border: none;
-  background: ${(props) => (props.secondary ? secondaryColor : mainColor)};
-  color: white;
+  background: ${(props) =>
+    props.secondary ? newSecondaryColor : newMainColor};
+  color: transparent;
   padding: 1rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white;
+
   &:hover {
-    color: ${(props) => (props.secondary ? mainColor : secondaryColor)};
+    color: white;
+    -webkit-text-stroke: 0px white;
+    text-stroke: 0px white;
   }
 `;
 
 export const Heading = styled.h1`
-  grid-column: span 4;
+  font-family: "Rubik Mono One", sans-serif;
+  grid-column: span 5;
   font-size: 2.5rem;
   font-weight: bold;
-  color: ${secondaryColor};
+  color: ${newMainColor};
   margin: 0;
   text-align: center;
+
+  > em {
+    color: transparent;
+    -webkit-text-stroke: 3px ${newMainColor};
+    text-stroke: 3px ${newMainColor};
+    font-style: normal;
+  }
 `;
 
 export const Argument = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
 
-  > img {
+  > div {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    border: 1px solid ${mainColor};
     padding: 0.5rem;
+    position: relative;
+
+    > span {
+      font-family: "Rubik Mono One", sans-serif;
+      font-family: "Rubik", sans-serif;
+      font-weight: 800;
+      color: ${newMainColor};
+      font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+    }
+
+    > img {
+      width: 100%;
+      position: absolute;
+    }
   }
 
   > p {
+    font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
     text-align: center;
   }

@@ -12,17 +12,25 @@ import { Engagement } from "../components/Engagement";
 import { BasePage } from "../components/BasePage";
 import { Footer } from "../components/Footer";
 
-// markup
+const IndexWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+`;
+
 const NouvelIndexSecretDeOuf = () => {
   return (
     <BasePage noindex>
       <NewNavBar />
-      <NewHero />
-      <WhachaWaitingFor />
-      <Curcumarmite />
-      <HowDoesItWork />
-      <Portrait />
-      <Engagement />
+
+      <IndexWrapper>
+        <NewHero />
+        <WhachaWaitingFor />
+        <Curcumarmite />
+        <HowDoesItWork />
+        <Portrait />
+        <Engagement />
+      </IndexWrapper>
 
       <Footer />
     </BasePage>

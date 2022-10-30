@@ -1,22 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
-import {
-  mainColor,
-  maxWidth,
-  secondaryColor,
-  sidePadding,
-  NewButton,
-  Heading,
-} from "../styles/theme";
+
+import blandoux from "../images/blandoux.jpg";
+import background from "../images/illustrations/grains2.png";
+import { maxWidth, sidePadding, NewButton, Heading } from "../styles/theme";
 
 const PortraitWrapper = styled.nav`
   padding: 1.5rem ${sidePadding};
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 3fr 250px;
+  row-gap: 2rem;
+  column-gap: 27rem;
+  align-items: flex-start;
+  position: relative;
 
   max-width: ${maxWidth};
   margin: 0 auto;
@@ -24,17 +20,27 @@ const PortraitWrapper = styled.nav`
   > ${Heading} {
     grid-column: span 2;
   }
+  &::before {
+    content: url(${background});
+    position: absolute;
+    top: 283px;
+    left: 600px;
+    transform: scale(0.6) rotate(284deg);
+  }
 `;
 
 const Description = styled.p`
   grid-column: 1 / 2;
-  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
 `;
 
 const Illustration = styled.img`
   align-self: center;
   justify-self: flex-end;
   grid-column: 2 / 2;
+  grid-row: span 2;
+  width: 100%;
 `;
 
 const CTA = styled(NewButton)`
@@ -45,14 +51,17 @@ const CTA = styled(NewButton)`
 export const Portrait = () => {
   return (
     <PortraitWrapper>
-      <Heading>Vous avez dit Curcumama ?</Heading>
+      <Heading>
+        Vous avez dit <em>Curcumama</em> ?
+      </Heading>
       <Description>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute
+        Blandine. Formée en nutrition de la femme enceinte et en post partum, en
+        massage pré et post natals, et dans l'accompagnement de la grossesse et
+        du post partum, elle propose des consultations nutritions pour aborder
+        au mieux ces périodes. Elle met toute son expertise et sa passion au
+        service des familles et donc de Curcumamas.
       </Description>
-      <Illustration src="https://placekitten.com/244/300"></Illustration>
+      <Illustration src={blandoux}></Illustration>
       <CTA to="/a-propos">En savoir plus</CTA>
     </PortraitWrapper>
   );

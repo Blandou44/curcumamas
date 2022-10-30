@@ -39,7 +39,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Permanent Marker`, `Montserrat\:100,400,700`],
+        fonts: [
+          `Permanent Marker`,
+          `Montserrat\:100,400,700`,
+          "Rubik Mono One",
+          "Rubik:500,700,800",
+        ],
         display: "swap",
       },
     },
