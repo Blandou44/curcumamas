@@ -3,25 +3,32 @@ import styled from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 import Headroom from "react-headroom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import {
+  applySidePadding,
   mainColor,
   maxWidth,
   newMainColor,
   newSecondaryColor,
   secondaryColor,
   sidePadding,
+  sidePaddingSmall,
   smallBreakpoint,
 } from "../styles/theme";
 
 const NavContainer = styled.div`
   background: ${newMainColor};
+  height: ${(props) => (props.isOpen ? `100vh;` : "4rem")};
+  overflow: hidden;
+  z-index: 1000;
 `;
 
 const NavWrapper = styled.nav`
-  padding: 0 ${sidePadding};
-  display: flex;
+  ${applySidePadding()};
+  display: grid;
   align-items: center;
-  justify-content: flex-end;
+  grid-template-columns: 1fr 2.5rem;
   gap: 3rem;
 
   max-width: ${maxWidth};
@@ -40,10 +47,21 @@ const LogoWrapper = styled.div`
   }
 `;
 
+const LinksWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: ${smallBreakpoint}) {
+    flex-direction: row;
+    gap: 3rem;
+  }
+`;
+
 const Link = styled(AnchorLink)`
   color: transparent;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
@@ -51,6 +69,10 @@ const Link = styled(AnchorLink)`
 
   -webkit-text-stroke: 2px white;
   text-stroke: 2px white;
+
+  @media (min-width: ${smallBreakpoint}) {
+    font-size: 1.2rem;
+  }
 
   ${(props) =>
     props.selected &&
@@ -66,15 +88,29 @@ const Link = styled(AnchorLink)`
   }
 `;
 
+const BurgerButton = styled.button`
+  border: none;
+  background: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+
+  > svg {
+    height: 100%;
+  }
+`;
+
 export const NewNavBar = () => {
   const path =
     typeof window !== "undefined"
       ? window.location.pathname
       : "/nouvel-index-secret-de-ouf";
 
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <Headroom>
-      <NavContainer>
+      <NavContainer isOpen={isOpen}>
         <NavWrapper>
           <LogoWrapper>
             <StaticImage
@@ -83,18 +119,29 @@ export const NewNavBar = () => {
               objectFit="contain"
             />
           </LogoWrapper>
-          <Link
-            to="/nouvel-index-secret-de-ouf"
-            selected={path === "/nouvel-index-secret-de-ouf"}
-          >
-            Accueil
-          </Link>
-          <Link to="/curcumagasin" selected={path === "/curcumagasin"}>
-            Curcumagasin
-          </Link>
-          <Link to="/nos-services" selected={path === "/nos-services"}>
-            Nos Services
-          </Link>
+          <BurgerButton>
+            <FontAwesomeIcon
+              icon={isOpen ? faXmark : faBars}
+              color="white"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            />
+          </BurgerButton>
+          <LinksWrapper>
+            <Link
+              to="/nouvel-index-secret-de-ouf"
+              selected={path === "/nouvel-index-secret-de-ouf"}
+            >
+              Accueil
+            </Link>
+            <Link to="/curcumagasin" selected={path === "/curcumagasin"}>
+              Curcumagasin
+            </Link>
+            <Link to="/nos-services" selected={path === "/nos-services"}>
+              Nos Services
+            </Link>
+          </LinksWrapper>
         </NavWrapper>
       </NavContainer>
     </Headroom>

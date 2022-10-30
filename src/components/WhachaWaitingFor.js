@@ -13,6 +13,8 @@ import {
   sidePadding,
   NewButton,
   Heading,
+  applySidePadding,
+  smallBreakpoint,
 } from "../styles/theme";
 
 const MotifWrapper = styled.div`
@@ -20,22 +22,27 @@ const MotifWrapper = styled.div`
 `;
 
 const WhachaWaitingForContainer = styled.nav`
-  padding: 5rem ${sidePadding};
+  ${applySidePadding("5rem")};
   max-width: ${maxWidth};
   margin: 0 auto;
 `;
 
 const WhachaWaitingForWrapper = styled.nav`
   border-radius: 1rem;
-  padding: 3rem 6rem;
+  ${applySidePadding("3rem")};
   box-shadow: 0px 0px 15px 4px #00000033;
   background: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 
-  > h1 {
-    grid-column: span 3;
+  gap: 2rem;
+  @media (min-width: ${smallBreakpoint}) {
+    font-size: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    > h1 {
+      grid-column: span 3;
+    }
   }
 `;
 

@@ -13,11 +13,23 @@ export const sidePaddingSmall = "1rem";
 export const maxWidth = "1200px";
 export const smallBreakpoint = "930px";
 
+export const applySidePadding = (vertical = "0") => `
+  padding: ${vertical} ${sidePaddingSmall};
+  @media (min-width: ${smallBreakpoint}) {
+    padding: ${vertical} ${sidePadding};
+  }
+  `;
+
 export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+  }
+
+  .headroom, .headroom--pinned, .headroom-wrapper {
+    z-index: 1000;
   }
 `;
 
@@ -66,6 +78,7 @@ export const NewButton = styled(AnchorLink)`
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  z-index: 10;
 
   -webkit-text-stroke: 2px white;
   text-stroke: 2px white;
@@ -80,11 +93,15 @@ export const NewButton = styled(AnchorLink)`
 export const Heading = styled.h1`
   font-family: "Rubik Mono One", sans-serif;
   grid-column: span 5;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: ${newMainColor};
   margin: 0;
   text-align: center;
+
+  @media (min-width: ${smallBreakpoint}) {
+    font-size: 2.5rem;
+  }
 
   > em {
     color: transparent;

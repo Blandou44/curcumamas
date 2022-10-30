@@ -13,10 +13,12 @@ import {
   sidePadding,
   NewButton,
   Heading,
+  applySidePadding,
+  smallBreakpoint,
 } from "../styles/theme";
 
 const CurcumarmiteWrapper = styled.nav`
-  padding: 1.5rem ${sidePadding};
+  ${applySidePadding("1.5rem")};
   max-width: ${maxWidth};
   margin: 0 auto;
   display: flex;
@@ -27,9 +29,16 @@ const CurcumarmiteWrapper = styled.nav`
   &::before {
     content: url(${background});
     position: absolute;
-    top: -20px;
-    left: 980px;
-    transform: scale(0.7);
+    z-index: 10;
+    transform: scale(0.5);
+    top: -7px;
+    left: 55%;
+
+    @media (min-width: ${smallBreakpoint}) {
+      transform: scale(0.7);
+      top: -20px;
+      left: 980px;
+    }
   }
 `;
 

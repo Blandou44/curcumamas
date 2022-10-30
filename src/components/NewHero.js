@@ -5,10 +5,10 @@ import heroImage from "../images/hero.jpg";
 
 import background from "../images/illustrations/grains2.png";
 
-import { maxWidth, sidePadding, NewButton } from "../styles/theme";
+import { maxWidth, applySidePadding, NewButton } from "../styles/theme";
 
 const HeroContainer = styled.div`
-  padding: 1.5rem ${sidePadding};
+  ${applySidePadding("1.5rem")};
 `;
 
 const HeroWrapper = styled.nav`

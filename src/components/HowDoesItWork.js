@@ -13,15 +13,16 @@ import {
   mainColor,
   maxWidth,
   newMainColor,
-  sidePadding,
+  applySidePadding,
   NewButton,
   Argument,
   Heading,
   MotifWrapper,
+  smallBreakpoint,
 } from "../styles/theme";
 
 const HowDoesItWorkContainer = styled.nav`
-  padding: 5rem ${sidePadding};
+  ${applySidePadding("5rem")};
   max-width: ${maxWidth};
   margin: 0 auto;
 `;
@@ -33,12 +34,13 @@ const HowDoesItWorkWrapper = styled.div`
   flex-direction: column;
   gap: 2rem;
   border-radius: 1rem;
-  padding: 3rem 6rem;
+  ${applySidePadding("3rem")};
 `;
 
 const Point = styled.div`
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
   position: relative;
 
@@ -51,24 +53,33 @@ const Point = styled.div`
   > p {
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
-    max-width: 66%;
   }
 
-  &:not(:last-child)::before {
-    content: "";
-    display: block;
-    width: 700px;
-    height: 3px;
-    background: ${newMainColor};
-    position: absolute;
-    left: calc(0);
-    top: calc(100% + 1rem);
-  }
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
+  @media (min-width: ${smallBreakpoint}) {
+    gap: 2rem;
 
     > p {
-      text-align: right;
+      max-width: 66%;
+    }
+
+    flex-direction: row;
+
+    &:not(:last-child)::before {
+      content: "";
+      display: block;
+      width: 700px;
+      height: 3px;
+      background: ${newMainColor};
+      position: absolute;
+      left: calc(0);
+      top: calc(100% + 1rem);
+    }
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      > p {
+        text-align: right;
+      }
     }
   }
 `;

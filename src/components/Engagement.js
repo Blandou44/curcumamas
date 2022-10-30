@@ -15,22 +15,29 @@ import {
   Argument,
   Heading,
   MotifWrapper,
+  applySidePadding,
+  smallBreakpoint,
 } from "../styles/theme";
 
 const EngagementContainer = styled.nav`
-  padding: 5rem ${sidePadding};
+  ${applySidePadding("5rem")}
   max-width: ${maxWidth};
   margin: 0 auto;
 `;
 
 const EngagementWrapper = styled.div`
-  padding: 3rem 6rem;
+  ${applySidePadding("3rem")}
   border-radius: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   box-shadow: 0px 0px 15px 4px #00000033;
   background: white;
+
+  @media (min-width: ${smallBreakpoint}) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 `;
 
 const CTA = styled(NewButton)`

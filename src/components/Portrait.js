@@ -3,15 +3,18 @@ import styled from "styled-components";
 
 import blandoux from "../images/blandoux.jpg";
 import background from "../images/illustrations/grains2.png";
-import { maxWidth, sidePadding, NewButton, Heading } from "../styles/theme";
+import {
+  maxWidth,
+  applySidePadding,
+  NewButton,
+  Heading,
+  smallBreakpoint,
+} from "../styles/theme";
 
 const PortraitWrapper = styled.nav`
-  padding: 1.5rem ${sidePadding};
-  display: grid;
-  grid-template-columns: 3fr 250px;
-  row-gap: 2rem;
-  column-gap: 27rem;
-  align-items: flex-start;
+  ${applySidePadding("1.5rem")};
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   max-width: ${maxWidth};
@@ -23,9 +26,22 @@ const PortraitWrapper = styled.nav`
   &::before {
     content: url(${background});
     position: absolute;
-    top: 283px;
-    left: 600px;
+    top: 336px;
+    left: 32%;
     transform: scale(0.6) rotate(284deg);
+  }
+
+  @media (min-width: ${smallBreakpoint}) {
+    display: grid;
+    grid-template-columns: 3fr 250px;
+    row-gap: 2rem;
+    column-gap: 27rem;
+    align-items: flex-start;
+
+    &::before {
+      top: 283px;
+      left: 600px;
+    }
   }
 `;
 
@@ -40,12 +56,13 @@ const Illustration = styled.img`
   justify-self: flex-end;
   grid-column: 2 / 2;
   grid-row: span 2;
-  width: 100%;
-`;
+  width: 35%;
+  margin-right: 20%;
 
-const CTA = styled(NewButton)`
-  grid-column: 1 / 2;
-  justify-self: flex-start;
+  @media (min-width: ${smallBreakpoint}) {
+    width: 100%;
+    margin-right: 0;
+  }
 `;
 
 export const Portrait = () => {
@@ -62,7 +79,6 @@ export const Portrait = () => {
         service des familles et donc de Curcumamas.
       </Description>
       <Illustration src={blandoux}></Illustration>
-      <CTA to="/a-propos">En savoir plus</CTA>
     </PortraitWrapper>
   );
 };

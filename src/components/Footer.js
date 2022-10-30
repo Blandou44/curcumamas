@@ -4,13 +4,14 @@ import { Link } from "gatsby";
 import {
   mainColor,
   secondaryColor,
-  sidePadding,
+  applySidePadding,
   smallBreakpoint,
 } from "../styles/theme";
 
 const FooterContainer = styled.footer`
   background: ${mainColor};
-  padding: 3rem ${sidePadding} 1rem;
+  ${applySidePadding("3rem")};
+  margin-bottom: 1rem;
   display: grid;
   row-gap: 2rem;
   justify-items: center;
