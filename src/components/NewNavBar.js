@@ -67,7 +67,10 @@ const Link = styled(AnchorLink)`
 `;
 
 export const NewNavBar = () => {
-  const path = window.location.pathname;
+  const path =
+    typeof window !== "undefined"
+      ? window.location.pathname
+      : "/nouvel-index-secret-de-ouf";
 
   return (
     <Headroom>

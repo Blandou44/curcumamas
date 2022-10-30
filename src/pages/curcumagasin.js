@@ -39,7 +39,9 @@ const FormWrapper = styled.div`
 
 const NouvelIndexSecretDeOuf = () => {
   // get the item from the query parameter
-  const urlParams = new URLSearchParams(window.location.search);
+  const urlParams = new URLSearchParams(
+    typeof window !== "undefined" ? window.location.search : ""
+  );
   const item = urlParams.get("item") ?? "fringale";
 
   const itemMap = {
