@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-import blandoux from "../images/blandoux.jpg";
-import background from "../images/illustrations/grains2.png";
-import { maxWidth, sidePadding, NewButton, Heading } from "../styles/theme";
+import grains1 from "../images/illustrations/grains1.png";
+import grains2 from "../images/illustrations/grains2.png";
+
+import {
+  maxWidth,
+  sidePadding,
+  NewButton,
+  Heading,
+  SmallText,
+  newMainColor,
+} from "../styles/theme";
+import { NumberInput } from "./NumberInput";
+
+const Form = styled.form`
+  padding-right: 2rem;
+`;
+
+const Input = styled.input`
+  border: 1px solid ${newMainColor};
+  border-radius: 5px;
+  height: 1.5rem;
+`;
 
 const ChoixContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3rem;
+  grid-template-columns: 3fr 1fr;
   grid-gap: 1rem;
+  align-items: center;
+`;
+
+const ChoixHeader = styled.p`
+  font-family: "Rubik Mono One", sans-serif;
+  margin: 0;
 `;
 
 const DetailsContainer = styled.div`
@@ -17,9 +42,73 @@ const DetailsContainer = styled.div`
   grid-gap: 1rem;
 `;
 
+const HiddenInput = styled.input`
+  height: 0;
+  width: 0;
+  position: absolute;
+  opacity: 0;
+`;
+
+const Separator = styled.span`
+  background: url(${grains1});
+  height: 4rem;
+  margin: 2rem 0;
+  background-size: contain;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  ${(props) =>
+    props.center &&
+    `
+    background-position: center;
+    background-image: url(${grains2});
+  `};
+
+  ${(props) =>
+    props.left &&
+    `
+  transform: rotate(180deg);
+  `};
+`;
+
 export const CommandForm = ({ defaultCadeau, nbRepas }) => {
+  const [nbEntree1, setNbEntree1] = useState(0);
+  const [nbEntree2, setNbEntree2] = useState(0);
+  const [nbEntree3, setNbEntree3] = useState(0);
+  const [nbEntree4, setNbEntree4] = useState(0);
+  const [remainingEntree, setRemainingEntree] = useState(0);
+
+  useEffect(() => {
+    setRemainingEntree(
+      nbRepas - (nbEntree1 + nbEntree2 + nbEntree3 + nbEntree4)
+    );
+  }, [nbEntree1, nbEntree2, nbEntree3, nbEntree4]);
+
+  const [nbPlat1, setNbPlat1] = useState(0);
+  const [nbPlat2, setNbPlat2] = useState(0);
+  const [nbPlat3, setNbPlat3] = useState(0);
+  const [nbPlat4, setNbPlat4] = useState(0);
+  const [remainingPlat, setRemainingPlat] = useState(0);
+
+  useEffect(() => {
+    setRemainingPlat(nbRepas - (nbPlat1 + nbPlat2 + nbPlat3 + nbPlat4));
+  }, [nbPlat1, nbPlat2, nbPlat3, nbPlat4]);
+
+  const [nbDessert1, setNbDessert1] = useState(0);
+  const [nbDessert2, setNbDessert2] = useState(0);
+  const [nbDessert3, setNbDessert3] = useState(0);
+  const [nbDessert4, setNbDessert4] = useState(0);
+  const [remainingDessert, setRemainingDessert] = useState(0);
+
+  useEffect(() => {
+    setRemainingDessert(
+      nbRepas - (nbDessert1 + nbDessert2 + nbDessert3 + nbDessert4)
+    );
+  }, [nbDessert1, nbDessert2, nbDessert3, nbDessert4]);
+
   return (
-    <form
+    <Form
       name="commandev2"
       method="POST"
       data-netlify="true"
@@ -44,13 +133,13 @@ export const CommandForm = ({ defaultCadeau, nbRepas }) => {
       <p>Vos coordonées</p>
       <DetailsContainer>
         <label for="nom-offrant">Nom</label>
-        <input type="text" name="nom-offrant" />
+        <Input type="text" name="nom-offrant" />
         <label for="prenom-offrant">Prénom</label>
-        <input type="text" name="prenom-offrant" />
+        <Input type="text" name="prenom-offrant" />
         <label for="email-offrant">Email</label>
-        <input type="email" name="email-offrant" />
+        <Input type="email" name="email-offrant" />
         <label for="telephone-offrant">Téléphone</label>
-        <input type="text" name="telephone-offrant" />
+        <Input type="text" name="telephone-offrant" />
       </DetailsContainer>
 
       <p>Option choisie</p>
@@ -59,54 +148,204 @@ export const CommandForm = ({ defaultCadeau, nbRepas }) => {
       <input type="radio" name="variante" value="flexi" />
       <label for="flexi">Flexi</label>
 
-      <p>Entrées</p>
+      <Separator />
+
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="entree1"
+        value={nbEntree1}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="entree2"
+        value={nbEntree2}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="entree3"
+        value={nbEntree3}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="entree4"
+        value={nbEntree4}
+      />
+
       <ChoixContainer>
-        <label for="entree1">Soupe Thaï</label>
-        <input type="number" max={nbRepas} min={0} name="entree1" />
-        <label for="entree2">houmous de betterave</label>
-        <input type="number" max={nbRepas} min={0} name="entree2" />
-        <label for="entree3">bouillon de légumes et gingembre</label>
-        <input type="number" max={nbRepas} min={0} name="entree3" />
-        <label for="entree4">velouté carotte coco citronnelle</label>
-        <input type="number" max={nbRepas} min={0} name="entree4" />
+        <ChoixHeader>Entrées</ChoixHeader>
+        <SmallText right>
+          ({remainingEntree} restante{remainingEntree > 1 ? "s" : ""})
+        </SmallText>
+        <label>Soupe Thaï</label>
+        <NumberInput
+          value={nbEntree1}
+          setValue={setNbEntree1}
+          remaining={remainingEntree}
+        />
+        <label>houmous de betterave</label>
+        <NumberInput
+          value={nbEntree2}
+          setValue={setNbEntree2}
+          remaining={remainingEntree}
+        />
+        <label>bouillon de légumes et gingembre</label>
+        <NumberInput
+          value={nbEntree3}
+          setValue={setNbEntree3}
+          remaining={remainingEntree}
+        />
+        <label>velouté carotte coco citronnelle</label>
+        <NumberInput
+          value={nbEntree4}
+          setValue={setNbEntree4}
+          remaining={remainingEntree}
+        />
       </ChoixContainer>
-      <p>Plats</p>
+
+      <Separator center />
+
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="plat1"
+        value={nbPlat1}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="plat2"
+        value={nbPlat2}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="plat3"
+        value={nbPlat3}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="plat4"
+        value={nbPlat4}
+      />
+
       <ChoixContainer>
-        <label for="plat1">
+        <ChoixHeader>Plats</ChoixHeader>
+        <SmallText right>
+          ({remainingPlat} restant{remainingPlat > 1 ? "s" : ""})
+        </SmallText>
+        <label>
           Curry vert aux légumes de saison, pois chiches et riz basmati (non
           pimenté)- (sg, sl)
         </label>
-        <input type="number" max={nbRepas} min={0} name="plat1" />
-        <label for="plat2">
+        <NumberInput
+          value={nbPlat1}
+          setValue={setNbPlat1}
+          remaining={remainingPlat}
+        />
+        <label>
           Parmentier et sa farce végétale aux lentilles, noisettes, capres et
           champignons- (sg)
         </label>
-        <input type="number" max={nbRepas} min={0} name="plat2" />
-        <label for="plat3">
+        <NumberInput
+          value={nbPlat2}
+          setValue={setNbPlat2}
+          remaining={remainingPlat}
+        />
+        <label>
           Dahl de lentilles corail, épices et légumes de saison- riz
           basmati-(sg, sl)
         </label>
-        <input type="number" max={nbRepas} min={0} name="plat3" />
-        <label for="plat4">
-          Tajine amandes, abricots et légume de saison-Quinoa
-        </label>
-        <input type="number" max={nbRepas} min={0} name="plat4" />
+        <NumberInput
+          value={nbPlat3}
+          setValue={setNbPlat3}
+          remaining={remainingPlat}
+        />
+        <label>Tajine amandes, abricots et légume de saison-Quinoa</label>
+        <NumberInput
+          value={nbPlat4}
+          setValue={setNbPlat4}
+          remaining={remainingPlat}
+        />
       </ChoixContainer>
-      <p>desserts</p>
+
+      <Separator left />
+
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="dessert1"
+        value={nbDessert1}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="dessert2"
+        value={nbDessert2}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="dessert3"
+        value={nbDessert3}
+      />
+      <HiddenInput
+        type="number"
+        max={nbRepas}
+        min={0}
+        name="dessert4"
+        value={nbDessert4}
+      />
+
       <ChoixContainer>
-        <label for="entree1">
+        <ChoixHeader>desserts</ChoixHeader>
+        <SmallText right>
+          ({remainingDessert} restant{remainingDessert > 1 ? "s" : ""})
+        </SmallText>
+        <label>
           Cookies roses, à la betterave, graine de chia purée de cajou et
           chocolat noir
         </label>
-        <input type="number" max={nbRepas} min={0} name="dessert1" />
-        <label for="dessert2">
+        <NumberInput
+          value={nbDessert1}
+          setValue={setNbDessert1}
+          remaining={remainingDessert}
+        />
+        <label>
           croustillant amande coco, compotée de fruits sur un porridge de chia
         </label>
-        <input type="number" max={nbRepas} min={0} name="dessert2" />
-        <label for="dessert3">Carotte cake</label>
-        <input type="number" max={nbRepas} min={0} name="dessert3" />
-        <label for="dessert4">Brownie chocolat noir et haricots rouges</label>
-        <input type="number" max={nbRepas} min={0} name="dessert4" />
+        <NumberInput
+          value={nbDessert2}
+          setValue={setNbDessert2}
+          remaining={remainingDessert}
+        />
+        <label>Carotte cake</label>
+        <NumberInput
+          value={nbDessert3}
+          setValue={setNbDessert3}
+          remaining={remainingDessert}
+        />
+        <label>Brownie chocolat noir et haricots rouges</label>
+        <NumberInput
+          value={nbDessert4}
+          setValue={setNbDessert4}
+          remaining={remainingDessert}
+        />
       </ChoixContainer>
 
       <p>à quelle date souhaitez-vous être livré&middot;e&middot;s ?</p>
@@ -125,26 +364,26 @@ export const CommandForm = ({ defaultCadeau, nbRepas }) => {
       <p>Vos coordonées</p>
       <DetailsContainer>
         <label for="nom">Nom</label>
-        <input type="text" name="nom" />
+        <Input type="text" name="nom" />
         <label for="prenom">Prénom</label>
-        <input type="text" name="prenom" />
+        <Input type="text" name="prenom" />
         <label for="email">Email</label>
-        <input type="email" name="email" />
+        <Input type="email" name="email" />
         <label for="adresse">Adresse</label>
-        <input type="text" name="adresse" />
+        <Input type="text" name="adresse" />
         <label for="codepostal">Code postal</label>
-        <input type="text" name="codepostal" />
+        <Input type="text" name="codepostal" />
         <label for="ville">Ville</label>
-        <input type="text" name="ville" />
+        <Input type="text" name="ville" />
         <label for="telephone">Téléphone</label>
-        <input type="text" name="telephone" />
+        <Input type="text" name="telephone" />
         <label for="message">Message</label>
-        <textarea name="message" />
+        <Input as="textarea" name="message" />
       </DetailsContainer>
 
       <button as="button" type="submit" disabled={false}>
         Contacte nous
       </button>
-    </form>
+    </Form>
   );
 };

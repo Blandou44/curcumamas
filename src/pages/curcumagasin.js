@@ -12,7 +12,13 @@ import { Engagement } from "../components/Engagement";
 import { BasePage } from "../components/BasePage";
 import { Footer } from "../components/Footer";
 
-import { colorBaie, Heading, maxWidth } from "../styles/theme";
+import {
+  colorBaie,
+  Heading,
+  maxWidth,
+  newMainColor,
+  SmallText,
+} from "../styles/theme";
 
 import motif from "../images/motif.png";
 import { CommandForm } from "../components/CommandForm";
@@ -37,7 +43,18 @@ const FormWrapper = styled.div`
   font-family: "Rubik", sans-serif;
 `;
 
-const NouvelIndexSecretDeOuf = () => {
+const Price = styled.h2`
+  font-family: "Rubik Mono One", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px ${newMainColor};
+  text-stroke: 1px ${newMainColor};
+  font-style: normal;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+`;
+
+const curcumagasin = () => {
   // get the item from the query parameter
   const urlParams = new URLSearchParams(
     typeof window !== "undefined" ? window.location.search : ""
@@ -49,6 +66,8 @@ const NouvelIndexSecretDeOuf = () => {
       title: "Fringale",
       description:
         "Cette formule contient deux curcumenus composés chacuns d'une entrée, plat et dessert. Parfait starter pack pour vous libérer les jours juste après l'enfantement sans négliger votre alimentation",
+      isCadeau: false,
+      nbRepas: 2,
       price: {
         vg: "54€",
         flexi: "57€",
@@ -59,9 +78,11 @@ const NouvelIndexSecretDeOuf = () => {
     curcufamille: {
       title: "La Curcufamille",
       description: "Pour les petits creux",
+      isCadeau: false,
+      nbRepas: 6,
       price: {
-        vg: "54€",
-        flexi: "57€",
+        vg: "150€",
+        flexi: "??€",
       },
       image:
         "https://images.unsplash.com/photo-1581090002029-8b2b2b2b2b2b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0YWxvZyUyMHBhZ2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
@@ -69,9 +90,11 @@ const NouvelIndexSecretDeOuf = () => {
     curcutribu: {
       title: "Curcutribu",
       description: "Pour les petits creux",
+      isCadeau: true,
+      nbRepas: 10,
       price: {
-        vg: "54€",
-        flexi: "57€",
+        vg: "250€",
+        flexi: "??€",
       },
       image:
         "https://images.unsplash.com/photo-1581090002029-8b2b2b2b2b2b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0YWxvZyUyMHBhZ2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
@@ -79,9 +102,11 @@ const NouvelIndexSecretDeOuf = () => {
     curcuvillage: {
       title: "CurcuVillage",
       description: "Pour les petits creux",
+      isCadeau: true,
+      nbRepas: 14,
       price: {
-        vg: "54€",
-        flexi: "57€",
+        vg: "??€",
+        flexi: "??€",
       },
       image:
         "https://images.unsplash.com/photo-1581090002029-8b2b2b2b2b2b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0YWxvZyUyMHBhZ2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
@@ -89,6 +114,8 @@ const NouvelIndexSecretDeOuf = () => {
     curcumoisdor: {
       title: "CurcuMoisD'or",
       description: "Pour les petits creux",
+      isCadeau: true,
+      nbRepas: 2,
       price: {
         vg: "54€",
         flexi: "57€",
@@ -100,7 +127,7 @@ const NouvelIndexSecretDeOuf = () => {
 
   const selectedItem = itemMap[item] ?? itemMap.fringale;
 
-  const { title, description, price, image } = selectedItem;
+  const { title, description, price, image, nbRepas, isCadeau } = selectedItem;
 
   return (
     <BasePage noindex>
@@ -114,12 +141,12 @@ const NouvelIndexSecretDeOuf = () => {
           />
           <FormWrapper>
             <Heading>{title}</Heading>
-            <p>
+            <Price>
               {price.vg} VG - {price.flexi} Flexi
-            </p>
-            <p>Taxes incluses, livraison non incluse.</p>
+            </Price>
+            <SmallText center>Taxes incluses, livraison non incluse.</SmallText>
             <p>{description}</p>
-            <CommandForm defaultCadeau={false} nbRepas={2} />
+            <CommandForm defaultCadeau={isCadeau} nbRepas={nbRepas} />
           </FormWrapper>
         </ShopWrapper>
       </MotifWrapper>
@@ -128,4 +155,4 @@ const NouvelIndexSecretDeOuf = () => {
   );
 };
 
-export default NouvelIndexSecretDeOuf;
+export default curcumagasin;

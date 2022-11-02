@@ -38,3 +38,112 @@ collections:
           - {label: Supplément Flexi Carte cadeau 14 jours, name: cc14jFlexi, widget: number}
           - {label: Carte cadeau 30 jours, name: cc30j, widget: number}
           - {label: Supplément Flexi Carte cadeau 30 jours, name: cc30jFlexi, widget: number}
+  - label: "Formules"
+    name: "formules"
+    files:
+      - label: "Fringale"
+        name: "fringale"
+        file: "content/fringale.yml"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: Cadeau, name: isCadeau, widget: boolean}
+          - {label: "Nombre de repas", name: nbRepas, widget: number}
+          - {label: "Prix végé", name: priceVG, widget: number}
+          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Curcufamille"
+        name: "curcufamille"
+        file: "content/curcufamille.yml"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: Cadeau, name: isCadeau, widget: boolean}
+          - {label: "Nombre de repas", name: nbRepas, widget: number}
+          - {label: "Prix végé", name: priceVG, widget: number}
+          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true      
+      - label: "Curcutribu"
+        name: "curcutribu"
+        file: "content/curcutribu.yml"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: Cadeau, name: isCadeau, widget: boolean}
+          - {label: "Nombre de repas", name: nbRepas, widget: number}
+          - {label: "Prix végé", name: priceVG, widget: number}
+          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true     
+      - label: "Curcuvillage"
+        name: "curcuvillage"
+        file: "content/curcuvillage.yml"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: Cadeau, name: isCadeau, widget: boolean}
+          - {label: "Nombre de repas", name: nbRepas, widget: number}
+          - {label: "Prix végé", name: priceVG, widget: number}
+          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true     
+      - label: "Curcu mois d'or"
+        name: "curcumoisdor"
+        file: "content/curcumoisdor.yml"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: Cadeau, name: isCadeau, widget: boolean}
+          - {label: "Nombre de repas", name: nbRepas, widget: number}
+          - {label: "Prix végé", name: priceVG, widget: number}
+          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true     
+                

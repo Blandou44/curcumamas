@@ -44,7 +44,7 @@ module.exports = {
           `Permanent Marker`,
           `Montserrat\:100,400,700`,
           "Rubik Mono One",
-          "Rubik:500,700,800",
+          "Rubik:300,500,700,800",
         ],
         display: "swap",
       },

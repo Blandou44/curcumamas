@@ -33,6 +33,10 @@ const NavWrapper = styled.nav`
 
   max-width: ${maxWidth};
   margin: 0 auto;
+
+  @media (min-width: ${smallBreakpoint}) {
+    grid-template-columns: 1fr auto;
+  }
 `;
 
 const LogoWrapper = styled.div`
@@ -97,6 +101,10 @@ const BurgerButton = styled.button`
 
   > svg {
     height: 100%;
+  }
+
+  @media (min-width: ${smallBreakpoint}) {
+    display: none;
   }
 `;
 

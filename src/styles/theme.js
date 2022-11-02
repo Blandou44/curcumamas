@@ -147,3 +147,13 @@ export const Argument = styled.div`
     text-align: center;
   }
 `;
+
+export const SmallText = styled.span`
+  font-size: 0.9rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+
+  ${(props) => (props.center ? "text-align: center;" : "")};
+  ${(props) => (props.right ? "text-align: right;" : "")};
+`;
