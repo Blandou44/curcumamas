@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css"; // optional
 
 import grains1 from "../images/illustrations/grains1.png";
 import grains2 from "../images/illustrations/grains2.png";
@@ -72,7 +74,7 @@ const Separator = styled.span`
   `};
 `;
 
-export const CommandForm = ({ defaultCadeau, nbRepas }) => {
+export const CommandForm = ({ defaultCadeau, nbRepas, menuArray }) => {
   const [nbEntree1, setNbEntree1] = useState(0);
   const [nbEntree2, setNbEntree2] = useState(0);
   const [nbEntree3, setNbEntree3] = useState(0);
@@ -184,25 +186,33 @@ export const CommandForm = ({ defaultCadeau, nbRepas }) => {
         <SmallText right>
           ({remainingEntree} restante{remainingEntree > 1 ? "s" : ""})
         </SmallText>
-        <label>Soupe Thaï</label>
+        <Tippy content={menuArray[0].infoNut1}>
+          <label>{menuArray[0].nom1}</label>
+        </Tippy>
         <NumberInput
           value={nbEntree1}
           setValue={setNbEntree1}
           remaining={remainingEntree}
         />
-        <label>houmous de betterave</label>
+        <Tippy content={menuArray[0].infoNut2}>
+          <label>{menuArray[0].nom2}</label>
+        </Tippy>
         <NumberInput
           value={nbEntree2}
           setValue={setNbEntree2}
           remaining={remainingEntree}
         />
-        <label>bouillon de légumes et gingembre</label>
+        <Tippy content={menuArray[0].infoNut3}>
+          <label>{menuArray[0].nom3}</label>
+        </Tippy>
         <NumberInput
           value={nbEntree3}
           setValue={setNbEntree3}
           remaining={remainingEntree}
         />
-        <label>velouté carotte coco citronnelle</label>
+        <Tippy content={menuArray[0].infoNut4}>
+          <label>{menuArray[0].nom4}</label>
+        </Tippy>
         <NumberInput
           value={nbEntree4}
           setValue={setNbEntree4}
@@ -246,34 +256,33 @@ export const CommandForm = ({ defaultCadeau, nbRepas }) => {
         <SmallText right>
           ({remainingPlat} restant{remainingPlat > 1 ? "s" : ""})
         </SmallText>
-        <label>
-          Curry vert aux légumes de saison, pois chiches et riz basmati (non
-          pimenté)- (sg, sl)
-        </label>
+        <Tippy content={menuArray[1].infoNut1}>
+          <label>{menuArray[1].nom1}</label>
+        </Tippy>
         <NumberInput
           value={nbPlat1}
           setValue={setNbPlat1}
           remaining={remainingPlat}
         />
-        <label>
-          Parmentier et sa farce végétale aux lentilles, noisettes, capres et
-          champignons- (sg)
-        </label>
+        <Tippy content={menuArray[1].infoNut2}>
+          <label>{menuArray[1].nom2}</label>
+        </Tippy>
         <NumberInput
           value={nbPlat2}
           setValue={setNbPlat2}
           remaining={remainingPlat}
         />
-        <label>
-          Dahl de lentilles corail, épices et légumes de saison- riz
-          basmati-(sg, sl)
-        </label>
+        <Tippy content={menuArray[1].infoNut3}>
+          <label>{menuArray[1].nom3}</label>
+        </Tippy>
         <NumberInput
           value={nbPlat3}
           setValue={setNbPlat3}
           remaining={remainingPlat}
         />
-        <label>Tajine amandes, abricots et légume de saison-Quinoa</label>
+        <Tippy content={menuArray[1].infoNut4}>
+          <label>{menuArray[1].nom4}</label>
+        </Tippy>
         <NumberInput
           value={nbPlat4}
           setValue={setNbPlat4}
@@ -317,30 +326,33 @@ export const CommandForm = ({ defaultCadeau, nbRepas }) => {
         <SmallText right>
           ({remainingDessert} restant{remainingDessert > 1 ? "s" : ""})
         </SmallText>
-        <label>
-          Cookies roses, à la betterave, graine de chia purée de cajou et
-          chocolat noir
-        </label>
+        <Tippy content={menuArray[2].infoNut1}>
+          <label>{menuArray[2].nom1}</label>
+        </Tippy>
         <NumberInput
           value={nbDessert1}
           setValue={setNbDessert1}
           remaining={remainingDessert}
         />
-        <label>
-          croustillant amande coco, compotée de fruits sur un porridge de chia
-        </label>
+        <Tippy content={menuArray[2].infoNut2}>
+          <label>{menuArray[2].nom2}</label>
+        </Tippy>
         <NumberInput
           value={nbDessert2}
           setValue={setNbDessert2}
           remaining={remainingDessert}
         />
-        <label>Carotte cake</label>
+        <Tippy content={menuArray[2].infoNut3}>
+          <label>{menuArray[2].nom3}</label>
+        </Tippy>
         <NumberInput
           value={nbDessert3}
           setValue={setNbDessert3}
           remaining={remainingDessert}
         />
-        <label>Brownie chocolat noir et haricots rouges</label>
+        <Tippy content={menuArray[2].infoNut4}>
+          <label>{menuArray[2].nom4}</label>
+        </Tippy>
         <NumberInput
           value={nbDessert4}
           setValue={setNbDessert4}

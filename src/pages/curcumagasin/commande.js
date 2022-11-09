@@ -55,6 +55,8 @@ const Price = styled.h2`
 `;
 
 const curcumagasin = ({ data }) => {
+  const menuArray = data.allContentYaml.nodes.filter((item) => item.nom1);
+
   //filter data without a title
   const filteredData = data.allContentYaml.nodes.filter((item) => item.title);
 
@@ -98,7 +100,11 @@ const curcumagasin = ({ data }) => {
             </Price>
             <SmallText center>Taxes incluses, livraison non incluse.</SmallText>
             <p>{description}</p>
-            <CommandForm defaultCadeau={isCadeau} nbRepas={nbRepas} />
+            <CommandForm
+              defaultCadeau={isCadeau}
+              nbRepas={nbRepas}
+              menuArray={menuArray}
+            />
           </FormWrapper>
         </ShopWrapper>
       </MotifWrapper>
@@ -117,6 +123,22 @@ export const query = graphql`
         nbRepas
         image
         isCadeau
+        nom1
+        nom2
+        nom3
+        nom4
+        infoNut1
+        infoNut3
+        infoNut2
+        infoNut4
+        description1
+        description2
+        description3
+        description4
+        image1
+        image2
+        image3
+        image4
       }
     }
   }

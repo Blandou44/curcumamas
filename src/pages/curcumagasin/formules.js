@@ -69,7 +69,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
           <div>
             <Heading>La Curcumarmite</Heading>
             <FormulesWrapper>
-              <Formule to="/curcumagasin/commande?item=entree">
+              <Formule to="/curcumagasin/menu/entrees">
                 <StaticImage
                   src="../../images/carousel/21.jpg"
                   layout="constrained"
@@ -77,7 +77,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
                 />
                 <p>Les entrées</p>
               </Formule>
-              <Formule to="/curcumagasin/commande?item=plat">
+              <Formule to="/curcumagasin/menu/plats">
                 <StaticImage
                   src="../../images/carousel/23.jpg"
                   layout="constrained"
@@ -85,7 +85,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
                 />
                 <p>Les plats</p>
               </Formule>
-              <Formule to="/curcumagasin/commande?item=dessert">
+              <Formule to="/curcumagasin/menu/desserts">
                 <StaticImage
                   src="../../images/carousel/24.jpg"
                   layout="constrained"

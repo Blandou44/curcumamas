@@ -20,7 +20,7 @@ const curcumagasin = ({ data }) => {
     <BasePage noindex>
       <NewNavBar />
       <MotifWrapper>
-        <MenuDisplay data={filteredData[0]} />
+        <MenuDisplay data={filteredData[2]} />
       </MotifWrapper>
       <Footer />
     </BasePage>
@@ -28,7 +28,7 @@ const curcumagasin = ({ data }) => {
 };
 
 export const query = graphql`
-  query EntreesQuery {
+  query DessertsQuery {
     allContentYaml {
       nodes {
         nom1
