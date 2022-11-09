@@ -46,7 +46,7 @@ const LogoWrapper = styled.div`
 
   > .gatsby-image-wrapper {
     height: 4rem;
-    filter: brightness(100);
+    filter: brightness(0) invert(1);
     width: 113px;
   }
 `;
@@ -143,7 +143,10 @@ export const NewNavBar = () => {
             >
               Accueil
             </Link>
-            <Link to="/curcumagasin" selected={path === "/curcumagasin"}>
+            <Link
+              to="/curcumagasin/formules"
+              selected={path.includes("/curcumagasin")}
+            >
               Curcumagasin
             </Link>
             <Link to="/nos-services" selected={path === "/nos-services"}>

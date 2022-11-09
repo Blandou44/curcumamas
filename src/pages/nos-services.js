@@ -51,115 +51,71 @@ const Formule = styled(Link)`
   }
 `;
 
-const NouvelIndexSecretDeOuf = () => {
+const NouvelIndexSecretDeOuf = ({ data }) => {
+  //filter data without a title
+  const filteredData = data.allContentYaml.nodes.filter((item) => item.title);
+
+  //create an array of data where isCadeau is false
+  const formules = filteredData.filter((item) => !item.isCadeau);
+
+  //create an array of data where isCadeau is true
+  const cadeaux = filteredData.filter((item) => item.isCadeau);
+
   return (
     <BasePage noindex>
       <NewNavBar />
       <MotifWrapper>
         <IndexWrapper>
           <div>
-            <Heading>La Curcumarmite</Heading>
-            <FormulesWrapper>
-              <Formule to="/curcumagasin?item=entree">
-                <StaticImage
-                  src="../images/carousel/21.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>Les entrées</p>
-              </Formule>
-              <Formule to="/curcumagasin?item=plat">
-                <StaticImage
-                  src="../images/carousel/23.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>Les plats</p>
-              </Formule>
-              <Formule to="/curcumagasin?item=dessert">
-                <StaticImage
-                  src="../images/carousel/24.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>Les desserts et collations</p>
-              </Formule>
-            </FormulesWrapper>
+            <Heading>
+              La <em>Curcumarmite</em> Occitane
+            </Heading>
+            <p>
+              La livraison de repas élaborés pour la grossesse et le post partum
+              et pour toute la famille. Retrouvez ce service partout en
+              Occitanie à s’offrir ou à offrir aux parents de votre tribu. Les
+              familles accompagnées par Blandine dans le cadre du métier de
+              Doula, peuvent demander à être livrées lors des consultations et
+              temps passés ensemble.
+            </p>
           </div>
+
           <div>
-            <Heading>Les Curcuformules</Heading>
-            <FormulesWrapper>
-              <Formule to="/curcumagasin?item=fringale">
-                <StaticImage
-                  src="../images/carousel/21.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>
-                  La fringale
-                  <br />2 repas
-                  <br />
-                  54€
-                </p>
-              </Formule>
-              <Formule to="/curcumagasin?item=curcufamille">
-                <StaticImage
-                  src="../images/carousel/23.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>
-                  La Curcufamille
-                  <br />6 repas
-                  <br />
-                  150€
-                </p>
-              </Formule>
-            </FormulesWrapper>
+            <Heading>
+              Les Curcumaccompagnements pendant{" "}
+              <em>la grossesse et le post partum.</em>
+            </Heading>
+            <p>
+              Blandine, formée en tant que Doula, vous accompagne tout au long
+              de la période que vous souhaitez. Plusieurs types
+              d’accompagnements sont possibles (long, moyen, court) et se
+              discutent avec les familles pour faire du sur mesure. Ils abordent
+              la question du couple, de l’allaitement, de la préparation à la
+              naissance et du post partum, du projet de naissance et bien sûr de
+              la nutrition pendant toutes ces périodes. Ils peuvent avoir lieu à
+              la curcumaison à Toulouse ou chez vous. Dans le cadre de ces
+              suivis, Blandine propose également des massages et des
+              consultations en naturopathie de la femme enceinte et en post
+              partum, sujet sur lequel elle possède une vrai expertise. Blandine
+              est là pour vous rassurer, vous permettre de faire des choix
+              éclairés et surtout vous faire prendre confiance en vos ressources
+              pour créer, aggrandire vos familles.
+            </p>
           </div>
+
           <div>
-            <Heading>les Curcucartes cadeau</Heading>
-            <FormulesWrapper>
-              <Formule to="/curcumagasin?item=curcutribu">
-                <StaticImage
-                  src="../images/carousel/21.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>
-                  Curcutribu
-                  <br />
-                  10 repas
-                  <br />
-                  250€
-                </p>
-              </Formule>
-              <Formule to="/curcumagasin?item=curcuvillage">
-                <StaticImage
-                  src="../images/carousel/23.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>
-                  Curcuvillage
-                  <br />
-                  14 repas
-                </p>
-              </Formule>
-              <Formule to="/curcumagasin?item=curcumoisdor">
-                <StaticImage
-                  src="../images/carousel/24.jpg"
-                  layout="constrained"
-                  width={300}
-                />
-                <p>
-                  Curcumoisd'or
-                  <br />2 repas
-                  <br />
-                  54€
-                </p>
-              </Formule>
-            </FormulesWrapper>
+            <Heading>
+              Les <em>massages</em> pré et post natal
+            </Heading>
+            <p>
+              Blandine est formé en massage et soins pré et post natal: -Les
+              massage ayurvédiques pour la femme enceinte et en post partum, qui
+              sont des massages aux huiles (sans HE), et qui vont détendre en
+              profondeur les muscles et tensions fréquements rencontrées pendant
+              la grossesse et le PP. Ils aident à préparer le bassin à
+              l’enfantement, aident à la sécrétion d’ocytocine, et connecter
+              avec votre bébé. -Les soins de resserrage du bassin et aussi
+            </p>
           </div>
         </IndexWrapper>
       </MotifWrapper>
