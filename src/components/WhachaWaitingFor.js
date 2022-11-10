@@ -34,8 +34,8 @@ const WhachaWaitingForWrapper = styled.nav`
   background: white;
   display: flex;
   flex-direction: column;
-
   gap: 2rem;
+
   @media (min-width: ${smallBreakpoint}) {
     font-size: 2.5rem;
     display: grid;
@@ -79,7 +79,6 @@ const Argument = styled.div`
   > p {
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
-    text-align: center;
   }
 `;
 

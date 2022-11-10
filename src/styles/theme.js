@@ -7,6 +7,17 @@ export const secondaryColor = "#F78B1E";
 export const grey10 = "#f7f7f7";
 export const grey20 = "#dee2e6";
 
+// nouveau site
+
+export const colorBaie = "#4f3d63";
+export const colorHerbes = "#8f9940";
+export const colorPaprika = "#cc3300";
+export const colorCurcuma = "#f26300";
+export const colorMoutarde = "#f5a800";
+
+export const newMainColor = "#013cf2";
+export const newSecondaryColor = colorCurcuma;
+
 export const sidePadding = "6rem";
 export const sidePaddingSmall = "1rem";
 
@@ -27,6 +38,11 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
     overflow-x: hidden;
+  }
+
+
+  p {
+    color: ${newMainColor};
   }
 
   .headroom, .headroom--pinned, .headroom-wrapper {
@@ -51,17 +67,6 @@ export const Button = styled(AnchorLink)`
     background: ${mainColor};
   }
 `;
-
-// nouveau site
-
-export const colorBaie = "#4f3d63";
-export const colorHerbes = "#8f9940";
-export const colorPaprika = "#cc3300";
-export const colorCurcuma = "#f26300";
-export const colorMoutarde = "#f5a800";
-
-export const newMainColor = "#013cf2";
-export const newSecondaryColor = colorCurcuma;
 
 export const MotifWrapper = styled.div`
   background: url(${motif});

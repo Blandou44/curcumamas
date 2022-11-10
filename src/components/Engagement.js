@@ -37,6 +37,7 @@ const EngagementWrapper = styled.div`
   @media (min-width: ${smallBreakpoint}) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 4rem;
   }
 `;
 
@@ -60,7 +61,7 @@ const EngagementItem = styled.div`
   > p {
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
-    text-align: center;
+    text-align: justify;
   }
 `;
 
