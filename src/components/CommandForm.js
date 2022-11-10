@@ -186,32 +186,32 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuArray }) => {
         <SmallText right>
           ({remainingEntree} restante{remainingEntree > 1 ? "s" : ""})
         </SmallText>
-        <Tippy content={menuArray[0].infoNut1}>
-          <label>{menuArray[0].nom1}</label>
+        <Tippy content={menuArray[2].infoNut1}>
+          <label>{menuArray[2].nom1}</label>
         </Tippy>
         <NumberInput
           value={nbEntree1}
           setValue={setNbEntree1}
           remaining={remainingEntree}
         />
-        <Tippy content={menuArray[0].infoNut2}>
-          <label>{menuArray[0].nom2}</label>
+        <Tippy content={menuArray[2].infoNut2}>
+          <label>{menuArray[2].nom2}</label>
         </Tippy>
         <NumberInput
           value={nbEntree2}
           setValue={setNbEntree2}
           remaining={remainingEntree}
         />
-        <Tippy content={menuArray[0].infoNut3}>
-          <label>{menuArray[0].nom3}</label>
+        <Tippy content={menuArray[2].infoNut3}>
+          <label>{menuArray[2].nom3}</label>
         </Tippy>
         <NumberInput
           value={nbEntree3}
           setValue={setNbEntree3}
           remaining={remainingEntree}
         />
-        <Tippy content={menuArray[0].infoNut4}>
-          <label>{menuArray[0].nom4}</label>
+        <Tippy content={menuArray[2].infoNut4}>
+          <label>{menuArray[2].nom4}</label>
         </Tippy>
         <NumberInput
           value={nbEntree4}
@@ -326,32 +326,32 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuArray }) => {
         <SmallText right>
           ({remainingDessert} restant{remainingDessert > 1 ? "s" : ""})
         </SmallText>
-        <Tippy content={menuArray[2].infoNut1}>
-          <label>{menuArray[2].nom1}</label>
+        <Tippy content={menuArray[0].infoNut1}>
+          <label>{menuArray[0].nom1}</label>
         </Tippy>
         <NumberInput
           value={nbDessert1}
           setValue={setNbDessert1}
           remaining={remainingDessert}
         />
-        <Tippy content={menuArray[2].infoNut2}>
-          <label>{menuArray[2].nom2}</label>
+        <Tippy content={menuArray[0].infoNut2}>
+          <label>{menuArray[0].nom2}</label>
         </Tippy>
         <NumberInput
           value={nbDessert2}
           setValue={setNbDessert2}
           remaining={remainingDessert}
         />
-        <Tippy content={menuArray[2].infoNut3}>
-          <label>{menuArray[2].nom3}</label>
+        <Tippy content={menuArray[0].infoNut3}>
+          <label>{menuArray[0].nom3}</label>
         </Tippy>
         <NumberInput
           value={nbDessert3}
           setValue={setNbDessert3}
           remaining={remainingDessert}
         />
-        <Tippy content={menuArray[2].infoNut4}>
-          <label>{menuArray[2].nom4}</label>
+        <Tippy content={menuArray[0].infoNut4}>
+          <label>{menuArray[0].nom4}</label>
         </Tippy>
         <NumberInput
           value={nbDessert4}

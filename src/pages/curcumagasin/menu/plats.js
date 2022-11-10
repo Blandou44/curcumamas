@@ -13,14 +13,16 @@ const MotifWrapper = styled.div`
 `;
 
 const curcumagasin = ({ data }) => {
-  // filter data without a nom1
-  const filteredData = data.allContentYaml.nodes.filter((item) => item.nom1);
+  // find node where menuType is "plats"
+  const filteredData = data.allContentYaml.nodes.find(
+    (item) => item.menuType === "plats"
+  );
 
   return (
     <BasePage noindex>
       <NewNavBar />
       <MotifWrapper>
-        <MenuDisplay data={filteredData[1]} />
+        <MenuDisplay data={filteredData} heading="Plats" />
       </MotifWrapper>
       <Footer />
     </BasePage>

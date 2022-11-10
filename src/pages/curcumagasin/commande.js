@@ -57,6 +57,15 @@ const Price = styled.h2`
 const curcumagasin = ({ data }) => {
   const menuArray = data.allContentYaml.nodes.filter((item) => item.nom1);
 
+  // turn the array into an object using menuType as key
+
+  const menuObject = menuArray.reduce((acc, item) => {
+    acc[item.menuType] = item;
+    return acc;
+  }, {});
+
+  console.log(menuObject);
+
   //filter data without a title
   const filteredData = data.allContentYaml.nodes.filter((item) => item.title);
 
@@ -72,17 +81,10 @@ const curcumagasin = ({ data }) => {
   );
   const item = urlParams.get("item") ?? filteredData[0].title;
 
-  console.log(item);
-  console.log(filteredData);
-
   // get the item with the matching title
   const formule = formulesObject[encodeURIComponent(item.toLowerCase())];
 
-  console.log(formule);
-
   const selectedItem = formulesObject[encodeURIComponent(item.toLowerCase())];
-
-  console.log(selectedItem);
 
   const { title, description, priceVG, priceFlexi, image, nbRepas, isCadeau } =
     selectedItem;
@@ -96,7 +98,7 @@ const curcumagasin = ({ data }) => {
           <FormWrapper>
             <Heading>{title}</Heading>
             <Price>
-              {priceVG} VG - {priceFlexi} Flexi
+              {priceVG}€ VG - {priceFlexi}€ Flexi
             </Price>
             <SmallText center>Taxes incluses, livraison non incluse.</SmallText>
             <p>{description}</p>

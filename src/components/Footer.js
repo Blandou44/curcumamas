@@ -11,7 +11,6 @@ import {
 const FooterContainer = styled.footer`
   background: ${mainColor};
   ${applySidePadding("3rem")};
-  margin-bottom: 1rem;
   display: grid;
   row-gap: 2rem;
   justify-items: center;
