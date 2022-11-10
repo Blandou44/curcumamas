@@ -7,13 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import {
   applySidePadding,
-  mainColor,
   maxWidth,
   newMainColor,
-  newSecondaryColor,
-  secondaryColor,
-  sidePadding,
-  sidePaddingSmall,
   smallBreakpoint,
 } from "../styles/theme";
 

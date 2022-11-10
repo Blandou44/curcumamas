@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { NewNavBar } from "../../../components/NewNavBar";
 import { MenuDisplay } from "../../../components/MenuDisplay";
 import { BasePage } from "../../../components/BasePage";

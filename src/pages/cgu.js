@@ -29,9 +29,9 @@ const CGU = () => {
         </p>
         <Article>Article 1 : Les mentions légales</Article>
         <p>
-          Copyright Chaumylène farmer Ayoooo L’édition et la direction de la
-          publication du site https://curcumamas.com/ est assurée par Julien
-          Demaria. Adresse e-mail julien-demaria@live.fr. L'hébergeur du site
+          Copyright Curcumamas L’édition et la direction de la publication du
+          site https://curcumamas.com/ est assurée par Clément Chaumel. Adresse
+          e-mail clemement.chaumel+curcumamas@gmail.com. L'hébergeur du site
           https://curcumamas.com/ est la société PlaneHoster avec le numéro de
           téléphone : 0 805 080 426.
         </p>

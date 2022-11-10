@@ -1,24 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { NewNavBar } from "../../components/NewNavBar";
-import { NewHero } from "../../components/NewHero";
-import { WhachaWaitingFor } from "../../components/WhachaWaitingFor";
-import { Curcumarmite } from "../../components/Curcumarmite";
-import { HowDoesItWork } from "../../components/HowDoesItWork";
-import { Portrait } from "../../components/Portrait";
-import { Engagement } from "../../components/Engagement";
 import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
 
-import {
-  colorBaie,
-  Heading,
-  maxWidth,
-  newMainColor,
-  SmallText,
-} from "../../styles/theme";
+import { Heading, maxWidth, newMainColor, SmallText } from "../../styles/theme";
 
 import motif from "../../images/motif.png";
 import { CommandForm } from "../../components/CommandForm";
@@ -97,7 +84,7 @@ const curcumagasin = ({ data }) => {
       <NewNavBar />
       <MotifWrapper>
         <ShopWrapper>
-          <img src={image} />
+          <img src={image} alt="" />
           <FormWrapper>
             <Heading>{title}</Heading>
             <Price>

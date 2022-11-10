@@ -8,14 +8,7 @@ import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import grains1 from "../images/illustrations/grains1.png";
 import grains2 from "../images/illustrations/grains2.png";
 
-import {
-  maxWidth,
-  sidePadding,
-  NewButton,
-  Heading,
-  SmallText,
-  newMainColor,
-} from "../styles/theme";
+import { NewButton, SmallText, newMainColor } from "../styles/theme";
 import { NumberInput } from "./NumberInput";
 
 const Form = styled.form`
@@ -119,7 +112,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
     setRemainingEntree(
       nbRepas - (nbEntree1 + nbEntree2 + nbEntree3 + nbEntree4)
     );
-  }, [nbEntree1, nbEntree2, nbEntree3, nbEntree4]);
+  }, [nbRepas, nbEntree1, nbEntree2, nbEntree3, nbEntree4]);
 
   const [nbPlat1, setNbPlat1] = useState(0);
   const [nbPlat2, setNbPlat2] = useState(0);
@@ -129,7 +122,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
 
   useEffect(() => {
     setRemainingPlat(nbRepas - (nbPlat1 + nbPlat2 + nbPlat3 + nbPlat4));
-  }, [nbPlat1, nbPlat2, nbPlat3, nbPlat4]);
+  }, [nbRepas, nbPlat1, nbPlat2, nbPlat3, nbPlat4]);
 
   const [nbDessert1, setNbDessert1] = useState(0);
   const [nbDessert2, setNbDessert2] = useState(0);
@@ -141,7 +134,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
     setRemainingDessert(
       nbRepas - (nbDessert1 + nbDessert2 + nbDessert3 + nbDessert4)
     );
-  }, [nbDessert1, nbDessert2, nbDessert3, nbDessert4]);
+  }, [nbRepas, nbDessert1, nbDessert2, nbDessert3, nbDessert4]);
 
   return (
     <Form

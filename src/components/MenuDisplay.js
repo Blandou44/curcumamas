@@ -2,11 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import {
-  mainColor,
-  maxWidth,
-  newMainColor,
   applySidePadding,
-  NewButton,
   smallBreakpoint,
   Heading,
   MotifWrapper,
@@ -77,7 +73,7 @@ export const MenuDisplay = ({ data, heading }) => {
         <MenuContainer>
           {[1, 2, 3, 4].map((item, index) => (
             <MenuWrapper>
-              <img src={data[`image${item}`]}></img>
+              <img src={data[`image${item}`]} alt=""></img>
               <ChoixHeader>{data[`nom${item}`]}</ChoixHeader>
               <SmallText>{data[`infoNut${item}`]}</SmallText>
               <p>{data[`description${item}`]}</p>

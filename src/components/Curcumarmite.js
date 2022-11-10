@@ -1,16 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
 import { StaticImage } from "gatsby-plugin-image";
 
 import background from "../images/illustrations/grains1.png";
 import {
-  mainColor,
   maxWidth,
-  secondaryColor,
-  sidePadding,
   NewButton,
   Heading,
   applySidePadding,

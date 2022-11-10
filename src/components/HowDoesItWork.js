@@ -1,8 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
 import allongee from "../images/illustrations/allongee_bleu.png";
 import menu from "../images/illustrations/menu_bleu.png";
 import legumes from "../images/illustrations/legumes_bleu.png";
@@ -10,12 +7,9 @@ import sac from "../images/illustrations/sac_bleu.png";
 import cadeau from "../images/illustrations/cadeau_bleu.png";
 
 import {
-  mainColor,
   maxWidth,
   newMainColor,
   applySidePadding,
-  NewButton,
-  Argument,
   Heading,
   MotifWrapper,
   smallBreakpoint,
@@ -93,7 +87,7 @@ export const HowDoesItWork = () => {
             Comment ça <em>curcumarche</em> ?
           </Heading>
           <Point>
-            <img src={allongee}></img>
+            <img alt="" src={allongee}></img>
             <p>
               Vous commandez de chez vous. <br />
               Fin de prise des commandes : vendredi 14h de la semaine précédant
@@ -101,7 +95,7 @@ export const HowDoesItWork = () => {
             </p>
           </Point>
           <Point>
-            <img src={menu}></img>
+            <img alt="" src={menu}></img>
             <p>
               Vous composez votre panier comme vous le souhaitez parmi les choix
               à la carte et vous remplissez le formulaire en indiquant vos
@@ -111,7 +105,7 @@ export const HowDoesItWork = () => {
             </p>
           </Point>
           <Point>
-            <img src={legumes}></img>
+            <img alt="" src={legumes}></img>
             <p>
               Les formules et cartes cadeaux comprennent 1 repas par jour pour
               une personne que vous êtes libres de partager (ou non).
@@ -120,14 +114,14 @@ export const HowDoesItWork = () => {
             </p>
           </Point>
           <Point>
-            <img src={sac}></img>
+            <img alt="" src={sac}></img>
             <p>
               Vous commandez et êtes livré&middot;e&middot;s la semaine suivante
               le mercredi avant 13h, chez vous, partout en Occitanie.
             </p>
           </Point>
           <Point>
-            <img src={cadeau}></img>
+            <img alt="" src={cadeau}></img>
             <p>
               Toutes les formules s’offrent en carte cadeau, pour vous même ou
               pour quelqu’un de votre tribu.
