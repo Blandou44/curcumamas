@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css"; // optional
+import "tippy.js/dist/tippy.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 import grains1 from "../images/illustrations/grains1.png";
 import grains2 from "../images/illustrations/grains2.png";
@@ -31,6 +33,11 @@ const ChoixContainer = styled.div`
   grid-template-columns: 3fr 1fr;
   grid-gap: 1rem;
   align-items: center;
+
+  svg {
+    margin-left: 0.5rem;
+    cursor: help;
+  }
 `;
 
 const ChoixHeader = styled.p`
@@ -74,7 +81,7 @@ const Separator = styled.span`
   `};
 `;
 
-export const CommandForm = ({ defaultCadeau, nbRepas, menuArray }) => {
+export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
   const [nbEntree1, setNbEntree1] = useState(0);
   const [nbEntree2, setNbEntree2] = useState(0);
   const [nbEntree3, setNbEntree3] = useState(0);
@@ -186,33 +193,47 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuArray }) => {
         <SmallText right>
           ({remainingEntree} restante{remainingEntree > 1 ? "s" : ""})
         </SmallText>
-        <Tippy content={menuArray[2].infoNut1}>
-          <label>{menuArray[2].nom1}</label>
-        </Tippy>
+
+        <label>
+          {menuObject.entrees.nom1}
+          <Tippy content={menuObject.entrees.infoNut1}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
+
         <NumberInput
           value={nbEntree1}
           setValue={setNbEntree1}
           remaining={remainingEntree}
         />
-        <Tippy content={menuArray[2].infoNut2}>
-          <label>{menuArray[2].nom2}</label>
-        </Tippy>
+        <label>
+          {menuObject.entrees.nom2}
+          <Tippy content={menuObject.entrees.infoNut2}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbEntree2}
           setValue={setNbEntree2}
           remaining={remainingEntree}
         />
-        <Tippy content={menuArray[2].infoNut3}>
-          <label>{menuArray[2].nom3}</label>
-        </Tippy>
+        <label>
+          {menuObject.entrees.nom3}
+          <Tippy content={menuObject.entrees.infoNut3}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbEntree3}
           setValue={setNbEntree3}
           remaining={remainingEntree}
         />
-        <Tippy content={menuArray[2].infoNut4}>
-          <label>{menuArray[2].nom4}</label>
-        </Tippy>
+        <label>
+          {menuObject.entrees.nom4}
+          <Tippy content={menuObject.entrees.infoNut4}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbEntree4}
           setValue={setNbEntree4}
@@ -256,33 +277,45 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuArray }) => {
         <SmallText right>
           ({remainingPlat} restant{remainingPlat > 1 ? "s" : ""})
         </SmallText>
-        <Tippy content={menuArray[1].infoNut1}>
-          <label>{menuArray[1].nom1}</label>
-        </Tippy>
+        <label>
+          {menuObject.plats.nom1}
+          <Tippy content={menuObject.plats.infoNut1}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbPlat1}
           setValue={setNbPlat1}
           remaining={remainingPlat}
         />
-        <Tippy content={menuArray[1].infoNut2}>
-          <label>{menuArray[1].nom2}</label>
-        </Tippy>
+        <label>
+          {menuObject.plats.nom2}
+          <Tippy content={menuObject.plats.infoNut2}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbPlat2}
           setValue={setNbPlat2}
           remaining={remainingPlat}
         />
-        <Tippy content={menuArray[1].infoNut3}>
-          <label>{menuArray[1].nom3}</label>
-        </Tippy>
+        <label>
+          {menuObject.plats.nom3}
+          <Tippy content={menuObject.plats.infoNut3}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbPlat3}
           setValue={setNbPlat3}
           remaining={remainingPlat}
         />
-        <Tippy content={menuArray[1].infoNut4}>
-          <label>{menuArray[1].nom4}</label>
-        </Tippy>
+        <label>
+          {menuObject.plats.nom4}
+          <Tippy content={menuObject.plats.infoNut4}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbPlat4}
           setValue={setNbPlat4}
@@ -326,33 +359,45 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuArray }) => {
         <SmallText right>
           ({remainingDessert} restant{remainingDessert > 1 ? "s" : ""})
         </SmallText>
-        <Tippy content={menuArray[0].infoNut1}>
-          <label>{menuArray[0].nom1}</label>
-        </Tippy>
+        <label>
+          {menuObject.desserts.nom1}
+          <Tippy content={menuObject.desserts.infoNut1}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbDessert1}
           setValue={setNbDessert1}
           remaining={remainingDessert}
         />
-        <Tippy content={menuArray[0].infoNut2}>
-          <label>{menuArray[0].nom2}</label>
-        </Tippy>
+        <label>
+          {menuObject.desserts.nom2}
+          <Tippy content={menuObject.desserts.infoNut2}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbDessert2}
           setValue={setNbDessert2}
           remaining={remainingDessert}
         />
-        <Tippy content={menuArray[0].infoNut3}>
-          <label>{menuArray[0].nom3}</label>
-        </Tippy>
+        <label>
+          {menuObject.desserts.nom3}
+          <Tippy content={menuObject.desserts.infoNut3}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbDessert3}
           setValue={setNbDessert3}
           remaining={remainingDessert}
         />
-        <Tippy content={menuArray[0].infoNut4}>
-          <label>{menuArray[0].nom4}</label>
-        </Tippy>
+        <label>
+          {menuObject.desserts.nom4}
+          <Tippy content={menuObject.desserts.infoNut4}>
+            <FontAwesomeIcon icon={faInfoCircle} />
+          </Tippy>
+        </label>
         <NumberInput
           value={nbDessert4}
           setValue={setNbDessert4}

@@ -13,16 +13,11 @@ const MotifWrapper = styled.div`
 `;
 
 const curcumagasin = ({ data }) => {
-  // find node where menuType is "plats"
-  const filteredData = data.allContentYaml.nodes.find(
-    (item) => item.menuType === "plats"
-  );
-
   return (
     <BasePage noindex>
       <NewNavBar />
       <MotifWrapper>
-        <MenuDisplay data={filteredData} heading="Plats" />
+        <MenuDisplay data={data.allContentYaml.edges[0].node} heading="Plats" />
       </MotifWrapper>
       <Footer />
     </BasePage>
@@ -31,24 +26,26 @@ const curcumagasin = ({ data }) => {
 
 export const query = graphql`
   query PlatsQuery {
-    allContentYaml {
-      nodes {
-        nom1
-        nom2
-        nom3
-        nom4
-        infoNut1
-        infoNut3
-        infoNut2
-        infoNut4
-        description1
-        description2
-        description3
-        description4
-        image1
-        image2
-        image3
-        image4
+    allContentYaml(filter: { menuType: { eq: "plats" } }) {
+      edges {
+        node {
+          description1
+          description2
+          description3
+          description4
+          image1
+          image2
+          image3
+          image4
+          infoNut1
+          infoNut2
+          infoNut3
+          infoNut4
+          nom1
+          nom3
+          nom2
+          nom4
+        }
       }
     }
   }

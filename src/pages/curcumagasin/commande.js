@@ -55,7 +55,7 @@ const Price = styled.h2`
 `;
 
 const curcumagasin = ({ data }) => {
-  const menuArray = data.allContentYaml.nodes.filter((item) => item.nom1);
+  const menuArray = data.allContentYaml.nodes.filter((item) => item.menuType);
 
   // turn the array into an object using menuType as key
 
@@ -105,7 +105,7 @@ const curcumagasin = ({ data }) => {
             <CommandForm
               defaultCadeau={isCadeau}
               nbRepas={nbRepas}
-              menuArray={menuArray}
+              menuObject={menuObject}
             />
           </FormWrapper>
         </ShopWrapper>
@@ -125,6 +125,7 @@ export const query = graphql`
         nbRepas
         image
         isCadeau
+        menuType
         nom1
         nom2
         nom3
