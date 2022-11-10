@@ -35,6 +35,12 @@ const ShopWrapper = styled.div`
   max-width: ${maxWidth};
   margin: 0 auto;
   padding: 4rem 0;
+
+  > img {
+    width: 700px;
+    position: sticky;
+    top: 0;
+  }
 `;
 
 const FormWrapper = styled.div`
@@ -81,9 +87,6 @@ const curcumagasin = ({ data }) => {
   );
   const item = urlParams.get("item") ?? filteredData[0].title;
 
-  // get the item with the matching title
-  const formule = formulesObject[encodeURIComponent(item.toLowerCase())];
-
   const selectedItem = formulesObject[encodeURIComponent(item.toLowerCase())];
 
   const { title, description, priceVG, priceFlexi, image, nbRepas, isCadeau } =
@@ -94,7 +97,7 @@ const curcumagasin = ({ data }) => {
       <NewNavBar />
       <MotifWrapper>
         <ShopWrapper>
-          <img src={image} layout="constrained" width={700} />
+          <img src={image} />
           <FormWrapper>
             <Heading>{title}</Heading>
             <Price>

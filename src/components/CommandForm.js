@@ -81,7 +81,34 @@ const Separator = styled.span`
   `};
 `;
 
+const QuestionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    font-family: "Rubik Mono One", sans-serif;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+
+  > div {
+    margin-bottom: 0.5rem;
+  }
+
+  ${(props) =>
+    props.isHidden &&
+    `
+      opacity: 0;
+      height: 0;
+      position: absolute;
+      overflow: hidden;
+  `};
+`;
+
 export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
+  const [isCadeau, setIsCadeau] = useState(defaultCadeau);
+
   const [nbEntree1, setNbEntree1] = useState(0);
   const [nbEntree2, setNbEntree2] = useState(0);
   const [nbEntree3, setNbEntree3] = useState(0);
@@ -124,38 +151,73 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       action="/succes/commande/"
     >
       <input type="hidden" name="commandev2-form" value="commandev2" />
-      <p>Est ce une curcucommande pour vous ?</p>
-      <input type="radio" name="cadeau" value="oui" />
-      <label for="oui">Oui</label>
-      <input type="radio" name="cadeau" value="non" />
-      <label for="non">Non</label>
+      <QuestionWrapper>
+        <p>Est ce une curcucommande pour vous ?</p>
+        <div>
+          <input
+            type="radio"
+            name="cadeau"
+            value="oui"
+            id="oui"
+            checked={!isCadeau}
+            onChange={() => setIsCadeau(false)}
+          />
+          <label for="oui">Oui</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="cadeau"
+            value="non"
+            id="non"
+            checked={isCadeau}
+            onChange={() => setIsCadeau(true)}
+          />
+          <label for="non">Non</label>
+        </div>
+      </QuestionWrapper>
 
-      <p>Qui s'occupe de la commande ?</p>
-      <input type="radio" name="qui" value="moi" />
-      <label for="moi">
-        Vous leur composez leur carte (dans cette option nous vous laissons le
-        soin de les informer du cadeau ou de leur faire une surprise)
-      </label>
-      <input type="radio" name="qui" value="elleux" />
-      <label for="elleux">Iels choisissent</label>
+      <QuestionWrapper isHidden={!isCadeau}>
+        <p>Qui s'occupe de la commande ?</p>
+        <div>
+          <input type="radio" name="qui" value="moi" id="moi" />
+          <label for="moi">
+            Vous leur composez leur carte{" "}
+            <SmallText>
+              (dans cette option nous vous laissons le soin de les informer du
+              cadeau ou de leur faire une surprise)
+            </SmallText>
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="qui" value="elleux" id="elleux" />
+          <label for="elleux">Iels choisissent</label>
+        </div>
 
-      <p>Vos coordonées</p>
-      <DetailsContainer>
-        <label for="nom-offrant">Nom</label>
-        <Input type="text" name="nom-offrant" />
-        <label for="prenom-offrant">Prénom</label>
-        <Input type="text" name="prenom-offrant" />
-        <label for="email-offrant">Email</label>
-        <Input type="email" name="email-offrant" />
-        <label for="telephone-offrant">Téléphone</label>
-        <Input type="text" name="telephone-offrant" />
-      </DetailsContainer>
+        <p>Vos coordonées</p>
+        <DetailsContainer>
+          <label for="nom-offrant">Nom</label>
+          <Input type="text" name="nom-offrant" />
+          <label for="prenom-offrant">Prénom</label>
+          <Input type="text" name="prenom-offrant" />
+          <label for="email-offrant">Email</label>
+          <Input type="email" name="email-offrant" />
+          <label for="telephone-offrant">Téléphone</label>
+          <Input type="text" name="telephone-offrant" />
+        </DetailsContainer>
+      </QuestionWrapper>
 
-      <p>Option choisie</p>
-      <input type="radio" name="variante" value="vg" />
-      <label for="vg">VG</label>
-      <input type="radio" name="variante" value="flexi" />
-      <label for="flexi">Flexi</label>
+      <QuestionWrapper>
+        <p>Option choisie</p>
+        <div>
+          <input type="radio" name="variante" value="vg" id="vg" />
+          <label for="vg">VG</label>
+        </div>
+        <div>
+          <input type="radio" name="variante" value="flexi" id="flexi" />
+          <label for="flexi">Flexi</label>
+        </div>
+      </QuestionWrapper>
 
       <Separator />
 
@@ -405,42 +467,60 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         />
       </ChoixContainer>
 
-      <p>à quelle date souhaitez-vous être livré&middot;e&middot;s ?</p>
-      <input type="radio" name="date" value="1" />
-      <label for="1">3 novembre</label>
-      <input type="radio" name="date" value="2" />
-      <label for="2">10 novembre</label>
-      <input type="radio" name="date" value="3" />
-      <label for="3">17 novembre</label>
+      <QuestionWrapper>
+        <p>à quelle date souhaitez-vous être livré&middot;e&middot;s ?</p>
+        <div>
+          <input type="radio" name="date" value="1" id="1" />
+          <label for="1">3 novembre</label>
+        </div>
+        <div>
+          <input type="radio" name="date" value="2" id="2" />
+          <label for="2">10 novembre</label>
+        </div>
+        <div>
+          <input type="radio" name="date" value="3" id="3" />
+          <label for="3">17 novembre</label>
+        </div>
+      </QuestionWrapper>
 
-      <p>Livraison chez vous ou pick up à la curcumaison ?</p>
-      <input type="radio" name="livraison" value="oui" />
-      <label for="oui">Chez moi (+5.99€)</label>
-      <input type="radio" name="livraison" value="non" />
-      <label for="non">Curcumaison</label>
-      <p>Vos coordonées</p>
-      <DetailsContainer>
-        <label for="nom">Nom</label>
-        <Input type="text" name="nom" />
-        <label for="prenom">Prénom</label>
-        <Input type="text" name="prenom" />
-        <label for="email">Email</label>
-        <Input type="email" name="email" />
-        <label for="adresse">Adresse</label>
-        <Input type="text" name="adresse" />
-        <label for="codepostal">Code postal</label>
-        <Input type="text" name="codepostal" />
-        <label for="ville">Ville</label>
-        <Input type="text" name="ville" />
-        <label for="telephone">Téléphone</label>
-        <Input type="text" name="telephone" />
-        <label for="message">Message</label>
-        <Input as="textarea" name="message" />
-      </DetailsContainer>
+      <QuestionWrapper>
+        <p>Livraison chez vous ou pick up à la curcumaison ?</p>
+        <div>
+          <input type="radio" name="livraison" value="oui" id="livraisonoui" />
+          <label for="livraisonoui">Chez moi (+5.99€)</label>
+        </div>
+        <div>
+          <input type="radio" name="livraison" value="non" id="livraisonnon" />
+          <label for="livraisonnon">Curcumaison</label>
+        </div>
+      </QuestionWrapper>
+      <QuestionWrapper>
+        <ChoixHeader>
+          {isCadeau ? "Leurs coordonnées" : "Vos coordonnées"}
+        </ChoixHeader>
+        <DetailsContainer>
+          <label for="nom">Nom</label>
+          <Input type="text" name="nom" />
+          <label for="prenom">Prénom</label>
+          <Input type="text" name="prenom" />
+          <label for="email">Email</label>
+          <Input type="email" name="email" />
+          <label for="adresse">Adresse</label>
+          <Input type="text" name="adresse" />
+          <label for="codepostal">Code postal</label>
+          <Input type="text" name="codepostal" />
+          <label for="ville">Ville</label>
+          <Input type="text" name="ville" />
+          <label for="telephone">Téléphone</label>
+          <Input type="text" name="telephone" />
+          <label for="message">Message</label>
+          <Input as="textarea" name="message" />
+        </DetailsContainer>
+      </QuestionWrapper>
 
-      <button as="button" type="submit" disabled={false}>
+      <NewButton as="button" type="submit" disabled={false}>
         Contacte nous
-      </button>
+      </NewButton>
     </Form>
   );
 };
