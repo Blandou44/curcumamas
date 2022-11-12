@@ -96,7 +96,7 @@ export const Curcumarmite = () => {
             />
           </div>
         </ReactCarousel>
-        <NewButton to="curcumagasin" secondary>
+        <NewButton to="/curcumagasin/formules" secondary>
           Commandez
         </NewButton>
       </CarouselContainer>

@@ -57,7 +57,7 @@ export const NewHero = () => {
           <br />
           Un post partum gourmand et accompagné commence avec Curcumamas &raquo;
         </Quote>
-        <CTA to="/nos-services" secondary>
+        <CTA to="/curcumagasin/formules" secondary>
           Commandez
         </CTA>
       </HeroWrapper>

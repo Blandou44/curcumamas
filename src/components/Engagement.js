@@ -112,7 +112,7 @@ export const Engagement = () => {
               et des bébés qui digèrent mieux.
             </p>
           </EngagementItem>
-          <CTA to="/nos-services">Commandez</CTA>
+          <CTA to="/curcumagasin/formules">Commandez</CTA>
         </EngagementWrapper>
       </EngagementContainer>
     </MotifWrapper>

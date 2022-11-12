@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
-import Headroom from "react-headroom";
-import mains from "../images/illustrations/mains.png";
 import motif from "../images/motif.png";
+import mimou from "../images/nos-services/mimourecadre.png";
+import cake from "../images/carousel/24.jpg";
+import manger from "../images/nos-services/mangerreacdre.png";
+import scrounch from "../images/nos-services/scrounch.jpeg";
 
 import {
   mainColor,
@@ -15,6 +16,7 @@ import {
   Heading,
   applySidePadding,
   smallBreakpoint,
+  newSecondaryColor,
 } from "../styles/theme";
 
 const MotifWrapper = styled.div`
@@ -39,11 +41,17 @@ const WhachaWaitingForWrapper = styled.nav`
   @media (min-width: ${smallBreakpoint}) {
     font-size: 2.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    > h1 {
-      grid-column: span 3;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+`;
+
+const SmallHeading = styled.h2`
+  font-family: "Rubik", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 800;
+  grid-column: span 4;
+  color: ${newMainColor};
 `;
 
 const Argument = styled.div`
@@ -52,33 +60,27 @@ const Argument = styled.div`
   align-items: center;
   gap: 1rem;
 
-  > div {
-    width: 100px;
-    height: 100px;
-    padding: 0.5rem;
-    position: relative;
-
-    > span {
-      font-family: "Rubik Mono One", sans-serif;
-      font-family: "Rubik", sans-serif;
-      font-weight: 800;
-      color: ${newMainColor};
-      font-size: 2rem;
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      text-align: center;
-    }
-
-    > img {
-      width: 100%;
-      position: absolute;
-    }
+  > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 52% 48% 61% 39% / 71% 52% 48% 29%;
   }
 
   > p {
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
+    text-align: center;
+
+    em,
+    strong {
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    strong {
+      color: ${newSecondaryColor};
+    }
   }
 `;
 
@@ -87,35 +89,40 @@ export const WhachaWaitingFor = () => {
     <MotifWrapper>
       <WhachaWaitingForContainer>
         <WhachaWaitingForWrapper>
-          <Heading>
-            Qu'attendez-vous pour prendre soin <em>de vous et votre tribu</em> ?
-          </Heading>
+          <SmallHeading>
+            Les parents, les familles, les tribus sont tout autour de nous{" "}
+            <br />
+            et vous en faites partie. <br />
+            Pendant le post-partum, période après l'enfantement, ils ont besoin
+            :
+          </SmallHeading>
           <Argument>
-            <div>
-              <img src={mains}></img>
-              <span>1800h</span>
-            </div>
+            <img src={mimou}></img>
             <p>
-              C’est le temps qu’un parent passe à allaiter ou biberonner la 1ère
-              année. Un travail à temps plein est de 1820h
+              Du <strong>temps</strong> pour <em>soi</em> et pour être avec son{" "}
+              <em>bébé</em> sans faire les tâches du quotidien
             </p>
           </Argument>
           <Argument>
-            <div>
-              <img src={mains}></img>
-              <span>+25%</span>
-            </div>
+            <img src={cake}></img>
             <p>
-              C’est le besoin supplémentaire journalier d’une femme en post
-              partum.
+              De sérénité, de <strong>réconfort</strong> et de{" "}
+              <em>gourmandise</em> saine
             </p>
           </Argument>
           <Argument>
-            <div>
-              <img src={mains}></img>
-              <span>20%</span>
-            </div>
-            <p>Des mères déclarent avoir fait une dépression post partum</p>
+            <img src={manger}></img>
+            <p>
+              D'<strong>apports nutritionnels</strong> indispensables pour{" "}
+              <em>récupérer</em>
+            </p>
+          </Argument>
+          <Argument>
+            <img src={scrounch}></img>
+            <p>
+              Du <strong>soutien</strong> de la tribu et des{" "}
+              <strong>cadeaux de naissance</strong> qui font du bien
+            </p>
           </Argument>
         </WhachaWaitingForWrapper>
       </WhachaWaitingForContainer>
