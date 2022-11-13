@@ -1,54 +1,36 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
+import { BasePage } from "../components/BasePage";
+import { Heading, MotifWrapper } from "../styles/theme";
+import styled from "styled-components";
+import { NewNavBar } from "../components/NewNavBar";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+const NotFoundWrapper = styled.div`
+  background: white;
+  border-radius: 1rem;
+  padding: 4rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 0px 15px 4px #00000033;
+`;
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <BasePage noindex>
+      <NewNavBar />
+      <MotifWrapper
+        style={{ height: "100vh", display: "flex", alignItems: "center" }}
+      >
+        <NotFoundWrapper>
+          <Heading>Curcuperdu.e ?</Heading>
+          <p>Cette page n'existe pas !</p>
+          <Link to="/">Retour à l'accueil</Link>
+        </NotFoundWrapper>
+      </MotifWrapper>
+    </BasePage>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

@@ -14,7 +14,7 @@ const MotifWrapper = styled.div`
 
 const curcumagasin = ({ data }) => {
   return (
-    <BasePage noindex>
+    <BasePage>
       <NewNavBar />
       <MotifWrapper>
         <MenuDisplay data={data.allContentYaml.edges[0].node} heading="Plats" />

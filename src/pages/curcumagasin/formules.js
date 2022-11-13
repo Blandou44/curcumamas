@@ -62,7 +62,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
   const cadeaux = filteredData.filter((item) => item.isCadeau);
 
   return (
-    <BasePage noindex>
+    <BasePage>
       <NewNavBar />
       <MotifWrapper>
         <IndexWrapper>

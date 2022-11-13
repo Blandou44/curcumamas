@@ -80,7 +80,7 @@ const curcumagasin = ({ data }) => {
     selectedItem;
 
   return (
-    <BasePage noindex>
+    <BasePage>
       <NewNavBar />
       <MotifWrapper>
         <ShopWrapper>

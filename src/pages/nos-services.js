@@ -70,7 +70,7 @@ const ServiceWrapper = styled.div`
 
 const NouvelIndexSecretDeOuf = () => {
   return (
-    <BasePage noindex>
+    <BasePage>
       <NewNavBar />
       <MotifWrapper>
         <IndexWrapper>

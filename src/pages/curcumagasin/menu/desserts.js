@@ -14,7 +14,7 @@ const MotifWrapper = styled.div`
 
 const curcumagasin = ({ data }) => {
   return (
-    <BasePage noindex>
+    <BasePage>
       <NewNavBar />
       <MotifWrapper>
         <MenuDisplay
