@@ -18,7 +18,7 @@ const IndexWrapper = styled.div`
   gap: 4rem;
 `;
 
-const NouvelIndexSecretDeOuf = () => {
+const Index = () => {
   return (
     <BasePage>
       <NewNavBar />
@@ -37,4 +37,4 @@ const NouvelIndexSecretDeOuf = () => {
   );
 };
 
-export default NouvelIndexSecretDeOuf;
+export default Index;

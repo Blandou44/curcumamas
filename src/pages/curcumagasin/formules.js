@@ -51,7 +51,7 @@ const Formule = styled(Link)`
   }
 `;
 
-const NouvelIndexSecretDeOuf = ({ data }) => {
+const Formules = ({ data }) => {
   //filter data without a title
   const filteredData = data.allContentYaml.nodes.filter((item) => item.title);
 
@@ -143,4 +143,4 @@ export const query = graphql`
   }
 `;
 
-export default NouvelIndexSecretDeOuf;
+export default Formules;

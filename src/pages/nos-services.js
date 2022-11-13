@@ -68,7 +68,7 @@ const ServiceWrapper = styled.div`
   }
 `;
 
-const NouvelIndexSecretDeOuf = () => {
+const NosServices = () => {
   return (
     <BasePage>
       <NewNavBar />
@@ -213,4 +213,4 @@ const NouvelIndexSecretDeOuf = () => {
   );
 };
 
-export default NouvelIndexSecretDeOuf;
+export default NosServices;

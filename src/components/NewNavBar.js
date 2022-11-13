@@ -104,10 +104,7 @@ const BurgerButton = styled.button`
 `;
 
 export const NewNavBar = () => {
-  const path =
-    typeof window !== "undefined"
-      ? window.location.pathname
-      : "/nouvel-index-secret-de-ouf";
+  const path = typeof window !== "undefined" ? window.location.pathname : "/";
 
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -132,10 +129,7 @@ export const NewNavBar = () => {
             />
           </BurgerButton>
           <LinksWrapper>
-            <Link
-              to="/nouvel-index-secret-de-ouf"
-              selected={path === "/nouvel-index-secret-de-ouf"}
-            >
+            <Link to="/" selected={path === "/"}>
               Accueil
             </Link>
             <Link
