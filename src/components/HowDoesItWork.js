@@ -89,7 +89,8 @@ export const HowDoesItWork = () => {
           <Point>
             <img alt="" src={allongee}></img>
             <p>
-              Vous commandez de chez vous. <br />
+              Vous commandez de chez vous pour vous ou votre tribu.
+              <br />
               Fin de prise des commandes : vendredi 14h de la semaine précédant
               votre livraison.
             </p>
@@ -97,9 +98,9 @@ export const HowDoesItWork = () => {
           <Point>
             <img alt="" src={menu}></img>
             <p>
-              Vous composez votre panier comme vous le souhaitez parmi les choix
-              à la carte et vous remplissez le formulaire en indiquant vos
-              choix.
+              Vous composez votre panier comme vous le souhaitez. Vous
+              choisissez la formule qui vous convient dont vous composez le
+              contenu comme vous souhaitez parmi les choix proposés.
               <br />
               Deux options sont possibles : végé ou flexi (en supplément)
             </p>
@@ -107,10 +108,11 @@ export const HowDoesItWork = () => {
           <Point>
             <img alt="" src={legumes}></img>
             <p>
-              Les formules et cartes cadeaux comprennent 1 repas par jour pour
-              une personne que vous êtes libres de partager (ou non).
+              Les formules et cartes cadeaux sont des assortiments qui
+              contiennent plusieurs collations salées, collations sucrées et
+              plats.
               <br />
-              Un repas comprend une entrée - un plat - un encas/dessert.
+              C’est à vous de les composer avec les options que vous souhaitez.
             </p>
           </Point>
           <Point>
@@ -126,10 +128,10 @@ export const HowDoesItWork = () => {
               Toutes les formules s’offrent en carte cadeau, pour vous même ou
               pour quelqu’un de votre tribu.
               <br />
-              Vous pouvez les offrir quand vous le souhaitez : à l'avance et la
-              famille nous contacte pour choisir ses menus et le moment où elle
-              souhaite être livrée, ou la semaine qui précède la livraison pour
-              qu’iels soient directement livré&middot;e&middot;s.
+              Vous n’avez qu’à commander et payer la carte et si il s’agit d’un
+              cadeau de naissance, les parents concernés n’auront plus qu'à
+              remplir sur le site leur choix pour composer leur assortiment le
+              moment voulu.
             </p>
           </Point>
         </HowDoesItWorkWrapper>

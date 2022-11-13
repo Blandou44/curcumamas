@@ -69,14 +69,15 @@ export const Portrait = () => {
   return (
     <PortraitWrapper>
       <Heading>
-        Vous avez dit <em>Curcumama</em> ?
+        Vous avez dit <em>Curcumamas</em> ?
       </Heading>
       <Description>
-        Blandine. Formée en nutrition de la femme enceinte et en post partum, en
-        massage pré et post natals, et dans l'accompagnement de la grossesse et
-        du post partum, elle propose des consultations nutritions pour aborder
-        au mieux ces périodes. Elle met toute son expertise et sa passion au
-        service des familles et donc de Curcumamas.
+        Blandine est la fondatrice de Curcumamas. <br /> Formée en nutrition de
+        la femme enceinte et en post partum, en massage pré et post natals, et
+        dans l'accompagnement de la grossesse et du post partum, elle propose
+        des consultations et suivis autour des ces enjeux, pour aborder au mieux
+        ces périodes. Elle met toute son expertise et sa passion au service des
+        familles et donc de Curcumamas.
       </Description>
       <Illustration src={blandoux}></Illustration>
     </PortraitWrapper>

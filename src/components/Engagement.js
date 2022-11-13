@@ -76,40 +76,36 @@ export const Engagement = () => {
           <EngagementItem>
             <img src={legumes}></img>
             <p>
-              Chez Curcumamas tout est 100% bio et de saison, en majorité local
-              (excepté épices, oléagineux etc)
+              Nos produits sont 100% bio, de saison et en grande partie locaux
+              (sauf épices etc..)
             </p>
           </EngagementItem>
           <EngagementItem>
             <img src={genoux}></img>
             <p>
-              Grâce à l’expertise de Blandine les menus sont élaborés pour
-              répondre aux besoins nutritionnels particuliers de la jeune mère,
-              convenant à toute la famille.
+              Les menus sont élaborés pour répondre aux besoins nutritionnels
+              particuliers de la jeune mère
             </p>
           </EngagementItem>
           <EngagementItem>
             <img src={graines}></img>
             <p>
-              Chez curcumamas on utilse des supers aliments qui permettent
-              d’avoir tous les nutriments nécessaires à votre récupération et
-              votre moral (algues, cacao cru, huile crue, épices...)
+              On utilise des supers aliments qui permettent d’avoir tous les
+              nutriments nécessaires à votre récupération
             </p>
           </EngagementItem>
           <EngagementItem>
             <img src={bocal}></img>
             <p>
-              Chez Curcumamas les cuissons sont douces pour préserver les
-              nutriments et les vitamines, utilisation de sucrants naturels, on
-              évite le lactose pour les aplv et le gluten.
+              Les cuissons sont douces pour préserver les nutriments et les
+              vitamines, utilisation de sucrants
             </p>
           </EngagementItem>
           <EngagementItem>
             <img src={nibs}></img>
             <p>
-              Chez Curcumamas on utilise des aliments qui soutiennent
-              l’allaitement et on évite le gluten et le lactose pour des mamans
-              et des bébés qui digèrent mieux.
+              On utilise des aliments qui soutiennent l’allaitement et on évite
+              gluten et lactose pour des familles qui digèrent mieux.
             </p>
           </EngagementItem>
           <CTA to="/curcumagasin/formules">Commandez</CTA>

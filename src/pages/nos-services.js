@@ -16,6 +16,7 @@ import {
   colorBaie,
   Heading,
   maxWidth,
+  SmallText,
 } from "../styles/theme";
 
 import motif from "../images/motif.png";
@@ -119,17 +120,20 @@ const NouvelIndexSecretDeOuf = () => {
               </p>
               <p>
                 Ils peuvent avoir lieu à la curcumaison à Toulouse ou chez vous.
-                Dans le cadre de ces suivis, Blandine propose également des
-                <b>massages</b> et des <b>consultations</b> en naturopathie de
-                la femme enceinte et en post partum, sujet sur lequel elle
-                possède une vrai expertise.
+                Dans le cadre de ces suivis, Blandine propose également des{" "}
+                <b>massages</b> et des <b>consultations</b> de la femme enceinte
+                et en post partum, sujets sur lesquels elle possède une vraie
+                expertise.
               </p>
               <p>
                 Blandine est là pour vous rassurer, vous permettre de faire des
                 choix éclairés et surtout vous faire prendre confiance en vos
-                ressources pour créer, aggrandire vos familles.
+                ressources pour créer et agrandir vos familles.
               </p>
-              <p>ces accompagnement s’offrent en cadeau de naissance</p>
+              <p>Prix à voir après échange et devis personnalisé.</p>
+              <SmallText as="p">
+                ces accompagnements s’offrent en cadeau de naissance
+              </SmallText>
             </div>
           </ServiceWrapper>
 
@@ -144,11 +148,11 @@ const NouvelIndexSecretDeOuf = () => {
               </Heading>
               <p>Blandine est formée en massage et soins pré et post natal:</p>
               <p>
-                - Les massage ayurvédiques pour la femme enceinte et en post
+                - Les massages ayurvédiques pour la femme enceinte et en post
                 partum, qui sont des massages aux huiles (sans HE), et qui vont
-                détendre en profondeur les muscles et tensions fréquements
+                détendre en profondeur les muscles et tensions fréquement
                 rencontrées pendant la grossesse et le PP. Ils aident à préparer
-                le bassin à l’enfantement, aident à la sécrétion d’ocytocine, et
+                le bassin à l’enfantement, aident à la sécrétion d’oxytocine, et
                 connecter avec votre bébé.
               </p>
               <p>
@@ -161,10 +165,11 @@ const NouvelIndexSecretDeOuf = () => {
                 relevailles, votre naissance en tant que parent. Nous en
                 discutons ensemble pour trouver ce qui est le plus adapaté.
               </p>
-              <p>
+              <p>à partir de 55€ pour 1h15 de massage</p>
+              <SmallText as="p">
                 Ces soins et massages s’offrent en cadeau de naissance, et sont
                 proposés également hors des accompagnements.
-              </p>
+              </SmallText>
             </div>
           </ServiceWrapper>
           <ServiceWrapper>
@@ -188,13 +193,17 @@ const NouvelIndexSecretDeOuf = () => {
                 conseils sur une alimentation adaptée à chaque trimestre de la
                 grossesse et pendant le post partum des conseils et des
                 techniques naturelles pour limiter les maux de grossesse et du
-                post partum. Ils peuvent avoir lieu à la curcumaison à Toulouse
-                ou chez vous ou en visio.
+                post partum. Ils peuvent avoir lieu à la curcumaison à Toulouse,
+                chez vous ou en visio.
               </p>
               <p>
+                60€ la première consultation de 1h30 et 45€ les consultations de
+                suivi de 1h.
+              </p>
+              <SmallText as="p">
                 Ces soins et massages s’offrent en cadeau de naissance, et sont
                 proposés également hors des accompagnements.
-              </p>
+              </SmallText>
             </div>
           </ServiceWrapper>
         </IndexWrapper>

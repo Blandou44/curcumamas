@@ -75,7 +75,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
                   layout="constrained"
                   width={300}
                 />
-                <p>Les entrées</p>
+                <p>Les soupes</p>
               </Formule>
               <Formule to="/curcumagasin/menu/plats">
                 <StaticImage
@@ -91,7 +91,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
                   layout="constrained"
                   width={300}
                 />
-                <p>Les desserts et collations</p>
+                <p>Les collations sucrées</p>
               </Formule>
             </FormulesWrapper>
           </div>
@@ -102,11 +102,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
                 <Formule to={`/curcumagasin/commande?item=${item.title}`}>
                   <img src={item.image} width={300} />
                   <p>
-                    {item.title}
-                    <br />
-                    {item.nbRepas} repas
-                    <br />
-                    {item.priceVG}€
+                    {item.title} <br />à partir de {item.priceVG}€
                   </p>
                 </Formule>
               ))}
@@ -119,11 +115,7 @@ const NouvelIndexSecretDeOuf = ({ data }) => {
                 <Formule to={`/curcumagasin/commande?item=${item.title}`}>
                   <img src={item.image} width={300} />
                   <p>
-                    {item.title}
-                    <br />
-                    {item.nbRepas} repas
-                    <br />
-                    {item.priceVG}€
+                    {item.title} <br />à partir de {item.priceVG}€
                   </p>
                 </Formule>
               ))}

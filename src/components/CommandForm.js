@@ -187,7 +187,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
           <label for="elleux">Iels choisissent</label>
         </div>
 
-        <p>Vos coordonées</p>
+        <p>Vos coordonnées</p>
         <DetailsContainer>
           <label for="nom-offrant">Nom</label>
           <Input type="text" name="nom-offrant" />
@@ -244,7 +244,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       />
 
       <ChoixContainer>
-        <ChoixHeader>Entrées</ChoixHeader>
+        <ChoixHeader>Soupes</ChoixHeader>
         <SmallText right>
           ({remainingEntree} restante{remainingEntree > 1 ? "s" : ""})
         </SmallText>
@@ -410,9 +410,9 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       />
 
       <ChoixContainer>
-        <ChoixHeader>desserts</ChoixHeader>
+        <ChoixHeader>collations sucrées</ChoixHeader>
         <SmallText right>
-          ({remainingDessert} restant{remainingDessert > 1 ? "s" : ""})
+          ({remainingDessert} restante{remainingDessert > 1 ? "s" : ""})
         </SmallText>
         <label>
           {menuObject.desserts.nom1}
@@ -485,6 +485,36 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         <div>
           <input type="radio" name="livraison" value="non" id="livraisonnon" />
           <label for="livraisonnon">Curcumaison</label>
+        </div>
+      </QuestionWrapper>
+      <QuestionWrapper>
+        <p>Pour un cadeau de naissance sur mesure, ajoutez :</p>
+        <div>
+          <input type="checkbox" name="massage" value="oui" id="massage" />
+          <label for="massage">Massage - 1h15 (+40€)</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="accompagnement"
+            value="oui"
+            id="accompagnement"
+          />
+          <label for="accompagnement">
+            Séance découverte d’accompagnement grossesse/post partum - 1h30
+            (+40€)
+          </label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="consultation-nutrition"
+            value="oui"
+            id="consultation-nutrition"
+          />
+          <label for="consultation-nutrition">
+            Consultation de nutrition - 1h30 (+40€)
+          </label>
         </div>
       </QuestionWrapper>
       <QuestionWrapper>
