@@ -114,6 +114,7 @@ export const query = graphql`
         priceFlexi
         nbRepas
         image
+        description
         isCadeau
         menuType
         nom1

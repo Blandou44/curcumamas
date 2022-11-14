@@ -155,7 +155,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
             checked={!isCadeau}
             onChange={() => setIsCadeau(false)}
           />
-          <label for="oui">Oui</label>
+          <label htmlFor="oui">Oui</label>
         </div>
         <div>
           <input
@@ -166,7 +166,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
             checked={isCadeau}
             onChange={() => setIsCadeau(true)}
           />
-          <label for="non">Non</label>
+          <label htmlFor="non">Non</label>
         </div>
       </QuestionWrapper>
 
@@ -174,7 +174,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         <p>Qui s'occupe de la commande ?</p>
         <div>
           <input type="radio" name="qui" value="moi" id="moi" />
-          <label for="moi">
+          <label htmlFor="moi">
             Vous leur composez leur carte{" "}
             <SmallText>
               (dans cette option nous vous laissons le soin de les informer du
@@ -184,18 +184,18 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         </div>
         <div>
           <input type="radio" name="qui" value="elleux" id="elleux" />
-          <label for="elleux">Iels choisissent</label>
+          <label htmlFor="elleux">Iels choisissent</label>
         </div>
 
         <p>Vos coordonnées</p>
         <DetailsContainer>
-          <label for="nom-offrant">Nom</label>
+          <label htmlFor="nom-offrant">Nom</label>
           <Input type="text" name="nom-offrant" />
-          <label for="prenom-offrant">Prénom</label>
+          <label htmlFor="prenom-offrant">Prénom</label>
           <Input type="text" name="prenom-offrant" />
-          <label for="email-offrant">Email</label>
+          <label htmlFor="email-offrant">Email</label>
           <Input type="email" name="email-offrant" />
-          <label for="telephone-offrant">Téléphone</label>
+          <label htmlFor="telephone-offrant">Téléphone</label>
           <Input type="text" name="telephone-offrant" />
         </DetailsContainer>
       </QuestionWrapper>
@@ -204,11 +204,11 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         <p>Option choisie</p>
         <div>
           <input type="radio" name="variante" value="vg" id="vg" />
-          <label for="vg">VG</label>
+          <label htmlFor="vg">VG</label>
         </div>
         <div>
           <input type="radio" name="variante" value="flexi" id="flexi" />
-          <label for="flexi">Flexi</label>
+          <label htmlFor="flexi">Flexi</label>
         </div>
       </QuestionWrapper>
 
@@ -464,15 +464,15 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         <p>à quelle date souhaitez-vous être livré&middot;e&middot;s ?</p>
         <div>
           <input type="radio" name="date" value="1" id="1" />
-          <label for="1">3 novembre</label>
+          <label htmlFor="1">3 novembre</label>
         </div>
         <div>
           <input type="radio" name="date" value="2" id="2" />
-          <label for="2">10 novembre</label>
+          <label htmlFor="2">10 novembre</label>
         </div>
         <div>
           <input type="radio" name="date" value="3" id="3" />
-          <label for="3">17 novembre</label>
+          <label htmlFor="3">17 novembre</label>
         </div>
       </QuestionWrapper>
 
@@ -480,18 +480,18 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         <p>Livraison chez vous ou pick up à la curcumaison ?</p>
         <div>
           <input type="radio" name="livraison" value="oui" id="livraisonoui" />
-          <label for="livraisonoui">Chez moi (+5.99€)</label>
+          <label htmlFor="livraisonoui">Chez moi (+5.99€)</label>
         </div>
         <div>
           <input type="radio" name="livraison" value="non" id="livraisonnon" />
-          <label for="livraisonnon">Curcumaison</label>
+          <label htmlFor="livraisonnon">Curcumaison</label>
         </div>
       </QuestionWrapper>
       <QuestionWrapper>
         <p>Pour un cadeau de naissance sur mesure, ajoutez :</p>
         <div>
           <input type="checkbox" name="massage" value="oui" id="massage" />
-          <label for="massage">Massage - 1h15 (+40€)</label>
+          <label htmlFor="massage">Massage - 1h15 (+40€)</label>
         </div>
         <div>
           <input
@@ -500,7 +500,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
             value="oui"
             id="accompagnement"
           />
-          <label for="accompagnement">
+          <label htmlFor="accompagnement">
             Séance découverte d’accompagnement grossesse/post partum - 1h30
             (+40€)
           </label>
@@ -512,7 +512,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
             value="oui"
             id="consultation-nutrition"
           />
-          <label for="consultation-nutrition">
+          <label htmlFor="consultation-nutrition">
             Consultation de nutrition - 1h30 (+40€)
           </label>
         </div>
@@ -522,21 +522,21 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
           {isCadeau ? "Leurs coordonnées" : "Vos coordonnées"}
         </ChoixHeader>
         <DetailsContainer>
-          <label for="nom">Nom</label>
+          <label htmlFor="nom">Nom</label>
           <Input type="text" name="nom" />
-          <label for="prenom">Prénom</label>
+          <label htmlFor="prenom">Prénom</label>
           <Input type="text" name="prenom" />
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <Input type="email" name="email" />
-          <label for="adresse">Adresse</label>
+          <label htmlFor="adresse">Adresse</label>
           <Input type="text" name="adresse" />
-          <label for="codepostal">Code postal</label>
+          <label htmlFor="codepostal">Code postal</label>
           <Input type="text" name="codepostal" />
-          <label for="ville">Ville</label>
+          <label htmlFor="ville">Ville</label>
           <Input type="text" name="ville" />
-          <label for="telephone">Téléphone</label>
+          <label htmlFor="telephone">Téléphone</label>
           <Input type="text" name="telephone" />
-          <label for="message">Message</label>
+          <label htmlFor="message">Message</label>
           <Input as="textarea" name="message" />
         </DetailsContainer>
       </QuestionWrapper>
