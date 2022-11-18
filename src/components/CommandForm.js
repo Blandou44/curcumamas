@@ -480,7 +480,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         <p>Livraison chez vous ou pick up à la curcumaison ?</p>
         <div>
           <input type="radio" name="livraison" value="oui" id="livraisonoui" />
-          <label htmlFor="livraisonoui">Chez moi (+5.99€)</label>
+          <label htmlFor="livraisonoui">Chez moi (+8,90€)</label>
         </div>
         <div>
           <input type="radio" name="livraison" value="non" id="livraisonnon" />
