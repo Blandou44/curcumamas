@@ -11,6 +11,7 @@ import { Portrait } from "../components/Portrait";
 import { Engagement } from "../components/Engagement";
 import { BasePage } from "../components/BasePage";
 import { Footer } from "../components/Footer";
+import { Curcumaintenance } from "../components/Curcumaintenance";
 
 const IndexWrapper = styled.div`
   display: flex;
@@ -21,17 +22,9 @@ const IndexWrapper = styled.div`
 const Index = () => {
   return (
     <BasePage>
-      <NewNavBar />
-
       <IndexWrapper>
-        <NewHero />
-        <WhachaWaitingFor />
-        <Curcumarmite />
-        <HowDoesItWork />
-        <Portrait />
-        <Engagement />
+        <Curcumaintenance />
       </IndexWrapper>
-
       <Footer />
     </BasePage>
   );
