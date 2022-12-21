@@ -32,7 +32,6 @@ const Section = styled.div`
 const CGU = () => {
   return (
     <BasePage title={"CGU"} noindex>
-      <NewNavBar />
       <MotifWrapper>
         <ArticlesContainer>
           <Section>
