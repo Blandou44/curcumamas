@@ -1,17 +1,17 @@
-menuType: "desserts"
-nom1: "Brownie chocolat noir et haricots rouges"
-infoNut1: "Sans gluten-sans lactose"
-description1: ""
+nom1: Brownie chocolat noir et haricots rouges
+infoNut1: Sans gluten-sans lactose
+description1: .
 image1: /images/23.jpg
-nom2: "Carotte cake aux épices et noix du brésil"
-infoNut2: "Sans gluten-sans lactose"
-description2: ""
+nom2: Compotée de fruits de saison et son granola topping croustillant
+infoNut2: Sans gluten-sans lactose
+description2: .
 image2: /images/23.jpg
-nom3: "Cookie au chocolat et sésame"
-infoNut3: "Sans gluten-sans lactose"
-description3: ""
+nom3: Cookie au chocolat et sésame
+infoNut3: Sans gluten-sans lactose
+description3: .
 image3: /images/23.jpg
-nom4: "Porridge de chia et sa compotée de fruits de saison"
-infoNut4: "Sans gluten-sans lactose"
-description4: ""
+nom4: Porridge de chia et sa compotée de fruits de saison
+infoNut4: Sans gluten-sans lactose
+description4: .
+menuType: desserts
 image4: /images/23.jpg
