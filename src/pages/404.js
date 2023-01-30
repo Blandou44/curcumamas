@@ -19,6 +19,7 @@ const NotFoundWrapper = styled.div`
 const NotFoundPage = () => {
   return (
     <BasePage noindex>
+      <NewNavBar />
       <MotifWrapper
         style={{ height: "100vh", display: "flex", alignItems: "center" }}
       >
