@@ -13,7 +13,7 @@ import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
 import { colorBaie, Heading, maxWidth } from "../../styles/theme";
 
-import motif from "../../images/motif.png";
+import motif from "../../images/motif2.png";
 
 const MotifWrapper = styled.div`
   background: url(${motif});

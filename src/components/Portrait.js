@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import blandoux from "../images/blandoux.jpg";
+import ludi from "../images/ludi.jpg";
 import background from "../images/illustrations/grains2.png";
 import {
   maxWidth,
@@ -72,14 +72,13 @@ export const Portrait = () => {
         Vous avez dit <em>Curcumamas</em> ?
       </Heading>
       <Description>
-        Blandine est la fondatrice de Curcumamas. <br /> Formée en nutrition de
-        la femme enceinte et en post partum, en massage pré et post natals, et
-        dans l'accompagnement de la grossesse et du post partum, elle propose
-        des consultations et suivis autour des ces enjeux, pour aborder au mieux
-        ces périodes. Elle met toute son expertise et sa passion au service des
+        Curcumamas c'est Ludivine et Blandine. <br />
+        Blandine est la fondatrice de Curcumamas et Ludivine sa gérante.
+        <br /> Formées en cuisine et nutrition de la femme enceinte et en post
+        partum, elles mettent toute leur expertise et passion au service des
         familles et donc de Curcumamas.
       </Description>
-      <Illustration src={blandoux}></Illustration>
+      <Illustration src={ludi}></Illustration>
     </PortraitWrapper>
   );
 };

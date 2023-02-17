@@ -141,7 +141,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       name="commandev2"
       method="POST"
       data-netlify="true"
-      action="/succes/commande/"
+      action="/succes/commandev2/"
     >
       <input type="hidden" name="commandev2-form" value="commandev2" />
       <QuestionWrapper>
@@ -183,8 +183,8 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
           </label>
         </div>
         <div>
-          <input type="radio" name="qui" value="elleux" id="elleux" />
-          <label htmlFor="elleux">Iels choisissent</label>
+          <input type="radio" name="qui" value="parents" id="parents" />
+          <label htmlFor="parents">Les parents choisissent</label>
         </div>
 
         <p>Vos coordonnées</p>
@@ -208,7 +208,12 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         </div>
         <div>
           <input type="radio" name="variante" value="flexi" id="flexi" />
-          <label htmlFor="flexi">Flexi</label>
+          <label htmlFor="flexi">
+            Flexi{" "}
+            <Tippy content="Portions de poulet mariné et cuit au four, ajoutées à certains plats">
+              <FontAwesomeIcon icon={faInfoCircle} />
+            </Tippy>
+          </label>
         </div>
       </QuestionWrapper>
 
@@ -234,13 +239,6 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         min={0}
         name="entree3"
         value={nbEntree3}
-      />
-      <HiddenInput
-        type="number"
-        max={nbRepas}
-        min={0}
-        name="entree4"
-        value={nbEntree4}
       />
 
       <ChoixContainer>
@@ -283,17 +281,6 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
           setValue={setNbEntree3}
           remaining={remainingEntree}
         />
-        <label>
-          {menuObject.entrees.nom4}
-          <Tippy content={menuObject.entrees.infoNut4}>
-            <FontAwesomeIcon icon={faInfoCircle} />
-          </Tippy>
-        </label>
-        <NumberInput
-          value={nbEntree4}
-          setValue={setNbEntree4}
-          remaining={remainingEntree}
-        />
       </ChoixContainer>
 
       <Separator center />
@@ -318,13 +305,6 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         min={0}
         name="plat3"
         value={nbPlat3}
-      />
-      <HiddenInput
-        type="number"
-        max={nbRepas}
-        min={0}
-        name="plat4"
-        value={nbPlat4}
       />
 
       <ChoixContainer>
@@ -365,17 +345,6 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
           setValue={setNbPlat3}
           remaining={remainingPlat}
         />
-        <label>
-          {menuObject.plats.nom4}
-          <Tippy content={menuObject.plats.infoNut4}>
-            <FontAwesomeIcon icon={faInfoCircle} />
-          </Tippy>
-        </label>
-        <NumberInput
-          value={nbPlat4}
-          setValue={setNbPlat4}
-          remaining={remainingPlat}
-        />
       </ChoixContainer>
 
       <Separator left />
@@ -410,7 +379,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       />
 
       <ChoixContainer>
-        <ChoixHeader>collations sucrées</ChoixHeader>
+        <ChoixHeader>boissons et collations sucrées</ChoixHeader>
         <SmallText right>
           ({remainingDessert} restante{remainingDessert > 1 ? "s" : ""})
         </SmallText>
@@ -477,43 +446,22 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       </QuestionWrapper>
 
       <QuestionWrapper>
-        <p>Livraison chez vous ou pick up à la curcumaison ?</p>
-        <div>
-          <input type="radio" name="livraison" value="oui" id="livraisonoui" />
-          <label htmlFor="livraisonoui">Chez moi (+8,90€)</label>
-        </div>
-        <div>
-          <input type="radio" name="livraison" value="non" id="livraisonnon" />
-          <label htmlFor="livraisonnon">Curcumaison</label>
-        </div>
-      </QuestionWrapper>
-      <QuestionWrapper>
         <p>Pour un cadeau de naissance sur mesure, ajoutez :</p>
+
         <div>
-          <input type="checkbox" name="massage" value="oui" id="massage" />
-          <label htmlFor="massage">Massage - 1h15 (+40€)</label>
+          <input type="checkbox" name="granola" value="oui" id="granola" />
+          <label htmlFor="granola">Granola 250g (+6€)</label>
         </div>
         <div>
-          <input
-            type="checkbox"
-            name="accompagnement"
-            value="oui"
-            id="accompagnement"
-          />
-          <label htmlFor="accompagnement">
-            Séance découverte d’accompagnement grossesse/post partum - 1h30
-            (+40€)
+          <input type="checkbox" name="laitdor" value="oui" id="laitdor" />
+          <label htmlFor="laitdor">
+            Lait d’or (5 portions a diluer dans du lait) - (5€)
           </label>
         </div>
         <div>
-          <input
-            type="checkbox"
-            name="consultation-nutrition"
-            value="oui"
-            id="consultation-nutrition"
-          />
-          <label htmlFor="consultation-nutrition">
-            Consultation de nutrition - 1h30 (+40€)
+          <input type="checkbox" name="chai" value="oui" id="chai" />
+          <label htmlFor="chai">
+            Chai (5 portions a diluer dans du lait) - (5€)
           </label>
         </div>
       </QuestionWrapper>
@@ -541,7 +489,12 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         </DetailsContainer>
       </QuestionWrapper>
 
-      <NewButton as="button" type="submit" disabled={false}>
+      <NewButton
+        as="button"
+        type="submit"
+        disabled={false}
+        style={{ marginTop: "2rem" }}
+      >
         Contacte nous
       </NewButton>
     </Form>

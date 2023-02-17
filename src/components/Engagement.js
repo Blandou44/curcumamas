@@ -98,14 +98,14 @@ export const Engagement = () => {
             <img src={bocal}></img>
             <p>
               Les cuissons sont douces pour préserver les nutriments et les
-              vitamines, utilisation de sucrants
+              vitamines, utilisation de sucrants naturels
             </p>
           </EngagementItem>
           <EngagementItem>
             <img src={nibs}></img>
             <p>
               On utilise des aliments qui soutiennent l’allaitement et on évite
-              gluten et lactose pour des familles qui digèrent mieux.
+              gluten et lactose pour des familles qui digèrent mieux
             </p>
           </EngagementItem>
           <CTA to="/curcumagasin/formules">Commandez</CTA>

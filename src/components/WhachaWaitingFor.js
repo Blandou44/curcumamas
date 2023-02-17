@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
-import motif from "../images/motif.png";
+import motif from "../images/motif2.png";
 import mimou from "../images/nos-services/mimourecadre.png";
 import cake from "../images/carousel/24.jpg";
 import manger from "../images/nos-services/mangerreacdre.png";

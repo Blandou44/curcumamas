@@ -7,7 +7,7 @@ import { Footer } from "../../components/Footer";
 
 import { Heading, maxWidth, newMainColor, SmallText } from "../../styles/theme";
 
-import motif from "../../images/motif.png";
+import motif from "../../images/motif2.png";
 import { CommandForm } from "../../components/CommandForm";
 
 const MotifWrapper = styled.div`
@@ -90,7 +90,7 @@ const curcumagasin = ({ data }) => {
             <Price>
               {priceVG}€ VG - {priceFlexi}€ Flexi
             </Price>
-            <SmallText center>Taxes incluses, livraison non incluse.</SmallText>
+            <SmallText center>Taxes incluses, livraison 8,90€.</SmallText>
             <p>{description}</p>
             <CommandForm
               defaultCadeau={isCadeau}
