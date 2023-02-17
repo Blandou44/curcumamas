@@ -143,7 +143,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       data-netlify="true"
       action="/succes/commandev2/"
     >
-      <input type="hidden" name="commandev2-form" value="commandev2" />
+      <input type="hidden" name="form-name" value="commandev2" />
       <QuestionWrapper>
         <p>Est ce une curcucommande pour vous ?</p>
         <div>
