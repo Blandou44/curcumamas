@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import ludi from "../images/ludi.jpg";
+import blandoux from "../images/blandoux.jpg";
 import background from "../images/illustrations/grains2.png";
 import {
   maxWidth,
@@ -33,9 +34,9 @@ const PortraitWrapper = styled.nav`
 
   @media (min-width: ${smallBreakpoint}) {
     display: grid;
-    grid-template-columns: 3fr 250px;
+    grid-template-columns: 3fr 500px;
     row-gap: 2rem;
-    column-gap: 27rem;
+    column-gap: 2rem;
     align-items: flex-start;
 
     &::before {
@@ -52,6 +53,13 @@ const Description = styled.p`
 `;
 
 const Illustration = styled.img`
+  height: 100%;
+`;
+
+const IllustrationsWrapper = styled.div`
+  display: flex;
+  height: 350px;
+  gap: 3rem;
   align-self: center;
   justify-self: flex-end;
   grid-column: 2 / 2;
@@ -78,7 +86,10 @@ export const Portrait = () => {
         partum, elles mettent toute leur expertise et passion au service des
         familles et donc de Curcumamas.
       </Description>
-      <Illustration src={ludi}></Illustration>
+      <IllustrationsWrapper>
+        <Illustration src={ludi}></Illustration>
+        <Illustration src={blandoux}></Illustration>
+      </IllustrationsWrapper>
     </PortraitWrapper>
   );
 };

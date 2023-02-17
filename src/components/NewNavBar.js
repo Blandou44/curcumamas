@@ -138,6 +138,9 @@ export const NewNavBar = () => {
             >
               Curcumagasin
             </Link>
+            <Link to="/nos-services" selected={path === "/nos-services"}>
+              Nos Services
+            </Link>
           </LinksWrapper>
         </NavWrapper>
       </NavContainer>
