@@ -1,13 +1,21 @@
-menuType: "plats"
-nom1: "Tajines aux légumes de saison, amandes et fruits secs- Quinoa"
-infoNut1: "Sans gluten-sans lactose"
-description1: "La tajine, par son incroyable mélange d’épices sera parfait pour votre digestion et pour vos apports en minéraux contenu dans les oléagineux"
-image1: /images/23.jpg
-nom2: "Parmentier végétal et sa farce aux lentilles champignons, noisettes et câpres."
-infoNut2: "Sans gluten-sans lactose-non pimenté"
-description2: "Un plat régressif, qui tous les bienfaits des noisettes et des lentilles riches en fer tout en gardant sa rondeur avec une purée bien onctueuse"
-image2: /images/23.jpg
-nom3: "Lasagne végétarienne"
-infoNut3: "possible sans lactose"
-description3: "Un bon plat de lasagne avec une farce végétale, un mixe parfait entre gourmandise et apports en fibres."
-image3: /images/23.jpg
+nom1: Tajines aux légumes de saison, amandes et fruits secs- Quinoa
+infoNut1: Sans gluten-sans lactose
+description1: La tajine, par son incroyable mélange d’épices sera parfait pour
+  votre digestion et pour vos apports en minéraux contenu dans les oléagineux
+image1: /images/5.png
+nom2: Curry aux légumes de saison et pois chiches - Riz.
+infoNut2: Sans gluten-sans lactose-non pimenté
+description2: "Un plat commun à toutes les cultures d'Asie pacifique, tout aussi
+  épicé (non pimenté), qu'oncteux avec sa sauce au lait de coco. Parfait pour se
+  réchauffer et faire le pleins de nutriments "
+image2: /images/6.png
+nom3: Lasagne végétarienne
+infoNut3: possible sans lactose
+description3: Un bon plat de lasagne avec une farce végétale, un mixe parfait
+  entre gourmandise et apports en fibres.
+image3: /images/7.png
+nom4: ss
+infoNut4: ss
+description4: ss
+menuType: plats
+image4: /images/1.png
