@@ -5,9 +5,16 @@ import { NewNavBar } from "../../components/NewNavBar";
 import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
 
-import { Heading, maxWidth, newMainColor, SmallText } from "../../styles/theme";
+import {
+  Heading,
+  maxWidth,
+  newMainColor,
+  newSecondaryColor,
+  smallBreakpoint,
+  SmallText,
+} from "../../styles/theme";
 
-import motif from "../../images/motif2.png";
+import motif from "../../images/fondlea.jpeg";
 import { CommandForm } from "../../components/CommandForm";
 
 const MotifWrapper = styled.div`
@@ -16,17 +23,29 @@ const MotifWrapper = styled.div`
 
 const ShopWrapper = styled.div`
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
   background: white;
   max-width: ${maxWidth};
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 0 1rem;
 
   > img {
-    width: 700px;
-    position: sticky;
-    top: 0;
+    max-height: 20vh;
+    justify-self: center;
+  }
+
+  @media (min-width: ${smallBreakpoint}) {
+    padding: 4rem 0;
+    padding-right: 2rem;
+    grid-template-columns: 50% 1fr;
+
+    > img {
+      max-height: 80vh;
+      max-width: 50vw;
+      position: sticky;
+      top: 0;
+    }
   }
 `;
 
@@ -39,8 +58,8 @@ const FormWrapper = styled.div`
 const Price = styled.h2`
   font-family: "Rubik Mono One", sans-serif;
   color: transparent;
-  -webkit-text-stroke: 1px ${newMainColor};
-  text-stroke: 1px ${newMainColor};
+  -webkit-text-stroke: 1px ${newSecondaryColor};
+  text-stroke: 1px ${newSecondaryColor};
   font-style: normal;
   font-size: 1.3rem;
   text-align: center;
@@ -93,6 +112,7 @@ const curcumagasin = ({ data }) => {
             <SmallText center>Taxes incluses, livraison 8,90€.</SmallText>
             <p>{description}</p>
             <CommandForm
+              title={title}
               defaultCadeau={isCadeau}
               nbRepas={nbRepas}
               menuObject={menuObject}

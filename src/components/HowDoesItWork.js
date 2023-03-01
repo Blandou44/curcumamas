@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import allongee from "../images/illustrations/allongee_bleu.png";
-import menu from "../images/illustrations/menu_bleu.png";
-import legumes from "../images/illustrations/legumes_bleu.png";
-import sac from "../images/illustrations/sac_bleu.png";
-import cadeau from "../images/illustrations/cadeau_bleu.png";
+import allongee from "../images/illustrations/allongee.png";
+import menu from "../images/illustrations/menu.png";
+import legumes from "../images/illustrations/legumes.png";
+import sac from "../images/illustrations/sac.png";
+import cadeau from "../images/illustrations/cadeau.png";
 
 import {
   maxWidth,
@@ -13,6 +13,7 @@ import {
   Heading,
   MotifWrapper,
   smallBreakpoint,
+  newSecondaryColor,
 } from "../styles/theme";
 
 const HowDoesItWorkContainer = styled.nav`
@@ -63,7 +64,7 @@ const Point = styled.div`
       display: block;
       width: 700px;
       height: 3px;
-      background: ${newMainColor};
+      background: ${newSecondaryColor};
       position: absolute;
       left: calc(0);
       top: calc(100% + 1rem);

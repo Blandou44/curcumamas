@@ -4,15 +4,15 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 import Headroom from "react-headroom";
 import {
-  mainColor,
   maxWidth,
-  secondaryColor,
+  newMainColor,
+  newSecondaryColor,
   sidePadding,
   smallBreakpoint,
 } from "../styles/theme";
 
 const NavContainer = styled.nav`
-  background: ${mainColor};
+  background: ${newMainColor};
   height: 5rem;
 
   @media (max-width: ${smallBreakpoint}) {
@@ -41,7 +41,7 @@ const LogoContainer = styled(AnchorLink)`
 `;
 
 const Link = styled(AnchorLink)`
-  color: ${secondaryColor};
+  color: ${newSecondaryColor};
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;

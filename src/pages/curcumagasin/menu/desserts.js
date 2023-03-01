@@ -6,7 +6,7 @@ import { MenuDisplay } from "../../../components/MenuDisplay";
 import { BasePage } from "../../../components/BasePage";
 import { Footer } from "../../../components/Footer";
 
-import motif from "../../../images/motif2.png";
+import motif from "../../../images/fondlea.jpeg";
 
 const MotifWrapper = styled.div`
   background: url(${motif});
@@ -19,7 +19,8 @@ const curcumagasin = ({ data }) => {
       <MotifWrapper>
         <MenuDisplay
           data={data.allContentYaml.edges[0].node}
-          heading="Desserts"
+          heading="Boissons et collations sucrées"
+          nbItems={4}
         />
       </MotifWrapper>
       <Footer />

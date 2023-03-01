@@ -99,7 +99,7 @@ const QuestionWrapper = styled.div`
   `};
 `;
 
-export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
+export const CommandForm = ({ title, defaultCadeau, nbRepas, menuObject }) => {
   const [isCadeau, setIsCadeau] = useState(defaultCadeau);
 
   const [nbEntree1, setNbEntree1] = useState(0);
@@ -144,6 +144,11 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
       action="/succes/commandev2/"
     >
       <input type="hidden" name="form-name" value="commandev2" />
+      <HiddenInput
+        type="text"
+        name="formule"
+        value={`${title} - ${nbRepas} repas`}
+      />
       <QuestionWrapper>
         <p>Est ce une curcucommande pour vous ?</p>
         <div>
@@ -210,7 +215,7 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
           <input type="radio" name="variante" value="flexi" id="flexi" />
           <label htmlFor="flexi">
             Flexi{" "}
-            <Tippy content="Portions de poulet mariné et cuit au four, ajoutées à certains plats">
+            <Tippy content="Portions de poulet mariné et cuit au four, ajoutées à un tiers des plats">
               <FontAwesomeIcon icon={faInfoCircle} />
             </Tippy>
           </label>
@@ -433,15 +438,29 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
         <p>à quelle date souhaitez-vous être livré&middot;e&middot;s ?</p>
         <div>
           <input type="radio" name="date" value="1" id="1" />
-          <label htmlFor="1">3 novembre</label>
+          <label htmlFor="1">5 avril</label>
         </div>
         <div>
           <input type="radio" name="date" value="2" id="2" />
-          <label htmlFor="2">10 novembre</label>
+          <label htmlFor="2">19 avril</label>
         </div>
         <div>
           <input type="radio" name="date" value="3" id="3" />
-          <label htmlFor="3">17 novembre</label>
+          <label htmlFor="3">10 mai</label>
+        </div>
+      </QuestionWrapper>
+      <QuestionWrapper isHidden={!isCadeau}>
+        <div>
+          <input
+            type="radio"
+            name="date"
+            value="ulterieurement"
+            id="ulterieurement"
+          />
+          <label htmlFor="ulterieurement">
+            Le destinataire du cadeau choisira sa date de livraison
+            ultérieurement
+          </label>
         </div>
       </QuestionWrapper>
 
@@ -450,18 +469,49 @@ export const CommandForm = ({ defaultCadeau, nbRepas, menuObject }) => {
 
         <div>
           <input type="checkbox" name="granola" value="oui" id="granola" />
-          <label htmlFor="granola">Granola 250g (+6€)</label>
+          <label htmlFor="granola">Granola 245g (soit 5 portions) (+6€)</label>
         </div>
         <div>
           <input type="checkbox" name="laitdor" value="oui" id="laitdor" />
           <label htmlFor="laitdor">
-            Lait d’or (5 portions a diluer dans du lait) - (5€)
+            Lait d’or (5 portions a diluer dans du lait) - (4€)
           </label>
         </div>
         <div>
           <input type="checkbox" name="chai" value="oui" id="chai" />
           <label htmlFor="chai">
-            Chai (5 portions a diluer dans du lait) - (5€)
+            Chai (5 portions a diluer dans du lait) - (4€)
+          </label>
+        </div>
+      </QuestionWrapper>
+      <QuestionWrapper>
+        <p>Les curcusoins :</p>
+        <div>
+          <input type="checkbox" name="massage" value="oui" id="massage" />
+          <label htmlFor="massage">1h15 de massage - (+75€)</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="consultation"
+            value="oui"
+            id="consultation"
+          />
+          <label htmlFor="consultation">
+            La première consultation de nutrition et naturopathie de 1h30 -
+            (60€)
+          </label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="accompagnement"
+            value="oui"
+            id="accompagnement"
+          />
+          <label htmlFor="accompagnement">
+            Accompagnements pendant la grossesse et le post partum. <br /> Prix
+            à voir après échange et devis personnalisé
           </label>
         </div>
       </QuestionWrapper>

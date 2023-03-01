@@ -53,9 +53,8 @@ export const NewHero = () => {
     <HeroContainer>
       <HeroWrapper>
         <Quote>
-          &laquo; Vos bébés naissent, vos familles avec.
-          <br />
-          Un post partum gourmand et accompagné commence avec Curcumamas &raquo;
+          Les petits plats de Curcumamas vous accompagne en post partum, tout
+          comme sa doula.
         </Quote>
         <CTA to="/curcumagasin/formules" secondary>
           Commandez

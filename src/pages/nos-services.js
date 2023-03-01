@@ -19,7 +19,7 @@ import {
   SmallText,
 } from "../styles/theme";
 
-import motif from "../images/motif2.png";
+import motif from "../images/fondlea.jpeg";
 
 const MotifWrapper = styled.div`
   background: url(${motif});
@@ -165,7 +165,7 @@ const NosServices = () => {
                 relevailles, votre naissance en tant que parent. Nous en
                 discutons ensemble pour trouver ce qui est le plus adapaté.
               </p>
-              <p>à partir de 55€ pour 1h15 de massage</p>
+              <p>à partir de 75€ pour 1h15 de massage</p>
               <SmallText as="p">
                 Ces soins et massages s’offrent en cadeau de naissance, et sont
                 proposés également hors des accompagnements.

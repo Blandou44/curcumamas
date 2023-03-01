@@ -13,10 +13,17 @@ import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
 import { colorBaie, Heading, maxWidth } from "../../styles/theme";
 
-import motif from "../../images/motif2.png";
+import motif from "../../images/fondlea.jpeg";
 
 const MotifWrapper = styled.div`
   background: url(${motif});
+`;
+
+const SubHeading = styled.h2`
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
 `;
 
 const IndexWrapper = styled.div`
@@ -53,13 +60,7 @@ const Formule = styled(Link)`
 
 const Formules = ({ data }) => {
   //filter data without a title
-  const filteredData = data.allContentYaml.nodes.filter((item) => item.title);
-
-  //create an array of data where isCadeau is false
-  const formules = filteredData.filter((item) => !item.isCadeau);
-
-  //create an array of data where isCadeau is true
-  const cadeaux = filteredData.filter((item) => item.isCadeau);
+  const formules = data.allContentYaml.nodes.filter((item) => item.title);
 
   return (
     <BasePage>
@@ -91,27 +92,17 @@ const Formules = ({ data }) => {
                   layout="constrained"
                   width={300}
                 />
-                <p>Les collations sucrées</p>
+                <p>Les boissons et collations sucrées</p>
               </Formule>
             </FormulesWrapper>
           </div>
           <div>
             <Heading>Les Curcuformules</Heading>
+            <SubHeading>
+              Toutes les formules peuvent s'offrir en carte cadeau
+            </SubHeading>
             <FormulesWrapper>
               {formules.map((item) => (
-                <Formule to={`/curcumagasin/commande?item=${item.title}`}>
-                  <img src={item.image} width={300} />
-                  <p>
-                    {item.title} <br />à partir de {item.priceVG}€
-                  </p>
-                </Formule>
-              ))}
-            </FormulesWrapper>
-          </div>
-          <div>
-            <Heading>les Curcucartes cadeau</Heading>
-            <FormulesWrapper>
-              {cadeaux.map((item) => (
                 <Formule to={`/curcumagasin/commande?item=${item.title}`}>
                   <img src={item.image} width={300} />
                   <p>

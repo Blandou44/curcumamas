@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
-import motif from "../images/motif2.png";
+import motif from "../images/fondlea.jpeg";
 import mimou from "../images/nos-services/mimourecadre.png";
 import cake from "../images/carousel/24.jpg";
 import manger from "../images/nos-services/mangerreacdre.png";
@@ -90,11 +90,7 @@ export const WhachaWaitingFor = () => {
       <WhachaWaitingForContainer>
         <WhachaWaitingForWrapper>
           <SmallHeading>
-            Les parents, les familles, les tribus sont tout autour de nous{" "}
-            <br />
-            et vous en faites partie. <br />
-            Pendant le post-partum, période après l'enfantement, ils ont besoin
-            :
+            Vos bébés naissent et vos familles avec, elles ont besoin de :
           </SmallHeading>
           <Argument>
             <img src={mimou}></img>

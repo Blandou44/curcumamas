@@ -80,11 +80,22 @@ export const Portrait = () => {
         Vous avez dit <em>Curcumamas</em> ?
       </Heading>
       <Description>
-        Curcumamas c'est Ludivine et Blandine. <br />
-        Blandine est la fondatrice de Curcumamas et Ludivine sa gérante.
-        <br /> Formées en cuisine et nutrition de la femme enceinte et en post
-        partum, elles mettent toute leur expertise et passion au service des
-        familles et donc de Curcumamas.
+        Curcumamas c'est Ludivine et Blandine.
+        <br />
+        <br />
+        Blandine est la fondatrice de Curcumamas elle est formée en nutrition et
+        accompagnement de la femme enceinte et en post partum et en massage pré
+        et post partum. Elle s'occupe des soins et tous les accompagnements.
+        <br />
+        <br />
+        Ludivine est la gérante de production, elle est cheffe et s'occupe de
+        toute la partie nutrition : de la prise de contacte avec vous jusqu'a la
+        confection de vos petits plats.
+        <br />
+        <br />
+        Formées en cuisine et nutrition de la femme enceinte et en post partum,
+        elles mettent toute leur expertise et passion au service des familles et
+        donc de Curcumamas.
       </Description>
       <IllustrationsWrapper>
         <Illustration src={ludi}></Illustration>

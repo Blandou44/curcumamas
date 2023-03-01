@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import motif from "../images/motif2.png";
+import motif from "../images/fondlea.jpeg";
 
 export const mainColor = "#032aaf";
 export const secondaryColor = "#F78B1E";
