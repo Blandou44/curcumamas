@@ -53,7 +53,7 @@ export const NewHero = () => {
     <HeroContainer>
       <HeroWrapper>
         <Quote>
-          Les petits plats de Curcumamas vous accompagne en post partum, tout
+          Les petits plats de Curcumamas vous accompagnent en post partum, tout
           comme sa doula.
         </Quote>
         <CTA to="/curcumagasin/formules" secondary>

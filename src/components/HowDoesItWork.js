@@ -101,7 +101,7 @@ export const HowDoesItWork = () => {
             <p>
               Vous composez votre panier comme vous le souhaitez. Vous
               choisissez la formule qui vous convient dont vous composez le
-              contenu comme vous souhaitez parmi les choix proposés.
+              contenu parmi les choix proposés.
               <br />
               Deux options sont possibles : végé ou flexi (en supplément)
             </p>
@@ -129,7 +129,7 @@ export const HowDoesItWork = () => {
               Toutes les formules s’offrent en carte cadeau, pour vous même ou
               pour quelqu’un de votre tribu.
               <br />
-              Vous n’avez qu’à commander et payer la carte et si il s’agit d’un
+              Vous n’avez qu’à commander et payer la carte et s'il s’agit d’un
               cadeau de naissance, les parents concernés n’auront plus qu'à
               remplir sur le site leur choix pour composer leur assortiment le
               moment voulu.

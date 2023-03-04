@@ -109,7 +109,9 @@ const curcumagasin = ({ data }) => {
             <Price>
               {priceVG}€ VG - {priceFlexi}€ Flexi
             </Price>
-            <SmallText center>Taxes incluses, livraison 8,90€.</SmallText>
+            <SmallText center>
+              Taxes incluses, livraison {nbRepas > 6 ? "offerte" : "8,90€"}.
+            </SmallText>
             <p>{description}</p>
             <CommandForm
               title={title}

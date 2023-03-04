@@ -85,11 +85,11 @@ export const Portrait = () => {
         <br />
         Blandine est la fondatrice de Curcumamas elle est formée en nutrition et
         accompagnement de la femme enceinte et en post partum et en massage pré
-        et post partum. Elle s'occupe des soins et tous les accompagnements.
+        et post partum. Elle s'occupe des soins et de tous les accompagnements.
         <br />
         <br />
         Ludivine est la gérante de production, elle est cheffe et s'occupe de
-        toute la partie nutrition : de la prise de contacte avec vous jusqu'a la
+        toute la partie nutrition : de la prise de contact avec vous jusqu'à la
         confection de vos petits plats.
         <br />
         <br />
