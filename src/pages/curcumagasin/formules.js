@@ -13,7 +13,7 @@ import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
 import { colorBaie, Heading, maxWidth } from "../../styles/theme";
 
-import motif from "../../images/fondlea.jpeg";
+import motif from "../../images/fondleainvert.jpeg";
 
 const MotifWrapper = styled.div`
   background: url(${motif});
@@ -31,6 +31,7 @@ const IndexWrapper = styled.div`
   flex-direction: column;
   gap: 4rem;
   background: white;
+  box-shadow: 0px 0px 15px 4px #00000033;
   max-width: ${maxWidth};
   margin: 0 auto;
   padding: 4rem 0;

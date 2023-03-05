@@ -6,7 +6,7 @@ import { MenuDisplay } from "../../../components/MenuDisplay";
 import { BasePage } from "../../../components/BasePage";
 import { Footer } from "../../../components/Footer";
 
-import motif from "../../../images/fondlea.jpeg";
+import motif from "../../../images/fondleainvert.jpeg";
 
 const MotifWrapper = styled.div`
   background: url(${motif});
