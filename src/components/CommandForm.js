@@ -437,16 +437,20 @@ export const CommandForm = ({ title, defaultCadeau, nbRepas, menuObject }) => {
       <QuestionWrapper>
         <p>à quelle date souhaitez-vous être livré&middot;e&middot;s ?</p>
         <div>
-          <input type="radio" name="date" value="1" id="1" />
-          <label htmlFor="1">5 avril</label>
+          <input type="radio" name="date" value="11/05" id="1" />
+          <label htmlFor="1">11 mai</label>
         </div>
         <div>
-          <input type="radio" name="date" value="2" id="2" />
-          <label htmlFor="2">19 avril</label>
+          <input type="radio" name="date" value="24/05" id="2" />
+          <label htmlFor="2">24 mai</label>
         </div>
         <div>
-          <input type="radio" name="date" value="3" id="3" />
-          <label htmlFor="3">10 mai</label>
+          <input type="radio" name="date" value="7/06" id="3" />
+          <label htmlFor="3">7 juin</label>
+        </div>
+        <div>
+          <input type="radio" name="date" value="28/06" id="4" />
+          <label htmlFor="4">28 juin</label>
         </div>
       </QuestionWrapper>
       <QuestionWrapper isHidden={!isCadeau}>
