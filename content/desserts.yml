@@ -1,17 +1,25 @@
-menuType: "desserts"
-nom1: "Brownie chocolat noir et haricots rouges"
-infoNut1: "Sans gluten-sans lactose"
-description1: ""
-image1: /images/23.jpg
-nom2: "Carotte cake aux épices et noix du brésil"
-infoNut2: "Sans gluten-sans lactose"
-description2: ""
-image2: /images/23.jpg
-nom3: "Cookie au chocolat et sésame"
-infoNut3: "Sans gluten-sans lactose"
-description3: ""
-image3: /images/23.jpg
-nom4: "Porridge de chia et sa compotée de fruits de saison"
-infoNut4: "Sans gluten-sans lactose"
-description4: ""
-image4: /images/23.jpg
+nom1: Brownie chocolat noir et haricots rouges
+infoNut1: Sans gluten-sans lactose
+description1: Incroyable Brownie fondant, avec sa recette secrète contenant
+  poudre d'amande et autres trésor nutritionnel, c'est une gourmandise qui ne
+  fait pas que réconforter !
+image1: /images/7.svg
+nom2: Porridge de chia et sa compotée de fruits de saison
+infoNut2: Sans gluten-sans lactose
+description2: Plein de protéine, de fibres, d'oméga et de vitamines, c'est un
+  grand connu du post partum pour un encas sain et gourmand tout au long de la
+  journée.
+image2: /images/10.svg
+nom3: Cookies (déclinaison selon l'humeur de la cheffe)
+infoNut3: Sans gluten-sans lactose
+description3: Tantôt à la betterave cajou et chocolat, tantôt tout choco
+  cacahuète, selon l'envie et la saison des approvisionnements vous aurez des
+  cookies différents.
+image3: /images/8.svg
+nom4: Granola spécial post partum et allaitement
+infoNut4: Sans gluten-sans lactose
+description4: "Un délicieux granola aux graines noix et autres supers aliments,
+  il sera parfait pour vous soutenir toute la journée : du petit déjeuner, au
+  goûter et sur toutes les fringales de la journée. Bercer ça creuse !"
+menuType: desserts
+image4: /images/9.svg
