@@ -462,7 +462,7 @@ export const CommandForm = ({ title, defaultCadeau, nbRepas, menuObject }) => {
             id="ulterieurement"
           />
           <label htmlFor="ulterieurement">
-            Le destinataire du cadeau choisira sa date de livraison
+            Le destinataire du cadeau choisira sa datcontGe de livraison
             ultérieurement
           </label>
         </div>
@@ -549,7 +549,7 @@ export const CommandForm = ({ title, defaultCadeau, nbRepas, menuObject }) => {
         disabled={false}
         style={{ marginTop: "2rem" }}
       >
-        Contacte nous
+        Passe ta commande
       </NewButton>
     </Form>
   );
