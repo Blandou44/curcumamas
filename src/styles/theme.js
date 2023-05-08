@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import motif from "../images/fondleainvert.jpeg";
 
-export const mainColor = "#032aaf";
+export const mainColor = "#132bd2";
 export const secondaryColor = "#F78B1E";
 export const grey10 = "#f7f7f7";
 export const grey20 = "#dee2e6";
@@ -15,7 +15,7 @@ export const colorPaprika = "#cc3300";
 export const colorCurcuma = "#f26300";
 export const colorMoutarde = "#f5a800";
 
-export const newMainColor = "#013cf2";
+export const newMainColor = "#132bd2";
 export const newSecondaryColor = colorCurcuma;
 
 export const sidePadding = "6rem";
