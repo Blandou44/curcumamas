@@ -8,36 +8,17 @@ media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Dates"
+    name: "dates"
     files:
-      - label: "Menus"
-        name: "menus"
-        file: "content/menus.yml"
+      - label: "Dates"
+        name: "dates"
+        file: "content/dates.yml"
         fields: 
-          - {label: Date, name: date, widget: string}
-          - label: "Menu"
-            name: "menu"
-            widget: "image"
-            choose_url: true
-            default: "/static/images/menu_1.png"
-            media_library:
-                config:
-                  multiple: true     
-      - label: "Prix"
-        name: "prix"
-        file: "content/prix.yml"
-        fields: 
-          - {label: Fringale, name: fringale, widget: number}
-          - {label: Supplément Flexi Fringale, name: fringaleFlexi, widget: number}
-          - {label: Curcufamille, name: curcufamille, widget: number}
-          - {label: Supplément Flexi Curcufamille, name: curcufamilleFlexi, widget: number}
-          - {label: Carte cadeau 10 jours, name: cc10j, widget: number}
-          - {label: Supplément Flexi Carte cadeau 10 jours, name: cc10jFlexi, widget: number}
-          - {label: Carte cadeau 14 jours, name: cc14j, widget: number}
-          - {label: Supplément Flexi Carte cadeau 14 jours, name: cc14jFlexi, widget: number}
-          - {label: Carte cadeau 30 jours, name: cc30j, widget: number}
-          - {label: Supplément Flexi Carte cadeau 30 jours, name: cc30jFlexi, widget: number}
+          - {label: Date1, name: date1, widget: string}
+          - {label: Date2, name: date2, widget: string}
+          - {label: Date3, name: date3, widget: string}
+          - {label: Date4, name: date4, widget: string}
   - label: "Menus"
     name: "menus"
     files:
@@ -198,6 +179,7 @@ collections:
             name: description,
             widget: string
           }
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
           - {label: "Nombre de repas", name: nbRepas, widget: number}
           - {label: "Prix végé", name: priceVG, widget: number}
@@ -219,6 +201,7 @@ collections:
             name: description,
             widget: string
           }
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
           - {label: "Nombre de repas", name: nbRepas, widget: number}
           - {label: "Prix végé", name: priceVG, widget: number}
@@ -240,6 +223,7 @@ collections:
             name: description,
             widget: string
           }
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
           - {label: "Nombre de repas", name: nbRepas, widget: number}
           - {label: "Prix végé", name: priceVG, widget: number}
@@ -261,6 +245,7 @@ collections:
             name: description,
             widget: string
           }
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
           - {label: "Nombre de repas", name: nbRepas, widget: number}
           - {label: "Prix végé", name: priceVG, widget: number}
@@ -282,6 +267,7 @@ collections:
             name: description,
             widget: string
           }
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
           - {label: "Nombre de repas", name: nbRepas, widget: number}
           - {label: "Prix végé", name: priceVG, widget: number}

@@ -99,7 +99,14 @@ const QuestionWrapper = styled.div`
   `};
 `;
 
-export const CommandForm = ({ title, defaultCadeau, nbRepas, menuObject }) => {
+export const CommandForm = ({
+  title,
+  defaultCadeau,
+  nbRepas,
+  menuObject,
+  dateArray,
+  lienPaiement,
+}) => {
   const [isCadeau, setIsCadeau] = useState(defaultCadeau);
 
   const [nbEntree1, setNbEntree1] = useState(0);
@@ -141,7 +148,9 @@ export const CommandForm = ({ title, defaultCadeau, nbRepas, menuObject }) => {
       name="commandev2"
       method="POST"
       data-netlify="true"
-      action="/succes/commandev2/"
+      action={`/succes/commandev2/${
+        lienPaiement ? `?lienpaiement=${encodeURIComponent(lienPaiement)}` : ""
+      }`}
     >
       <input type="hidden" name="form-name" value="commandev2" />
       <HiddenInput
@@ -437,20 +446,20 @@ export const CommandForm = ({ title, defaultCadeau, nbRepas, menuObject }) => {
       <QuestionWrapper>
         <p>à quelle date souhaitez-vous être livré&middot;e&middot;s ?</p>
         <div>
-          <input type="radio" name="date" value="11/05" id="1" />
-          <label htmlFor="1">11 mai</label>
+          <input type="radio" name="date" value={dateArray[0]} id="1" />
+          <label htmlFor="1">{dateArray[0]}</label>
         </div>
         <div>
-          <input type="radio" name="date" value="24/05" id="2" />
-          <label htmlFor="2">24 mai</label>
+          <input type="radio" name="date" value={dateArray[1]} id="2" />
+          <label htmlFor="2">{dateArray[1]}</label>
         </div>
         <div>
-          <input type="radio" name="date" value="7/06" id="3" />
-          <label htmlFor="3">7 juin</label>
+          <input type="radio" name="date" value={dateArray[2]} id="3" />
+          <label htmlFor="3">{dateArray[2]}</label>
         </div>
         <div>
-          <input type="radio" name="date" value="28/06" id="4" />
-          <label htmlFor="4">28 juin</label>
+          <input type="radio" name="date" value={dateArray[3]} id="4" />
+          <label htmlFor="4">{dateArray[3]}</label>
         </div>
       </QuestionWrapper>
       <QuestionWrapper isHidden={!isCadeau}>

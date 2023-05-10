@@ -43,7 +43,7 @@ const ShopWrapper = styled.div`
 
     > img {
       max-height: 80vh;
-      max-width: 50vw;
+      max-width: 100%;
       position: sticky;
       top: 0;
     }
@@ -68,16 +68,32 @@ const Price = styled.h2`
 `;
 
 const curcumagasin = ({ data }) => {
+  // filter data without date1
+  const dateNode = data.allContentYaml.nodes.filter((item) => item.date1);
+
+  // put all the non null dates into a date array
+  const dateArray = dateNode.reduce((acc, item) => {
+    if (item.date1) {
+      acc.push(item.date1);
+    }
+    if (item.date2) {
+      acc.push(item.date2);
+    }
+    if (item.date3) {
+      acc.push(item.date3);
+    }
+    if (item.date4) {
+      acc.push(item.date4);
+    }
+    return acc;
+  }, []);
   const menuArray = data.allContentYaml.nodes.filter((item) => item.menuType);
 
   // turn the array into an object using menuType as key
-
   const menuObject = menuArray.reduce((acc, item) => {
     acc[item.menuType] = item;
     return acc;
   }, {});
-
-  console.log(menuObject);
 
   //filter data without a title
   const filteredData = data.allContentYaml.nodes.filter((item) => item.title);
@@ -96,8 +112,18 @@ const curcumagasin = ({ data }) => {
 
   const selectedItem = formulesObject[encodeURIComponent(item.toLowerCase())];
 
-  const { title, description, priceVG, priceFlexi, image, nbRepas, isCadeau } =
-    selectedItem;
+  const {
+    title,
+    description,
+    priceVG,
+    priceFlexi,
+    image,
+    nbRepas,
+    isCadeau,
+    lienPaiement,
+  } = selectedItem;
+
+  console.log({ selectedItem });
 
   return (
     <BasePage>
@@ -119,6 +145,8 @@ const curcumagasin = ({ data }) => {
               defaultCadeau={isCadeau}
               nbRepas={nbRepas}
               menuObject={menuObject}
+              dateArray={dateArray}
+              lienPaiement={lienPaiement}
             />
           </FormWrapper>
         </ShopWrapper>
@@ -138,6 +166,7 @@ export const query = graphql`
         nbRepas
         image
         description
+        lienPaiement
         isCadeau
         menuType
         nom1
@@ -156,6 +185,10 @@ export const query = graphql`
         image2
         image3
         image4
+        date1
+        date2
+        date3
+        date4
       }
     }
   }
