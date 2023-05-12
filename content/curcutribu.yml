@@ -3,9 +3,9 @@ description: "Ce coffret contient à composer comme vous souhaitez : 10 soupes,
   10 collations sucrées, et 10 plats. Parfait assortiment à offrir ou à
   s'offrir, pour des semaines réconfortantes et sans charge mentale. Les
   portions sont individuelles et copieuses."
+lienPaiement: https://pay.sendinblue.com/fbc032a6-8f8d-4ae9-a6c4-3ff47bd7cd1e
 isCadeau: true
 nbRepas: 10
 priceVG: 240
 priceFlexi: 252
 image: /images/16.svg
-lienPaiement: null
