@@ -5,9 +5,9 @@ description: "Ce coffret contient : deux soupes gourmandes, deux collations
   individuelles et copieuses. Ce coffret est en PROMO il vous suffit de
   renseigner dans le champs \"message les 3 portions supplémentaires que vous
   voulez et nous les ajouteront à votre commande."
+lienPaiement: "https://pay.brevo.com/de58e65f-84fe-41d9-9423-71529830c948 "
 isCadeau: false
 nbRepas: 2
 priceVG: 54
 priceFlexi: 57
 image: /images/17.svg
-lienPaiement: "https://pay.sendinblue.com/60618f4b-2ddc-4b1f-a731-4fab8651a8aa"
