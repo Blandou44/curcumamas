@@ -3,9 +3,9 @@ description: "Ce coffret est à composer comme vous souhaitez, il contient : 6
   soupes 6 collations sucrées, et 6 plats. Parfait assortiment pour une semaine,
   juste après l'enfantement par exemple. Les portions sont individuelles et
   copieuses."
+lienPaiement: https://pay.sendinblue.com/268b9645-336a-44e9-92b1-92fe38a0cf76
 isCadeau: false
 nbRepas: 6
 priceVG: 156
 priceFlexi: 162
 image: /images/15.svg
-lienPaiement: null
