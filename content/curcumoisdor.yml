@@ -5,9 +5,9 @@ description: "Ce coffret est à composer comme vous souhaitez, il contient : 30
   mentale. Les portions sont individuelles et copieuses. Selon vos souhaits ce
   coffret peut être livré en trois fois avec les livraisons OFFERTES. Vous avez
   1 an pour choisir 3 dates de livraisons qui vous conviennent!"
+lienPaiement: https://pay.brevo.com/5198d75e-de65-4223-acb8-57216b12f6a9
 isCadeau: true
 nbRepas: 30
 priceVG: 660
 priceFlexi: 702
 image: /images/18.svg
-lienPaiement: null
