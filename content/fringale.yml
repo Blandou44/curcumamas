@@ -5,7 +5,7 @@ description: "Ce coffret contient : deux soupes gourmandes, deux collations
   individuelles et copieuses. Ce coffret est en PROMO il vous suffit de
   renseigner dans le champs \"message les 3 portions supplémentaires que vous
   voulez et nous les ajouteront à votre commande."
-lienPaiement: "https://pay.brevo.com/de58e65f-84fe-41d9-9423-71529830c948 "
+lienPaiement: https://pay.brevo.com/9ad3e2c2-01ec-40c8-b6b3-b1a78873e3b0
 isCadeau: false
 nbRepas: 2
 priceVG: 54
