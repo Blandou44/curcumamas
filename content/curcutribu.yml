@@ -1,11 +1,10 @@
-title: Curcutribu
-description: "Ce coffret contient à composer comme vous souhaitez : 10 soupes,
-  10 collations sucrées, et 10 plats. Parfait assortiment à offrir ou à
-  s'offrir, pour des semaines réconfortantes et sans charge mentale. Les
-  portions sont individuelles et copieuses."
+title: Curcugoûter
+description: "Ce coffret contient : 1 granola Amande Abricot (notre best-seller)
+  200g, un mélange pour lait d’or (4 portions) et pour Chai (4 portions), un
+  livret astuces et recettes du post-partum"
 lienPaiement: https://pay.brevo.com/cbb5d004-982f-47f5-95c5-5ff65d8a70e5
 isCadeau: true
-nbRepas: 10
-priceVG: 240
-priceFlexi: 252
-image: /images/16.svg
+nbRepas: 4
+priceVG: 35
+priceFlexi: 38
+image: /images/9.svg
