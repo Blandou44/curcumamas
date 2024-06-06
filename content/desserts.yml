@@ -1,21 +1,23 @@
 nom1: Brownie chocolat noir, poudre d'amandes et ingrédient secret
 infoNut1: Sans gluten-sans lactose
 description1: Incroyable Brownie fondant, avec sa recette secrète contenant
-  poudre d'amande et autres trésor nutritionnel, c'est une gourmandise qui ne
+  poudre d'amande et autres trésor nutritionnels, c'est une gourmandise qui ne
   fait pas que réconforter !
 image1: /images/7.svg
-nom2: Porridge de chia, coco et spiruline
+nom2: "Chai : épices et réconfort"
 infoNut2: Sans gluten-sans lactose
-description2: Plein de superaliments, de protéine, de fibres, d'oméga et de
-  vitamines, c'est un grand connu du post partum pour un encas sain et gourmand
-  tout au long de la journée.
-image2: /images/sans-titre.svg
-nom3: Cookies (déclinaison selon l'humeur de la cheffe)
+description2: "Un mix d’épices sans thé, prêt à être mélangé à du lait (végétal
+  ou animal) : gingembre, muscade, cannelle, cardamome… Cette boisson
+  réconfortante est très consommée en Inde. Nous avons ici enlevé la théine et
+  le sucre pour pouvoir en boire à volonté pendant le post-partum."
+image2: /images/capture-d-écran_20240606_141536.png
+nom3: "Lait d'or : la boisson du post partum"
 infoNut3: Sans gluten-sans lactose
-description3: Tantôt à la betterave cajou et chocolat, tantôt tout choco
-  cacahuète, selon l'envie et la saison des approvisionnements vous aurez des
-  cookies différents.
-image3: /images/8.svg
+description3: "Un mix d’épices prêt à être mélangé à du lait végétal (lait de
+  coco ou lait d’amande) : curcuma, gingembre, poivre… Cette boisson chaude et
+  réconfortante est reconnue pour ses propriétés antioxydantes, détoxifiantes et
+  apaisantes, elle est parfaite pour le post-partum."
+image3: /images/capture-d-écran_20240606_142349.png
 nom4: Granola spécial post partum et allaitement
 infoNut4: Sans gluten-sans lactose
 description4: "Un délicieux granola aux graines noix et autres supers aliments,
