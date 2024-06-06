@@ -1,11 +1,13 @@
-title: Curcufamille
-description: "Ce coffret est à composer comme vous souhaitez, il contient : 6
-  soupes 6 collations sucrées, et 6 plats. Parfait assortiment pour une semaine,
-  juste après l'enfantement par exemple. Les portions sont individuelles et
-  copieuses."
+title: Formule Famille
+description: "Ce coffret contient : 8 portions salées soit  4 lasagnes
+  végétariennes et 4 Currys de légumes (l’une des deux option peut être
+  remplacés par 4 portions de Tajine de légumes sur demande) 8 portions sucrées
+  : 2 portions de granola et 6 portions de fondant au chocolat (sans gluten/
+  sans lactose) 8 boissons : 4 portions de Chai et 4 portions de Lait d’or 1
+  Livret astuces et recette du post-partum"
 lienPaiement: https://pay.brevo.com/062761ba-8368-41d6-aac5-26b9a564f5d0
 isCadeau: false
-nbRepas: 6
-priceVG: 156
+nbRepas: 8
+priceVG: 170
 priceFlexi: 162
 image: /images/15.svg
