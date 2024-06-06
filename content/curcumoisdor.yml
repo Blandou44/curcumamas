@@ -1,13 +1,14 @@
-title: Curcu mois d'or
-description: "Ce coffret est à composer comme vous souhaitez, il contient : 30
-  soupes, 30 collations sucrées, et 30 plats. Livrés en 3 fois, c'est un parfait
-  assortiment à offrir ou à s'offrir, pour un mois réconfortant et sans charge
-  mentale. Les portions sont individuelles et copieuses. Selon vos souhaits ce
-  coffret peut être livré en trois fois avec les livraisons OFFERTES. Vous avez
-  1 an pour choisir 3 dates de livraisons qui vous conviennent!"
+title: Formule mois d'or
+description: "24 portions salées : 8 portions de lasagnes végétariennes, 4 de
+  Currys de légumes (avec ou sans poulet), 4 de Tajines de légumes, 4 portions
+  de velouté de saison et 4 portions de bouillons d’os et nouilles de riz (des
+  remplacements sont possibles sur demande)  8 portions sucrées : 2 portions de
+  granola et 6 portions de fondant au chocolat (sans gluten/ sans lactose) 8
+  boissons : 4 portions de Chai et 4 portions de Lait d’or 1 Livret astuces et
+  recette du post-partum"
 lienPaiement: https://pay.brevo.com/5198d75e-de65-4223-acb8-57216b12f6a9
 isCadeau: true
-nbRepas: 30
-priceVG: 660
+nbRepas: 24
+priceVG: 230
 priceFlexi: 702
 image: /images/18.svg
