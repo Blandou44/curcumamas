@@ -2,8 +2,14 @@ title: Carte cadeau
 description: Offrez une carte cadeau (valable un an) pour un post partum plus
   serein. Les petits plats Curcumamas sont faits avec amour pour vous faciliter
   la vie des nouveaux parents
+options:
+  - 50€
+  - 100€
+  - 170€ (formule Famille sans les courses)
+  - 230€ (formule Famille tout compris ou formule Mois d’or sans les courses)
+  - 360€ (formule mois d’or tout compris)
 lienPaiement: https://pay.brevo.com/d86678af-7c1a-4792-b2e5-6fde16872e35
 isCadeau: true
-price: 35
-priceWGroceries: 50
+price: -1
+priceWGroceries: -1
 image: /images/19.svg
