@@ -118,7 +118,6 @@ const curcumagasin = ({ data }) => {
     price,
     priceWGroceries,
     image,
-    nbRepas,
     isCadeau,
     lienPaiement,
   } = selectedItem;
@@ -139,7 +138,6 @@ const curcumagasin = ({ data }) => {
             <CommandForm
               title={title}
               defaultCadeau={isCadeau}
-              nbRepas={nbRepas}
               menuObject={menuObject}
               dateArray={dateArray}
               lienPaiement={lienPaiement}
@@ -159,7 +157,6 @@ export const query = graphql`
         title
         price
         priceWGroceries
-        nbRepas
         image
         description
         lienPaiement

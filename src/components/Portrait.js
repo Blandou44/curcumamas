@@ -40,7 +40,7 @@ const PortraitWrapper = styled.nav`
     align-items: flex-start;
 
     &::before {
-      top: 283px;
+      top: 70%;
       left: 600px;
     }
   }

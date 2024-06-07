@@ -127,7 +127,6 @@ export const query = graphql`
         title
         price
         priceWGroceries
-        nbRepas
         image
         isCadeau
       }

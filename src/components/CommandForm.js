@@ -102,7 +102,6 @@ const QuestionWrapper = styled.div`
 export const CommandForm = ({
   title,
   defaultCadeau,
-  nbRepas,
   menuObject,
   dateArray,
   lienPaiement,
@@ -114,6 +113,8 @@ export const CommandForm = ({
   const [nbEntree3, setNbEntree3] = useState(0);
   const [nbEntree4, setNbEntree4] = useState(0);
   const [remainingEntree, setRemainingEntree] = useState(0);
+
+  const nbRepas = 6;
 
   useEffect(() => {
     setRemainingEntree(

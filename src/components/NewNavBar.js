@@ -112,13 +112,15 @@ export const NewNavBar = () => {
     <Headroom>
       <NavContainer isOpen={isOpen}>
         <NavWrapper>
-          <LogoWrapper>
-            <StaticImage
-              src="../images/logo-curcumamas-bleu.png"
-              alt="logo"
-              objectFit="contain"
-            />
-          </LogoWrapper>
+          <Link to="/" selected={path === "/"}>
+            <LogoWrapper>
+              <StaticImage
+                src="../ipmages/logo-curcumamas-bleu.png"
+                alt="logo"
+                objectFit="contain"
+              />
+            </LogoWrapper>
+          </Link>
           <BurgerButton>
             <FontAwesomeIcon
               icon={isOpen ? faXmark : faBars}
@@ -137,6 +139,12 @@ export const NewNavBar = () => {
               selected={path.includes("/curcumagasin")}
             >
               Curcumagasin
+            </Link>
+            <Link
+              to="/qui-sommes-nous"
+              selected={path.includes("/qui-sommes-nous")}
+            >
+              Qui sommes nous
             </Link>
           </LinksWrapper>
         </NavWrapper>
