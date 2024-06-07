@@ -1,13 +1,9 @@
-title: Fringale
-description: "Ce coffret contient : deux soupes gourmandes, deux collations
-  sucrées et deux plats. Parfait assortiment pour vous libérer les jours juste
-  après l'enfantement sans négliger votre alimentation. Les portions sont
-  individuelles et copieuses. Ce coffret est en PROMO il vous suffit de
-  renseigner dans le champs \"message les 3 portions supplémentaires que vous
-  voulez et nous les ajouteront à votre commande."
+title: "Batch cooking "
+description: Cette offre sur mesure, vous permets d'avoir un frigo et un
+  congelateur plein sur plusieurs semaines au gré de vos envies
 lienPaiement: https://pay.brevo.com/9ad3e2c2-01ec-40c8-b6b3-b1a78873e3b0
 isCadeau: false
-nbRepas: 2
-priceVG: 54
+nbRepas: 1
+priceVG: 170
 priceFlexi: 57
 image: /images/17.svg
