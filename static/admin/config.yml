@@ -249,8 +249,7 @@ collections:
           }
           - label: Options carte cadeau
             name: options
-            widget: list,
-            summary: '{{fields.option_no}}'
+            widget: list
             field: {label: Option no, name: option_no, widget: string}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
