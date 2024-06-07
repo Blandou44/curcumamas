@@ -94,40 +94,16 @@ export const Footer = ({ isCGU = false }) => {
           Insta
         </FooterLink>
       </LinksContainer>
-      <PartnersContainer>
-        <FooterText>Partenaires</FooterText>
-        <CityContainer>
-          <FooterText>Toulouse :</FooterText>
-          <FooterLink href="http://aad-accouchement-domicile.fr/">
-            AAD
-          </FooterLink>
-        </CityContainer>
-        <CityContainer>
-          <FooterText>Paris :</FooterText>
-          <FooterLink href="https://www.oponopono-paris.com/">
-            Oponopono-Paris
-          </FooterLink>
-          <FooterLink href="https://www.chefcecile.com/">
-            Chef Cécile
-          </FooterLink>
-        </CityContainer>
-        <CityContainer>
-          <FooterText>Lyon :</FooterText>
-          <FooterLink href="https://www.mama-lova.fr/">Mama-lova</FooterLink>
-        </CityContainer>
-        <CityContainer>
-          <FooterText>Bordeaux :</FooterText>
-          <FooterLink href="https://www.instagram.com/bepviet_bdx/?hl=fr">
-            @bepviet_bdx
-          </FooterLink>
-        </CityContainer>
-      </PartnersContainer>
       <ContactContainer>
         <FooterText>
           Contact:{" "}
           <FooterLink href="mailto:curcumamas@gmail.com">
             curcumamas@gmail.com
           </FooterLink>
+        </FooterText>
+        <FooterText>
+          Téléphone:{" "}
+          <FooterLink href="tel:0689300865">06.89.30.08.65</FooterLink>
         </FooterText>
       </ContactContainer>
       <Copyright>

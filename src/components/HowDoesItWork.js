@@ -90,49 +90,46 @@ export const HowDoesItWork = () => {
           <Point>
             <img alt="" src={allongee}></img>
             <p>
-              Vous commandez de chez vous pour vous ou votre tribu.
-              <br />
-              Fin de prise des commandes : vendredi 14h de la semaine précédant
-              votre livraison.
+              Vous commandez pour vous ou pour offrir en choisissant votre
+              formule ou votre carte cadeau.
             </p>
           </Point>
           <Point>
             <img alt="" src={menu}></img>
             <p>
-              Vous composez votre panier comme vous le souhaitez. Vous
-              choisissez la formule qui vous convient dont vous composez le
-              contenu parmi les choix proposés.
-              <br />
-              Deux options sont possibles : végé ou flexi (en supplément)
+              Vous décidez de faire les courses vous-mêmes avec une liste
+              détaillée préparée par nos soins ou vous nous confiez cette
+              mission.
             </p>
           </Point>
           <Point>
             <img alt="" src={legumes}></img>
             <p>
-              Les formules et cartes cadeaux sont des assortiments qui
-              contiennent plusieurs collations salées, collations sucrées et
-              plats.
-              <br />
-              C’est à vous de les composer avec les options que vous souhaitez.
+              Les formules et cartes cadeaux sont des assortiments qui Vous
+              réservez votre créneau en ligne ou laissez les nouveaux parents le
+              faire plus tard.
             </p>
           </Point>
           <Point>
             <img alt="" src={sac}></img>
             <p>
-              Vous commandez et êtes livré&middot;e&middot;s la semaine suivante
-              le mercredi avant 13h, chez vous, partout en Occitanie.
+              Ludivine se déplace au domicile des futurs ou nouveaux parents
+              pour une session de cuisine (entre 2 et 4h selon la formule) à
+              Toulouse et en région Toulousaine.
+              <br />
+              <br />
+              Seule la formule Curcu-goûter peut être envoyée partout en France.
             </p>
           </Point>
           <Point>
             <img alt="" src={cadeau}></img>
             <p>
-              Toutes les formules s’offrent en carte cadeau, pour vous même ou
-              pour quelqu’un de votre tribu.
+              Tous les plats sont pensés pour être stockés au frigo (pendant 3
+              jours) ou au congélateur (pendant 3 mois).
               <br />
-              Vous n’avez qu’à commander et payer la carte et s'il s’agit d’un
-              cadeau de naissance, les parents concernés n’auront plus qu'à
-              remplir sur le site leur choix pour composer leur assortiment le
-              moment voulu.
+              <br />
+              Ludivine se charge bien évidemment de laisser la cuisine et la
+              vaisselle propres.
             </p>
           </Point>
         </HowDoesItWorkWrapper>

@@ -80,22 +80,19 @@ export const Portrait = () => {
         Vous avez dit <em>Curcumamas</em> ?
       </Heading>
       <Description>
-        Curcumamas c'est Ludivine et Blandine.
+        Blandine a fondé Curcumamas en janvier 2021, formée en nutrition et
+        accompagnement de la femme enceinte et en post partum, elle a élaboré
+        des recettes pour répondre aux besoins nutritionnels particuliers de la
+        jeune mère.
         <br />
         <br />
-        Blandine est la fondatrice de Curcumamas elle est formée en nutrition et
-        accompagnement de la femme enceinte et en post partum et en massage pré
-        et post partum. Elle s'occupe des soins et de tous les accompagnements.
+        Au même moment, Ludivine passait son CAP Cuisine pendant la grossesse de
+        son deuxième enfant. Elle a rejoint l’aventure Curcumamas en mai 2022 et
+        a repris les rênes de l’entreprise en solo.
         <br />
         <br />
-        Ludivine est la gérante de production, elle est cheffe et s'occupe de
-        toute la partie nutrition : de la prise de contact avec vous jusqu'à la
-        confection de vos petits plats.
-        <br />
-        <br />
-        Formées en cuisine et nutrition de la femme enceinte et en post partum,
-        elles mettent toute leur expertise et passion au service des familles et
-        donc de Curcumamas.
+        Cuisiner pour les futures et jeunes mamans est pour elle une vocation et
+        une passion.
       </Description>
       <IllustrationsWrapper>
         <Illustration src={ludi}></Illustration>

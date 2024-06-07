@@ -71,7 +71,7 @@ const Formules = ({ data }) => {
           <div>
             <Heading>La Curcumarmite</Heading>
             <FormulesWrapper>
-              <Formule to="/curcumagasin/menu/entrees">
+              <Formule to="/curcumagasin/menu/soupes">
                 <StaticImage
                   src="../../images/carousel/21.jpg"
                   layout="constrained"

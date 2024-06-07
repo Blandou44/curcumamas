@@ -53,8 +53,13 @@ export const NewHero = () => {
     <HeroContainer>
       <HeroWrapper>
         <Quote>
-          Les petits plats de Curcumamas vous accompagnent en post partum, tout
-          comme sa doula.
+          Le plus précieux des cadeaux pour les nouveaux parents.
+          <br />
+          <br />
+          <small>
+            Les petits plats Curcumamas sont faits avec amour pour vous
+            faciliter la vie en post-partum.
+          </small>
         </Quote>
         <CTA to="/curcumagasin/formules" secondary>
           Commandez
