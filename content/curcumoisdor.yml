@@ -8,7 +8,6 @@ description: "24 portions salées : 8 portions de lasagnes végétariennes, 4 de
   recette du post-partum"
 lienPaiement: https://pay.brevo.com/5198d75e-de65-4223-acb8-57216b12f6a9
 isCadeau: true
-nbRepas: 24
-priceVG: 230
-priceFlexi: 702
+price: 230
+priceWGroceries: 702
 image: /images/18.svg

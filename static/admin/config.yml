@@ -170,9 +170,9 @@ collections:
   - label: "Formules"
     name: "formules"
     files:
-      - label: "Fringale"
-        name: "fringale"
-        file: "content/fringale.yml"
+      - label: "Batch cooking"
+        name: "batch-cooking"
+        file: "content/batch-cooking.yml"
         fields: 
           - {label: Title, name: title, widget: string}
           - {label: Description,
@@ -181,9 +181,8 @@ collections:
           }
           - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Nombre de repas", name: nbRepas, widget: number}
-          - {label: "Prix végé", name: priceVG, widget: number}
-          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - {label: "Prix", name: price, widget: number}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - label: "Image"
             name: "image"
             widget: "image"
@@ -203,9 +202,12 @@ collections:
           }
           - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Nombre de repas", name: nbRepas, widget: number}
-          - {label: "Prix végé", name: priceVG, widget: number}
-          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - {label: "Prix", name: price, widget: number}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - label: "Image"
             name: "image"
             widget: "image"
@@ -214,9 +216,9 @@ collections:
             media_library:
                 config:
                   multiple: true      
-      - label: "Curcutribu"
-        name: "curcutribu"
-        file: "content/curcutribu.yml"
+      - label: "Curcugoûter"
+        name: "curcugouter"
+        file: "content/curcugouter.yml"
         fields: 
           - {label: Title, name: title, widget: string}
           - {label: Description,
@@ -225,9 +227,9 @@ collections:
           }
           - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Nombre de repas", name: nbRepas, widget: number}
-          - {label: "Prix végé", name: priceVG, widget: number}
-          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - label: "Image"
             name: "image"
             widget: "image"
@@ -236,20 +238,24 @@ collections:
             media_library:
                 config:
                   multiple: true     
-      - label: "Curcuvillage"
-        name: "curcuvillage"
-        file: "content/curcuvillage.yml"
+      - label: "Carte Cadeau"
+        name: "carte-cadeau"
+        file: "content/carte-cadeau.yml"
         fields: 
           - {label: Title, name: title, widget: string}
           - {label: Description,
             name: description,
             widget: string
           }
+          - label: Options carte cadeau
+            name: options
+            widget: list,
+            summary: '{{fields.option_no}}'
+            field: {label: Option no, name: option_no, widget: string}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Nombre de repas", name: nbRepas, widget: number}
-          - {label: "Prix végé", name: priceVG, widget: number}
-          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - {label: "Prix", name: price, widget: number}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - label: "Image"
             name: "image"
             widget: "image"
@@ -269,9 +275,12 @@ collections:
           }
           - {label: Lien de paiement, name: lienPaiement, widget: string}
           - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Nombre de repas", name: nbRepas, widget: number}
-          - {label: "Prix végé", name: priceVG, widget: number}
-          - {label: "Prix flexi", name: priceFlexi, widget: number}
+          - {label: "Prix", name: price, widget: number}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - label: "Image"
             name: "image"
             widget: "image"

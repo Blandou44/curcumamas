@@ -7,7 +7,6 @@ description: "Ce coffret contient : 8 portions salées soit  4 lasagnes
   Livret astuces et recette du post-partum"
 lienPaiement: https://pay.brevo.com/062761ba-8368-41d6-aac5-26b9a564f5d0
 isCadeau: false
-nbRepas: 8
-priceVG: 170
-priceFlexi: 196
+price: 170
+priceWGroceries: 196
 image: /images/illus-site.png

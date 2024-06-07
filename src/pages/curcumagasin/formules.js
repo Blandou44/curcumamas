@@ -107,7 +107,7 @@ const Formules = ({ data }) => {
                 <Formule to={`/curcumagasin/commande?item=${item.title}`}>
                   <img src={item.image} width={300} />
                   <p>
-                    {item.title} <br />à partir de {item.priceVG}€
+                    {item.title} <br />à partir de {item.price}€
                   </p>
                 </Formule>
               ))}
@@ -125,8 +125,8 @@ export const query = graphql`
     allContentYaml {
       nodes {
         title
-        priceVG
-        priceFlexi
+        price
+        priceWGroceries
         nbRepas
         image
         isCadeau

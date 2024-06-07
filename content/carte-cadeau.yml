@@ -4,7 +4,6 @@ description: Offrez une carte cadeau (valable un an) pour un post partum plus
   la vie des nouveaux parents
 lienPaiement: https://pay.brevo.com/d86678af-7c1a-4792-b2e5-6fde16872e35
 isCadeau: true
-nbRepas: 14
-priceVG: 35
-priceFlexi: 50
+price: 35
+priceWGroceries: 50
 image: /images/19.svg

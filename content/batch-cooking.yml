@@ -1,9 +1,8 @@
-title: "Batch cooking "
+title: "Batch cooking"
 description: Cette offre sur mesure, vous permets d'avoir un frigo et un
   congelateur plein sur plusieurs semaines au gré de vos envies
 lienPaiement: https://pay.brevo.com/9ad3e2c2-01ec-40c8-b6b3-b1a78873e3b0
 isCadeau: false
-nbRepas: 1
-priceVG: 170
-priceFlexi: 57
+price: 170
+priceWGroceries: 57
 image: /images/17.svg

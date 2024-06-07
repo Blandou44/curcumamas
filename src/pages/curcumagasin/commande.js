@@ -115,8 +115,8 @@ const curcumagasin = ({ data }) => {
   const {
     title,
     description,
-    priceVG,
-    priceFlexi,
+    price,
+    priceWGroceries,
     image,
     nbRepas,
     isCadeau,
@@ -133,12 +133,8 @@ const curcumagasin = ({ data }) => {
           <img src={image} alt="" />
           <FormWrapper>
             <Heading>{title}</Heading>
-            <Price>
-              {priceVG}€ VG - {priceFlexi}€ Flexi
-            </Price>
-            <SmallText center>
-              Taxes incluses, livraison {nbRepas > 10 ? "offerte" : "8,90€"}.
-            </SmallText>
+            <Price>à partir de {price}€</Price>
+            <SmallText center>A Toulouse et région toulousaine</SmallText>
             <p>{description}</p>
             <CommandForm
               title={title}
@@ -161,8 +157,8 @@ export const query = graphql`
     allContentYaml {
       nodes {
         title
-        priceVG
-        priceFlexi
+        price
+        priceWGroceries
         nbRepas
         image
         description

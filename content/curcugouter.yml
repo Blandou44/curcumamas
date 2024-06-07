@@ -4,7 +4,6 @@ description: "Ce coffret contient : 1 granola Amande Abricot (notre best-seller)
   livret astuces et recettes du post-partum"
 lienPaiement: https://pay.brevo.com/cbb5d004-982f-47f5-95c5-5ff65d8a70e5
 isCadeau: true
-nbRepas: 4
-priceVG: 35
-priceFlexi: 38
+price: 35
+priceWGroceries: 38
 image: /images/9.svg
