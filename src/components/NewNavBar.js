@@ -34,7 +34,7 @@ const NavWrapper = styled.nav`
   }
 `;
 
-const LogoWrapper = styled.div`
+const LogoWrapper = styled(AnchorLink)`
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
@@ -112,15 +112,14 @@ export const NewNavBar = () => {
     <Headroom>
       <NavContainer isOpen={isOpen}>
         <NavWrapper>
-          <Link to="/" selected={path === "/"}>
-            <LogoWrapper>
-              <StaticImage
-                src="../ipmages/logo-curcumamas-bleu.png"
-                alt="logo"
-                objectFit="contain"
-              />
-            </LogoWrapper>
-          </Link>
+          <LogoWrapper to="/" selected={path === "/"}>
+            <StaticImage
+              src="../images/logo-curcumamas-bleu.png"
+              alt="logo"
+              objectFit="contain"
+            />
+          </LogoWrapper>
+
           <BurgerButton>
             <FontAwesomeIcon
               icon={isOpen ? faXmark : faBars}
