@@ -170,19 +170,35 @@ collections:
   - label: "Formules"
     name: "formules"
     files:
-      - label: "Batch cooking"
-        name: "batch-cooking"
-        file: "content/batch-cooking.yml"
+      - label: "Formule 1"
+        name: "formule-1"
+        file: "content/formule-1.yml"
         fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
           - {label: Description,
             name: description,
             widget: string
           }
-          - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Prix", name: price, widget: number}
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
           - label: "Image"
             name: "image"
             widget: "image"
@@ -191,101 +207,5 @@ collections:
             media_library:
                 config:
                   multiple: true
-      - label: "Curcufamille"
-        name: "curcufamille"
-        file: "content/curcufamille.yml"
-        fields: 
-          - {label: Title, name: title, widget: string}
-          - {label: Description,
-            name: description,
-            widget: string
-          }
-          - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Prix", name: price, widget: number}
-          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
-          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
-          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
-          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
-          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            choose_url: true
-            default: "/static/images/menu_1.png"
-            media_library:
-                config:
-                  multiple: true      
-      - label: "Curcugoûter"
-        name: "curcugouter"
-        file: "content/curcugouter.yml"
-        fields: 
-          - {label: Title, name: title, widget: string}
-          - {label: Description,
-            name: description,
-            widget: string
-          }
-          - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: Frais de port, name: fdp, widget: string}
-          - {label: "Prix", name: price, widget: number}
-          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            choose_url: true
-            default: "/static/images/menu_1.png"
-            media_library:
-                config:
-                  multiple: true     
-      - label: "Carte Cadeau"
-        name: "carte-cadeau"
-        file: "content/carte-cadeau.yml"
-        fields: 
-          - {label: Title, name: title, widget: string}
-          - {label: Description,
-            name: description,
-            widget: string
-          }
-          - label: Options carte cadeau
-            name: options
-            widget: list
-            field: {label: Option no, name: option_no, widget: string}
-          - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Prix", name: price, widget: number}
-          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            choose_url: true
-            default: "/static/images/menu_1.png"
-            media_library:
-                config:
-                  multiple: true     
-      - label: "Curcu mois d'or"
-        name: "curcumoisdor"
-        file: "content/curcumoisdor.yml"
-        fields: 
-          - {label: Title, name: title, widget: string}
-          - {label: Description,
-            name: description,
-            widget: string
-          }
-          - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - {label: Cadeau, name: isCadeau, widget: boolean}
-          - {label: "Prix", name: price, widget: number}
-          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
-          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
-          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
-          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
-          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
-          - label: "Image"
-            name: "image"
-            widget: "image"
-            choose_url: true
-            default: "/static/images/menu_1.png"
-            media_library:
-                config:
-                  multiple: true     
+
                 
