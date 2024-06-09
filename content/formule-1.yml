@@ -1,19 +1,24 @@
 isEnabled: true
-title: Fomule 1
-price: 12
+title: Formule Famille
+price: 170
 fdp: "-1"
-description: Description de la formule 1
+description: "Ce coffret contient : 8 portions salées soit  4 lasagnes
+  végétariennes et 4 Currys de légumes (l’une des deux option peut être
+  remplacés par 4 portions de Tajine de légumes sur demande) 8 portions sucrées
+  : 2 portions de granola et 6 portions de fondant au chocolat (sans gluten/
+  sans lactose) 8 boissons : 4 portions de Chai et 4 portions de Lait d’or 1
+  Livret astuces et recette du post-partum"
 hasGroceries: true
-priceWGroceries: 120
+priceWGroceries: 196
 hasGiftCard: true
-giftCardPrice: 13
+giftCardPrice: 8
 hasGiftCardOptions: false
 hasDelivery: true
 priceDeliveryToulouse: 0
-priceDeliveryCloseToulouse: 12
-priceDeliveryMidToulouse: 122
-priceDeliveryFarToulouse: 1222
+priceDeliveryCloseToulouse: 10
+priceDeliveryMidToulouse: 25
+priceDeliveryFarToulouse: 35
 hasCalendlyLink: true
-calendlyLink: perdu.com
-lienPaiement: coucou.com
+calendlyLink: https://calendly.com/curcumamas/formule_famille
+lienPaiement: https://pay.brevo.com/062761ba-8368-41d6-aac5-26b9a564f5d0
 image: /images/15.svg

@@ -1,19 +1,25 @@
 isEnabled: true
-title: Fomule 2
-price: 12
+title: Formule Mois d'Or
+price: 230
 fdp: "-1"
-description: Description de la formule 2
+description: "24 portions salées : 8 portions de lasagnes végétariennes, 4 de
+  Currys de légumes (avec ou sans poulet), 4 de Tajines de légumes, 4 portions
+  de velouté de saison et 4 portions de bouillons d’os et nouilles de riz (des
+  remplacements sont possibles sur demande)  8 portions sucrées : 2 portions de
+  granola et 6 portions de fondant au chocolat (sans gluten/ sans lactose) 8
+  boissons : 4 portions de Chai et 4 portions de Lait d’or 1 Livret astuces et
+  recette du post-partum"
 hasGroceries: true
-priceWGroceries: 120
+priceWGroceries: 702
 hasGiftCard: true
-giftCardPrice: 13
+giftCardPrice: 8
 hasGiftCardOptions: false
 hasDelivery: true
 priceDeliveryToulouse: 0
-priceDeliveryCloseToulouse: 12
-priceDeliveryMidToulouse: 122
-priceDeliveryFarToulouse: 1222
+priceDeliveryCloseToulouse: 10
+priceDeliveryMidToulouse: 15
+priceDeliveryFarToulouse: 35
 hasCalendlyLink: true
-calendlyLink: perdu.com
-lienPaiement: coucou.com
-image: /images/15.svg
+calendlyLink: https://calendly.com/curcumamas/formule_famille
+lienPaiement: https://pay.brevo.com/062761ba-8368-41d6-aac5-26b9a564f5d0
+image: /images/18.svg
