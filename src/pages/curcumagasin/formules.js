@@ -61,7 +61,7 @@ const Formule = styled(Link)`
 
 const Formules = ({ data }) => {
   //filter data without a title
-  const formules = data.allContentYaml.nodes.filter((item) => item.title);
+  const formules = data.allContentYaml.nodes.filter((item) => item.isEnabled);
 
   return (
     <BasePage>
@@ -124,11 +124,25 @@ export const query = graphql`
   query OtherFormulesQuery {
     allContentYaml {
       nodes {
+        isEnabled
         title
         price
+        fdp
+        description
+        hasGroceries
         priceWGroceries
+        hasGiftCard
+        giftCardPrice
+        hasGiftCardOptions
+        hasDelivery
+        priceDeliveryToulouse
+        priceDeliveryCloseToulouse
+        priceDeliveryMidToulouse
+        priceDeliveryFarToulouse
+        hasCalendlyLink
+        calendlyLink
+        lienPaiement
         image
-        isCadeau
       }
     }
   }

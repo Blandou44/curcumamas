@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { graphql } from "gatsby";
 import { NewNavBar } from "../../components/NewNavBar";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import {
   Heading,
   maxWidth,
+  NewButton,
   newMainColor,
   newSecondaryColor,
   smallBreakpoint,
@@ -15,7 +18,11 @@ import {
 } from "../../styles/theme";
 
 import motif from "../../images/fondleainvert.jpeg";
-import { CommandForm } from "../../components/CommandForm";
+import {
+  CommandForm,
+  QuestionWrapper,
+  Separator,
+} from "../../components/CommandForm";
 
 const MotifWrapper = styled.div`
   background: url(${motif});
@@ -67,36 +74,33 @@ const Price = styled.h2`
   margin-bottom: 0.5rem;
 `;
 
+const Answers = styled.div`
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1rem;
+
+  span:first-child {
+    justify-self: flex-end;
+    color: ${newSecondaryColor};
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+`;
+
+const formatPrice = ({ amount, isAddon = true }) => {
+  if (amount === 0) {
+    return "Gratuit";
+  }
+  return `${isAddon ? "+" : ""}${amount}€`;
+};
+
 const curcumagasin = ({ data }) => {
-  // filter data without date1
-  const dateNode = data.allContentYaml.nodes.filter((item) => item.date1);
-
-  // put all the non null dates into a date array
-  const dateArray = dateNode.reduce((acc, item) => {
-    if (item.date1) {
-      acc.push(item.date1);
-    }
-    if (item.date2) {
-      acc.push(item.date2);
-    }
-    if (item.date3) {
-      acc.push(item.date3);
-    }
-    if (item.date4) {
-      acc.push(item.date4);
-    }
-    return acc;
-  }, []);
-  const menuArray = data.allContentYaml.nodes.filter((item) => item.menuType);
-
-  // turn the array into an object using menuType as key
-  const menuObject = menuArray.reduce((acc, item) => {
-    acc[item.menuType] = item;
-    return acc;
-  }, {});
-
   //filter data without a title
-  const filteredData = data.allContentYaml.nodes.filter((item) => item.title);
+  const filteredData = data.allContentYaml.nodes.filter(
+    (item) => item.isEnabled
+  );
 
   // turn filteredData into an object using title as a key
   const formulesObject = filteredData.reduce((acc, item) => {
@@ -113,13 +117,25 @@ const curcumagasin = ({ data }) => {
   const selectedItem = formulesObject[encodeURIComponent(item.toLowerCase())];
 
   const {
+    isEnabled,
     title,
-    description,
     price,
+    fdp,
+    description,
+    hasGroceries,
     priceWGroceries,
-    image,
-    isCadeau,
+    hasGiftCard,
+    giftCardPrice,
+    hasGiftCardOptions,
+    hasDelivery,
+    priceDeliveryToulouse,
+    priceDeliveryCloseToulouse,
+    priceDeliveryMidToulouse,
+    priceDeliveryFarToulouse,
+    hasCalendlyLink,
+    calendlyLink,
     lienPaiement,
+    image,
   } = selectedItem;
 
   console.log({ selectedItem });
@@ -132,16 +148,104 @@ const curcumagasin = ({ data }) => {
           <img src={image} alt="" />
           <FormWrapper>
             <Heading>{title}</Heading>
-            <Price>à partir de {price}€</Price>
+            <Price>
+              à partir de {formatPrice({ amount: price, isAddon: false })}
+            </Price>
             <SmallText center>A Toulouse et région toulousaine</SmallText>
             <p>{description}</p>
-            <CommandForm
-              title={title}
-              defaultCadeau={isCadeau}
-              menuObject={menuObject}
-              dateArray={dateArray}
-              lienPaiement={lienPaiement}
-            />
+            {hasGroceries ? (
+              <>
+                <QuestionWrapper>
+                  <p>Qui fait les courses ?</p>
+                  <Answers>
+                    <span>
+                      {formatPrice({ amount: price, isAddon: false })}&nbsp;
+                      &mdash;
+                    </span>
+                    <span>
+                      Je fais les courses moi-même (ou les futurs parents si
+                      c’est un cadeau) avec la liste des courses à télécharger
+                      ici
+                    </span>
+                  </Answers>
+                  <Answers>
+                    <span>
+                      {formatPrice({ amount: priceWGroceries, isAddon: false })}
+                      &nbsp; &mdash;
+                    </span>
+                    <span>Je laisse les Curcumamas s’occuper de tout</span>
+                  </Answers>
+                </QuestionWrapper>
+                <Separator />
+              </>
+            ) : null}
+            {hasGiftCard ? (
+              <>
+                <QuestionWrapper>
+                  <p>Si c’est un cadeau</p>
+                  <Answers>
+                    <span>
+                      {formatPrice({ amount: giftCardPrice })}&nbsp; &mdash;
+                    </span>
+                    <span>Carte cadeau imprimée et envoyée par la poste</span>
+                  </Answers>
+                  <Answers>
+                    <span>Gratuit &nbsp; &mdash;</span>
+                    <span>E-carte envoyée par email</span>
+                  </Answers>
+                </QuestionWrapper>
+                <Separator center />
+              </>
+            ) : null}
+            {hasDelivery ? (
+              <>
+                <QuestionWrapper>
+                  <p>Les futurs parents habitent</p>
+                  <Answers>
+                    <span>
+                      {formatPrice({ amount: priceDeliveryToulouse })}&nbsp;
+                      &mdash;
+                    </span>
+                    <span>A Toulouse</span>
+                  </Answers>
+                  <Answers>
+                    <span>
+                      {formatPrice({ amount: priceDeliveryCloseToulouse })}
+                      &nbsp; &mdash;
+                    </span>
+                    <span>Dans une ville limitrophe de Toulouse</span>
+                  </Answers>
+                  <Answers>
+                    <span>
+                      {formatPrice({ amount: priceDeliveryMidToulouse })}&nbsp;
+                      &mdash;
+                    </span>
+                    <span>Dans une ville à moins de 20km de Toulouse</span>
+                  </Answers>
+                  <Answers>
+                    <span>
+                      {formatPrice({ amount: priceDeliveryFarToulouse })}&nbsp;
+                      &mdash;
+                    </span>
+                    <span>Dans une ville entre 20 et 40km de Toulouse</span>
+                  </Answers>
+                </QuestionWrapper>
+                <Separator left />
+              </>
+            ) : null}
+            {hasCalendlyLink ? (
+              <>
+                <NewButton href={calendlyLink} target="_blank" as="a">
+                  <FontAwesomeIcon icon={faCalendar} color="white" />
+                  &nbsp;réserver mon créneau
+                </NewButton>
+                <p>
+                  <small>(dès à présent ou jusqu'à 72h à l'avance)</small>
+                </p>
+              </>
+            ) : null}
+
+            <CommandForm lienPaiement={lienPaiement} />
           </FormWrapper>
         </ShopWrapper>
       </MotifWrapper>
@@ -154,34 +258,25 @@ export const query = graphql`
   query FormulesQuery {
     allContentYaml {
       nodes {
+        isEnabled
         title
         price
-        priceWGroceries
-        image
+        fdp
         description
+        hasGroceries
+        priceWGroceries
+        hasGiftCard
+        giftCardPrice
+        hasGiftCardOptions
+        hasDelivery
+        priceDeliveryToulouse
+        priceDeliveryCloseToulouse
+        priceDeliveryMidToulouse
+        priceDeliveryFarToulouse
+        hasCalendlyLink
+        calendlyLink
         lienPaiement
-        isCadeau
-        menuType
-        nom1
-        nom2
-        nom3
-        nom4
-        infoNut1
-        infoNut3
-        infoNut2
-        infoNut4
-        description1
-        description2
-        description3
-        description4
-        image1
-        image2
-        image3
-        image4
-        date1
-        date2
-        date3
-        date4
+        image
       }
     }
   }

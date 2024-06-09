@@ -1,0 +1,19 @@
+isEnabled: true
+title: Fomule 2
+price: 12
+fdp: "-1"
+description: Description de la formule 2
+hasGroceries: true
+priceWGroceries: 120
+hasGiftCard: true
+giftCardPrice: 13
+hasGiftCardOptions: false
+hasDelivery: true
+priceDeliveryToulouse: 0
+priceDeliveryCloseToulouse: 12
+priceDeliveryMidToulouse: 122
+priceDeliveryFarToulouse: 1222
+hasCalendlyLink: true
+calendlyLink: perdu.com
+lienPaiement: coucou.com
+image: /images/15.svg

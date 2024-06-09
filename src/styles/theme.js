@@ -75,6 +75,7 @@ export const MotifWrapper = styled.div`
 export const NewButton = styled(AnchorLink)`
   font-family: "Rubik Mono One", sans-serif;
   border: none;
+  cursor: pointer;
   background: ${(props) =>
     props.secondary ? newSecondaryColor : newMainColor};
   color: transparent;

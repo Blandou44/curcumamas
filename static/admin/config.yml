@@ -207,5 +207,338 @@ collections:
             media_library:
                 config:
                   multiple: true
+      - label: "Formule 2"
+        name: "formule-2"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 3"
+        name: "formule-3"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 4"
+        name: "formule-4"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 5"
+        name: "formule-5"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 6"
+        name: "formule-6"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 7"
+        name: "formule-7"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 8"
+        name: "formule-8"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 9"
+        name: "formule-9"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+      - label: "Formule 10"
+        name: "formule-10"
+        file: "content/formule-1.yml"
+        fields: 
+          - {label: "Activée", name: isEnabled, widget: boolean}
+          - {label: Title, name: title, widget: string}
+          - {label: "Prix", name: price, widget: number}
+          - {label: Frais de port, name: fdp, widget: string}
+          - {label: Description,
+            name: description,
+            widget: string
+          }
+          - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Prix avec courses", name: priceWGroceries, widget: number}
+          - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
+          - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
+          - {label: "Affiche les options de carte cadeau", name: hasGiftCardOptions, widget: boolean}
+          - label: Options carte cadeau
+            name: options
+            widget: list
+            field: {label: Option no, name: option_no, widget: string}
+          - {label: "Est livré en main propres sur Toulouse", name: hasDelivery, widget: boolean}
+          - {label: "Prix livraison Toulouse", name: priceDeliveryToulouse, widget: number}
+          - {label: "Prix livraison Limitrophe Toulouse", name: priceDeliveryCloseToulouse, widget: number}
+          - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
+          - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
+          - {label: "A un lien calendly", name: hasCalendlyLink, widget: boolean}
+          - {label: Lien Calendly, name: calendlyLink, widget: string}
+          - {label: Lien de paiement, name: lienPaiement, widget: string}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
 
                 

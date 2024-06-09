@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { BasePage } from "../../components/BasePage";
-import { Heading, MotifWrapper, NewButton } from "../../styles/theme";
+import { Heading, MotifWrapper } from "../../styles/theme";
 import styled from "styled-components";
 import { NewNavBar } from "../../components/NewNavBar";
 
@@ -19,12 +19,12 @@ const NotFoundWrapper = styled.div`
   box-shadow: 0px 0px 15px 4px #00000033;
 `;
 const OrderSuccess = () => {
-  const [lienpaiment, setLienpaiment] = React.useState(null);
-
   React.useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const lienpaiment = urlParams.get("lienpaiement");
-    setLienpaiment(lienpaiment);
+    if (lienpaiment) {
+      window.location.href = lienpaiment;
+    }
   }, []);
 
   return (
@@ -35,16 +35,10 @@ const OrderSuccess = () => {
       >
         <NotFoundWrapper>
           <Heading>Merci !</Heading>
-          {lienpaiment ? (
-            <NewButton as={Link} to={lienpaiment}>
-              Payer votre commande
-            </NewButton>
-          ) : (
-            <p>
-              Nous vous recontacterons très bientôt pour vous indiquer comment
-              procéder à votre paiement.
-            </p>
-          )}
+          <p>
+            Nous vous recontacterons très bientôt pour vous indiquer comment
+            procéder à votre paiement.
+          </p>
           <Link to="/">Retour à l'accueil</Link>
         </NotFoundWrapper>
       </MotifWrapper>
