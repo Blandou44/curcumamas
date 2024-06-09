@@ -209,7 +209,7 @@ collections:
                   multiple: true
       - label: "Formule 2"
         name: "formule-2"
-        file: "content/formule-1.yml"
+        file: "content/formule-2.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -246,7 +246,7 @@ collections:
                   multiple: true
       - label: "Formule 3"
         name: "formule-3"
-        file: "content/formule-1.yml"
+        file: "content/formule-3.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -283,7 +283,7 @@ collections:
                   multiple: true
       - label: "Formule 4"
         name: "formule-4"
-        file: "content/formule-1.yml"
+        file: "content/formule-4.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -320,7 +320,7 @@ collections:
                   multiple: true
       - label: "Formule 5"
         name: "formule-5"
-        file: "content/formule-1.yml"
+        file: "content/formule-5.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -357,7 +357,7 @@ collections:
                   multiple: true
       - label: "Formule 6"
         name: "formule-6"
-        file: "content/formule-1.yml"
+        file: "content/formule-6.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -394,7 +394,7 @@ collections:
                   multiple: true
       - label: "Formule 7"
         name: "formule-7"
-        file: "content/formule-1.yml"
+        file: "content/formule-7.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -431,7 +431,7 @@ collections:
                   multiple: true
       - label: "Formule 8"
         name: "formule-8"
-        file: "content/formule-1.yml"
+        file: "content/formule-8.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -468,7 +468,7 @@ collections:
                   multiple: true
       - label: "Formule 9"
         name: "formule-9"
-        file: "content/formule-1.yml"
+        file: "content/formule-9.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
@@ -505,7 +505,7 @@ collections:
                   multiple: true
       - label: "Formule 10"
         name: "formule-10"
-        file: "content/formule-1.yml"
+        file: "content/formule-10.yml"
         fields: 
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
