@@ -109,7 +109,15 @@ export const NewNavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Headroom>
+    <Headroom
+      disable={isOpen}
+      style={{
+        zIndex: 10000,
+        height: isOpen ? "100vh" : "auto",
+        position: isOpen ? "fixed" : "auto",
+        width: "100%",
+      }}
+    >
       <NavContainer isOpen={isOpen}>
         <NavWrapper>
           <LogoWrapper to="/" selected={path === "/"}>
