@@ -177,7 +177,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -214,7 +216,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -251,7 +255,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -288,7 +294,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -325,7 +333,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -362,7 +372,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -399,7 +411,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -436,7 +450,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -473,7 +489,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string
@@ -510,7 +528,9 @@ collections:
           - {label: "Activée", name: isEnabled, widget: boolean}
           - {label: Title, name: title, widget: string}
           - {label: "Prix", name: price, widget: number}
+          - {label: "Frais de ports en supplément", name: hasFdp, widget: boolean}
           - {label: Frais de port, name: fdp, widget: string}
+          - {label: "Livre partout en france", name: isEverywhere, widget: boolean}
           - {label: Description,
             name: description,
             widget: string

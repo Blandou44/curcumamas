@@ -1,7 +1,9 @@
 isEnabled: true
 title: Formule Famille
 price: 170
+hasFdp: false
 fdp: "-1"
+isEverywhere: false
 description: "Ce coffret contient : 8 portions salées soit  4 lasagnes
   végétariennes et 4 Currys de légumes (l’une des deux option peut être
   remplacés par 4 portions de Tajine de légumes sur demande) 8 portions sucrées

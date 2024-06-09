@@ -89,6 +89,35 @@ const Answers = styled.div`
   }
 `;
 
+const GiftCardOptions = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  > li {
+    color: black;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    gap: 1rem;
+
+    &:before {
+      content: "";
+      display: block;
+      height: 1rem;
+      width: 1rem;
+      margin-top: 5px;
+      background-color: ${newSecondaryColor};
+      border-radius: 38% 62% 66% 34% / 55% 42% 58% 45%;
+    }
+
+    &:nth-child(even):before {
+      transform: rotate(90deg);
+    }
+  }
+`;
+
 const formatPrice = ({ amount, isAddon = true }) => {
   if (amount === 0) {
     return "Gratuit";
@@ -120,13 +149,16 @@ const curcumagasin = ({ data }) => {
     isEnabled,
     title,
     price,
+    hasFdp,
     fdp,
+    isEverywhere,
     description,
     hasGroceries,
     priceWGroceries,
     hasGiftCard,
     giftCardPrice,
     hasGiftCardOptions,
+    options,
     hasDelivery,
     priceDeliveryToulouse,
     priceDeliveryCloseToulouse,
@@ -149,9 +181,15 @@ const curcumagasin = ({ data }) => {
           <FormWrapper>
             <Heading>{title}</Heading>
             <Price>
-              à partir de {formatPrice({ amount: price, isAddon: false })}
+              {hasGroceries || hasGiftCardOptions ? "à partir de " : ""}
+              {formatPrice({ amount: price, isAddon: false })}{" "}
+              {hasFdp ? `${formatPrice({ amount: fdp })} de frais de port` : ""}
             </Price>
-            <SmallText center>A Toulouse et région toulousaine</SmallText>
+            <SmallText center>
+              {isEverywhere
+                ? "Livré partout en France"
+                : "A Toulouse et région toulousaine"}
+            </SmallText>
             <p>{description}</p>
             {hasGroceries ? (
               <>
@@ -177,6 +215,19 @@ const curcumagasin = ({ data }) => {
                   </Answers>
                 </QuestionWrapper>
                 <Separator />
+              </>
+            ) : null}
+            {hasGiftCardOptions ? (
+              <>
+                <QuestionWrapper>
+                  <p>Les cartes cadeau disponibles sont</p>
+                  <GiftCardOptions>
+                    {options.map((option) => (
+                      <li>{option}</li>
+                    ))}
+                  </GiftCardOptions>
+                </QuestionWrapper>
+                <Separator center />
               </>
             ) : null}
             {hasGiftCard ? (
@@ -261,13 +312,16 @@ export const query = graphql`
         isEnabled
         title
         price
+        hasFdp
         fdp
+        isEverywhere
         description
         hasGroceries
         priceWGroceries
         hasGiftCard
         giftCardPrice
         hasGiftCardOptions
+        options
         hasDelivery
         priceDeliveryToulouse
         priceDeliveryCloseToulouse

@@ -1,7 +1,9 @@
 isEnabled: true
 title: Carte cadeau
-price: 0
+price: 50
+hasFdp: false
 fdp: "0"
+isEverywhere: true
 description: Offrez une carte cadeau (valable un an) pour un post partum
   plus   serein. Les petits plats Curcumamas sont faits avec amour pour vous
   faciliter   la vie des nouveaux parents

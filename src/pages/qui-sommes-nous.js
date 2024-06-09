@@ -1,23 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
-import { graphql, Link } from "gatsby";
 import { NewNavBar } from "../components/NewNavBar";
-import { NewHero } from "../components/NewHero";
-import { WhachaWaitingFor } from "../components/WhachaWaitingFor";
-import { Curcumarmite } from "../components/Curcumarmite";
-import { HowDoesItWork } from "../components/HowDoesItWork";
 import { Portrait } from "../components/Portrait";
-import { Engagement } from "../components/Engagement";
 import { BasePage } from "../components/BasePage";
 import { Footer } from "../components/Footer";
-import {
-  applySidePadding,
-  colorBaie,
-  Heading,
-  maxWidth,
-  SmallText,
-} from "../styles/theme";
+import { applySidePadding, maxWidth } from "../styles/theme";
 
 import motif from "../images/fondleainvert.jpeg";
 

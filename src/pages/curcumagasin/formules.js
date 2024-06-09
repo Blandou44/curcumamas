@@ -56,6 +56,10 @@ const Formule = styled(Link)`
 
   &:visited {
     color: ${colorBaie};
+
+    p {
+      color: ${colorBaie};
+    }
   }
 `;
 
@@ -107,7 +111,11 @@ const Formules = ({ data }) => {
                 <Formule to={`/curcumagasin/commande?item=${item.title}`}>
                   <img src={item.image} width={300} />
                   <p>
-                    {item.title} <br />à partir de {item.price}€
+                    {item.title} <br />
+                    {item.hasGroceries || item.hasGiftCardOptions
+                      ? "à partir de "
+                      : ""}
+                    {item.price}€
                   </p>
                 </Formule>
               ))}

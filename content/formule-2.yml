@@ -1,7 +1,9 @@
 isEnabled: true
 title: Formule Mois d'Or
 price: 230
+hasFdp: false
 fdp: "-1"
+isEverywhere: false
 description: "24 portions salées : 8 portions de lasagnes végétariennes, 4 de
   Currys de légumes (avec ou sans poulet), 4 de Tajines de légumes, 4 portions
   de velouté de saison et 4 portions de bouillons d’os et nouilles de riz (des

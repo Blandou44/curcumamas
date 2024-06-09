@@ -125,6 +125,8 @@ export const NewNavBar = () => {
               src="../images/logo-curcumamas-bleu.png"
               alt="logo"
               objectFit="contain"
+              loading="eager"
+              placeholder="None"
             />
           </LogoWrapper>
 

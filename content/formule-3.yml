@@ -1,7 +1,9 @@
 isEnabled: true
 title: Curcu Goûter
 price: 35
+hasFdp: true
 fdp: "3.90"
+isEverywhere: true
 description: "Ce coffret contient : 1 granola Amande Abricot (notre
   best-seller)   200g, un mélange pour lait d’or (4 portions) et pour Chai (4
   portions), un   livret astuces et recettes du post-partum"
