@@ -19,7 +19,7 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 15
 priceDeliveryFarToulouse: 35
-hasCalendlyLink: true
+hasCalendlyLink: false
 calendlyLink: https://calendly.com/curcumamas/formule_famille
-lienPaiement: https://pay.brevo.com/062761ba-8368-41d6-aac5-26b9a564f5d0
+lienPaiement: https://pay.brevo.com/5198d75e-de65-4223-acb8-57216b12f6a9
 image: /images/18.svg
