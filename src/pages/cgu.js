@@ -49,7 +49,7 @@ const CGU = () => {
             <p>
               Copyright Curcumamas L’édition et la direction de la publication
               du site https://curcumamas.com/ est assurée par Clément Chaumel.
-              Adresse e-mail clemement.chaumel+curcumamas@gmail.com. L'hébergeur
+              Adresse e-mail clement.chaumel+curcumamas@gmail.com. L'hébergeur
               du site https://curcumamas.com/ est la société PlaneHoster avec le
               numéro de téléphone : 0 805 080 426.
             </p>
