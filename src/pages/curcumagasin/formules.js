@@ -147,8 +147,6 @@ export const query = graphql`
         priceDeliveryCloseToulouse
         priceDeliveryMidToulouse
         priceDeliveryFarToulouse
-        hasCalendlyLink
-        calendlyLink
         lienPaiement
         image
       }

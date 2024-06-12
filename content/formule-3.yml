@@ -17,7 +17,6 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 0
 priceDeliveryMidToulouse: 0
 priceDeliveryFarToulouse: 0
-hasCalendlyLink: false
 calendlyLink: "-"
 lienPaiement: https://pay.brevo.com/b2f1fa7b-a0f5-4cd9-861c-fb91d032162f
 image: /images/capture-d-écran_20240606_141536.png

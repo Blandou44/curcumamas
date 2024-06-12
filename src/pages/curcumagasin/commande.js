@@ -165,8 +165,6 @@ const curcumagasin = ({ data }) => {
     priceDeliveryCloseToulouse,
     priceDeliveryMidToulouse,
     priceDeliveryFarToulouse,
-    hasCalendlyLink,
-    calendlyLink,
     lienPaiement,
     image,
   } = selectedItem;
@@ -293,17 +291,6 @@ const curcumagasin = ({ data }) => {
                 <Separator left />
               </>
             ) : null}
-            {hasCalendlyLink ? (
-              <>
-                <NewButton href={calendlyLink} target="_blank" as="a">
-                  <FontAwesomeIcon icon={faCalendar} color="white" />
-                  &nbsp;réserver mon créneau
-                </NewButton>
-                <p>
-                  <small>(dès à présent ou jusqu'à 72h à l'avance)</small>
-                </p>
-              </>
-            ) : null}
 
             <CommandForm lienPaiement={lienPaiement} />
           </FormWrapper>
@@ -337,8 +324,6 @@ export const query = graphql`
         priceDeliveryCloseToulouse
         priceDeliveryMidToulouse
         priceDeliveryFarToulouse
-        hasCalendlyLink
-        calendlyLink
         lienPaiement
         image
       }
