@@ -67,50 +67,48 @@ const EngagementItem = styled.div`
 
 export const Engagement = () => {
   return (
-    <MotifWrapper>
-      <EngagementContainer>
-        <EngagementWrapper>
-          <Heading>
-            L'engagement <em>nutritionnel</em>
-          </Heading>
-          <EngagementItem>
-            <img src={legumes}></img>
-            <p>
-              Nos produits sont 100% bio, de saison et en grande partie locaux
-              (sauf épices etc..)
-            </p>
-          </EngagementItem>
-          <EngagementItem>
-            <img src={genoux}></img>
-            <p>
-              Les menus sont élaborés pour répondre aux besoins nutritionnels
-              particuliers de la jeune mère
-            </p>
-          </EngagementItem>
-          <EngagementItem>
-            <img src={graines}></img>
-            <p>
-              On utilise des supers aliments qui permettent d’avoir tous les
-              nutriments nécessaires à votre récupération
-            </p>
-          </EngagementItem>
-          <EngagementItem>
-            <img src={bocal}></img>
-            <p>
-              Les cuissons sont douces pour préserver les nutriments et les
-              vitamines, utilisation de sucrants naturels
-            </p>
-          </EngagementItem>
-          <EngagementItem>
-            <img src={nibs}></img>
-            <p>
-              On utilise des aliments qui soutiennent l’allaitement et on évite
-              gluten et lactose pour des familles qui digèrent mieux
-            </p>
-          </EngagementItem>
-          <CTA to="/curcumagasin/formules">Commandez</CTA>
-        </EngagementWrapper>
-      </EngagementContainer>
-    </MotifWrapper>
+    <EngagementContainer>
+      <EngagementWrapper>
+        <Heading>
+          L'engagement <em>nutritionnel</em>
+        </Heading>
+        <EngagementItem>
+          <img src={legumes}></img>
+          <p>
+            Nos produits sont 100% bio, de saison et en grande partie locaux
+            (sauf épices etc..)
+          </p>
+        </EngagementItem>
+        <EngagementItem>
+          <img src={genoux}></img>
+          <p>
+            Les menus sont élaborés pour répondre aux besoins nutritionnels
+            particuliers de la jeune mère
+          </p>
+        </EngagementItem>
+        <EngagementItem>
+          <img src={graines}></img>
+          <p>
+            On utilise des supers aliments qui permettent d’avoir tous les
+            nutriments nécessaires à votre récupération
+          </p>
+        </EngagementItem>
+        <EngagementItem>
+          <img src={bocal}></img>
+          <p>
+            Les cuissons sont douces pour préserver les nutriments et les
+            vitamines, utilisation de sucrants naturels
+          </p>
+        </EngagementItem>
+        <EngagementItem>
+          <img src={nibs}></img>
+          <p>
+            On utilise des aliments qui soutiennent l’allaitement et on évite
+            gluten et lactose pour des familles qui digèrent mieux
+          </p>
+        </EngagementItem>
+        <CTA to="/curcumagasin/formules">Commandez</CTA>
+      </EngagementWrapper>
+    </EngagementContainer>
   );
 };

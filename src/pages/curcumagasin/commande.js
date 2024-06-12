@@ -154,6 +154,7 @@ const curcumagasin = ({ data }) => {
     isEverywhere,
     description,
     hasGroceries,
+    groceriesLink,
     priceWGroceries,
     hasGiftCard,
     giftCardPrice,
@@ -202,8 +203,16 @@ const curcumagasin = ({ data }) => {
                     </span>
                     <span>
                       Je fais les courses moi-même (ou les futurs parents si
-                      c’est un cadeau) avec la liste des courses à télécharger
-                      ici
+                      c’est un cadeau)
+                      {groceriesLink ? (
+                        <span style={{ color: "black" }}>
+                          {" "}
+                          avec la liste des courses à télécharger{" "}
+                          <a href={groceriesLink} target="_blank">
+                            ici
+                          </a>
+                        </span>
+                      ) : null}
                     </span>
                   </Answers>
                   <Answers>
@@ -317,6 +326,7 @@ export const query = graphql`
         isEverywhere
         description
         hasGroceries
+        groceriesLink
         priceWGroceries
         hasGiftCard
         giftCardPrice

@@ -185,6 +185,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -224,6 +225,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -263,6 +265,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -302,6 +305,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -341,6 +345,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -380,6 +385,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -419,6 +425,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -458,6 +465,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -497,6 +505,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}
@@ -536,6 +545,7 @@ collections:
             widget: string
           }
           - {label: "Nécessite courses", name: hasGroceries, widget: boolean}
+          - {label: "Lien liste des courses", name: groceriesLink, widget: string}
           - {label: "Prix avec courses", name: priceWGroceries, widget: number}
           - {label: "Propose carte cadeau par la poste", name: hasGiftCard, widget: boolean}
           - {label: "Prix de la carte cadeau par la poste", name: giftCardPrice, widget: number}

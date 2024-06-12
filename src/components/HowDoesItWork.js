@@ -105,9 +105,8 @@ export const HowDoesItWork = () => {
           <Point>
             <img alt="" src={legumes}></img>
             <p>
-              Les formules et cartes cadeaux sont des assortiments qui Vous
-              réservez votre créneau en ligne ou laissez les nouveaux parents le
-              faire plus tard.
+              Vous réservez votre créneau en ligne ou laissez les nouveaux
+              parents le faire plus tard.
             </p>
           </Point>
           <Point>

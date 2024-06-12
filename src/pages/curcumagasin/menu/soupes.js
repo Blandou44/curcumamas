@@ -20,7 +20,7 @@ const curcumagasin = ({ data }) => {
         <MenuDisplay
           data={data.allContentYaml.edges[0].node}
           heading="Soupes"
-          nbItems={3}
+          nbItems={2}
         />
       </MotifWrapper>
       <Footer />

@@ -11,6 +11,7 @@ description: "Ce coffret contient : 8 portions salées soit  4 lasagnes
   sans lactose) 8 boissons : 4 portions de Chai et 4 portions de Lait d’or 1
   Livret astuces et recette du post-partum"
 hasGroceries: true
+groceriesLink: "http://perdu.com"
 priceWGroceries: 196
 hasGiftCard: true
 giftCardPrice: 8

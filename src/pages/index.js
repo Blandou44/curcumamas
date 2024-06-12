@@ -28,7 +28,6 @@ const Index = () => {
         <WhachaWaitingFor />
         <Curcumarmite />
         <HowDoesItWork />
-        <Portrait />
         <Engagement />
       </IndexWrapper>
 

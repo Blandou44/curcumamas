@@ -3,17 +3,17 @@ infoNut1: Sans gluten-sans lactose
 description1: Un réconfortant velouté aux légumes, légumineuses et aux épices
   pour vous réchauffer et faire le plein de fibres et de gourmandises.
 image1: /images/3.svg
-nom2: Houmous de betterave
-infoNut2: Sans gluten-sans lactose-non pimenté
-description2: Un houmous onctueux et frais aux notes de citron et d'herbes
-  fraîches et d'épices. Parfait pour vos tartines express avec bébé
-image2: /images/1.svg
-nom3: Curcubouillon d'os aux légumes, gingembre et épices
-infoNut3: Sans gluten-sans lactose
-description3: Le bouillon, un incontournable du post partum. Potion
+nom2: Curcubouillon d'os aux légumes, gingembre et épices
+infoNut2: Sans gluten-sans lactose
+description2: Le bouillon, un incontournable du post partum. Potion
   reminéralisante aux milles vertues, il vous permettra de faire le plein de
   collagène.
-image3: /images/2.svg
+image2: /images/2.svg
+nom3: Houmous de betterave
+infoNut3: Sans gluten-sans lactose-non pimenté
+description3: Un houmous onctueux et frais aux notes de citron et d'herbes
+  fraîches et d'épices. Parfait pour vos tartines express avec bébé
+image3: /images/1.svg
 nom4: lsls
 infoNut4: sss
 description4: sss
