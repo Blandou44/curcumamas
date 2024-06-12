@@ -11,7 +11,7 @@ description: "Ce coffret contient : 8 portions salées soit  4 lasagnes
   sans lactose) 8 boissons : 4 portions de Chai et 4 portions de Lait d’or 1
   Livret astuces et recette du post-partum"
 hasGroceries: true
-groceriesLink: "http://perdu.com"
+groceriesLink: http://perdu.com
 priceWGroceries: 196
 hasGiftCard: true
 giftCardPrice: 8
@@ -21,7 +21,7 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
-hasCalendlyLink: true
+hasCalendlyLink: false
 calendlyLink: https://calendly.com/curcumamas/formule_famille
 lienPaiement: https://pay.brevo.com/ebac3fcf-bc20-4b86-b776-85701e2bb3b8
 image: /images/15.svg
