@@ -8,6 +8,7 @@ description: "Ce coffret contient : 1 granola Amande Abricot (notre
   best-seller)   200g, un mélange pour lait d’or (4 portions) et pour Chai (4
   portions), un   livret astuces et recettes du post-partum"
 hasGroceries: false
+groceriesLink: https://curcumamas.com/
 priceWGroceries: 0
 hasGiftCard: false
 giftCardPrice: 0
@@ -17,6 +18,6 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 0
 priceDeliveryMidToulouse: 0
 priceDeliveryFarToulouse: 0
-calendlyLink: "-"
 lienPaiement: https://pay.brevo.com/b2f1fa7b-a0f5-4cd9-861c-fb91d032162f
-image: /images/capture-d-écran_20240606_141536.png
+calendlyLink: "-"
+image: /images/gouter-post-partum-granola-boisson-chai-golden-latte-partout-en-france.png
