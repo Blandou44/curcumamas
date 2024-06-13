@@ -12,7 +12,8 @@ description: "24 portions salées : 8 portions de lasagnes végétariennes, 4 de
   boissons : 4 portions de Chai et 4 portions de Lait d’or 1 Livret astuces et
   recette du post-partum"
 hasGroceries: true
-priceWGroceries: 702
+groceriesLink: https://perdu.com/
+priceWGroceries: 360
 hasGiftCard: true
 giftCardPrice: 8
 hasGiftCardOptions: false
