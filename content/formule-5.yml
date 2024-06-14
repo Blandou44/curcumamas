@@ -1,0 +1,24 @@
+isEnabled: true
+title: Formule Batch-cooking sur mesure
+price: 170
+hasFdp: false
+fdp: "-1"
+isEverywhere: true
+description: Une formule sur-mesure adaptée à votre famille. Entre 2 et 5
+  recettes différentes, de 4 à 6 portions par recette, c'est vous qui décidez.
+  Parfait en cas de reprise du travail, en cas de déplacement professionnel d'un
+  des parents ou simplement en cas de fatigue (les dents, les microbes d'hiver,
+  les nuits hachées …)
+hasGroceries: true
+groceriesLink: http://perdu.com
+priceWGroceries: 360
+hasGiftCard: true
+giftCardPrice: 8
+hasGiftCardOptions: false
+hasDelivery: true
+priceDeliveryToulouse: 0
+priceDeliveryCloseToulouse: 10
+priceDeliveryMidToulouse: 15
+priceDeliveryFarToulouse: 35
+lienPaiement: https://pay.brevo.com/2b72315c-9fa1-4610-ac48-bb33797f3f17
+image: /images/formule-batch-cooking-famille-toulouse-region-toulousaine.png
