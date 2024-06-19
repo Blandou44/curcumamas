@@ -4,15 +4,11 @@ price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: "24 portions salées : 8 portions de lasagnes végétariennes, 4 de
-  Currys de légumes (avec ou sans poulet), 4 de Tajines de légumes, 4 portions
-  de velouté de saison et 4 portions de bouillons d’os et nouilles de riz (des
-  remplacements sont possibles sur demande)  8 portions sucrées : 2 portions de
-  granola et 6 portions de fondant au chocolat (sans gluten/ sans lactose) 8
-  boissons : 4 portions de Chai et 4 portions de Lait d’or 1 Livret astuces et
-  recette du post-partum"
+description: 24 portions salées (lasagne, curry, tajine, velouté, bouillon) /  8
+  portions sucrée (granola, fondant au chocolat) / 8 boissons (Chai et Lait
+  d’or)
 hasGroceries: true
-groceriesLink: https://perdu.com/
+groceriesLink: https://drive.google.com/file/d/1A6eHfVZ0GVFFHx2wpWxZ8wdpuq2Vju6Q/view?usp=drive_link
 priceWGroceries: 360
 hasGiftCard: true
 giftCardPrice: 8
