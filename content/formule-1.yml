@@ -7,7 +7,7 @@ isEverywhere: false
 description: "Ce coffret contient : 8 portions salées (2 recettes au choix) / 8
   portions sucrées (2 recettes au choix)  / 8 boissons (Chai et Lait d’or) "
 hasGroceries: true
-groceriesLink: http://perdu.com
+groceriesLink: https://drive.google.com/file/d/1TkJmi3bwlc4u1ExUZeFgoVAFwii8-Ff3/view?usp=drive_link
 priceWGroceries: 230
 hasGiftCard: true
 giftCardPrice: 8
