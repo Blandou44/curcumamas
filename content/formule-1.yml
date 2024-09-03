@@ -4,9 +4,9 @@ price: 170
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: "Ce coffret contient : 8 portions salées (lasagne et curry) / 8
-  portions sucrées (granola et fondant chocolat) / 8 boissons (Chai et Lait
-  d’or) - remplacement possible sur demande"
+description: "Ce coffret contient 16 portions, par exemple : 8 portions salées
+  (lasagne et curry) / 8 portions sucrées (granola et fondant chocolat)  et 8
+  boissons (Chai et Lait d’or) - remplacement possible sur demande"
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1se6XuorSxc_LO_T_mrYF3tUNzlc3-Blr/view?usp=sharing
 priceWGroceries: 230
@@ -19,4 +19,4 @@ priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 15
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/ebac3fcf-bc20-4b86-b776-85701e2bb3b8
-image: /images/formule-famille-repas-postpartum-toulouse-region-toulousaine.png
+image: /images/illus-site-8-.png
