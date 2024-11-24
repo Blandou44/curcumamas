@@ -1,15 +1,15 @@
 isEnabled: true
 title: Formule Mois d'Or
-price: 230
+price: 200
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: 24 portions salées (lasagne, curry, tajine, velouté, bouillon) /  8
-  portions sucrée (granola, fondant au chocolat) / 8 boissons (Chai et Lait
-  d’or) - remplacement possible sur demande
+description: EN PROMO 200 € au lieu de 230€. 24 portions salées (lasagne, curry,
+  tajine, velouté, bouillon) /  8 portions sucrée (granola, fondant au chocolat)
+  / 8 boissons (Chai et Lait d’or) - remplacement possible sur demande
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1xwhBKVlgfsdZze8V939BlXVMLM2W9wKG/view?usp=sharing
-priceWGroceries: 360
+priceWGroceries: 330
 hasGiftCard: true
 giftCardPrice: 5
 hasGiftCardOptions: false
