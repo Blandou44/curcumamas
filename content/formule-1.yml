@@ -1,15 +1,16 @@
 isEnabled: true
 title: Formule Famille
-price: 170
+price: 150
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: "Ce coffret contient 16 portions, par exemple : 8 portions salées
-  (lasagne et curry) / 8 portions sucrées (granola et fondant chocolat)  et 8
-  boissons (Chai et Lait d’or) - remplacement possible sur demande"
+description: "EN PROMO 150 € au lieu de 170€. Ce coffret contient 16 portions,
+  par exemple : 8 portions salées (lasagne et curry) / 8 portions sucrées
+  (granola et fondant chocolat)  et 8 boissons (Chai et Lait d’or) -
+  remplacement possible sur demande"
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1Ek500Yh4CPH7-fAq8VOEFHPtWLVb1NDy/view?usp=sharing
-priceWGroceries: 230
+priceWGroceries: 212
 hasGiftCard: true
 giftCardPrice: 5
 hasGiftCardOptions: false
