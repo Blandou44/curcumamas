@@ -11,12 +11,12 @@ hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1Ek500Yh4CPH7-fAq8VOEFHPtWLVb1NDy/view?usp=sharing
 priceWGroceries: 230
 hasGiftCard: true
-giftCardPrice: 8
+giftCardPrice: 5
 hasGiftCardOptions: false
 hasDelivery: true
 priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
-priceDeliveryMidToulouse: 15
+priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
-lienPaiement: https://pay.brevo.com/ebac3fcf-bc20-4b86-b776-85701e2bb3b8
-image: /images/illus-site-8-.png
+lienPaiement: https://pay.brevo.com/e20bdda7-1600-4e70-ba00-7529b0a68bbe
+image: /images/illus-site-6-.png
