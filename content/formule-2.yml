@@ -11,12 +11,12 @@ hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1xwhBKVlgfsdZze8V939BlXVMLM2W9wKG/view?usp=sharing
 priceWGroceries: 360
 hasGiftCard: true
-giftCardPrice: 8
+giftCardPrice: 5
 hasGiftCardOptions: false
 hasDelivery: true
 priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
-priceDeliveryMidToulouse: 15
+priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
-lienPaiement: https://pay.brevo.com/8d7a9a2d-6276-4017-b54a-999e61c4d30a
-image: /images/formule-mois-d-or-repas-post-partum-toulouse-region-toulousaine.png
+lienPaiement: https://pay.brevo.com/b29db5a1-bc34-40b1-bcc6-6caa303f8f05
+image: /images/illus-site-7-.png
