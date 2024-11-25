@@ -11,20 +11,20 @@ hasGroceries: false
 groceriesLink: https://curcumamas.com/curcumagasin/formules/
 priceWGroceries: 0
 hasGiftCard: true
-giftCardPrice: 8
+giftCardPrice: 5
 hasGiftCardOptions: true
 options:
   - 50 euros
   - 100 euros
-  - 170 euros (formule Famille sans les courses)
-  - 230 euros (formule Famille tout compris ou formule Mois d’or sans les
-    courses)
-  - 360 euros (formule mois d’or tout compris)
+  - PROMO 150 euros au lieu 170 euros (formule Famille sans les courses)
+  - PROMO 200 euros au lieu de 230 euros (formule Famille tout compris ou
+    formule Mois d’or sans les courses)
+  - PROMO 330 euros au lieu de 360 euros (formule mois d’or tout compris)
 hasDelivery: false
 priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 0
 priceDeliveryMidToulouse: 0
 priceDeliveryFarToulouse: 0
-lienPaiement: https://pay.brevo.com/1cbc4bea-67a7-4382-a8f8-f6597e2f7836
+lienPaiement: https://pay.brevo.com/f1775aed-b729-4150-9fbe-16532668c09a
 calendlyLink: "-"
 image: /images/illus-site.png
