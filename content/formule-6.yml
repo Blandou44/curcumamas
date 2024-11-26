@@ -8,16 +8,16 @@ description: "Un coffret naissance pour maman & bébé : Un mobile à broder (ki
   complet, niveau facile)  pour la chambre de bébé + Un goûter spécial
   post-partum (Granola, lait d'or et chai) pour la maternité +   Un livret
   d’astuces et recettes post-partum  "
-hasGroceries: true
-groceriesLink: "-1"
-priceWGroceries: -1
-hasGiftCard: true
-giftCardPrice: -1
-hasGiftCardOptions: true
-hasDelivery: true
-priceDeliveryToulouse: -1
-priceDeliveryCloseToulouse: -1
-priceDeliveryMidToulouse: -1
-priceDeliveryFarToulouse: -1
+hasGroceries: false
+groceriesLink: curcumamas.com
+priceWGroceries: 0
+hasGiftCard: false
+giftCardPrice: 0
+hasGiftCardOptions: false
+hasDelivery: false
+priceDeliveryToulouse: 0
+priceDeliveryCloseToulouse: 0
+priceDeliveryMidToulouse: 0
+priceDeliveryFarToulouse: 0
 lienPaiement: https://pay.brevo.com/a276e5ba-0ace-407e-a98b-596d001eb1e0
 image: /images/illus-site-10-.png
