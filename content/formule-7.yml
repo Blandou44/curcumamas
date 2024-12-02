@@ -1,10 +1,10 @@
 isEnabled: true
-title: EBOOK "Cuisine, Grossesse et Post-partum" GRATUIT
+title: EBOOK GRATUIT
 price: 0
-hasFdp: true
-fdp: "-1"
+hasFdp: false
+fdp: "0"
 isEverywhere: true
-description: Un ebook plein d''informations et d'astuces en nutrition pendant la
+description: Un ebook plein d'informations et d'astuces en nutrition pendant la
   grossesse et le post-partum incluant CINQ recettes
   exclusives.                                                                                  En
   validant, j'accepte de recevoir vos e-mails et confirme avoir pris
@@ -15,7 +15,7 @@ hasGroceries: false
 groceriesLink: https://curcumamas.com/
 priceWGroceries: 0
 hasGiftCard: false
-giftCardPrice: 5
+giftCardPrice: 0
 hasGiftCardOptions: false
 hasDelivery: false
 priceDeliveryToulouse: -1
