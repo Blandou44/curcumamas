@@ -3,7 +3,7 @@ title: Massage & Repas
 price: 320
 hasFdp: false
 fdp: "-1"
-isEverywhere: true
+isEverywhere: false
 description: Villa Famille et Curcumamas s'unissent pour vous offrir une offre à
   prix tout doux.
 hasGroceries: false
@@ -11,8 +11,8 @@ groceriesLink: curcumamas.com
 priceWGroceries: 0
 hasGiftCard: true
 giftCardPrice: 5
-hasGiftCardOptions: true
-hasDelivery: true
+hasGiftCardOptions: false
+hasDelivery: false
 priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
