@@ -6,9 +6,9 @@ fdp: "-1"
 isEverywhere: true
 description: Villa Famille et Curcumamas s'unissent pour vous offrir une offre à
   prix tout doux.
-hasGroceries: true
-groceriesLink: https://curcumamas.com
-priceWGroceries: -1
+hasGroceries: false
+groceriesLink: curcumamas.com
+priceWGroceries: 0
 hasGiftCard: true
 giftCardPrice: 5
 hasGiftCardOptions: true
