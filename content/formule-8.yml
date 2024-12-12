@@ -22,7 +22,7 @@ giftCardPrice: 5
 hasGiftCardOptions: true
 hasDelivery: true
 priceDeliveryToulouse: 0
-priceDeliveryCloseToulouse: 15
+priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/0983ce62-7efa-4a5b-8f95-06d8179e2d07
