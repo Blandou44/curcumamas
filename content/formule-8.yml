@@ -18,7 +18,7 @@ hasGroceries: true
 groceriesLink: https://curcumamas.com/curcumagasin/formules
 priceWGroceries: -1
 hasGiftCard: true
-giftCardPrice: -1
+giftCardPrice: 5
 hasGiftCardOptions: true
 hasDelivery: true
 priceDeliveryToulouse: 0
