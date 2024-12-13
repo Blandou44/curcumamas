@@ -1,11 +1,19 @@
-isEnabled: false
+isEnabled: true
 title: Massage et Repas
 price: 320
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: Villa Famille et Curcumamas s'unissent pour vous offrir une offre à
-  prix tout doux.
+description: "Villa Famille et Curcumamas s'unissent pour vous offrir une offre
+  à prix tout doux. Villa Famille propose des soins dans ses locaux à St Orens.
+  Curcumamas se déplace chez vous (déplacement offert à Toulouse) pour de bons
+  petits plats post-partum  -\tMassage Détente Rebozo. Durée :  3h30 Lieu :
+  Villa Famille (St Orens de Gameville). 190€ au lieu de 210€  Massage
+  enveloppant et réconfortant de tout le corps pour une relaxation profonde,
+  suivi d'un bain de pieds aux plantes et d'un serrage en douceur avec les
+  traditionnels tissus Rebozo. -\tFormule Famille ou Mois d'or. 210€ au lieu de
+  230€. A vous de choisir : La Formule Famille courses comprises OU la formule
+  Mois d'or sans les courses. "
 hasGroceries: false
 groceriesLink: curcumamas.com
 priceWGroceries: 0
