@@ -33,11 +33,16 @@ export const applySidePadding = (vertical = "0") => `
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;
+  margin: 0;
     padding: 0;
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
     overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
 
