@@ -1,24 +1,29 @@
 isEnabled: true
-title: Formule Batch-cooking
-price: 170
+title: Massage & Repas
+price: 320
 hasFdp: false
 fdp: "-1"
 isEverywhere: true
-description: Une formule sur-mesure adaptée à votre famille. Entre 2 et 5
-  recettes différentes, de 4 à 6 portions par recette, c'est vous qui décidez.
-  Parfait en cas de reprise du travail, en cas de déplacement professionnel d'un
-  des parents ou simplement en cas de fatigue (les dents, les microbes d'hiver,
-  les nuits hachées …)
+description: "Villa Famille et Curcumamas s'unissent pour vous offrir une offre
+  à prix tout doux. Villa Famille propose des soins dans ses locaux à St Orens
+  de Gameville. Curcumamas se déplace chez vous (déplacement offert à Toulouse)
+  pour de bons petits plats post-partum. Cette formule comprend :\tUn Massage
+  Détente Rebozo. Durée :  3h30 Lieu : Villa Famille (St Orens de Gameville).
+  190€ au lieu de 210€  Massage enveloppant et réconfortant de tout le corps
+  pour une relaxation profonde, suivi d'un bain de pieds aux plantes et d'un
+  serrage en douceur avec les traditionnels tissus Rebozo.  ET une Formule
+  Famille ou Mois d'or. 210€ au lieu de 230€. A vous de choisir : La Formule
+  Famille courses comprises OU la formule Mois d'or sans les courses. "
 hasGroceries: true
-groceriesLink: https://drive.google.com/file/d/1A6eHfVZ0GVFFHx2wpWxZ8wdpuq2Vju6Q/view?usp=drive_link
-priceWGroceries: 360
+groceriesLink: curcumamas.com
+priceWGroceries: 320
 hasGiftCard: true
-giftCardPrice: 8
+giftCardPrice: 5
 hasGiftCardOptions: false
-hasDelivery: true
+hasDelivery: false
 priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 15
-priceDeliveryFarToulouse: 35
-lienPaiement: https://pay.brevo.com/2b72315c-9fa1-4610-ac48-bb33797f3f17
-image: /images/formule-batch-cooking-famille-toulouse-region-toulousaine.png
+priceDeliveryFarToulouse: 25
+lienPaiement: https://pay.brevo.com/0983ce62-7efa-4a5b-8f95-06d8179e2d07
+image: /images/illus-site-17-.png
