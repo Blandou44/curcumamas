@@ -50,6 +50,7 @@ const LinksWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  grid-column: span 2;
 
   @media (min-width: ${smallBreakpoint}) {
     flex-direction: row;
