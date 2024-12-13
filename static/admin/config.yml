@@ -27,6 +27,7 @@ collections:
         file: "content/entrees.yml"
         fields: 
           - {label: "Nom 1", name: nom1, widget: string}
+          - {label: "Activé 1", name: isEnabled1, widget: boolean}
           - {label: "Informations nutritionnelles 1", name: infoNut1, widget: string}
           - {label: "Description 1", name: description1, widget: string}  
           - label: "Image 1"
@@ -38,6 +39,7 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 2", name: nom2, widget: string}
+          - {label: "Activé 2", name: isEnabled2, widget: boolean}
           - {label: "Informations nutritionnelles 2", name: infoNut2, widget: string}
           - {label: "Description 2", name: description2, widget: string}  
           - label: "Image 2"
@@ -49,6 +51,7 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 3", name: nom3, widget: string}
+          - {label: "Activé 3", name: isEnabled3, widget: boolean}
           - {label: "Informations nutritionnelles 3", name: infoNut3, widget: string}
           - {label: "Description 3", name: description3, widget: string}  
           - label: "Image 3"
@@ -60,10 +63,83 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 4", name: nom4, widget: string}
+          - {label: "Activé 4", name: isEnabled4, widget: boolean}
           - {label: "Informations nutritionnelles 4", name: infoNut4, widget: string}
           - {label: "Description 4", name: description4, widget: string}  
           - label: "Image 4"
             name: "image4"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 5", name: nom5, widget: string}
+          - {label: "Activé 5", name: isEnabled5, widget: boolean}
+          - {label: "Informations nutritionnelles 5", name: infoNut5, widget: string}
+          - {label: "Description 5", name: description5, widget: string}  
+          - label: "Image 5"
+            name: "image5"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 6", name: nom6, widget: string}
+          - {label: "Activé 6", name: isEnabled6, widget: boolean}
+          - {label: "Informations nutritionnelles 6", name: infoNut6, widget: string}
+          - {label: "Description 6", name: description6, widget: string}  
+          - label: "Image 6"
+            name: "image6"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 7", name: nom7, widget: string}
+          - {label: "Activé 7", name: isEnabled7, widget: boolean}
+          - {label: "Informations nutritionnelles 7", name: infoNut7, widget: string}
+          - {label: "Description 7", name: description7, widget: string}  
+          - label: "Image 7"
+            name: "image7"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 8", name: nom8, widget: string}
+          - {label: "Activé 8", name: isEnabled8, widget: boolean}
+          - {label: "Informations nutritionnelles 8", name: infoNut8, widget: string}
+          - {label: "Description 8", name: description8, widget: string}  
+          - label: "Image 8"
+            name: "image8"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 9", name: nom9, widget: string}
+          - {label: "Activé 9", name: isEnabled9, widget: boolean}
+          - {label: "Informations nutritionnelles 9", name: infoNut9, widget: string}
+          - {label: "Description 9", name: description9, widget: string}  
+          - label: "Image 9"
+            name: "image9"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 10", name: nom10, widget: string}
+          - {label: "Activé 10", name: isEnabled10, widget: boolean}
+          - {label: "Informations nutritionnelles 10", name: infoNut10, widget: string}
+          - {label: "Description 10", name: description10, widget: string}  
+          - label: "Image 10"
+            name: "image10"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
@@ -75,6 +151,7 @@ collections:
         file: "content/plats.yml"
         fields: 
           - {label: "Nom 1", name: nom1, widget: string}
+          - {label: "Activé 1", name: isEnabled1, widget: boolean}
           - {label: "Informations nutritionnelles 1", name: infoNut1, widget: string}
           - {label: "Description 1", name: description1, widget: string}  
           - label: "Image 1"
@@ -86,6 +163,7 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 2", name: nom2, widget: string}
+          - {label: "Activé 2", name: isEnabled2, widget: boolean}
           - {label: "Informations nutritionnelles 2", name: infoNut2, widget: string}
           - {label: "Description 2", name: description2, widget: string}  
           - label: "Image 2"
@@ -97,6 +175,7 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 3", name: nom3, widget: string}
+          - {label: "Activé 3", name: isEnabled3, widget: boolean}
           - {label: "Informations nutritionnelles 3", name: infoNut3, widget: string}
           - {label: "Description 3", name: description3, widget: string}  
           - label: "Image 3"
@@ -108,10 +187,83 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 4", name: nom4, widget: string}
+          - {label: "Activé 4", name: isEnabled4, widget: boolean}
           - {label: "Informations nutritionnelles 4", name: infoNut4, widget: string}
           - {label: "Description 4", name: description4, widget: string}  
           - label: "Image 4"
             name: "image4"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 5", name: nom5, widget: string}
+          - {label: "Activé 5", name: isEnabled5, widget: boolean}
+          - {label: "Informations nutritionnelles 5", name: infoNut5, widget: string}
+          - {label: "Description 5", name: description5, widget: string}  
+          - label: "Image 5"
+            name: "image5"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 6", name: nom6, widget: string}
+          - {label: "Activé 6", name: isEnabled6, widget: boolean}
+          - {label: "Informations nutritionnelles 6", name: infoNut6, widget: string}
+          - {label: "Description 6", name: description6, widget: string}  
+          - label: "Image 6"
+            name: "image6"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 7", name: nom7, widget: string}
+          - {label: "Activé 7", name: isEnabled7, widget: boolean}
+          - {label: "Informations nutritionnelles 7", name: infoNut7, widget: string}
+          - {label: "Description 7", name: description7, widget: string}  
+          - label: "Image 7"
+            name: "image7"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 8", name: nom8, widget: string}
+          - {label: "Activé 8", name: isEnabled8, widget: boolean}
+          - {label: "Informations nutritionnelles 8", name: infoNut8, widget: string}
+          - {label: "Description 8", name: description8, widget: string}  
+          - label: "Image 8"
+            name: "image8"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 9", name: nom9, widget: string}
+          - {label: "Activé 9", name: isEnabled9, widget: boolean}
+          - {label: "Informations nutritionnelles 9", name: infoNut9, widget: string}
+          - {label: "Description 9", name: description9, widget: string}  
+          - label: "Image 9"
+            name: "image9"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 10", name: nom10, widget: string}
+          - {label: "Activé 10", name: isEnabled10, widget: boolean}
+          - {label: "Informations nutritionnelles 10", name: infoNut10, widget: string}
+          - {label: "Description 10", name: description10, widget: string}  
+          - label: "Image 10"
+            name: "image10"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
@@ -123,6 +275,7 @@ collections:
         file: "content/desserts.yml"
         fields: 
           - {label: "Nom 1", name: nom1, widget: string}
+          - {label: "Activé 1", name: isEnabled1, widget: boolean}
           - {label: "Informations nutritionnelles 1", name: infoNut1, widget: string}
           - {label: "Description 1", name: description1, widget: string}  
           - label: "Image 1"
@@ -134,6 +287,7 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 2", name: nom2, widget: string}
+          - {label: "Activé 2", name: isEnabled2, widget: boolean}
           - {label: "Informations nutritionnelles 2", name: infoNut2, widget: string}
           - {label: "Description 2", name: description2, widget: string}  
           - label: "Image 2"
@@ -145,6 +299,7 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 3", name: nom3, widget: string}
+          - {label: "Activé 3", name: isEnabled3, widget: boolean}
           - {label: "Informations nutritionnelles 3", name: infoNut3, widget: string}
           - {label: "Description 3", name: description3, widget: string}  
           - label: "Image 3"
@@ -156,10 +311,83 @@ collections:
                 config:
                   multiple: true
           - {label: "Nom 4", name: nom4, widget: string}
+          - {label: "Activé 4", name: isEnabled4, widget: boolean}
           - {label: "Informations nutritionnelles 4", name: infoNut4, widget: string}
           - {label: "Description 4", name: description4, widget: string}  
           - label: "Image 4"
             name: "image4"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 5", name: nom5, widget: string}
+          - {label: "Activé 5", name: isEnabled5, widget: boolean}
+          - {label: "Informations nutritionnelles 5", name: infoNut5, widget: string}
+          - {label: "Description 5", name: description5, widget: string}  
+          - label: "Image 5"
+            name: "image5"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 6", name: nom6, widget: string}
+          - {label: "Activé 6", name: isEnabled6, widget: boolean}
+          - {label: "Informations nutritionnelles 6", name: infoNut6, widget: string}
+          - {label: "Description 6", name: description6, widget: string}  
+          - label: "Image 6"
+            name: "image6"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 7", name: nom7, widget: string}
+          - {label: "Activé 7", name: isEnabled7, widget: boolean}
+          - {label: "Informations nutritionnelles 7", name: infoNut7, widget: string}
+          - {label: "Description 7", name: description7, widget: string}  
+          - label: "Image 7"
+            name: "image7"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 8", name: nom8, widget: string}
+          - {label: "Activé 8", name: isEnabled8, widget: boolean}
+          - {label: "Informations nutritionnelles 8", name: infoNut8, widget: string}
+          - {label: "Description 8", name: description8, widget: string}  
+          - label: "Image 8"
+            name: "image8"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 9", name: nom9, widget: string}
+          - {label: "Activé 9", name: isEnabled9, widget: boolean}
+          - {label: "Informations nutritionnelles 9", name: infoNut9, widget: string}
+          - {label: "Description 9", name: description9, widget: string}  
+          - label: "Image 9"
+            name: "image9"
+            widget: "image"
+            choose_url: true
+            default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - {label: "Nom 10", name: nom10, widget: string}
+          - {label: "Activé 10", name: isEnabled10, widget: boolean}
+          - {label: "Informations nutritionnelles 10", name: infoNut10, widget: string}
+          - {label: "Description 10", name: description10, widget: string}  
+          - label: "Image 10"
+            name: "image10"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"

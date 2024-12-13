@@ -1,28 +1,72 @@
+menuType: desserts
+
 nom1: Brownie chocolat noir, poudre d'amandes et ingrédient secret
+isEnabled1: true
 infoNut1: Sans gluten-sans lactose
 description1: Incroyable Brownie fondant, avec sa recette secrète contenant
   poudre d'amande et autres trésor nutritionnels, c'est une gourmandise qui ne
   fait pas que réconforter ! Plein d'autres recettes disponible à la demande,
   même si celle ci reste de loin votre favorite
 image1: /images/fondant-au-chocolat-sans-gluten-sans-lactose-curcumamas-post-partum.jfif
+
 nom2: "Chai : épices et réconfort"
+isEnabled2: true
 infoNut2: Sans gluten-sans lactose
 description2: "Un mix d’épices sans thé, prêt à être mélangé à du lait (végétal
   ou animal) : gingembre, muscade, cannelle, cardamome… Cette boisson
   réconfortante est très consommée en Inde. Nous avons ici enlevé la théine et
   le sucre pour pouvoir en boire à volonté pendant le post-partum."
 image2: /images/chai-1-.png
+
 nom3: "Lait d'or : la boisson du post partum"
+isEnabled3: true
 infoNut3: Sans gluten-sans lactose
 description3: "Un mix d’épices prêt à être mélangé à du lait végétal (lait de
   coco ou lait d’amande) : curcuma, gingembre, poivre… Cette boisson chaude et
   réconfortante est reconnue pour ses propriétés antioxydantes, détoxifiantes et
   apaisantes, elle est parfaite pour le post-partum."
 image3: /images/20220406_161522.jpg
+
 nom4: Granola spécial post partum et allaitement
+isEnabled4: true
 infoNut4: Sans gluten-sans lactose
 description4: "Un délicieux granola aux graines noix et autres supers aliments,
   il sera parfait pour vous soutenir toute la journée : du petit déjeuner, au
   goûter et sur toutes les fringales de la journée. Bercer ça creuse !"
-menuType: desserts
 image4: /images/granola-post-partum-toulouse-et-toute-france-curcumamas.jpeg
+
+nom5: ""
+isEnabled5: false
+infoNut5: "" 
+description5: ""
+image5: ""
+
+nom6: ""
+isEnabled6: false
+infoNut6: "" 
+description6: ""
+image6: ""
+
+nom7: ""
+isEnabled7: false
+infoNut7: "" 
+description7: ""
+image7: ""
+
+nom8: ""
+isEnabled8: false
+infoNut8: "" 
+description8: ""
+image8: ""
+
+nom9: ""
+isEnabled9: false
+infoNut9: "" 
+description9: ""
+image9: ""
+
+nom10: ""
+isEnabled10: false
+infoNut10: "" 
+description10: ""
+image10: ""

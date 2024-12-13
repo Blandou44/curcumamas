@@ -1,21 +1,65 @@
+menuType: plats
+
 nom1: Tajine aux légumes de saison, amandes et fruits secs- Quinoa
+isEnabled1: true
 infoNut1: Sans gluten-sans lactose
 description1: La tajine, par son incroyable mélange d’épices sera parfait pour
   votre digestion et pour vos apports en minéraux contenu dans les oléagineux
 image1: /images/illus-site-14-.png
+
 nom2: Curry aux légumes de saison et pois chiches - Riz.
+isEnabled2: true
 infoNut2: Sans gluten-sans lactose-non pimenté
 description2: "Un plat commun à toutes les cultures d'Asie pacifique, tout aussi
   épicé (non pimenté), qu'oncteux avec sa sauce au lait de coco. Parfait pour se
   réchauffer et faire le plein de nutriments "
 image2: /images/5.svg
+
 nom3: Lasagnes végétariennes
+isEnabled3: true
 infoNut3: possible sans lactose
 description3: Un bon plat de lasagnes avec une farce végétale, un mix parfait
   entre gourmandise et apports en fibres.
 image3: /images/illus-site-15-.png
+
 nom4: "Et plein d'autres recettes disponibles à la demande "
+isEnabled4: false
 infoNut4: nos recettes d'adaptent à vos gouts et vos régimes alimentaires
 description4: "dans des barquettes individuelles ou plus grandes, c'et vous qui choisissez. "
-menuType: plats
 image4: /images/illus-site-16-.png
+
+nom5: ""
+isEnabled5: false
+infoNut5: "" 
+description5: ""
+image5: ""
+
+nom6: ""
+isEnabled6: false
+infoNut6: "" 
+description6: ""
+image6: ""
+
+nom7: ""
+isEnabled7: false
+infoNut7: "" 
+description7: ""
+image7: ""
+
+nom8: ""
+isEnabled8: false
+infoNut8: "" 
+description8: ""
+image8: ""
+
+nom9: ""
+isEnabled9: false
+infoNut9: "" 
+description9: ""
+image9: ""
+
+nom10: ""
+isEnabled10: false
+infoNut10: "" 
+description10: ""
+image10: ""

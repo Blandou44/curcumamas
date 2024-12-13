@@ -1,22 +1,68 @@
+menuType: entrees
+
 nom1: Vélouté aux épices et légumes et légumineuse de saison
+isEnabled1: true
 infoNut1: Sans gluten-sans lactose
 description1: "Un réconfortant velouté aux légumes, légumineuses et aux épices
   pour vous réchauffer et faire le plein de fibres et de gourmandises. Plein de
   recettes possibles en fonction des saisons. "
 image1: /images/illus-site-12-.png
+
 nom2: Curcubouillon d'os aux légumes, gingembre et épices
+isEnabled2: true
 infoNut2: Sans gluten-sans lactose
 description2: Le bouillon, un incontournable du post partum. Potion
   reminéralisante aux milles vertues, il vous permettra de faire le plein de
   collagène.
 image2: /images/illus-site-13-.png
+
 nom3: Houmous de betterave
+isEnabled3: true
 infoNut3: Sans gluten-sans lactose-non pimenté
 description3: Un houmous onctueux et frais aux notes de citron et d'herbes
   fraîches et d'épices. Parfait pour vos tartines express avec bébé
 image3: /images/1.svg
-nom4: lsls
-infoNut4: sss
-description4: sss
-menuType: entrees
-image4: /images/2.svg
+
+nom4: ""
+isEnabled4: false
+infoNut4: ""
+description4: ""
+image4: ""
+
+nom5: ""
+isEnabled5: false
+infoNut5: ""
+description5: ""
+image5: ""
+
+nom6: ""
+isEnabled6: false
+infoNut6: ""
+description6: ""
+image6: ""
+
+nom7: ""
+isEnabled7: false
+infoNut7: ""
+description7: ""
+image7: ""
+
+nom8: ""
+isEnabled8: false
+infoNut8: ""
+description8: ""
+image8: ""
+
+nom9: ""
+isEnabled9: false
+infoNut9: ""
+description9: ""
+image9: ""
+
+nom10: ""
+isEnabled10: false
+infoNut10: ""
+description10: ""
+image10: ""
+
+

@@ -61,10 +61,7 @@ const ChoixHeader = styled.p`
   margin: 0;
 `;
 
-export const MenuDisplay = ({ data, heading, nbItems = 4 }) => {
-  //generate an array of numbers from 1 to nbItems
-  const array = Array.from({ length: nbItems }, (_, i) => i + 1);
-
+export const MenuDisplay = ({ data, heading, enabledItems }) => {
   return (
     <MotifWrapper>
       <HeadingWrapper>
@@ -74,8 +71,8 @@ export const MenuDisplay = ({ data, heading, nbItems = 4 }) => {
       </HeadingWrapper>
       <MenuOuterContainer>
         <MenuContainer>
-          {array.map((item, index) => (
-            <MenuWrapper>
+          {enabledItems.map((item, index) => (
+            <MenuWrapper key={item}>
               <img src={data[`image${item}`]} alt=""></img>
               <ChoixHeader>{data[`nom${item}`]}</ChoixHeader>
               <SmallText>{data[`infoNut${item}`]}</SmallText>
