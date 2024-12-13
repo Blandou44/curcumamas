@@ -19,7 +19,7 @@ options:
   - 170 euros (formule Famille sans les courses)
   - 230 euros (formule Famille courses comprises ou formule Mois d’or sans les
     courses)
-  - 60 euros (formule mois d’or courses comprises)
+  - 360 euros (formule mois d’or courses comprises)
 hasDelivery: false
 priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 0
