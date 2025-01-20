@@ -1,22 +1,21 @@
-isEnabled: false
-title: Massage et Repas
-price: 320
+isEnabled: true
+title: "Formule Batch cooking "
+price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: true
-description: "Villa Famille et Curcumamas s'unissent pour vous offrir une offre
-  à prix tout doux. Villa Famille propose des soins dans ses locaux à St Orens
-  de Gameville. Curcumamas se déplace chez vous (déplacement offert à Toulouse)
-  pour de bons petits plats post-partum. Cette formule comprend :\tUn Massage
-  Détente Rebozo. Durée :  3h30 Lieu : Villa Famille (St Orens de Gameville).
-  190€ au lieu de 210€  Massage enveloppant et réconfortant de tout le corps
-  pour une relaxation profonde, suivi d'un bain de pieds aux plantes et d'un
-  serrage en douceur avec les traditionnels tissus Rebozo.  ET une Formule
-  Famille ou Mois d'or. 210€ au lieu de 230€. A vous de choisir : La Formule
-  Famille courses comprises OU la formule Mois d'or sans les courses. "
+description: "Une formule sur-mesure adaptée à votre famille. 4 recettes
+  familiales de 6 portions à définir ensemble (par exemple : Velouté de
+  lentilles corail et potimarron, Curry crémeux de patate douce, Lasagnes
+  végétariennes, Tajine de légumes rôtis). Vous faites les courses vous-même
+  avec notre liste de course détaillée puis on s’occupe de tout cuisiner dans
+  votre cuisine. Ou on s’occupe de TOUT, courses comprises.  Parfait en cas de
+  reprise du travail, en cas de déplacement professionnel d'un des parents ou
+  simplement en cas de fatigue (les dents, les microbes d'hiver, les nuits
+  hachées …)"
 hasGroceries: true
 groceriesLink: curcumamas.com
-priceWGroceries: 320
+priceWGroceries: 360
 hasGiftCard: true
 giftCardPrice: 5
 hasGiftCardOptions: false
@@ -25,5 +24,5 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 15
 priceDeliveryFarToulouse: 25
-lienPaiement: https://pay.brevo.com/0983ce62-7efa-4a5b-8f95-06d8179e2d07
-image: /images/illus-site-17-.png
+lienPaiement: https://pay.brevo.com/2b72315c-9fa1-4610-ac48-bb33797f3f17
+image: /images/illus-site-23-.png
