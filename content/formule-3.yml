@@ -1,12 +1,12 @@
 isEnabled: true
 title: Curcu Goûter
-price: 30
+price: 35
 hasFdp: true
 fdp: "3.90"
 isEverywhere: true
-description: "EN PROMO 30€ au lieu de 35€ (jusqu'au 24 décembre). Ce coffret
-  contient : 1 granola Amande Abricot Chocolat 250g, une préparation pour cacao
-  sacré (4 portions) , un livret astuces et recettes du post-partum"
+description: "Ce coffret contient : 1 granola Amande Abricot Chocolat 250g, 8
+  préparations pour boisson (lait d'or, chai ou cacao sacré) , un livret astuces
+  et recettes du post-partum"
 hasGroceries: false
 groceriesLink: https://curcumamas.com/
 priceWGroceries: 0
@@ -18,6 +18,6 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 0
 priceDeliveryMidToulouse: 0
 priceDeliveryFarToulouse: 0
-lienPaiement: https://pay.brevo.com/4f0ce63c-340c-45ef-b258-fb9296fd38dc
+lienPaiement: https://pay.brevo.com/b2f1fa7b-a0f5-4cd9-861c-fb91d032162f
 calendlyLink: "-"
-image: /images/illus-site-8-.png
+image: /images/illus-site-22-.png
