@@ -4,9 +4,10 @@ price: 170
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: "Ce coffret contient 16 portions, par exemple : 8 portions salées
-  (lasagne et curry) / 8 portions sucrées (granola et fondant chocolat)  et 8
-  boissons (Chai et Lait d’or) - autre recette possible sur demande"
+description: "Cette formule contient 16 portions, par exemple : 8 portions
+  salées (lasagne et curry) / 8 portions sucrées (granola et fondant
+  chocolat)  et 8 boissons (Chai et Lait d’or) - autre recette possible sur
+  demande"
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1Ek500Yh4CPH7-fAq8VOEFHPtWLVb1NDy/view?usp=sharing
 priceWGroceries: 230
