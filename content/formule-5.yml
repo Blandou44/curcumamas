@@ -1,7 +1,7 @@
 isEnabled: true
 title: "Formule batch cooking "
 price: 230
-hasFdp: false
+hasFdp: true
 fdp: "-1"
 isEverywhere: false
 description: "Une formule sur-mesure adaptée à votre famille. 4 recettes
@@ -22,7 +22,7 @@ hasGiftCardOptions: false
 hasDelivery: false
 priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
-priceDeliveryMidToulouse: 15
-priceDeliveryFarToulouse: 25
+priceDeliveryMidToulouse: 25
+priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/2b72315c-9fa1-4610-ac48-bb33797f3f17
 image: /images/illus-site-23-.png
