@@ -428,11 +428,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -466,11 +480,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -504,11 +532,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -542,11 +584,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -580,11 +636,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -618,11 +688,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -656,11 +740,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -694,11 +792,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -732,11 +844,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
@@ -770,11 +896,25 @@ collections:
           - {label: "Prix livraison <20km Toulouse", name: priceDeliveryMidToulouse, widget: number}
           - {label: "Prix livraison >20km Toulouse", name: priceDeliveryFarToulouse, widget: number}
           - {label: Lien de paiement, name: lienPaiement, widget: string}
-          - label: "Image"
+          - label: "Image principale"
             name: "image"
             widget: "image"
             choose_url: true
             default: "/static/images/menu_1.png"
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 1"
+            name: "imageAdd1"
+            widget: "image"
+            choose_url: true
+            media_library:
+                config:
+                  multiple: true
+          - label: "Image additionnelle 2"
+            name: "imageAdd2"
+            widget: "image"
+            choose_url: true
             media_library:
                 config:
                   multiple: true
