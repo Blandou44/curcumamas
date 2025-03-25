@@ -75,7 +75,7 @@ export const QuestionWrapper = styled.div`
   `};
 `;
 
-export const CommandForm = ({ defaultCadeau, lienPaiement }) => {
+export const CommandForm = ({ defaultCadeau, lienPaiement, title }) => {
   const [isCadeau, setIsCadeau] = useState(defaultCadeau);
 
   return (
@@ -88,6 +88,7 @@ export const CommandForm = ({ defaultCadeau, lienPaiement }) => {
       }`}
     >
       <input type="hidden" name="form-name" value="commandev2" />
+      <input type="hidden" name="formule" value={title} />
       <QuestionWrapper>
         <p>Est ce une curcucommande pour vous ?</p>
         <div>

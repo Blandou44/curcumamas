@@ -292,7 +292,7 @@ const curcumagasin = ({ data }) => {
               </>
             ) : null}
 
-            <CommandForm lienPaiement={lienPaiement} />
+            <CommandForm lienPaiement={lienPaiement} title={title} />
           </FormWrapper>
         </ShopWrapper>
       </MotifWrapper>
