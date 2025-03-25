@@ -63,8 +63,6 @@ const Formules = ({ data }) => {
     .filter((item) => item.isEnabled)
     .sort((a, b) => a.sortId - b.sortId);
 
-  console.log(formules);
-
   return (
     <BasePage>
       <NewNavBar />
@@ -106,7 +104,7 @@ const Formules = ({ data }) => {
             </SubHeading>
             <FormulesWrapper>
               {formules.map((item) => (
-                <Formule to={`/curcumagasin/commande?item=${item.title}`}>
+                <Formule to={`/curcumagasin/commande?item=${item.id}`}>
                   <img src={item.image} width={300} />
                   <p>
                     {item.title} <br />
@@ -130,6 +128,7 @@ export const query = graphql`
   query OtherFormulesQuery {
     allContentYaml {
       nodes {
+        id
         sortId
         isEnabled
         title
@@ -148,6 +147,8 @@ export const query = graphql`
         priceDeliveryFarToulouse
         lienPaiement
         image
+        imageAdd1
+        imageAdd2
       }
     }
   }

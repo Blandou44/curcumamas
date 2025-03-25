@@ -57,10 +57,31 @@ const ShopWrapper = styled.div`
   }
 `;
 
+const ImageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  > img {
+    max-width: 100%;
+  }
+
+  > img:not(:first-child) {
+    display: none;
+  }
+
+  @media (min-width: ${smallBreakpoint}) {
+    > img:not(:first-child) {
+      display: block;
+    }
+  }
+`;
+
 const FormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
+  padding-bottom: 2rem;
 `;
 
 const Price = styled.h2`
@@ -133,7 +154,7 @@ const curcumagasin = ({ data }) => {
 
   // turn filteredData into an object using title as a key
   const formulesObject = filteredData.reduce((acc, item) => {
-    acc[encodeURIComponent(item.title.toLowerCase())] = item;
+    acc[encodeURIComponent(item.id)] = item;
     return acc;
   }, {});
 
@@ -141,7 +162,7 @@ const curcumagasin = ({ data }) => {
   const urlParams = new URLSearchParams(
     typeof window !== "undefined" ? window.location.search : ""
   );
-  const item = urlParams.get("item") ?? filteredData[0].title;
+  const item = urlParams.get("item") ?? filteredData[0].id;
 
   const selectedItem = formulesObject[encodeURIComponent(item.toLowerCase())];
 
@@ -167,16 +188,21 @@ const curcumagasin = ({ data }) => {
     priceDeliveryFarToulouse,
     lienPaiement,
     image,
+    imageAdd1,
+    imageAdd2,
   } = selectedItem;
-
-  console.log({ selectedItem });
 
   return (
     <BasePage>
       <NewNavBar />
       <MotifWrapper>
         <ShopWrapper>
-          <img src={image} alt="" />
+          <ImageWrapper>
+            <img src={image} alt="" />
+            {imageAdd1 ? <img src={imageAdd1} alt="" /> : null}
+            {imageAdd2 ? <img src={imageAdd2} alt="" /> : null}
+          </ImageWrapper>
+
           <FormWrapper>
             <Heading>{title}</Heading>
             <Price>
@@ -305,6 +331,7 @@ export const query = graphql`
   query FormulesQuery {
     allContentYaml {
       nodes {
+        id
         isEnabled
         title
         price
@@ -326,6 +353,8 @@ export const query = graphql`
         priceDeliveryFarToulouse
         lienPaiement
         image
+        imageAdd1
+        imageAdd2
       }
     }
   }
