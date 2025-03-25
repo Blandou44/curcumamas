@@ -12,7 +12,7 @@ import {
   smallBreakpoint,
 } from "../styles/theme";
 
-const PortraitWrapper = styled.nav`
+const PortraitWrapper = styled.div`
   ${applySidePadding("1.5rem")};
   display: flex;
   flex-direction: column;
@@ -24,13 +24,6 @@ const PortraitWrapper = styled.nav`
   > ${Heading} {
     grid-column: span 2;
   }
-  &::before {
-    content: url(${background});
-    position: absolute;
-    top: 336px;
-    left: 32%;
-    transform: scale(0.6) rotate(284deg);
-  }
 
   @media (min-width: ${smallBreakpoint}) {
     display: grid;
@@ -41,6 +34,9 @@ const PortraitWrapper = styled.nav`
 
     &::before {
       top: 70%;
+      content: url(${background});
+      position: absolute;
+      transform: scale(0.6) rotate(284deg);
       left: 600px;
     }
   }
@@ -53,21 +49,24 @@ const Description = styled.p`
 `;
 
 const Illustration = styled.img`
-  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  @media (min-width: ${smallBreakpoint}) {
+    height: 100%;
+  }
 `;
 
 const IllustrationsWrapper = styled.div`
-  display: flex;
-  height: 350px;
-  gap: 3rem;
-  align-self: center;
-  justify-self: flex-end;
-  grid-column: 2 / 2;
-  grid-row: span 2;
-  width: 35%;
-  margin-right: 20%;
-
   @media (min-width: ${smallBreakpoint}) {
+    display: flex;
+    height: 350px;
+    gap: 3rem;
+    align-self: center;
+    justify-self: flex-end;
+    grid-column: 2 / 2;
+    grid-row: span 2;
+    width: 35%;
+    margin-right: 20%;
     width: 100%;
     margin-right: 0;
   }
