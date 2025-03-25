@@ -59,7 +59,11 @@ const Formule = styled(Link)`
 
 const Formules = ({ data }) => {
   //filter data without a title
-  const formules = data.allContentYaml.nodes.filter((item) => item.isEnabled);
+  const formules = data.allContentYaml.nodes
+    .filter((item) => item.isEnabled)
+    .sort((a, b) => a.sortId - b.sortId);
+
+  console.log(formules);
 
   return (
     <BasePage>
@@ -126,6 +130,7 @@ export const query = graphql`
   query OtherFormulesQuery {
     allContentYaml {
       nodes {
+        sortId
         isEnabled
         title
         price
