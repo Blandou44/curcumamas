@@ -1,27 +1,39 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, withPrefix } from "gatsby";
 
 const SEO = ({
-  title,
-  description,
-  image,
+  title: customTitle,
+  description: customDescription,
+  image: customImage,
   article,
   keywords,
   noindex = false,
+  frontmatter, // Add frontmatter prop
 }) => {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
 
   const {
     defaultTitle,
-    titleTemplate,
     defaultDescription,
+    titleTemplate,
     siteUrl,
     defaultImage,
     defaultKeywords,
   } = site.siteMetadata;
+
+  const title = frontmatter?.meta_title || customTitle;
+  const description = frontmatter?.meta_description || customDescription;
+  const image = customImage || defaultImage;
+
+  console.log("frontmatter", frontmatter);
+  console.log("title", title);
+  console.log("description", description);
+  console.log("image", image);
+
+
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
@@ -74,7 +86,7 @@ const SEO = ({
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-      {seo.keywords && <meta name="keywords" content={seo.keywords} />}
+      {seo.keywords && !frontmatter && <meta name="keywords" content={seo.keywords} />}
       {noindex ? <meta name="robots" content="noindex,nofollow" /> : null}
     </Helmet>
   );
