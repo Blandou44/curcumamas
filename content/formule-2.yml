@@ -1,15 +1,15 @@
-sortId: 2
 isEnabled: true
 title: Formule Mois d'Or
 price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: Cette formule contient 24 portions salées (lasagne, curry, tajine,
-  velouté, bouillon) /  8 portions sucrée (granola, fondant au chocolat) / 8
-  boissons (Chai et Lait d’or) - autre recette possible sur demande
+description: Cette formule contient 24 portions salées (lasagne, poulet curry ou
+  satay, tajine, houmous de betterave, bouillon) /  8 portions sucrée (granola,
+  fondant au chocolat) / 8 boissons (Chai, Lait d’or ou Cacao sacré) - toute
+  modification est possible sur demande
 hasGroceries: true
-groceriesLink: https://drive.google.com/file/d/1xwhBKVlgfsdZze8V939BlXVMLM2W9wKG/view?usp=sharing
+groceriesLink: https://drive.google.com/file/d/1dcLnsOwIwsygU3VTtVRU5vbfQqRL8b6v/view?usp=sharing
 priceWGroceries: 360
 hasGiftCard: true
 giftCardPrice: 5
@@ -21,3 +21,6 @@ priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/8d7a9a2d-6276-4017-b54a-999e61c4d30a
 image: /images/formule-mois-d-or-repas-post-partum-toulouse-region-toulousaine.png
+imageAdd1: /images/repas-post-partum-nouveaux-parents-toulouse8mois-d-or-2.png
+imageAdd2: /images/repas-post-partum-nouveaux-parents-toulouse8mois-d-or-1.png
+sortId: 2
