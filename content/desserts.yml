@@ -1,14 +1,11 @@
-menuType: desserts
-
 nom1: Brownie chocolat noir, poudre d'amandes et ingrédient secret
 isEnabled1: true
-infoNut1: Sans gluten-sans lactose
+infoNut1: "Sans gluten-sans lactose. contient des oeufs. "
 description1: Incroyable Brownie fondant, avec sa recette secrète contenant
   poudre d'amande et autres trésor nutritionnels, c'est une gourmandise qui ne
   fait pas que réconforter ! Plein d'autres recettes disponible à la demande,
   même si celle ci reste de loin votre favorite
 image1: /images/fondant-au-chocolat-sans-gluten-sans-lactose-curcumamas-post-partum.jfif
-
 nom2: "Chai : épices et réconfort"
 isEnabled2: true
 infoNut2: Sans gluten-sans lactose
@@ -17,7 +14,6 @@ description2: "Un mix d’épices sans thé, prêt à être mélangé à du lait
   réconfortante est très consommée en Inde. Nous avons ici enlevé la théine et
   le sucre pour pouvoir en boire à volonté pendant le post-partum."
 image2: /images/chai-1-.png
-
 nom3: "Lait d'or : la boisson du post partum"
 isEnabled3: true
 infoNut3: Sans gluten-sans lactose
@@ -26,7 +22,6 @@ description3: "Un mix d’épices prêt à être mélangé à du lait végétal 
   réconfortante est reconnue pour ses propriétés antioxydantes, détoxifiantes et
   apaisantes, elle est parfaite pour le post-partum."
 image3: /images/20220406_161522.jpg
-
 nom4: Granola spécial post partum et allaitement
 isEnabled4: true
 infoNut4: Sans gluten-sans lactose
@@ -34,39 +29,42 @@ description4: "Un délicieux granola aux graines noix et autres supers aliments,
   il sera parfait pour vous soutenir toute la journée : du petit déjeuner, au
   goûter et sur toutes les fringales de la journée. Bercer ça creuse !"
 image4: /images/granola-post-partum-toulouse-et-toute-france-curcumamas.jpeg
-
-nom5: ""
-isEnabled5: false
-infoNut5: "" 
-description5: ""
-image5: ""
-
-nom6: ""
-isEnabled6: false
-infoNut6: "" 
-description6: ""
-image6: ""
-
-nom7: ""
+nom5: "Pudding de graines de chia "
+isEnabled5: true
+infoNut5: "Sans lactose sans gluten "
+description5: Ce pudding de graines de chia est une explosion de bienfaits dans
+  chaque cuillerée. Les graines de chia, riches en oméga-3, fibres et protéines,
+  sont baignées dans un lait végétal onctueux, laissant place à un dessert ou
+  en-cas ultra-léger, parfait pour la digestion et l’hydratation.  Ajoutez-y un
+  filet de miel et des fruits frais de saison pour encore plus de douceur et de
+  vitamines.
+image5: /images/10.svg
+nom6: "Cacao sacré : une boisson douce et réchauffante"
+isEnabled6: true
+infoNut6: Sans gluten-sans lactose
+description6: "Notre boisson de cacao sacré est un véritable élixir de
+  réconfort. À base de cacao non sucré, riche en antioxydants et en magnésium,
+  et en épices douces et réchauffantes, cette boisson est parfaite pour apaiser,
+  revitaliser et réconforter.. "
+image6: /images/illus-site-33-.png
+nom7: " "
 isEnabled7: false
-infoNut7: "" 
-description7: ""
-image7: ""
-
-nom8: ""
+infoNut7: " "
+description7: " "
+image7: " "
+nom8: " "
 isEnabled8: false
-infoNut8: "" 
-description8: ""
-image8: ""
-
-nom9: ""
+infoNut8: " "
+description8: " "
+image8: " "
+nom9: " "
 isEnabled9: false
-infoNut9: "" 
-description9: ""
-image9: ""
-
-nom10: ""
+infoNut9: " "
+description9: " "
+nom10: " "
 isEnabled10: false
-infoNut10: "" 
-description10: ""
-image10: ""
+menuType: desserts
+image9: " "
+infoNut10: " "
+description10: " "
+image10: " "
