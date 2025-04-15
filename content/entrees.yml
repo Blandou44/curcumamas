@@ -1,5 +1,3 @@
-menuType: entrees
-
 nom1: Vélouté aux épices et légumes et légumineuse de saison
 isEnabled1: true
 infoNut1: Sans gluten-sans lactose
@@ -7,7 +5,6 @@ description1: "Un réconfortant velouté aux légumes, légumineuses et aux épi
   pour vous réchauffer et faire le plein de fibres et de gourmandises. Plein de
   recettes possibles en fonction des saisons. "
 image1: /images/illus-site-12-.png
-
 nom2: Curcubouillon d'os aux légumes, gingembre et épices
 isEnabled2: true
 infoNut2: Sans gluten-sans lactose
@@ -15,54 +12,49 @@ description2: Le bouillon, un incontournable du post partum. Potion
   reminéralisante aux milles vertues, il vous permettra de faire le plein de
   collagène.
 image2: /images/illus-site-13-.png
-
 nom3: Houmous de betterave
 isEnabled3: true
 infoNut3: Sans gluten-sans lactose-non pimenté
 description3: Un houmous onctueux et frais aux notes de citron et d'herbes
   fraîches et d'épices. Parfait pour vos tartines express avec bébé
 image3: /images/1.svg
-
-nom4: ""
-isEnabled4: false
-infoNut4: ""
-description4: ""
-image4: ""
-
-nom5: ""
-isEnabled5: false
-infoNut5: ""
-description5: ""
-image5: ""
-
-nom6: ""
-isEnabled6: false
-infoNut6: ""
-description6: ""
-image6: ""
-
-nom7: ""
+nom4: Houmous de petit pois
+isEnabled4: true
+infoNut4: Sans gluten-sans lactose-non pimenté
+description4: "Un houmous qui ressemble à un guacamole mais plus
+  éco-responsable, toujours aussi frais aux notes de citron. Parfait pour vos
+  tartines express avec bébé ou un apéro raisonnable et gourmand. "
+image4: /images/illus-site-28-.png
+nom5: "Velouté courgette menthe "
+isEnabled5: true
+infoNut5: Sans gluten-sans lactose-non pimenté
+description5: A consommer chaud ou froid (c'est meilleur pour toi chaud si tu es
+  en post-partum immédiat), le velouté préféré de l'été.
+image5: /images/illus-site-29-.png
+nom6: "Houmous classique "
+isEnabled6: true
+infoNut6: Sans gluten-sans lactose-non pimenté
+description6: "Pour les puristes, un vrai houmous onctueux et traditionnel,
+  parfait pour tous les petits creux et toujours facile à manger "
+image6: /images/illus-site-30-.png
+nom7: " "
 isEnabled7: false
-infoNut7: ""
-description7: ""
-image7: ""
-
-nom8: ""
+infoNut7: " "
+description7: " "
+image7: " "
+nom8: " "
 isEnabled8: false
-infoNut8: ""
-description8: ""
-image8: ""
-
-nom9: ""
+infoNut8: " "
+description8: " "
+image8: " "
+nom9: " "
 isEnabled9: false
-infoNut9: ""
-description9: ""
-image9: ""
-
-nom10: ""
+infoNut9: " "
+description9: " "
+nom10: " "
 isEnabled10: false
-infoNut10: ""
-description10: ""
-image10: ""
-
-
+menuType: entrees
+image9: " "
+infoNut10: " "
+description10: " "
+image10: " "
