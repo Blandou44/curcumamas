@@ -1,65 +1,98 @@
-menuType: plats
-
 nom1: Tajine aux légumes de saison, amandes et fruits secs- Quinoa
 isEnabled1: true
 infoNut1: Sans gluten-sans lactose
-description1: La tajine, par son incroyable mélange d’épices sera parfait pour
-  votre digestion et pour vos apports en minéraux contenu dans les oléagineux
+description1: "Chaque légume de saison est rôti lentement au four pour révéler
+  ses arômes et garder ses vitamines, tout en s’imprégnant des épices douces et
+  chaudes typiques du Maroc : Raz-el Hanout (cannelle, cumin, curcuma et
+  gingembre), qui apportent à la fois douceur et légèreté digestive. Le tout est
+  agrémenté d’une sauce tomate, oignon et abricots secs, qui ajoutent une touche
+  sucrée et réconfortante. Des amandes grillées viennent ensuite ajouter du
+  croquant, des protéines et du magnésium. Ce tajine est accompagné de quinoa,
+  un super aliment riche en protéines et facile à digérer, idéal pour soutenir
+  la récupération post-partum tout en apportant de l’énergie. 🌟 Pourquoi les
+  mamans l’adorent ? •\tRiche en fibres et en antioxydants, parfait pour la
+  digestion et le système immunitaire •\tLes amandes apportent des protéines et
+  du magnésium pour de l’énergie de longue durée •\tUne belle combinaison
+  d’épices pour apaiser et réchauffer, tout en étant faciles à digérer •\tLe
+  quinoa est un allié post-partum parfait : protéiné, léger et plein de
+  nutriments essentiels"
 image1: /images/illus-site-14-.png
-
 nom2: Curry aux légumes de saison et pois chiches - Riz.
 isEnabled2: true
 infoNut2: Sans gluten-sans lactose-non pimenté
-description2: "Un plat commun à toutes les cultures d'Asie pacifique, tout aussi
-  épicé (non pimenté), qu'oncteux avec sa sauce au lait de coco. Parfait pour se
-  réchauffer et faire le plein de nutriments "
+description2: "Un plat commun à toutes les cultures d'Asie pacifique, ce curry
+  est une invitation à ralentir, à respirer, à se recentrer. Des légumes de
+  saison soigneusement sélectionnés (courge, carottes, épinards, brocolis, selon
+  le moment de l’année) mijotés tout doucement dans un lait de coco onctueux,
+  parfumé au curcuma, gingembre frais et une touche de coriandre douce. Les pois
+  chiches, riches en protéines végétales, apportent de la texture et une
+  sensation de satiété douce et durable. Servi avec un riz basmati ou un riz
+  complet pour un plat complet, digeste et équilibré. 🌼 Pourquoi les mamans
+  l’adorent ? •\tRiche en protéines végétales et en fibres, essentielles après
+  l’accouchement •\tÉpices douces et digestes, parfaites pour le corps fragile
+  en post-partum •\tTexture fondante, goût délicat, facile à manger "
 image2: /images/5.svg
-
 nom3: Lasagnes végétariennes
 isEnabled3: true
 infoNut3: possible sans lactose
-description3: Un bon plat de lasagnes avec une farce végétale, un mix parfait
-  entre gourmandise et apports en fibres.
+description3: "Des couches généreuses de légumes de saison fondants nichées
+  entre des feuilles de lasagnes moelleuses, nappées d’une sauce tomate maison
+  mijotée longuement. Une touche de fromage fondant pour apporter du crémeux et
+  ce petit goût doudou qui fait du bien au moral. 💚 Pourquoi les mamans en
+  raffolent ? •\tRiche en fibres pour soutenir la digestion, souvent sensible en
+  post-partum •\tPlein de vitamines et minéraux pour recharger les batteries
+  naturellement •\tSans viande, mais ultra nourrissant grâce aux légumes et aux
+  protéines végétales •\tUne texture fondante et douce, facile à manger "
 image3: /images/illus-site-15-.png
-
-nom4: "Et plein d'autres recettes disponibles à la demande "
-isEnabled4: false
-infoNut4: nos recettes d'adaptent à vos gouts et vos régimes alimentaires
-description4: "dans des barquettes individuelles ou plus grandes, c'et vous qui choisissez. "
-image4: /images/illus-site-16-.png
-
-nom5: ""
-isEnabled5: false
-infoNut5: "" 
-description5: ""
-image5: ""
-
-nom6: ""
-isEnabled6: false
-infoNut6: "" 
-description6: ""
-image6: ""
-
-nom7: ""
+nom4: "Poulet sauce Satay "
+isEnabled4: true
+infoNut4: contient de la cacahuète - sans gluten sans lactose
+description4: Une recette savoureuse d'inspiration asiatique pensée pour
+  chouchouter les mamans en période post-partum. Des aiguillettes de poulet
+  tendres, marinées dans une sauce douce au lait de coco, curcuma et gingembre,
+  puis délicatement grillées pour conserver tout leur moelleux.  Le tout est
+  nappé d’une crème de cacahuète maison, veloutée et parfumée, riche en bons
+  gras et en protéines, idéale pour soutenir l’allaitement et la récupération
+  après l’accouchement. Servi avec un riz parfumé et des légumes de saison pour
+  un plein de fibres, de vitamines et d’énergie.  💛 Pourquoi les mamans
+  l’adorent ? •  Riche en protéines pour soutenir la réparation des tissus  •
+  Source de bonnes graisses pour l’énergie et la satiété  • Épices douces
+  (curcuma, gingembre) aux vertus anti-inflammatoires  • Facile à digérer et
+  ultra-réconfortant
+image4: /images/illus-site-31-.png
+nom5: "Crinkle de courgettes feta menthe "
+isEnabled5: true
+infoNut5: contient des oeufs, du lactose et du gluten
+description5: "Une recette originale et familiale qui plaira aux petits et aux
+  grands. Pas recommandé en post-partum immédiat mais une parfaite option pour
+  plus tard. Des courgettes (ou tout autre légume de saison) pleines de fibres,
+  des feuilles de pâte filo fondantes sur le dessous et craquantes sur le
+  dessus, de la feta et de la menthe pour la gourmandise et la fraicheur;  "
+image5: /images/illus-site-32-.png
+nom6: "Et plein d'autres recettes disponibles à la demande "
+isEnabled6: true
+infoNut6: nos recettes d'adaptent à la saison, à vos goûts et vos régimes alimentaires
+description6: "dans des barquettes individuelles ou plus grandes, c'est vous qui
+  choisissez. "
+image6: /images/illus-site-16-.png
+nom7: " "
 isEnabled7: false
-infoNut7: "" 
-description7: ""
-image7: ""
-
-nom8: ""
+infoNut7: " "
+description7: " "
+image7: " "
+nom8: " "
 isEnabled8: false
-infoNut8: "" 
-description8: ""
-image8: ""
-
-nom9: ""
+infoNut8: " "
+description8: " "
+image8: " "
+nom9: " "
 isEnabled9: false
-infoNut9: "" 
-description9: ""
-image9: ""
-
-nom10: ""
+infoNut9: " "
+description9: " "
+nom10: " "
 isEnabled10: false
-infoNut10: "" 
-description10: ""
-image10: ""
+menuType: plats
+image9: " "
+infoNut10: " "
+description10: " "
+image10: " "
