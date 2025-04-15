@@ -1,11 +1,10 @@
-sortId: 3
 isEnabled: true
 title: Curcu Goûter
 price: 35
 hasFdp: true
 fdp: "3.90"
 isEverywhere: true
-description: "Ce coffret contient : 1 granola Amande Abricot Chocolat 250g, 8
+description: "Ce coffret contient : 1 granola Amande Abricot 250g, 8
   préparations pour boisson (lait d'or, chai ou cacao sacré) , un livret astuces
   et recettes du post-partum"
 hasGroceries: false
@@ -20,5 +19,8 @@ priceDeliveryCloseToulouse: 0
 priceDeliveryMidToulouse: 0
 priceDeliveryFarToulouse: 0
 lienPaiement: https://pay.brevo.com/b2f1fa7b-a0f5-4cd9-861c-fb91d032162f
+imageAdd1: /images/illus-site-24-.png
+imageAdd2: /images/illus-site-25-.png
 calendlyLink: "-"
+sortId: 3
 image: /images/illus-site-22-.png
