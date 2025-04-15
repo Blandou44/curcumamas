@@ -1,4 +1,3 @@
-sortId: 6
 isEnabled: true
 title: COFFRET NAISSANCE
 price: 60
@@ -22,3 +21,6 @@ priceDeliveryMidToulouse: 0
 priceDeliveryFarToulouse: 0
 lienPaiement: https://pay.brevo.com/a276e5ba-0ace-407e-a98b-596d001eb1e0
 image: /images/illus-site-10-.png
+imageAdd1: /images/illus-site-27-.png
+imageAdd2: /images/illus-site-26-.png
+sortId: 6
