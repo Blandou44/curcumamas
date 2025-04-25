@@ -7,6 +7,9 @@ import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel as ReactCarousel } from "react-responsive-carousel";
+
 import {
   Heading,
   maxWidth,
@@ -58,22 +61,29 @@ const ShopWrapper = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  display: flex;
   flex-direction: column;
   gap: 2rem;
+  display: none;
 
   > img {
     max-width: 100%;
   }
-
+  
   > img:not(:first-child) {
     display: none;
   }
 
-  @media (min-width: ${smallBreakpoint}) {
+  @media (min-width: ${smallBreakpoint}) {\
+    display: flex;
     > img:not(:first-child) {
       display: block;
     }
+  }
+`;
+
+const CarouselWrapper = styled.div`
+  @media (min-width: ${smallBreakpoint}) {
+    display: none;
   }
 `;
 
@@ -197,6 +207,31 @@ const curcumagasin = ({ data }) => {
       <NewNavBar />
       <MotifWrapper>
         <ShopWrapper>
+          <CarouselWrapper>
+            <ReactCarousel
+              emulateTouch={true}
+              showArrows={true}
+              showThumbs={false}
+              showStatus={false}
+              autoPlay={true}
+              infiniteLoop={true}
+              interval={8000}
+            >
+              <div>
+                <img src={image} alt="" />
+              </div>
+              {imageAdd1 ? (
+                <div>
+                  <img src={imageAdd1} alt="" />{" "}
+                </div>
+              ) : null}
+              {imageAdd2 ? (
+                <div>
+                  <img src={imageAdd2} alt="" />{" "}
+                </div>
+              ) : null}
+            </ReactCarousel>
+          </CarouselWrapper>
           <ImageWrapper>
             <img src={image} alt="" />
             {imageAdd1 ? <img src={imageAdd1} alt="" /> : null}
