@@ -19,7 +19,9 @@ const NotFoundWrapper = styled.div`
   box-shadow: 0px 0px 15px 4px #00000033;
 `;
 const OrderSuccess = () => {
-  const urlParams = new URLSearchParams(window.location.search);
+  const urlParams = new URLSearchParams(
+    typeof window !== "undefined" ? window.location.search : ""
+  );
   const lienpaiment = urlParams.get("lienpaiement");
   React.useEffect(() => {
     const asyncRedirect = async () => {
