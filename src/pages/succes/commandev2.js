@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { BasePage } from "../../components/BasePage";
-import { Heading, MotifWrapper } from "../../styles/theme";
+import { Heading, MotifWrapper, NewButton } from "../../styles/theme";
 import styled from "styled-components";
 import { NewNavBar } from "../../components/NewNavBar";
 
@@ -19,13 +19,17 @@ const NotFoundWrapper = styled.div`
   box-shadow: 0px 0px 15px 4px #00000033;
 `;
 const OrderSuccess = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const lienpaiment = urlParams.get("lienpaiement");
   React.useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const lienpaiment = urlParams.get("lienpaiement");
-    if (lienpaiment) {
+    const asyncRedirect = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 3000));
       window.location.href = lienpaiment;
+    };
+    if (lienpaiment) {
+      asyncRedirect();
     }
-  }, []);
+  }, [lienpaiment]);
 
   return (
     <BasePage noindex>
@@ -36,9 +40,13 @@ const OrderSuccess = () => {
         <NotFoundWrapper>
           <Heading>Merci !</Heading>
           <p>
-            Nous vous recontacterons très bientôt pour vous indiquer comment
-            procéder à votre paiement.
+            Vous allez être redirigé.e vers le site de paiement pour finaliser
+            votre commande.
           </p>
+          <p>
+            Si ce n'est pas le cas, vous pouvez cliquer sur le bouton ci-dessous
+          </p>
+          <NewButton to={lienpaiment}>Vers le site de paiement</NewButton>
           <Link to="/">Retour à l'accueil</Link>
         </NotFoundWrapper>
       </MotifWrapper>
