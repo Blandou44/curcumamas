@@ -88,6 +88,7 @@ const CarouselWrapper = styled.div`
 `;
 
 const FormWrapper = styled.div`
+  max-width: calc(100vw - 2rem);
   display: flex;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
