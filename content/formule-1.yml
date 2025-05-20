@@ -5,9 +5,10 @@ hasFdp: false
 fdp: "-1"
 isEverywhere: false
 description: "Cette formule contient 16 portions, par exemple : 8 portions
-  salées (lasagne et houmous de betterave) / 8 portions sucrées (granola et
+  salées (lasagne et tajine de légumes rôtis) / 8 portions sucrées (granola et
   fondant chocolat)  et 8 boissons (Chai et Lait d’or) - tout changement
-  possible sur demande"
+  possible sur demande. Si la cuisine à domicile n'est pas possible, je peux
+  livrer dans certains cas (merci de me contacter)"
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1okWjGDMEb554czOVKwJAEWR9zpqaa6w3/view?usp=drive_link
 priceWGroceries: 230
