@@ -4,10 +4,12 @@ price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: Cette formule contient 24 portions salées (lasagne, poulet curry ou
-  satay, tajine, houmous de betterave, bouillon) /  8 portions sucrée (granola,
-  fondant au chocolat) / 8 boissons (Chai, Lait d’or ou Cacao sacré) - toute
-  modification est possible sur demande
+description: "Cette formule contient 20 portions salées (exemple : lasagnes,
+  poulet curry satay, tajine, houmous de betterave ou bouillon) /  8 portions
+  sucrée (exemple: granola, fondant au chocolat) / 8 boissons (Chai, Lait d’or
+  ou Cacao sacré) - toute modification est possible sur demande. Si la cuisine à
+  domicile n'est pas possible, je peux livrer dans certains cas (merci de me
+  contacter)"
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1dcLnsOwIwsygU3VTtVRU5vbfQqRL8b6v/view?usp=sharing
 priceWGroceries: 360
