@@ -1,6 +1,5 @@
-sortId: 9
 isEnabled: true
-title: Rituel Rebozo et Repas
+title: Formule Convalescence
 price: 400
 hasFdp: false
 fdp: "-1"
@@ -27,3 +26,6 @@ priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/a74b2847-a5f2-42a6-842b-e31913aa2edd
 image: /images/illus-site-18-.png
+imageAdd1: /images/5.svg
+imageAdd2: /images/illus-site-29-.png
+sortId: 9
