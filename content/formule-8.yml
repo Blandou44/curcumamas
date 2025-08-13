@@ -1,7 +1,6 @@
-sortId: 8
-isEnabled: true
-title: Massage et Repas
-price: 320
+isEnabled: false
+title: Formule Convalescence
+price: 170
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
@@ -15,9 +14,9 @@ description: "Villa Famille et Curcumamas s'unissent pour vous offrir une offre
   traditionnels tissus Rebozo. -\tFormule Famille ou Mois d'or. 210€ au lieu de
   230€. A vous de choisir : La Formule Famille courses comprises OU la formule
   Mois d'or sans les courses. "
-hasGroceries: false
+hasGroceries: true
 groceriesLink: curcumamas.com
-priceWGroceries: 0
+priceWGroceries: 230
 hasGiftCard: true
 giftCardPrice: 5
 hasGiftCardOptions: false
@@ -27,4 +26,7 @@ priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/0983ce62-7efa-4a5b-8f95-06d8179e2d07
-image: /images/illus-site-17-.png
+image: /images/illus-site-41-.png
+imageAdd1: /images/5.svg
+imageAdd2: /images/illus-site-29-.png
+sortId: 8
