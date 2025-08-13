@@ -1,6 +1,6 @@
 isEnabled: true
 title: Formule Convalescence
-price: 400
+price: 170
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
@@ -15,7 +15,7 @@ description: "Villa Famille propose des soins dans ses locaux à St Orens.
   les courses."
 hasGroceries: false
 groceriesLink: https://curcumamas.com
-priceWGroceries: -3
+priceWGroceries: 230
 hasGiftCard: true
 giftCardPrice: 5
 hasGiftCardOptions: false
