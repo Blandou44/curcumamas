@@ -1,19 +1,17 @@
-sortId: 5
 isEnabled: true
-title: "Formule batch cooking "
+title: "Formule Reprise du travail "
 price: 230
 hasFdp: true
 fdp: "-1"
 isEverywhere: false
-description: "Une formule sur-mesure adaptée à votre famille. 4 recettes
-  familiales de 6 portions à définir ensemble (par exemple : Velouté de
-  lentilles corail et potimarron, Curry crémeux de patate douce, Lasagnes
-  végétariennes, Tajine de légumes rôtis). Vous faites les courses vous-même
-  avec notre liste de course détaillée puis on s’occupe de tout cuisiner dans
-  votre cuisine. Ou on s’occupe de TOUT, courses comprises.  Parfait en cas de
-  reprise du travail, en cas de déplacement professionnel d'un des parents ou
-  simplement en cas de fatigue (les dents, les microbes d'hiver, les nuits
-  hachées …)"
+description: "Une formule adaptée à votre famille. 5 recettes familiales de 4
+  portions à définir ensemble (par exemple : Velouté de lentilles corail et
+  potimarron, Curry crémeux de patate douce, Lasagnes végétariennes, Tajine de
+  légumes rôtis). Vous faites les courses vous-même avec notre liste de course
+  détaillée puis on s’occupe de tout cuisiner dans votre cuisine. Ou on s’occupe
+  de TOUT, courses comprises.  Parfait en cas de reprise du travail, en cas de
+  déplacement professionnel d'un des parents ou simplement en cas de fatigue
+  (les dents, les microbes d'hiver, les nuits hachées …)"
 hasGroceries: true
 groceriesLink: curcumamas.com
 priceWGroceries: 360
@@ -26,4 +24,7 @@ priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/2b72315c-9fa1-4610-ac48-bb33797f3f17
-image: /images/illus-site-23-.png
+image: /images/illus-site-40-.png
+imageAdd1: /images/illus-site-32-.png
+imageAdd2: /images/illus-site-31-.png
+sortId: 5
