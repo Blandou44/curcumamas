@@ -1,20 +1,17 @@
-isEnabled: false
+isEnabled: true
 title: Formule Convalescence
-price: 170
+price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
-description: "Villa Famille et Curcumamas s'unissent pour vous offrir une offre
-  à prix tout doux. Villa Famille propose des soins dans ses locaux à St Orens.
-  Curcumamas se déplace chez vous (déplacement offert à Toulouse) pour de bons
-  petits plats post-partum  -\tMassage Détente Rebozo. Durée :  3h30 Lieu :
-  Villa Famille (St Orens de Gameville). 190€ au lieu de 210€  Massage
-  enveloppant et réconfortant de tout le corps pour une relaxation profonde,
-  suivi d'un bain de pieds aux plantes et d'un serrage en douceur avec les
-  traditionnels tissus Rebozo. -\tFormule Famille ou Mois d'or. 210€ au lieu de
-  230€. A vous de choisir : La Formule Famille courses comprises OU la formule
-  Mois d'or sans les courses. "
-hasGroceries: true
+description: Une formule à (s')offrir en cas de maladie, pour récupérer au mieux
+  et recevoir du réconfort. 8 portions salées (2 recette de 4 portions), 8
+  portions sucrées (2 recette de 4 portions) et 8 boissons anti-inflammatoires.
+  Les recettes sont pensées pour être facile à digérer, pleines de nutriments
+  (produits de saison, locaux, aussi bio que possible, cuisson lente...) et de
+  réconforts sains (sucre complet, protéine végétale, fibre...). Livraison à
+  Toulouse et en région toulousaine
+hasGroceries: false
 groceriesLink: curcumamas.com
 priceWGroceries: 230
 hasGiftCard: true
@@ -25,7 +22,7 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
-lienPaiement: https://pay.brevo.com/0983ce62-7efa-4a5b-8f95-06d8179e2d07
+lienPaiement: https://pay.brevo.com/f35715e5-ba64-4458-8bdf-da7bb803c251
 image: /images/illus-site-41-.png
 imageAdd1: /images/5.svg
 imageAdd2: /images/illus-site-29-.png
