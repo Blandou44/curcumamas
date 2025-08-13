@@ -1,4 +1,3 @@
-sortId: 4
 isEnabled: true
 title: Carte cadeau
 price: 50
@@ -18,12 +17,9 @@ options:
   - 50 euros
   - 100 euros
   - 170 euros (formule Famille sans les courses)
-  - 230 euros (formule Famille courses comprises ou formule Mois d’or sans les
-    courses)
-  - "320 euros : Massage détente Rebozo chez Villa Famille (St Orens) + La
-    Formule Famille courses comprises OU la formule Mois d'or sans les courses.
-    "
-  - 360 euros (formule mois d’or courses comprises)
+  - 230 euros (formule Famille courses comprises ou formule Reprise du travail
+    ou Mois d’or sans les courses)
+  - 360 euros (formule Mois d’or ou Reprise du travail courses comprises)
   - "400 euros : Rituel Rebozo chez Villa Famille (St Orens) + La Formule
     Famille courses comprises OU la formule Mois d'or sans les courses. "
 hasDelivery: false
@@ -32,5 +28,8 @@ priceDeliveryCloseToulouse: 0
 priceDeliveryMidToulouse: 0
 priceDeliveryFarToulouse: 0
 lienPaiement: https://pay.brevo.com/1cbc4bea-67a7-4382-a8f8-f6597e2f7836
+imageAdd1: /images/illus-site-16-.png
+imageAdd2: /images/curcumamas-2-.jpg
 calendlyLink: "-"
+sortId: 4
 image: /images/illus-site.png
