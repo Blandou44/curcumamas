@@ -1,7 +1,7 @@
 isEnabled: true
 title: Formule Deuil
 price: 230
-hasFdp: true
+hasFdp: false
 fdp: "0"
 isEverywhere: false
 description: "Nous apportons à vos proches endeuillés 2 repas pour 4 personnes
@@ -17,7 +17,7 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
-lienPaiement: https://pay.brevo.com/ebac3fcf-bc20-4b86-b776-85701e2bb3b8
+lienPaiement: https://pay.brevo.com/3cd4d5cf-e77c-49bb-ad40-0593743c2fc4
 image: /images/illus-site-42-.png
 imageAdd1: /images/11.svg
 imageAdd2: /images/illus-site-15-.png
