@@ -13,7 +13,7 @@ description: "Villa Famille propose des soins dans ses locaux à St Orens.
   Rebozo. -\tFormule Famille ou Mois d'or. 210€ au lieu de 230€. A vous de
   choisir : La Formule Famille courses comprises OU la formule Mois d'or sans
   les courses."
-hasGroceries: true
+hasGroceries: false
 groceriesLink: https://curcumamas.com
 priceWGroceries: 230
 hasGiftCard: true
