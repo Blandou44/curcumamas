@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { NewNavBar } from "../components/NewNavBar";
 import { Portrait } from "../components/Portrait";
 import { BasePage } from "../components/BasePage";
 import { Footer } from "../components/Footer";
 import { applySidePadding, maxWidth } from "../styles/theme";
-
 import motif from "../images/fondleainvert.jpeg";
 
 const MotifWrapper = styled.div`
@@ -57,6 +56,19 @@ const ServiceWrapper = styled.div`
 `;
 
 const NosServices = () => {
+  // useEffect(() => {
+  //   const removeBranding = async () => {
+  //     setTimeout(() => {
+  //       console.log("I will appear after 1000ms");
+  //       const branding = document.querySelectorAll("[data-tm-edit='branding']");
+  //       // branding?.[0]?.remove();
+  //       branding?.[0]?.setAttribute("style", "display: none !important;");
+  //     }, 1000);
+  //   };
+
+  //   removeBranding().catch(console.error);
+  // }, []);
+
   return (
     <BasePage>
       <NewNavBar />
@@ -66,6 +78,7 @@ const NosServices = () => {
             <Portrait />
           </ServiceWrapper>
         </IndexWrapper>
+        <div data-trustmary-widget="TzsxEKNAi"></div>
       </MotifWrapper>
       <Footer />
     </BasePage>

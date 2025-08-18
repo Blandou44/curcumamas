@@ -37,6 +37,19 @@ const SEO = ({
       htmlAttributes={{
         lang: "fr",
       }}
+      script={[
+        {
+          type: "text/javascript",
+          innerHTML: `(function (w,d,s,o,r,js,fjs) {
+    w[r]=w[r]||function() {(w[r].q = w[r].q || []).push(arguments)}
+    w[r]('app', 'SCOWkxnkP2');
+    if(d.getElementById(o)) return;
+    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+    js.id = o; js.src = 'https://embed.trustmary.com/embed.js';
+    js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+  }(window, document, 'script', 'trustmary-embed', 'tmary'));`,
+        },
+      ]}
     >
       <link
         rel="apple-touch-icon"
