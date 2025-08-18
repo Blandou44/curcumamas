@@ -19,6 +19,7 @@ export const BasePage = ({
         article={article}
         noindex={noindex}
       />
+      <script src="https://widget.trustmary.com/TzsxEKNAi"></script>
       <GlobalStyle />
 
       {children}
