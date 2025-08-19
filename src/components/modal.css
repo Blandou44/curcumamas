@@ -35,8 +35,30 @@ iframe {
   max-width: 640px;
 	width: 90vw;
 }
+
+
 .DialogContent:focus {
 	outline: none;
+}
+
+.header, .footer {
+	background: white;
+	padding: 1rem;
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+.header {
+	top: 0;
+	padding-top: 6rem;
+}
+
+.footer {
+	bottom: 0;
+	max-width: 95%;
+	color: black;
+	font-size: 1rem;
 }
 
 
