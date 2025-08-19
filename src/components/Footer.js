@@ -21,6 +21,15 @@ const FooterContainer = styled.footer`
   @media (max-width: ${smallBreakpoint}) {
     padding: 2rem 1rem 1rem;
   }
+
+  .image-wrapper {
+    height: 100px;
+    filter: drop-shadow(10px 10px 7px #00000060);
+
+    img {
+      height: 100px;
+    }
+  }
 `;
 
 const FooterText = styled.p`
@@ -125,6 +134,12 @@ export const Footer = ({ isCGU = false }) => {
           <FooterLink href="tel:0689300865">06.89.30.08.65</FooterLink>
         </FooterText>
       </ContactContainer>
+      <Link to="/credit-impots" className="image-wrapper">
+        <StaticImage
+          src={"../images/service-a-la-personne.png"}
+          alt="Service à la personne"
+        />
+      </Link>
       <Copyright>
         Crédit photo : rose citron <br /> © Copyright{" "}
         <strong>Curcumamas</strong>. All Rights Reserved

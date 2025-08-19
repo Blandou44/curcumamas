@@ -4,6 +4,7 @@ price: 170
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
+hasCreditImpots: true
 description: "Cette formule contient 16 portions, par exemple : 8 portions
   salées (lasagne et tajine de légumes rôtis) / 8 portions sucrées (granola et
   fondant chocolat)  et 8 boissons (Chai et Lait d’or) - tout changement

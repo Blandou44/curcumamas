@@ -4,6 +4,7 @@ price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
+hasCreditImpots: true
 description: Une formule à (s')offrir en cas de maladie, pour récupérer au mieux
   et recevoir du réconfort. 8 portions salées (2 recette de 4 portions), 8
   portions sucrées (2 recette de 4 portions) et 8 boissons anti-inflammatoires.

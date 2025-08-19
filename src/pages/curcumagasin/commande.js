@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { NewNavBar } from "../../components/NewNavBar";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { BasePage } from "../../components/BasePage";
@@ -106,6 +106,18 @@ const Price = styled.h2`
   margin-bottom: 0.5rem;
 `;
 
+const Price2 = styled.h2`
+  font-family: "Rubik Mono One", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px ${newMainColor};
+  text-stroke: 1px ${newMainColor};
+  font-style: normal;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+`;
+
 const Answers = styled.div`
   display: grid;
   grid-template-columns: 7rem 1fr;
@@ -184,6 +196,7 @@ const curcumagasin = ({ data }) => {
     hasFdp,
     fdp,
     isEverywhere,
+    hasCreditImpots,
     description,
     hasGroceries,
     groceriesLink,
@@ -243,7 +256,8 @@ const curcumagasin = ({ data }) => {
             <Heading>{title}</Heading>
             <Price>
               {hasGroceries || hasGiftCardOptions ? "à partir de " : ""}
-              {formatPrice({ amount: price, isAddon: false })}{" "}
+              {formatPrice({ amount: price, isAddon: false })}
+              {hasCreditImpots ? "*" : ""}{" "}
               {hasFdp ? `${formatPrice({ amount: fdp })} de frais de port` : ""}
             </Price>
             <SmallText center>
@@ -251,6 +265,18 @@ const curcumagasin = ({ data }) => {
                 ? "Livré partout en France"
                 : "A Toulouse et région toulousaine"}
             </SmallText>
+            {hasCreditImpots ? (
+              <>
+                <Price2>
+                  {hasGroceries || hasGiftCardOptions ? "*Ou " : ""}
+                  {formatPrice({ amount: price / 2, isAddon: false })}{" "}
+                </Price2>
+                <SmallText center>
+                  en bénéficiant du crédit d'impôt{" "}
+                  <Link to="/credit-impots">En savoir plus</Link>
+                </SmallText>
+              </>
+            ) : null}
             <p>{description}</p>
             {hasGroceries ? (
               <>
@@ -357,6 +383,7 @@ const curcumagasin = ({ data }) => {
             <CommandForm lienPaiement={lienPaiement} title={title} />
           </FormWrapper>
         </ShopWrapper>
+        <div data-trustmary-widget="TzsxEKNAi"></div>
       </MotifWrapper>
       <Footer />
     </BasePage>
@@ -372,6 +399,7 @@ export const query = graphql`
         title
         price
         hasFdp
+        hasCreditImpots
         fdp
         isEverywhere
         description
