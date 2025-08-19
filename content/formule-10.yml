@@ -4,6 +4,7 @@ price: 230
 hasFdp: false
 fdp: "0"
 isEverywhere: false
+hasCreditImpots: true
 description: "Nous apportons à vos proches endeuillés 2 repas pour 4 personnes
   (plats chauds et desserts) pour leur apporter du réconfort. "
 hasGroceries: false

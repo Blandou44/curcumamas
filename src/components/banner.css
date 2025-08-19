@@ -1,0 +1,25 @@
+.banner {
+  background-color: #F78B1E;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  
+  @media (max-width: 600px) {
+    padding: .5rem;
+    >p {
+
+      font-size: .8rem;
+    }
+  }
+  
+  > p {
+    margin: 0 auto;
+    padding: 1.2rem;
+    text-align: center;
+    >a:visited {
+      color: #132bd2;
+    }
+  }
+
+}

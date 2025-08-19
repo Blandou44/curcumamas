@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: "Rubik", sans-serif;
     font-size: 1.4rem;
-    overflow-x: hidden;
+    overflow: inital;
   }
 
   html {

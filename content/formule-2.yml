@@ -4,6 +4,7 @@ price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
+hasCreditImpots: true
 description: "Cette formule contient 20 portions salées (exemple : lasagnes,
   poulet curry satay, tajine, houmous de betterave ou bouillon) /  8 portions
   sucrée (exemple: granola, fondant au chocolat) / 8 boissons (Chai, Lait d’or

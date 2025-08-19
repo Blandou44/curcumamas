@@ -16,7 +16,7 @@ iframe {
 	background-color: #000000b3;
 	inset: 0;
 	position: fixed;
-  z-index: 10;
+  z-index: 2000;
 }
 
 .DialogContent {
@@ -29,14 +29,36 @@ iframe {
 	position: fixed;
 	top: 50%;
 	transform: translate(-50%, -50%);
-  z-index: 20;
+  z-index: 2020;
   max-height: 800px;
 	height: 90vh;
   max-width: 640px;
 	width: 90vw;
 }
+
+
 .DialogContent:focus {
 	outline: none;
+}
+
+.header, .footer {
+	background: white;
+	padding: 1rem;
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+.header {
+	top: 0;
+	padding-top: 6rem;
+}
+
+.footer {
+	bottom: 0;
+	max-width: 95%;
+	color: black;
+	font-size: 1rem;
 }
 
 
@@ -53,7 +75,7 @@ iframe {
 
   top: 1rem;
   right: 1rem;
-  z-index: 30;
+  z-index: 2030;
 }
 
 

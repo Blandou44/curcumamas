@@ -13,6 +13,8 @@ import { BasePage } from "../components/BasePage";
 import { Footer } from "../components/Footer";
 import BrevoModal from "../components/BrevoModal";
 import { BrevoSection } from "../components/BrevoSection";
+import { Reviews } from "../components/Reviews";
+import { Banner } from "../components/Banner";
 
 const IndexWrapper = styled.div`
   display: flex;
@@ -24,6 +26,7 @@ const Index = () => {
   return (
     <BasePage>
       <NewNavBar />
+      <Banner />
       <IndexWrapper>
         <BrevoModal />
         <NewHero />
@@ -31,6 +34,7 @@ const Index = () => {
         <Curcumarmite />
         <HowDoesItWork />
         <Engagement />
+        <Reviews />
         <BrevoSection />
       </IndexWrapper>
 

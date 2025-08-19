@@ -4,6 +4,7 @@ price: 230
 hasFdp: false
 fdp: "-1"
 isEverywhere: false
+hasCreditImpots: true
 description: "Une formule adaptée à votre famille. 5 recettes familiales de 4
   portions à définir ensemble (par exemple : Velouté de lentilles corail et
   potimarron, Curry crémeux de patate douce, Lasagnes végétariennes, Tajine de
