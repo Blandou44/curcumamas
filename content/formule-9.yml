@@ -1,5 +1,4 @@
-sortId: 9
-isEnabled: true
+isEnabled: false
 title: Rituel Rebozo et Repas
 price: 400
 hasFdp: false
@@ -27,3 +26,6 @@ priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/a74b2847-a5f2-42a6-842b-e31913aa2edd
 image: /images/illus-site-18-.png
+imageAdd1: /images/illus-site-41-.png
+imageAdd2: /images/1.svg
+sortId: 9
