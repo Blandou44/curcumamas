@@ -5,7 +5,7 @@ import { NewNavBar } from "../../components/NewNavBar";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { BasePage } from "../../components/BasePage";
 import { Footer } from "../../components/Footer";
-import Mapsmodal from "../../components/Mapsmodal";
+import GoogleMapsModal from "../../components/GoogleMapsModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -266,7 +266,7 @@ const curcumagasin = ({ data }) => {
                 "Livré partout en France"
               ) : (
                 <span>
-                  A Toulouse et région toulousaine <Mapsmodal />
+                  A Toulouse et région toulousaine <GoogleMapsModal />
                 </span>
               )}
             </SmallText>

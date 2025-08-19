@@ -15,7 +15,7 @@ import {
   smallBreakpoint,
   newSecondaryColor,
 } from "../styles/theme";
-import Mapsmodal from "./Mapsmodal";
+import GoogleMapsModal from "./GoogleMapsModal";
 
 const HowDoesItWorkContainer = styled.nav`
   ${applySidePadding("5rem")};
@@ -115,7 +115,7 @@ export const HowDoesItWork = () => {
             <p>
               Ludivine se déplace au domicile des futurs ou nouveaux parents
               pour une session de cuisine (entre 2 et 4h selon la formule) à
-              Toulouse et en région Toulousaine. <Mapsmodal />
+              Toulouse et en région Toulousaine. <GoogleMapsModal />
               <br />
               <br />
               Seule la formule Curcu-goûter peut être envoyée partout en France.
