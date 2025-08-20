@@ -30,6 +30,7 @@ const Section = styled.div`
 
   p {
     color: black;
+    word-break: break-word;
   }
 
   span {

@@ -105,11 +105,12 @@ export const NewButton = styled(AnchorLink)`
 export const Heading = styled.h1`
   font-family: "Rubik Mono One", sans-serif;
   grid-column: span 5;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   color: ${newMainColor};
   margin: 0;
   text-align: center;
+  word-break: break-word;
 
   @media (min-width: ${smallBreakpoint}) {
     font-size: 2.5rem;

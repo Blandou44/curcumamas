@@ -19,9 +19,10 @@ const HeroWrapper = styled.nav`
   background: url(${heroImage});
   background-size: cover;
   position: relative;
-  max-width: ${maxWidth};
   height: 620px;
   margin: 0 auto;
+  max-width: min(100vw, ${maxWidth});
+  overflow-y: hidden;
 
   &::before {
     content: url(${background});

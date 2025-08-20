@@ -21,8 +21,9 @@ import {
 
 const EngagementContainer = styled.nav`
   ${applySidePadding("5rem")}
-  max-width: ${maxWidth};
+  max-width: min(100vw, ${maxWidth});
   margin: 0 auto;
+  box-sizing: border-box;
 `;
 
 const EngagementWrapper = styled.div`

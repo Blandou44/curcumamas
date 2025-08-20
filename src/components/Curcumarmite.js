@@ -15,7 +15,8 @@ import {
 
 const CurcumarmiteWrapper = styled.nav`
   ${applySidePadding("1.5rem")};
-  max-width: ${maxWidth};
+  max-width: min(100vw, ${maxWidth});
+  overflow-x: hidden;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
