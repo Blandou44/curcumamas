@@ -4,7 +4,7 @@ price: 12
 hasFdp: true
 fdp: "8"
 isEverywhere: true
-hasCreditImpots: true
+hasCreditImpots: false
 description: "LE planificateur de repas qu’il vous manquait : à offrir ou à
   s’offrir pour bien préparer le post-partum immédiat. Toutes les recettes sont
   pensées pour cette période aux besoins nutritionnels particuliers, pour une
@@ -13,13 +13,13 @@ description: "LE planificateur de repas qu’il vous manquait : à offrir ou à
   semaine (petit déjeuner, midi, encas et dîner, du lundi au dimanche) + la
   liste des courses associée + le tableau planificateur de repas (qui fait quoi
   et quand? ) + les 28 recettes en question."
-hasGroceries: true
+hasGroceries: false
 groceriesLink: https://curcumamas.com/curcumagasin/formules
 priceWGroceries: 12
-hasGiftCard: true
+hasGiftCard: false
 giftCardPrice: 6
-hasGiftCardOptions: true
-hasDelivery: true
+hasGiftCardOptions: false
+hasDelivery: false
 priceDeliveryToulouse: 8
 priceDeliveryCloseToulouse: -2
 priceDeliveryMidToulouse: -3
