@@ -1,0 +1,30 @@
+isEnabled: true
+title: Planificateur de repas
+price: 12
+hasFdp: true
+fdp: "8"
+isEverywhere: true
+hasCreditImpots: true
+description: "LE planificateur de repas qu’il vous manquait : à offrir ou à
+  s’offrir pour bien préparer le post-partum immédiat. Toutes les recettes sont
+  pensées pour cette période aux besoins nutritionnels particuliers, pour une
+  récupération optimale et pour se régaler. Les recettes peuvent aussi bien sûr
+  convenir aux autres membres de la famille.  Vous y trouverez : le menu de la
+  semaine (petit déjeuner, midi, encas et dîner, du lundi au dimanche) + la
+  liste des courses associée + le tableau planificateur de repas (qui fait quoi
+  et quand? ) + les 28 recettes en question."
+hasGroceries: true
+groceriesLink: https://curcumamas.com/curcumagasin/formules
+priceWGroceries: 12
+hasGiftCard: true
+giftCardPrice: 6
+hasGiftCardOptions: true
+hasDelivery: true
+priceDeliveryToulouse: 8
+priceDeliveryCloseToulouse: -2
+priceDeliveryMidToulouse: -3
+priceDeliveryFarToulouse: -1
+lienPaiement: https://pay.brevo.com/6ebaa27f-dee0-411c-a2af-3147c84d36df
+image: /images/planificateur-de-repas-spécial-post-partum-.png
+imageAdd1: /images/planificateur-de-repas-spécial-post-partum-1-.png
+imageAdd2: /images/11.svg
