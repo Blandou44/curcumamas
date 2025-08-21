@@ -15,15 +15,15 @@ description: "LE planificateur de repas qu’il vous manquait : à offrir ou à
   et quand? ) + les 28 recettes en question."
 hasGroceries: false
 groceriesLink: https://curcumamas.com/curcumagasin/formules
-priceWGroceries: 12
+priceWGroceries: 0
 hasGiftCard: false
-giftCardPrice: 6
+giftCardPrice: 0
 hasGiftCardOptions: false
 hasDelivery: false
 priceDeliveryToulouse: 8
-priceDeliveryCloseToulouse: -2
-priceDeliveryMidToulouse: -3
-priceDeliveryFarToulouse: -1
+priceDeliveryCloseToulouse: 8
+priceDeliveryMidToulouse: 7
+priceDeliveryFarToulouse: 8
 lienPaiement: https://pay.brevo.com/6ebaa27f-dee0-411c-a2af-3147c84d36df
 image: /images/illus-site-44-.png
 imageAdd1: /images/illus-site-43-.png
