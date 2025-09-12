@@ -28,6 +28,7 @@ const FooterContainer = styled.footer`
 
     img {
       height: 100px;
+      object-fit: contain !important;
     }
   }
 `;
