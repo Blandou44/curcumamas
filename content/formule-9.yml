@@ -1,5 +1,4 @@
-sortId: 9
-isEnabled: true
+isEnabled: false
 title: Rituel Rebozo et Repas
 price: 400
 hasFdp: false
@@ -26,5 +25,8 @@ priceDeliveryToulouse: 0
 priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
-lienPaiement: https://pay.brevo.com/a74b2847-a5f2-42a6-842b-e31913aa2edd
+lienPaiement: tomates (en conserve)
 image: /images/illus-site-18-.png
+imageAdd1: /images/11.svg
+imageAdd2: /images/11.svg
+sortId: 9
