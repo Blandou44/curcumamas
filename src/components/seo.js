@@ -89,6 +89,8 @@ const SEO = ({
       {seo.image && <meta name="twitter:image" content={seo.image} />}
       {seo.keywords && <meta name="keywords" content={seo.keywords} />}
       {noindex ? <meta name="robots" content="noindex,nofollow" /> : null}
+
+      <script defer src="https://medama.stream2guerre.lol/script.js"></script>
     </Helmet>
   );
 };
