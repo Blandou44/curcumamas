@@ -1,5 +1,4 @@
-sortId: 7
-isEnabled: true
+isEnabled: false
 title: EBOOK GRATUIT
 price: 0
 hasFdp: false
@@ -25,4 +24,5 @@ priceDeliveryCloseToulouse: -3
 priceDeliveryMidToulouse: -1
 priceDeliveryFarToulouse: -5
 lienPaiement: https://bit.ly/4hKP05Q
+sortId: 7
 image: /images/illus-site-19-.png
