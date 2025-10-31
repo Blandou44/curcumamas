@@ -5,11 +5,11 @@ hasFdp: false
 fdp: "-1"
 isEverywhere: false
 hasCreditImpots: true
-description: "Cette formule contient 16 portions, par exemple : 8 portions
-  salées (lasagne et tajine de légumes rôtis) / 8 portions sucrées (granola et
-  fondant chocolat)  et 8 boissons (Chai et Lait d’or) - tout changement
-  possible sur demande. Si la cuisine à domicile n'est pas possible, je peux
-  livrer dans certains cas (merci de me contacter)"
+description: "Cette formule contient 8 portions salées (par exemple : lasagnes
+  et tajine de légumes rôtis) + 8 portions sucrées (par exemple : granola et
+  fondant chocolat)  et 8 boissons OFFERTES aux jeunes mamans (Chai et Lait
+  d’or) - tout changement possible sur demande. Si la cuisine à domicile n'est
+  pas possible, je peux livrer dans certains cas (merci de me contacter)"
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/186eFqSBubEjzlAcV9eSd7wWjfqOH-vKO/view?usp=drive_link
 priceWGroceries: 230
@@ -22,7 +22,7 @@ priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/ebac3fcf-bc20-4b86-b776-85701e2bb3b8
-image: /images/formule-famille-repas-postpartum-toulouse-region-toulousaine.png
+image: /images/illus-site-1-.png
 imageAdd1: /images/repas-post-partum-nouveaux-parents-toulouse_famille-1.png
 imageAdd2: /images/repas-post-partum-nouveaux-parents-toulouse_famille-2.png
 sortId: 1
