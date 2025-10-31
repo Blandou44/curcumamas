@@ -6,11 +6,10 @@ fdp: "-1"
 isEverywhere: false
 hasCreditImpots: true
 description: "Cette formule contient 20 portions salées (exemple : lasagnes,
-  poulet curry satay, tajine, houmous de betterave ou bouillon) /  8 portions
-  sucrée (exemple: granola, fondant au chocolat) / 8 boissons (Chai, Lait d’or
-  ou Cacao sacré) - toute modification est possible sur demande. Si la cuisine à
-  domicile n'est pas possible, je peux livrer dans certains cas (merci de me
-  contacter)"
+  poulet curry satay, tajine, bouillon) +  8 portions sucrées (exemple: granola,
+  fondant au chocolat) + 8 boissons OFFERTES aux jeunes mamans (Chai et Lait
+  d’or) - toute modification est possible sur demande. Si la cuisine à domicile
+  n'est pas possible, je peux livrer dans certains cas (merci de me contacter)"
 hasGroceries: true
 groceriesLink: https://drive.google.com/file/d/1ZuyJtKMx-mzsGlc9xYDrZT3hIPEcRt9C/view?usp=drive_link
 priceWGroceries: 360
@@ -23,7 +22,7 @@ priceDeliveryCloseToulouse: 10
 priceDeliveryMidToulouse: 25
 priceDeliveryFarToulouse: 35
 lienPaiement: https://pay.brevo.com/8d7a9a2d-6276-4017-b54a-999e61c4d30a
-image: /images/illus-site-39-.png
+image: /images/illus-site.png
 imageAdd1: /images/repas-post-partum-nouveaux-parents-toulouse8mois-d-or-2.png
 imageAdd2: /images/repas-post-partum-nouveaux-parents-toulouse8mois-d-or-1.png
 sortId: 2
