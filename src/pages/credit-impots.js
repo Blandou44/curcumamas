@@ -72,10 +72,31 @@ const CreditImpots = () => {
               2017). <br />
               Cette attestation vous servira aussi de justificatif à conserver
               en cas de contrôle fiscal.
+              <br />
+              <br />
+              Pour en savoir plus, consultez{" "}
+              <a
+                href="https://www.urssaf.fr/portail/home/services-a-la-personne/client-dorganisme-de-service-a-l/client-de-prestataire/foire-aux-questions-1.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                la foire aux questions de l’Urssaf
+              </a>
+              .
+              <br />
+              <br />
+              Page d'information sur les plafonds de crédit d'impôt :
+              <a
+                href="https://www.impots.gouv.fr/portail/particulier/emploi-domicile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://www.impots.gouv.fr/portail/particulier/emploi-domicile
+              </a>
             </p>
           </Section>
         </ArticlesContainer>
-        <ArticlesContainer>
+        {/* <ArticlesContainer>
           <Section>
             <span>
               Pour les clients réguliers (dès la deuxième prestation):
@@ -140,30 +161,9 @@ const CreditImpots = () => {
               Si vous souhaitez en bénéficier, ou pour toute question à ce
               sujet, merci de nous contacter par mail à{" "}
               <a href="mailto:curcumamas@gmail.com">curcumamas@gmail.com</a>
-              <br />
-              <br />
-              Pour en savoir plus, consultez{" "}
-              <a
-                href="https://www.urssaf.fr/portail/home/services-a-la-personne/client-dorganisme-de-service-a-l/client-de-prestataire/foire-aux-questions-1.html"
-                target="_blank"
-                rel="noreferrer"
-              >
-                la foire aux questions de l’Urssaf
-              </a>
-              .
-              <br />
-              <br />
-              Page d'information sur les plafonds de crédit d'impôt :
-              <a
-                href="https://www.impots.gouv.fr/portail/particulier/emploi-domicile"
-                target="_blank"
-                rel="noreferrer"
-              >
-                https://www.impots.gouv.fr/portail/particulier/emploi-domicile
-              </a>
             </p>
           </Section>
-        </ArticlesContainer>
+        </ArticlesContainer> */}
       </MotifWrapper>
       <Footer />
     </BasePage>
